@@ -1,0 +1,31 @@
+#Where do you want the work done
+main_output_dir=/work/j/jgibbons1
+prefix_outdir=Sample_RNA-Seq
+#Please send the email to yourself
+email_to_send_output_to=JGibbons1@mail.usf.edu
+#Tell the program where your sample files are located
+sample_dir=/work/j/jgibbons1/Richards/Samples
+#Tell the program where your reference gff is located
+gff=/work/j/jgibbons1/Richards/Index/Solanum_lycopersicum.SL3.0.43.gff3
+gff_annotation=ID
+#Tell the program where your indexed reference genome is located
+genome_index=/work/j/jgibbons1/Richards/Index/Solanum_lycopersicum.SL3.0.dna.toplevel.fa
+#Threads is the number of processors you are requesting
+threads=3
+#How much memory do you need/want?
+mem=10000
+#How long will your job take?
+hours=1
+minutes=55
+#
+Data_Paired_End=False
+Paired-end=--f
+#cufflinks_-–library-type=fr-firststrand
+#If you want to peform normalization based on samples provide a comma seperated list with a pattern in the file names that can be used to group the samples
+#See the README file for more information on naming your sample files
+#Choose your normalization method
+normalization_groups=AC,C_,M,P
+normalization_method=classic-fpkm
+#Indicate any optional hisat2 arguments with hisat2_argument
+hisat2_--rna-strandness=F
+submit_to_rra=True

@@ -1,0 +1,114 @@
+---
+title: "Gene functional-enrichment using JO's GO-analysis pipeline"
+author: "Author: J. Oberstaller"
+date: "Date: 7/18/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+*This html-file was generated via an R Markdown document (file-extension ".Rmd", in the same folder as this .html file). Open the .Rmd file in RStudio and follow directions below to regenerate this analysis and all accompanying output-files. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.*
+
+*Clicking the **Knit** button in RStudio generates an html-file that includes both content as well as the output of any embedded R code-chunks within the document. It may also be informative to use RStudio to run the code in the .Rmd document chunk-by-chunk by pressing the "play" buttons to better-understand each step.*
+```{r load source functions, message=FALSE}
+source("Ranalysis/GO.pipeline.source.071819.JO.R")
+```
+## GO enrichment analyses ##
+
+The basic principle behind GO analysis is to test for enrichment of terms for genes of interest vs. distribution in the entire "gene universe", or the entire set of genes that have some representation in your dataset (for example, any gene that has RNAseq expression-data above threshold in your analysis).
+
+Though all our gene-sets of interest (such as "increased.expression" or "decreased.expression" from an RNAseq experiment) start with the same gene universe, different genes are classified as "background" depending on which gene-set you're interested in.
+
+
+### How do I decide which genes are "interesting"? ###
+
+That entirely depends on your biological question. You decide how to categorize your genes into gene-sets of interest, and you can have as many different categories as you want. Each gene-set of interest will be tested for GO-term enrichment against the background of every other gene in the gene-universe that is not in your gene-set of interest.
+
+Continuing with the RNAseq example, you could be interested in terms enriched in increased-abundance genes vs. background. Or decreased-abundance genes vs. background. Or any differentially-expressed gene against background. You could introduce more comparisons by treatment-type, such as genes increased, decreased, or unchanged in response to a drug vs. a no-drug control. **Your categorizations don't need to arise from any particular type of experiment (e.g., RNAseq); all you need to provide is a table of all genes in your gene universe, with each gene labeled by gene-set of interest.** Your labels can be whatever makes sense to you.
+
+**Example**
+
+*RNAseq data classified into gene-sets of interest; each different "Class_Code" indicates another gene-set of interest*
+
+```{r, echo = FALSE}
+input.genes <- "Rdata/genes.and.categories.txt"
+mydf <- read.delim(input.genes, header = TRUE)
+colnames(mydf) <- c("Gene_ID", "Class_Code")
+head(mydf)
+
+```
+
+*add diagram of example experimental design with gene-sets of interest*
+
+*Note: I'll upload a truncated test-data set and example pipeline output suitable for sharing*
+
+### Enrichment-analyses using the run.topGO function ###
+
+The run.topGO function will perform GO analysis using the topGO-package **^a^** by ontology (molecular function, MF; biological process, BP; cellular component, CC) on all gene-sets of interest at once and then output to a combined tab-delimited table. Logs detailing analyses performed on each gene-set of interest are created, as well as output-tables of all SIGNIFICANT genes annotated to each SIGNIFICANT GO-term for each comparison.
+
+  + run.topGO defines which genes are interesting and which should be defined as background for each comparison of interest. Genes are defined as interesting or not based on the user-supplied dataframe "mydf"--genes in the category of interest are tested for enrichment against all the OTHER genes in mydf.
+  + The "gene universe" consists of ALL genes in the comparison. topGO automatically accounts for genes that cannot be mapped to GO terms with the "feasible genes" indicated in the topGO GOdata object (which you can see in the *"topGO.log.\*.txt"* output file for each gene-set of interest from this function).
+
+#### Arguments (user-provided input files) ####
+
+  **1. mydf** : a data frame containing geneIDs in column 1, and group-of-interest classifications in column 2.
+  
+  **2. geneID2GO** : a data frame containing geneIDs in column 1, and comma-separated GOterms in column2 (and will be used for the gene2GO setting in the GOdata object). This data frame should contain all your organism's geneIDs (not JUST genes of interest) and associated GO-terms, if any.
+
+##### Additional optional arguments (setting parameters) #####
+
+  + p = p.value threshold for significance; default is p <= 0.05
+  + fdr.p = FDR-corrected p.value for significance; default is fdr.p <= 0.05
+
+
+```{r load necessary packages}
+# for GO enrichment analyses:
+library(topGO)
+# if doing enrichment analyses on a species which has a bioconductor annotation package (such as mouse or human), also load AnnotationDbi:
+# library(AnnotationDbi)
+
+# for data-visualization:
+# library(ggplot2)
+# library(dplyr)
+# library(scales)
+# library(formatR)
+# library(cowplot)
+```
+
+```{r read in gene-universe with category-of-interest classifications}
+# read in gene-universe with category-of-interest classifications
+
+input.genes <- "Rdata/genes.and.categories.txt"
+mydf <- read.delim(input.genes, header = TRUE)
+colnames(mydf) <- c("Gene_ID", "Class_Code")
+```
+
+```{r read in and format custom GO database}
+# read in and format custom GO database
+  ## if you are using an organism for which a GO database is available through the AnnotationDbi package, you will follow a slightly different (and easier) procedure, which I'll detail in another example later.
+
+# make your custom GO database by first converting your input "geneID2GO" dataframe into the correct format (a named character-vector: each vector named by geneID, with GO terms as each element) using the readMappings function from topGO:
+
+input.GO <- "Rdata/PfGOdb_May2019.txt"
+geneID2GO <- readMappings(input.GO)
+```
+
+Now we're ready to perform our enrichment analyses using the run.topGO function. Additional documentation is available commented throughout the function (in the **source.R** file in the **Ranalysis** directory).
+
+```{r run.topGO function, warning=FALSE}
+# run run.topGO using default parameters:
+
+run.topGO(mydf = mydf, geneID2GO = geneID2GO, p=0.05, fdr.p=0.05)
+
+```
+
+
+## COMING SOON: DATA VISUALIZATION ##
+
+
+### Including Plots
+
+
+
+**^a^** *For more information regarding topGO, see the topGO manual from Alexa et al.:* https://rdrr.io/bioc/topGO/f/inst/doc/topGO.pdf
