@@ -10,7 +10,7 @@
 
   
 <p align="center">
-  <img src="https://github.com/JustinGibbons/USF_Omics_Hub/blob/master/Misc/github.web.src/images/OmicsHub_logo_no_email.png">
+  <img src="img/Hub_logo_2.0_small.PNG">
   <br>
   <h3 align="center">We post our materials for our data-analysis workshops here, as well as the code we've developed for various other omics-related data analyses.</h3>
   <br>
