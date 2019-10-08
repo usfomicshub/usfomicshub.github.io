@@ -21,7 +21,7 @@
 
 * After the initial consultation, a Service Plan will be made by the consultant for the client to approve or change. Included in this Service Plan will be any services requested and an estimated timeline for services to be provided. All work beyond the initial 4 hours of consultation (including preparation of the Service Plan) will be invoiced. You will be notified before time becomes billable.
 
-<a href>Click here</href> to view our full Service Request Policies and Procedures.
+<a href>Click here</a> to view our full Service Request Policies and Procedures.
 
 ***
 
