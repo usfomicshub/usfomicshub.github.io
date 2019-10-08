@@ -3,6 +3,7 @@ title: "Gene functional-enrichment using JO's GO-analysis pipeline"
 author: "Author: J. Oberstaller"
 date: "Date: 7/18/2019"
 output: html_document
+keep_md: true
 ---
 
 ```{r setup, include=FALSE}
