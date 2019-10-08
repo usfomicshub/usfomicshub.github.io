@@ -1,0 +1,16 @@
+# FACILITIES AND RESOURCES
+
+**Laboratory:**  The USF Genomics Core laboratory facilities are on the 3rd floor of the Interdisciplinary Research Building (IDRB) in the USF Research Park.  The ~3000 sq. ft. BSL2 laboratory space is equipped for cell biological and molecular biological experiments. The USF Genomics Core facility offers/encourages one-on-one consultation with a team of experienced bench and computational scientists on experimental design, sample preparation and data analysis for USF researchers. 
+
+The USF Genomics Core laboratory facilities house the following instrumentation:
+_Next-Gen Sequencers:_ 10x Chromium with Single-Cell Controller, Illumina MiSeq, Illumina NextSeq-550.
+
+_Instrumentation for sample library-prep and quality-assurance:_ Covaris M220 for DNA framentation, Agilent TapeStation 2200 for DNA and RNA quality assessment, Stratagene mx3005p qPCR for DNA library quantification, and an Invitrogen Qubit 2.0 fluorometer for DNA- and RNA-sample quantitation.
+
+_Instrumentation for cell culture:_ Three four-foot class II biosafety cabinets, four mixed-gas incubators, two Leica microscopes, an Eppendorf 5810 centrifuge
+
+These facilities are additionally fully equipped with refrigerators, -20°C and -80°C freezers, thermocyclers, bench top centrifuges, heatblocks, and vortexers.
+
+**Computational:** The USF Genomics Core computational facilities are on the 4th floor of the IDRB and comprise a 1400+ sq. ft. computational suite shared with Genomics Program members, in addition to private offices. Genomics Core computational consultants run many Mac, Linux and Dell workstations and have access to USF’s High-Performance Computing (HPC) clusters and a variety of both proprietary and open-source, command-line based analysis software. Data generated from the Core sequencers, as well as any data to be analyzed by the Core, are securely stored on a 1000-core HIPAA-compliant cluster operated by the USF Department of Research Computing to which Genomics Program researchers have priority access. USF researchers additionally have access to a 7,700-core general-computation cluster with multi-core servers located in the on-campus datacenter. The nodes in the cluster are connected with either a QDR InfiniBand fabric (older hardware) or an Intel Omnipath fabric (newer hardware) for computations as well as a separate Ethernet-management network.  All nodes in the clusters are connected (over either QDR Infiniband or Omnipath) to a 2.1~PB GPFS system or a 300 TB BeeGFS system (dedicated to the HIPAA-compliant cluster).  The HPC clusters also have close to 100 nodes outfitted with Nvidia GPU resources with a total of 170 GPUs in production. Additional details are available at http://rc.usf.edu. HPC infrastructure and hardware supporting USF Genomics and the USF Genomics Core Facility is managed by the USF Department of Research Computing.
+
+**Expertise:** USF Genomics offers both laboratory- and computational-consultation for USF Researchers through its USF Omics Hub, a core group of four PhD-level computational biologists with extensive and varied experience with omics experiments from the bench to data-analysis. The consultants of the Hub are available for project-planning, periodic consultation and training, as well as longer-term collaboration on funded projects.  
