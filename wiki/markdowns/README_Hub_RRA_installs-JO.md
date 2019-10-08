@@ -1,6 +1,6 @@
 #  Hub software-installs on USF's RRA-cluster
 
-USF Research Computing maintains the High-Performance Computing (HPC) hardware and resources available to all USF Researchers.  They have gone above and beyond to provide installations of USF Genomics software-requests on both CIRCE and RRA clusters. Their list of available software and any documentation can be found <a href=https://wiki.rc.usf.edu/index.php/Applications>here</a>. A more updated list of pending and recently-completed installs can be found <a href=https://wiki.rc.usf.edu/index.php/Apps_Queue>here</>, though most of these have not yet been documented due to the bulk of requests.
+USF Research Computing maintains the High-Performance Computing (HPC) hardware and resources available to all USF Researchers.  They have gone above and beyond to provide installations of USF Genomics software-requests on both CIRCE and RRA clusters. Their list of available software and any documentation can be found <a href=https://wiki.rc.usf.edu/index.php/Applications>here</a>. A more updated list of pending and recently-completed installs can be found <a href=https://wiki.rc.usf.edu/index.php/Apps_Queue>here</a>, though most of these have not yet been documented due to the bulk of requests.
 
 To relieve some of the Genomics-software installation- and documentation-burden from RC, the Hub (with guidance from RC) has established an independently-maintained repository on RRA of mostly omics-related software available for all RRA account-holders. 
 
@@ -98,8 +98,8 @@ To make the module command know where to look for modules (besides default), we 
    
  Best-practice to keep your environment clear of programs you don't need that could cause compatibility-problems when loading the programs you *do* need is to keep track of modules you may have already loaded, then PURGE them:
  
-    + module list
-    + module purge
+    module list
+    module purge
    
    Next activate the module (using the seekdeep module as an example):
 
