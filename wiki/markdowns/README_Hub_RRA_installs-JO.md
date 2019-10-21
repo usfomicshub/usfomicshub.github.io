@@ -35,7 +35,7 @@ Omics data-analysis workflows often require chaining together several different 
 
 Best practice when loading any environment or module is to start by purging your current environment to minimize the chance of loading incompatible programs. 
 
-         module purge
+      module purge
 
 #### The FIRST time you use the Hub Anaconda-install, do these three steps: ####
 
@@ -49,21 +49,21 @@ Best practice when loading any environment or module is to start by purging your
          
    + if your environment is provided via anaconda2:
         
-            export PATH=/shares/omicshub/anaconda2/bin:$PATH >> ~/.bashrc
+         export PATH=/shares/omicshub/anaconda2/bin:$PATH >> ~/.bashrc
 
-***Only use this option of permanently setting your anaconda-version if you're sure that's the one you want to use. If you need to switch back and forth between environments available via anaconda2 and anaconda3, it is better to set your path ONLY for your current login-session (meaning without appending the anaconda path to your environment-settings in ~/.bashrc). This example will set your path only for the current session:
+      ***Only use this option of permanently setting your anaconda-version if you're sure that's the one you want to use. If you need to switch back and forth between environments available via anaconda2 and anaconda3, it is better to set your path ONLY for your current login-session (meaning without appending the anaconda path to your environment-settings in ~/.bashrc). This example will set your path only for the current session:*
 
-            export PATH=/shares/omicshub/anaconda2/bin:$PATH
+          export PATH=/shares/omicshub/anaconda2/bin:$PATH
 
 ##### 2. initialize conda
 
 This command tells conda to automatically add a block of code to your default environment-settings--your ~/.bashrc file--so you never have to do this again.
 
-            conda init
+    conda init
             
 ##### 3. tell it to use the environment-settings you just upgraded
 
-            source ~/.bashrc
+      source ~/.bashrc
             
    *alternatively you can logout and login to RRA again and your new settings will take effect automatically.*
 
@@ -74,21 +74,21 @@ That's it! Now you are ready to use conda and all environments we have built.
 
 List the environments available to load:
 
-        conda env list
+      conda env list
         
 Load the environment (using qiime2 as an example):
     
    *loading an environment adds all the programs necessary to run a given analysis-pipeline directly to your path*
         
         
-    conda activate qiime2-2019.7
+      conda activate qiime2-2019.7
         
 
 Unloading the environment:
     
    *When you are finished using the environment, you should unload it to avoid introducing compatibility-issues with software-versions, etc.*
     
-    conda deactivate
+      conda deactivate
 
 
         
