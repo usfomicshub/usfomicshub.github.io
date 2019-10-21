@@ -39,7 +39,7 @@ Best practice when loading any environment or module is to start by purging your
 
 #### The FIRST time you use the Hub Anaconda-install, do these three steps: ####
 
-##### 1. add conda to your path for this login-session AND permanently so you never have to do this again**
+##### 1. add conda to your path for this login-session AND permanently so you never have to do this again.**
 
    *Your file-path is searched for programs etc. by the order in which directories appear in your path-variable. Pre-pending to your path ensures that the version of anaconda you load is the one you specify.*
    
@@ -51,11 +51,13 @@ Best practice when loading any environment or module is to start by purging your
         
             export PATH=/shares/omicshub/anaconda2/bin:$PATH >> ~/.bashrc
 
-**Only use this option of permanently setting your anaconda-version if you're sure that's the one you want to use. If you need to switch back and forth between environments available via anaconda2 and anaconda3, it is better to set your path ONLY for your current login-session (meaning without appending the anaconda path to your environment-settings in ~/.bashrc). This example will set your path only for the current session:
+***Only use this option of permanently setting your anaconda-version if you're sure that's the one you want to use. If you need to switch back and forth between environments available via anaconda2 and anaconda3, it is better to set your path ONLY for your current login-session (meaning without appending the anaconda path to your environment-settings in ~/.bashrc). This example will set your path only for the current session:
 
             export PATH=/shares/omicshub/anaconda2/bin:$PATH
 
-##### 2. initialize conda (conda will automatically add a block of code to your default environment-settings--your ~/.bashrc file--so you never have to do this again
+##### 2. initialize conda
+
+This command tells conda to automatically add a block of code to your default environment-settings--your ~/.bashrc file--so you never have to do this again.
 
             conda init
             
@@ -63,7 +65,7 @@ Best practice when loading any environment or module is to start by purging your
 
             source ~/.bashrc
             
-   *alternatively you can logout and login to RRA again and your new settings will take effect automatically*
+   *alternatively you can logout and login to RRA again and your new settings will take effect automatically.*
 
 
 
