@@ -10,6 +10,7 @@ To relieve some of the Genomics-software installation- and documentation-burden 
 
    + fastq_dump
    + kera2
+   + qiime2-2019.7
 
 #### Anaconda2 environments ####
 
@@ -32,35 +33,62 @@ Omics data-analysis workflows often require chaining together several different 
 
 ### Loading Hub Anaconda environments on RRA ###
 
-Pre-pend the correct anaconda installation to your path:
-    
+Best practice when loading any environment or module is to start by purging your current environment to minimize the chance of loading incompatible programs. 
+
+         module purge
+
+#### The FIRST time you use the Hub Anaconda-install, do these three steps: ####
+
+##### 1. add conda to your path for this login-session AND permanently so you never have to do this again**
+
    *Your file-path is searched for programs etc. by the order in which directories appear in your path-variable. Pre-pending to your path ensures that the version of anaconda you load is the one you specify.*
-    
+   
+   + if your environment is provided via anaconda3 (the appropriate choice for most users):
+   
+         export PATH=/shares/omicshub/apps/anaconda3/bin:$PATH >> ~/.bashrc
+         
    + if your environment is provided via anaconda2:
         
+            export PATH=/shares/omicshub/anaconda2/bin:$PATH >> ~/.bashrc
+
+**Only use this option of permanently setting your anaconda-version if you're sure that's the one you want to use. If you need to switch back and forth between environments available via anaconda2 and anaconda3, it is better to set your path ONLY for your current login-session (meaning without appending the anaconda path to your environment-settings in ~/.bashrc). This example will set your path only for the current session:
+
             export PATH=/shares/omicshub/anaconda2/bin:$PATH
 
-   + if your environment is provided via anaconda3:
-        
-            export PATH=/shares/omicshub/anaconda3/bin:$PATH
+##### 2. initialize conda (conda will automatically add a block of code to your default environment-settings--your ~/.bashrc file--so you never have to do this again
+
+            conda init
+            
+##### 3. tell it to use the environment-settings you just upgraded
+
+            source ~/.bashrc
+            
+   *alternatively you can logout and login to RRA again and your new settings will take effect automatically*
+
+
+
+That's it! Now you are ready to use conda and all environments we have built.
+
 
 List the environments available to load:
 
         conda env list
         
-Load the environment:
+Load the environment (using qiime2 as an example):
     
    *loading an environment adds all the programs necessary to run a given analysis-pipeline directly to your path*
         
         
-    source activate epiGBS_shared
+    conda activate qiime2-2019.7
         
 
 Unloading the environment:
     
    *When you are finished using the environment, you should unload it to avoid introducing compatibility-issues with software-versions, etc.*
     
-    source deactivate
+    conda deactivate
+
+
         
 
 
