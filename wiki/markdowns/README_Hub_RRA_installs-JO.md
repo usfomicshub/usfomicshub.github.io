@@ -12,7 +12,7 @@ To relieve some of the Genomics-software installation- and documentation-burden 
    + kera2
    + qiime2-2019.7
    + lumpy
-      (v 0.2.13)
+        + (v 0.2.13)
 
 #### Anaconda2 environments ####
 
