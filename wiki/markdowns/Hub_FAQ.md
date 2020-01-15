@@ -9,15 +9,11 @@
 
 * We are a small, interdisciplinary team of PhD-level biologists, bench scientists, bioinformaticians, programmers, statisticians, and scientific-writing experts here to help you design experiments, generate preliminary data, and collaborate with you to facilitate your omics research and strengthen the USF Genomics Program.
 
-* We are also employed nearly full-time as researchers on various extramurally-funded projects. **We continue to build our careers through these as well as collaborative projects initiated through the Hub.**
+* We are also employed full-time as researchers on various extramurally-funded projects. **We continue to build our careers through these as well as collaborative projects initiated through the Hub.**
 ***  		
 
-## Why do I have to provide a funding-mechanism in my inquiry even though up to 4 hours of consultation are free per PI?
-* coming soon
-***
-
 ## What is included in consultation, and when would I have to start paying?
-* Once we receive your request, we schedule an approximately one-hour meeting with you to discuss your needs and how we can fulfill them. The content of this initial meeting will vary by request: for example if you are seeking sequencing- and/or analysis-quotes and details for a grant-application, you will meet with our Core-Facility expert and lead data-scientist/grant-writing expert. If you are developing an experimental plan or looking for trouble-shooting help on existing projects or analyses, you will meet with our Brain Trust of widely-experienced data-scientists who can offer you advice and ideas. We work with you.
+* Once we receive your request, we schedule an approximately one-hour meeting with you to discuss your needs and how we can fulfill them. The content of this initial meeting will vary by request: for example if you are seeking quotes for sequencing and/or analysis and other details for a grant-application, you will meet with our Core Facility expert and lead data scientist/grant-writing expert. If you are developing an experimental plan or looking for trouble-shooting help on existing projects or analyses, you will meet with our Brain Trust of widely-experienced data-scientists who can offer you advice and ideas. We work with you.
 
 * After the initial consultation, a Service Plan will be made by the consultant for the client to approve or change. Included in this Service Plan will be any services requested and an estimated timeline for services to be provided. All work beyond the initial 4 hours of consultation (including preparation of the Service Plan) will be invoiced. You will be notified before time becomes billable.
 
@@ -29,7 +25,7 @@
 
 * We are all scientists, and in a perfect world, the Spirit of Discovery would be the sole reason for our existence. However! The Spirit of Discovery must ultimately be sustained by grant-money, and as such, our primary purpose is to facilitate high-caliber omics research to build a nationally-competitive Program for securing this funding. 
 
-* Our Core was established with ___ as an investment in the future and growth of USF Genomics. Thanks to this support, we're currently able to provide _____ services (RNAseq training) for free to our USF community, as well as initial hours of consultation on omics-related projects per PI. Through these initiatives just over the past year, we've already seen promising Community engagement (from PI's, staff, and trainees), productive interdisciplinary collaborations, and a number of successful extramurally-funded proposals.
+* Our Core was established with University funds as an investment in the future and growth of USF Genomics. Thanks to this support, we're currently able to provide select services/workshops (RNAseq training, Microbiome data-analysis training) for free to our USF community, as well as initial hours of consultation on omics-related projects per USF PI. Through these initiatives just over the past year, we've already seen promising Community engagement (from PI's, staff, and trainees), productive interdisciplinary collaborations, and a number of successful intra- and extramurally-funded proposals.
 
 * As an academic institutional Core, The USF Genomics Facility and Omics Hub consulting services are not actually allowed to make profit. And don't worry, we don't! We do, however, need to recoup a percentage of operating-costs to continue to justify our existence and ensure continued availability of these resources.
 		
