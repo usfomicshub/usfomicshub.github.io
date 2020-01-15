@@ -7,7 +7,7 @@ _Next-Gen Sequencers:_ 10x Chromium with Single-Cell Controller, Illumina MiSeq,
 
 _Instrumentation for sample library-prep and quality-assurance:_ Covaris M220 for DNA framentation, Agilent TapeStation 2200 for DNA and RNA quality assessment, Stratagene mx3005p qPCR for DNA library quantification, and an Invitrogen Qubit 2.0 fluorometer for DNA- and RNA-sample quantitation.
 
-_Instrumentation for cell culture:_ Three four-foot class II biosafety cabinets, four mixed-gas incubators, two Leica microscopes, an Eppendorf 5810 centrifuge
+_Instrumentation for cell culture:_ Three four-foot class II biosafety cabinets, four mixed-gas incubators, two Leica microscopes, an Eppendorf 5810 centrifuge.
 
 These facilities are additionally fully equipped with refrigerators, -20°C and -80°C freezers, thermocyclers, bench top centrifuges, heatblocks, and vortexers.
 
