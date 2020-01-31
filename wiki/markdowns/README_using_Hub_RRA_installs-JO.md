@@ -84,7 +84,7 @@ List the environments available to load:
         
 Load the environment (using qiime2 as an example):
     
-   *loading an environment adds all the programs necessary to run a given analysis-pipeline directly to your path*
+   *loading an environment adds all the programs necessary to run a given analysis-pipeline directly to your path.*
          
       conda activate qiime2-2019.7
         
@@ -92,11 +92,12 @@ Each environment will have many programs/packages/tools installed. To see packag
 
       conda list
       
+
 Sometimes you will want to check the available executable commands in an environment. All executables are stored in the same place for each anaconda3 environment so you can easily check. Using qiime2-2019.7 as an example: 
 
       ls -l /shares/omicshub/apps/anaconda3/envs/qiime2-2019.7/bin
-   
-   *This command will list all the executables installed in the qiime2-2019.7 environment. Typically these file-names are the commands you can use from programs loaded in the given environment.   
+   *This command will list all the executables installed in the qiime2-2019.7 environment. Typically these file-names are the commands you can use from programs loaded in the given environment.*   
+
 
 Unloading the environment:
     
