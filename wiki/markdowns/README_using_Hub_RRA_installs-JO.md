@@ -10,9 +10,12 @@ To relieve some of the Genomics-software installation- and documentation-burden 
 
    + fastq_dump
    + kera2
-   + qiime2-2019.7
    + lumpy
         + (v 0.2.13)
+   + Rdeseq
+        + R version 3.6.2 (2019-12-12)
+   + selene
+   + qiime2-2019.7
 
 #### Anaconda2 environments ####
 
@@ -73,6 +76,7 @@ This command tells conda to automatically add a block of code to your default en
 
 That's it! Now you are ready to use conda and all environments we have built.
 
+### Using Hub Anaconda environments on RRA ###
 
 List the environments available to load:
 
@@ -81,10 +85,18 @@ List the environments available to load:
 Load the environment (using qiime2 as an example):
     
    *loading an environment adds all the programs necessary to run a given analysis-pipeline directly to your path*
-        
-        
+         
       conda activate qiime2-2019.7
         
+Each environment will have many programs/packages/tools installed. To see packages and their versions installed in the loaded environment:
+
+      conda list
+      
+Sometimes you will want to check the available executable commands in an environment. All executables are stored in the same place for each anaconda3 environment so you can easily check. Using qiime2-2019.7 as an example: 
+
+      ls -l /shares/omicshub/apps/anaconda3/envs/qiime2-2019.7/bin
+   
+   *This command will list all the executables installed in the qiime2-2019.7 environment. Typically these file-names are the commands you can use from programs loaded in the given environment.   
 
 Unloading the environment:
     
