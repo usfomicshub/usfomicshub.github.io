@@ -1,0 +1,27 @@
+---
+title: "ReadMe"
+author: "Chengqi(Charley) Wang"
+date: "2/3/2020"
+output: html_document
+---
+
+#### The folder includes all R scripts related to Genomic training.
+```
+1. basic_R.Rmd                     
+#Introducing basic R including all data type
+
+2. Saving_loading_if_for_apply.Rmd 
+#Introducing how to load and save data, for loop and if_else command
+
+3. data_normalization_ScatterPlot.Rmd 
+#Introducing how to normalize data and scatter plot drawing in R
+
+4. FPKM_cor_heatmap.Rmd
+##Drawing the heatmap to check the correlation between each biological replicates
+
+5. DEseq_and_heatmap.Rmd
+##Extracting the differential expression gene and draw heatmap
+
+5. Box_Hist_plot
+##Draw the boxplot and histplot for significant differential expression genes
+```
