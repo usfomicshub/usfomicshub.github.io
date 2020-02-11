@@ -27,12 +27,15 @@ date: "2/3/2020"
 
 *4. FPKM_cor_heatmap.Rmd*
 
-* Drawing the heatmap to check the correlation between each biological replicates
+* Drawing a heatmap to check the correlation between biological replicates
 
 *5. DEseq_and_heatmap.Rmd*
-* Extracting the differentially expressed genes and draw heatmap
+* Extract differentially expressed genes and draw a heatmap
 
 *6. Box_Hist_plot*
-* Draw the boxplot and histplot for significant differentially expressed genes
+* Draw boxplots and histplots for significant differentially expressed genes
+
+
+
 
 © 2020 GitHub, Inc.
