@@ -9,6 +9,8 @@ date: "2/3/2020"
    **(1)** as *R-markdown files (extension .Rmd)*, which you can view and run interactively in RStudio, and
     
    **(2)** completed .html files created from each markdown which can be opened with any internet browser.
+   
+   You should be able to run these tutorials interactively if you participated in the RNAseq data-analysis workshop (all necessary programs should already be installed). Remember that any referenced filepaths need to be changed to your own.
 
 
 #### Files: ####
