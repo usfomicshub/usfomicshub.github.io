@@ -8,19 +8,24 @@
 
   
 <p align="center">
-  <br>
-  <h3 align="center">We post our materials for our data-analysis workshops here, as well as the code we've developed for various other omics-related data analyses.</h3>
+  <h3 align="center">We post our materials for our data-analysis workshops here, information for upcoming events, as well as the code we've developed for various other omics-related data analyses.</h3>
   <br>
  </p>
+ 
+ ## News
+   * USF's One Health Codeathon: Host-Microbiome Interactions in Global Health will be taking place February 26th - 28th! More information is available at the Genomics Program website.
+ 
+   * Presentations from our Genomics Forum One Health Codeathon 2020 onboarding-meeting are now available <a href=https://github.com/oberstal/USFOneHealthCodeathon2020/blob/master/README.md>here</a>.
+<b>
+<b>
 
-<p align="center">
+ ## Info
   <b> See our <a href="https://github.com/usfomicshub/usfomicshub.github.io/wiki">Wiki</a> page for documentation, walkthroughs for our pipelines, and other helpful information. See our <a href="https://github.com/usfomicshub/usfomicshub.github.io/blob/master/wiki/markdowns/Hub_FAQ.md">FAQ</a> for answers to common questions about the Omics Hub. </b>
   <br>
   <br>
   <img src="img/Hub_logo_2.0_small.PNG">
   
   <br>
-</p>
 
 <p align="center">
   <b> Other useful links:</b><br>
