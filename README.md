@@ -22,7 +22,8 @@
   **See our [Wiki](https://github.com/usfomicshub/usfomicshub.github.io/wiki) page for documentation, walkthroughs for our pipelines, and other helpful information. See our [FAQ](https://github.com/usfomicshub/usfomicshub.github.io/blob/master/wiki/markdowns/Hub_FAQ.md) for answers to common questions about the Omics Hub.**
   <br>
   <br>
-  ![Hub logo](https://github.com/usfomicshub/usfomicshub.github.io/blob/master/img/Hub_logo_2.0_small.PNG)
+  ![Hub logo](https://github.com/usfomicshub/usfomicshub.github.io/blob/master/img/Hub_logo_2.0_small.PNG)  
+  
 
   
   <br>
