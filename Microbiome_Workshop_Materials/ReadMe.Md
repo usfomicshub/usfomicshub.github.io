@@ -15,8 +15,8 @@ These folders contain all presentations, data, tutorials and code we provided du
 ### Using the tutorials:
 
   * The tutorials are provided in R-Markdown format (file-extension .Rmd). They can be run interactively in R-studio (after setting up a Project in the specified directory we had you download for the hands-on portion of the workshop, as we did in class).
-  * The [day2 directory]() contains all necessary practice-data and code (including automated installation of required R-packages) to complete the day2 tutorial.
-  * The [day3 directory]() contains all necessary practice-data and code (including automated installation of required R-packages) to complete the day3 tutorial. Mac-users may need to install xTerm for full functionality.  
+  * The [day2 directory](https://github.com/usfomicshub/usfomicshub.github.io/tree/master/Microbiome_Workshop_Materials/microbiome_workshop_demos/day2) contains all necessary practice-data and code (including automated installation of required R-packages) to complete the day2 tutorial.
+  * The [day3 directory](https://github.com/usfomicshub/usfomicshub.github.io/tree/master/Microbiome_Workshop_Materials/microbiome_workshop_demos/day3) contains all necessary practice-data and code (including automated installation of required R-packages) to complete the day3 tutorial. Mac-users may need to install xTerm for full functionality.  
 
 
 
