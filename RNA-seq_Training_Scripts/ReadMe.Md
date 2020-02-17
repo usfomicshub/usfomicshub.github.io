@@ -1,6 +1,6 @@
 ## RNA-seq Data-Analysis Workshop materials
 
-Presentation 1: [An introduction to RNA-seq and data-analysis](https://github.com/usfomicshub/usfomicshub.github.io/edit/master/RNA-seq_Training_Scripts/intro_to_rna_seq.pdf)
+**Presentation 1**: [An introduction to RNA-seq and data-analysis](https://github.com/usfomicshub/usfomicshub.github.io/edit/master/RNA-seq_Training_Scripts/intro_to_rna_seq.pdf)
 
 ### Pipeline scripts
 
@@ -16,4 +16,4 @@ The scripts are numbered in the order you should run them (via commandline, whil
   
 ### Next steps
 
-During the workshop, we then feed the output from featureCounts (the raw gene-counts) into R for filtering, normalization, plotting, etc. You can find materials for the R-components of the workshop [here].
+During the workshop, we then feed the output from featureCounts (the raw gene-counts) into R for filtering, normalization, plotting, etc. You can find materials for the R-components of the workshop [here](https://github.com/usfomicshub/usfomicshub.github.io/tree/master/R_training).
