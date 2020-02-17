@@ -6,7 +6,7 @@ These folders contain all presentations, data, tutorials and code we provided du
   * [Presentations](https://github.com/usfomicshub/usfomicshub.github.io/tree/master/Microbiome_Workshop_Materials/presentations)
     * Presentations are organized by day and topic.
   * Pipeline/Tutorials*
-    * [Day 2: Running dada2]()
+    * [Day 2: Running dada2](https://github.com/usfomicshub/usfomicshub.github.io/tree/master/Microbiome_Workshop_Materials/microbiome_workshop_demos/day2)
       * **Goal**: The purpose of this analysis is to obtain an Amplicon Sequence Variant (ASV) table for all of our microbiome-sample example-data.
     * [Day 3: Data-visualization]()
 
