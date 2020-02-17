@@ -24,6 +24,8 @@
 
   
 ![Hub logo](https://github.com/usfomicshub/usfomicshub.github.io/blob/master/img/Hub_logo_2.0_small.PNG)
+![Hub logo](/img/Hub_logo_2.0_small.PNG)
+
  
 
 
