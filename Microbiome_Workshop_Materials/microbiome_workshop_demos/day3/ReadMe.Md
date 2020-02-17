@@ -5,6 +5,14 @@ Date: "11/06/2019"
 Output: html_document
 ---
 
+
+# Before you begin #
+See important notes for operating this tutorial [here](https://github.com/usfomicshub/usfomicshub.github.io/tree/master/Microbiome_Workshop_Materials#using-the-tutorials).
+
+
+
+#
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo=TRUE)
 source(here::here("Rsource/microbiome.day3.source.scripts.R"))
