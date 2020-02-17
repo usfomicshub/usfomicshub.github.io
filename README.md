@@ -13,7 +13,7 @@
  </p>
  
  ## News
-   * USF's One Health Codeathon: Host-Microbiome Interactions in Global Health will be taking place February 26th - 28th! More information is available at the Genomics Program website.
+   * USF's One Health Codeathon: Host-Microbiome Interactions in Global Health will be taking place February 26th - 28th! More information is available at the <a href=https://health.usf.edu/publichealth/ghidr/genomics>Genomics Program website</a>.
  
    * Presentations from our Genomics Forum One Health Codeathon 2020 onboarding-meeting are now available <a href=https://github.com/oberstal/USFOneHealthCodeathon2020/blob/master/README.md>here</a>.
 <b>
