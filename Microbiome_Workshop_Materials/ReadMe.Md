@@ -1,6 +1,6 @@
 # Microbiome Data-Analysis Workshop materials
 
-These folders contain all presentations, data, tutorials and code we provided during our first Microbiome Data-Analysis Workshop.
+These folders contain all presentations, data, tutorials and code we provided during our first Microbiome Data-Analysis Workshop (offered November 2019).
 
 ## Files
   * [Presentations](https://github.com/usfomicshub/usfomicshub.github.io/tree/master/Microbiome_Workshop_Materials/presentations)
