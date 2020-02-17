@@ -8,16 +8,17 @@
 
   
 <p align="center">
-  <img src="img/Hub_logo_2.0_small.PNG">
   <br>
   <h3 align="center">We post our materials for our data-analysis workshops here, as well as the code we've developed for various other omics-related data analyses.</h3>
   <br>
  </p>
 
 <p align="center">
-  <b> See our <a href="https://github.com/usfomicshub/usfomicshub.github.io/wiki">Wiki</a> page for documentation, walkthroughs for our pipelines, and other helpful information. See our <a href="https://github.com/usfomicshub/usfomicshub.github.io/blob/master/wiki/markdowns/Hub_FAQ.md">FAQ</a> for answers to common questions about the Omics Hub. More updates coming soon! </b>
+  <b> See our <a href="https://github.com/usfomicshub/usfomicshub.github.io/wiki">Wiki</a> page for documentation, walkthroughs for our pipelines, and other helpful information. See our <a href="https://github.com/usfomicshub/usfomicshub.github.io/blob/master/wiki/markdowns/Hub_FAQ.md">FAQ</a> for answers to common questions about the Omics Hub. </b>
   <br>
   <br>
+  <img src="img/Hub_logo_2.0_small.PNG">
+  
   <br>
 </p>
 
