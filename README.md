@@ -13,28 +13,27 @@
  </p>
  
  ## News
-   * USF's One Health Codeathon: Host-Microbiome Interactions in Global Health will be taking place February 26th - 28th! More information is available at the <a href=https://health.usf.edu/publichealth/ghidr/genomics>Genomics Program website</a>.
+   * USF's One Health Codeathon: Host-Microbiome Interactions in Global Health will be taking place February 26th - 28th! More information is available at the [Genomics Program website](https://health.usf.edu/publichealth/ghidr/genomics).
  
-   * Presentations from our Genomics Forum One Health Codeathon 2020 onboarding-meeting are now available <a href=https://github.com/oberstal/USFOneHealthCodeathon2020/blob/master/README.md>here</a>.
-<b>
-<b>
-
+   * Presentations from our Genomics Forum One Health Codeathon 2020 onboarding-meeting are now available [here](https://github.com/oberstal/USFOneHealthCodeathon2020/blob/master/README.md).  
+   
+   
  ## Info
-  <b> See our <a href="https://github.com/usfomicshub/usfomicshub.github.io/wiki">Wiki</a> page for documentation, walkthroughs for our pipelines, and other helpful information. See our <a href="https://github.com/usfomicshub/usfomicshub.github.io/blob/master/wiki/markdowns/Hub_FAQ.md">FAQ</a> for answers to common questions about the Omics Hub. </b>
+  **See our [Wiki](https://github.com/usfomicshub/usfomicshub.github.io/wiki) page for documentation, walkthroughs for our pipelines, and other helpful information. See our [FAQ](https://github.com/usfomicshub/usfomicshub.github.io/blob/master/wiki/markdowns/Hub_FAQ.md) for answers to common questions about the Omics Hub.**
   <br>
   <br>
-  <img src="img/Hub_logo_2.0_small.PNG">
+  ![Hub logo](https://github.com/usfomicshub/usfomicshub.github.io/blob/master/img/Hub_logo_2.0_small.PNG)
+
   
   <br>
 
-<p align="center">
-  <b> Other useful links:</b><br>
-  <a href="https://health.usf.edu/publichealth/ghidr/genomics">USF Genomics Home</a> |
-  <a href="https://health.usf.edu/publichealth/ghidr/genomics/request-services"> Hub service inquiries </a>
-  <br>
-  <a href="https://wiki.rc.usf.edu/index.php/Main_Page"> USF Research Computing Home* </a> |
-  <a href="https://wiki.rc.usf.edu/index.php/Software_and_Libraries"> USF Research Computing: Available software* </a>
-</p>
+
+ **Other useful links:**
+  * [USF Genomics Home](https://health.usf.edu/publichealth/ghidr/genomics)
+  * [Hub service inquiries](https://health.usf.edu/publichealth/ghidr/genomics/request-services)
+  * [USF Research Computing Home*](https://wiki.rc.usf.edu/index.php/Main_Page)
+  * [USF Research Computing: Available software*](https://wiki.rc.usf.edu/index.php/Software_and_Libraries)
+
 
 
 
