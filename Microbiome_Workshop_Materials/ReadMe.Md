@@ -3,7 +3,7 @@
 These folders contain all presentations, data, tutorials and code we provided during our first Microbiome Data-Analysis Workshop.
 
 ## Files
-  * [Presentations]()
+  * [Presentations](https://github.com/usfomicshub/usfomicshub.github.io/tree/master/Microbiome_Workshop_Materials/presentations)
     * Presentations are organized by day and topic.
   * Pipeline/Tutorials*
     * [Day 2: Running dada2]()
