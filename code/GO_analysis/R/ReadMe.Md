@@ -1,9 +1,8 @@
 ---
-title: "Gene functional-enrichment using JO's GO-analysis pipeline"
-author: "Author: J. Oberstaller"
-date: "Date: 7/18/2019"
-output: html_document
-keep_md: true
+Title: "Gene functional-enrichment using JO's GO-analysis pipeline"
+Author: "J. Oberstaller"
+Date: "7/18/2019"
+
 ---
 
 ```{r setup, include=FALSE}
