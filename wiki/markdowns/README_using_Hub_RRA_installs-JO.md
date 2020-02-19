@@ -12,6 +12,9 @@ To relieve some of the Genomics-software installation- and documentation-burden 
    + kera2
    + lumpy
         + (v 0.2.13)
+   + picrust2
+        + v 2.3.0_b
+        + [PICRUSt2 documentation](https://github.com/picrust/picrust2/wiki)
    + Rdeseq
         + R version 3.6.2 (2019-12-12)
    + selene
