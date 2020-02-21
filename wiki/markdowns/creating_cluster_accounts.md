@@ -15,6 +15,12 @@ Please follow the instructions below to gain access to the appropriate cluster. 
 
 ## Creating an RRA Cluster Account
 
+<br>
+
+* If you or your supporting USF Faculty member are **NOT** listed on the [USF Genomics Faculty page](https://health.usf.edu/publichealth/ghidr/genomics/researchers), please email usfgenomics@usf.edu for clearance **BEFORE** requesting an account.
+
+<br>
+
 _**HIPAA Training is *required* for access to the Genomics RRA cluster**_
 
 ### 1. Log in to the https://usf.sabacloud.com site.
