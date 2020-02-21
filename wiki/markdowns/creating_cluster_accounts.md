@@ -11,7 +11,7 @@ The **CIRCE** cluster, on the other hand, does not have as many restrictions on 
 
 Please follow the instructions below to gain access to the appropriate cluster. Once the requirements have been satisfied, Research Computing is typically very quick to create your account (< 1 day).
 
-
+<br>
 
 ## Creating an RRA Cluster Account
 
@@ -43,7 +43,11 @@ _**HIPAA Training is *required* for access to the Genomics RRA cluster**_
 
 ### 5.  Research Computing will then send you a security agreement via DocuSign that you will need to review and sign electronically. Once your information is verified they will create your account.
 
+<br>
+<br>
+
 ## Creating a CIRCE account
+<br>
 
 ### 1.  Go to https://cwa.rc.usf.edu/ and login with NetID and password.
 
