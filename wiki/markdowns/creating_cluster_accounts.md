@@ -25,11 +25,11 @@ _**HIPAA Training is *required* for access to the Genomics RRA cluster**_
 
 ### 3. Access and complete the following modules.
 
-  *   a.	HIPAA Privacy at USF
+ * HIPAA Privacy at USF
    
-  *   b.	Code of Conduct
+ * Code of Conduct
    
-  *   c.	Computer and Information Security
+ * Computer and Information Security
 
 ### 4.  When you have finished, please generate PDF copies of the completion certificates for all 3 modules and include them in an email to Research Computing at rc-help@usf.edu with the subject “RRA Account Request”. 
    
