@@ -46,3 +46,10 @@ _**HIPAA Training is *required* for access to the Genomics RRA cluster**_
    * If you are not a faculty member, please also provide the name and email address of your faculty sponsor in the email.
 
 ### 3.	Research Computing will create your account on CIRCE once your information is verified.
+
+
+<br>
+<br>
+<br>
+
+You can refer to [Research Computing's documentation-wiki](https://wiki.rc.usf.edu/index.php/Main_Page) for further information on HPC-basics, CIRCE hardware and other useful topics.
