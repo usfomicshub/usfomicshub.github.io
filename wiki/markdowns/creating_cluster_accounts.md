@@ -9,7 +9,7 @@ Both clusters have excellent capabilities. As the name implies, **RRA** has stri
 
 The **CIRCE** cluster, on the other hand, does not have as many restrictions on access and does not require additional certification for account-creation. Wait-times for job completions using CIRCE are likely to be longer due to much-higher utilization.
 
-Please follow the instructions below to gain access to the appropriate cluster. Once the requirements have been satisfied, Research Computing is typically very quick to create your account (< 1 day).
+Please follow the instructions below to gain access to the appropriate cluster. Once the requirements have been satisfied, Research Computing is typically very quick to create your account.
 
 <br>
 
@@ -17,31 +17,19 @@ Please follow the instructions below to gain access to the appropriate cluster. 
 
 <br>
 
-* If you or your supporting USF Faculty member are **NOT** listed on the [USF Genomics Faculty page](https://health.usf.edu/publichealth/ghidr/genomics/researchers), please email usfgenomics@usf.edu for clearance **BEFORE** requesting an account.
+To request an RRA-Cluster account, email rc-help@usf.edu *from your official USF email address* with the following information:
+
+  * Supporting USF Faculty-member full name
+  * Supporting USF Faculty-member email address
+  
+Once contacted, RC administrators will send over all applicable SabaCloud/Docusign links/information, which will include instructions for completing your online HIPAA-certification. Note that **HIPAA Training is *required* for access to the Genomics RRA cluster.**
+
+   * If you or your supporting USF Faculty member are **NOT** listed on the [USF Genomics Faculty page](https://health.usf.edu/publichealth/ghidr/genomics/researchers), please email genomics@usf.edu for clearance **BEFORE** requesting an account.
+    
+<br>
+ *All RRA accounts are automatically granted access to CIRCE. If requesting an RRA account, do not send in a request for a CIRCE account as well.
 
 <br>
-
-_**HIPAA Training is *required* for access to the Genomics RRA cluster**_
-
-### 1. Log in to the https://usf.sabacloud.com site.
-
-   * If you do not have an existing login, send an email to support@health.usf.edu to request SABA registration. Make a note that it is for required HIPAA training modules for REDCap access.
-
-### 2. After logging in, use the search bar at the top for the Learning Catalog.
-
-### 3. Access and complete the following modules.
-
- * HIPAA Privacy at USF
-   
- * Code of Conduct
-   
- * Computer and Information Security
-
-### 4.  When you have finished, please generate PDF copies of the completion certificates for all 3 modules and include them in an email to Research Computing at rc-help@usf.edu with the subject “RRA Account Request”. 
-   
-   * If you are not a faculty member, please also provide the name and email address of your faculty sponsor in the email.
-
-### 5.  Research Computing will then send you a security agreement via DocuSign that you will need to review and sign electronically. Once your information is verified they will create your account.
 
 <br>
 <br>
@@ -49,17 +37,16 @@ _**HIPAA Training is *required* for access to the Genomics RRA cluster**_
 ## Creating a CIRCE account
 <br>
 
-### 1.  Go to https://cwa.rc.usf.edu/ and login with NetID and password.
-
-### 2.	Send email to rc-help@usf.edu with the subject "CIRCE Account Request". 
+To request a CIRCE account, email rc-help@usf.edu *from your official USF email address* with the following information: 
    
-   * If you are not a faculty member, please also provide the name and email address of your faculty sponsor in the email.
+  * Supporting USF Faculty-member full name
+  * Supporting USF Faculty-member email address
 
-### 3.	Research Computing will create your account on CIRCE once your information is verified.
 
+** *NOTE: Only send a request for a CIRCE account if you do not currently have (or are not actively requesting) an RRA account.* **
 
 <br>
 <br>
 <br>
 
-You can refer to [Research Computing's documentation-wiki](https://wiki.rc.usf.edu/index.php/Main_Page) for further information on HPC-basics, CIRCE hardware and other useful topics.
+You can refer to [Research Computing's documentation-wiki](https://wiki.rc.usf.edu/index.php/Main_Page) for further information on HPC-basics, CIRCE hardware and other useful topics. Refer to [our Genomics Facilities and Resources](https://github.com/usfomicshub/usfomicshub.github.io/blob/master/wiki/markdowns/facilities_and_resources.md) for information on RRA hardware and specifications.
