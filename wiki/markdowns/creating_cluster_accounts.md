@@ -24,10 +24,10 @@ To request an RRA-Cluster account, email rc-help@usf.edu *from your official USF
   
 Once contacted, RC administrators will send over all applicable SabaCloud/Docusign links/information, which will include instructions for completing your online HIPAA-certification. Note that **HIPAA Training is *required* for access to the Genomics RRA cluster.**
 
-   * If you or your supporting USF Faculty member are **NOT** listed on the [USF Genomics Faculty page](https://health.usf.edu/publichealth/ghidr/genomics/researchers), please email genomics@usf.edu for clearance **BEFORE** requesting an account.
+*If you or your supporting USF Faculty member are **NOT** listed on the [USF Genomics Faculty page](https://health.usf.edu/publichealth/ghidr/genomics/researchers), please email genomics@usf.edu for clearance **BEFORE** requesting an account.*
     
 <br>
- *All RRA accounts are automatically granted access to CIRCE. If requesting an RRA account, do not send in a request for a CIRCE account as well.
+ ***All RRA accounts are automatically granted access to CIRCE. If requesting an RRA account, do not send in a request for a CIRCE account as well.***
 
 <br>
 
@@ -43,7 +43,7 @@ To request a CIRCE account, email rc-help@usf.edu *from your official USF email 
   * Supporting USF Faculty-member email address
 
 
-** *NOTE: Only send a request for a CIRCE account if you do not currently have (or are not actively requesting) an RRA account.* **
+***NOTE: Only send a request for a CIRCE account if you do not currently have (or are not actively requesting) an RRA account.***
 
 <br>
 <br>
