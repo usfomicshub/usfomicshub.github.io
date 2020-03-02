@@ -4,6 +4,8 @@ USF Genomics researchers requiring high-performance computing have two primary c
 * **The Research-Restricted Access cluster (RRA)**, to which USF Genomics Program members have priority access, and 
 * **CIRCE**, the primary cluster servicing all USF researchers. 
 
+<br>
+
 ## What's the difference, and which one do I use?
 Both clusters have excellent capabilities. As the name implies, **RRA** has stringent security measures in place to limit access and to protect potentially-sensitive human-subjects data. _Your research does not NEED to include HIPAA-protected data for you to use RRA._ Everybody requesting an RRA-account will, however, need to obtain HIPAA-training before their account can be created. Jobs run on RRA typically have faster turnaround-time as it is currently at lower utilization. 
 
@@ -17,7 +19,7 @@ Please follow the instructions below to gain access to the appropriate cluster. 
 
 <br>
 
-To request an RRA-Cluster account, email rc-help@usf.edu *from your official USF email address* with the following information:
+To request an RRA-Cluster account, email rc-help@usf.edu ***from your official USF email address*** with the following information:
 
   * Supporting USF Faculty-member full name
   * Supporting USF Faculty-member email address
@@ -27,9 +29,9 @@ Once contacted, RC administrators will send over all applicable SabaCloud/Docusi
 *If you or your supporting USF Faculty member are **NOT** listed on the [USF Genomics Faculty page](https://health.usf.edu/publichealth/ghidr/genomics/researchers), please email genomics@usf.edu for clearance **BEFORE** requesting an account.*
     
 <br>
+ 
  ***All RRA accounts are automatically granted access to CIRCE. If requesting an RRA account, do not send in a request for a CIRCE account as well.***
 
-<br>
 
 <br>
 <br>
@@ -37,7 +39,7 @@ Once contacted, RC administrators will send over all applicable SabaCloud/Docusi
 ## Creating a CIRCE account
 <br>
 
-To request a CIRCE account, email rc-help@usf.edu *from your official USF email address* with the following information: 
+To request a CIRCE account, email rc-help@usf.edu ***from your official USF email address*** with the following information: 
    
   * Supporting USF Faculty-member full name
   * Supporting USF Faculty-member email address
