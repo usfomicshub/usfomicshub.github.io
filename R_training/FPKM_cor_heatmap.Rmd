@@ -1,11 +1,10 @@
 ---
 title: "FPKM_cor_heatmap"
 author: "Chengqi(Charley) Wang"
-date: "2/3/2020"
 output: html_document
 ---
 
-
+*date: "2/3/2020"*
 ####loading previous saved FPKM data
 ```{r}
 setwd('~/Documents/work/paper_write/genome_training/R_training/')
