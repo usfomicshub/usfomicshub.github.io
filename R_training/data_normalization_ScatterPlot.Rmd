@@ -1,10 +1,11 @@
 ---
 title: "Data_normalization_FPKM_Scatter Plot"
 author: "Chengqi(Charley) Wang"
-date: "2/3/2020"
 output: html_document
 ---
 <br/><br/>
+
+*date: "2/3/2020"*
 
 ####load the data
 ```{r}
