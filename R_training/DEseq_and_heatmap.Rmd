@@ -1,9 +1,10 @@
 ---
 title: "DEseq_and_heatmap"
 author: "Chengqi(Charley) Wang"
-date: "2/1/2020"
 output: html_document
 ---
+
+*date: 2/1/2020*
 <br/><br/>
 
 ####load the txt count data
