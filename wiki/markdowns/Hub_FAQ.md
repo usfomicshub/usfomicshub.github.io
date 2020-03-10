@@ -1,3 +1,10 @@
+---
+layout: "default"
+title: "Hub FAQ"
+permalink: /wiki/Hub_FAQ/
+---
+
+
 <h1 style align="center">USF Omics Hub Frequently-Asked Questions</h1>
 
 ## What is the purpose of the Hub?
