@@ -1,10 +1,9 @@
 ---
 Title: "Gene functional-enrichment using JO's GO-analysis pipeline"
 Author: "J. Oberstaller"
-Date: "7/18/2019"
-
 ---
 
+Date: 7/18/2019
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
