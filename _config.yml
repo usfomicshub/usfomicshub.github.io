@@ -1,3 +1,13 @@
 theme: jekyll-theme-hacker
 # title: Welcome to the USF Omics Hub git repository!
 markdown: GFM
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "pages" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "default"
+      theme: jekyll-theme-hacker
+      
