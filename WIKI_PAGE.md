@@ -1,7 +1,8 @@
+---
 layout: page
 title: "WIKI PAGE TEST"
 permalink: /wiki-test/
-
+---
 
 ## THIS IS A TEST
 
