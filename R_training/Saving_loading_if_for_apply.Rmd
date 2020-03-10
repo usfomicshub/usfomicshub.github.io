@@ -1,12 +1,11 @@
 ---
 title: "Saving_loading_if_for_apply"
 author: "Chengqi(Charley) Wang"
-date: "1/29/2020"
 output: html_document
 ---
 <br/><br/>
 
-
+*date: 1/29/2020*
 ####Load the RNA-Seq data
 ```{r}
 ##set your working directory and load the data
