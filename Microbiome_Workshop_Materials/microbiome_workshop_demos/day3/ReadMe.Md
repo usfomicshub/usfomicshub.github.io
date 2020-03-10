@@ -1,10 +1,10 @@
 ---
 Title: "Visualizing microbiome-data: USF Omics Hub Microbiome Workshop Day3"
 Authors: "J. Gibbons, T. E. Keller, J. Oberstaller"
-Date: "11/06/2019"
 Output: html_document
 ---
 
+*Date: 11/06/2019*
 
 # Before you begin #
 See important notes for operating this tutorial [here](https://github.com/usfomicshub/usfomicshub.github.io/tree/master/Microbiome_Workshop_Materials#using-the-tutorials).
