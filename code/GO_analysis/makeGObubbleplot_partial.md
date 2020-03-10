@@ -1,10 +1,10 @@
 ---
 title: 'Make GO bubble-plot: essential genes version'
 author: "J. Oberstaller"
-date: "6/4/2019"
 output: html_document
 ---
 
+*date: 6/4/2019*
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
