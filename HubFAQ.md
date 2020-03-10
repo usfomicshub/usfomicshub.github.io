@@ -1,7 +1,7 @@
 ---
 layout: "default"
 title: "Hub FAQ"
-permalink: /wiki/FAQ/
+permalink: /FAQ/
 ---
 
 
