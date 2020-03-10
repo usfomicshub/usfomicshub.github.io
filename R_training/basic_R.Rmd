@@ -1,13 +1,12 @@
 ---
 title: "Basic_R"
 author: "Chengqi(Charley) Wang"
-date: "1/29/2020"
 output:
   html_document:
     df_print: paged
 ---
 <br/>
-
+*date: 1/29/2020*
 ###Arithmetic Operators
 ```
 +            addition
