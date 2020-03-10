@@ -1,11 +1,12 @@
 ---
 title: "Box_Hist_plot"
 author: "Chengqi(Charley) Wang"
-date: "2/4/2020"
 output: html_document
 ---
 
 ---
+
+*date: 2/4/2020*
 <br/><br/>
 
 ####load the significant differential genes normalized by DESeq
