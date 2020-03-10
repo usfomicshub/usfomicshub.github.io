@@ -1,8 +1,9 @@
 ---
 title: "R_training ReadMe"
 author: "Chengqi(Charley) Wang"
-date: "2/3/2020"
 ---
+
+*date: 2/3/2020*
 
 ### The R_training folder includes all Charley's R-scripts related to the Genomics Program Omics Hub's RNAseq data-analysis workshop. All tutorials are provided in two formats: ###
 
