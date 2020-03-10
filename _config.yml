@@ -10,4 +10,5 @@ defaults:
     values:
       layout: "default"
       theme: jekyll-theme-hacker
+      markdown: GFM
       
