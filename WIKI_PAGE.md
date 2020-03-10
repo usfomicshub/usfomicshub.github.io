@@ -1,6 +1,6 @@
 layout: page
 title: "WIKI PAGE TEST"
-permalink: /wiki/
+permalink: /wiki-test/
 
 
 ## THIS IS A TEST
