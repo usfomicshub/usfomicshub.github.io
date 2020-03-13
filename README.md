@@ -13,6 +13,9 @@
  </p>
  
  ## News
+ 
+   * **UPDATE 3/13/2020**: The Hub Microbiome Data-Analysis Workshop has been postponed in accordance with USF's coronavirus control-measures. We will announce new dates when possible. 
+ 
    * [USF's One Health Codeathon repository](https://usfonehealthcodeathon2020.github.io/) is now online! Check the team-repos for live project-updates during the codeathon.
  
    * Presentations from our Genomics Forum One Health Codeathon 2020 onboarding-meeting are now available [here](https://github.com/usfomicshub/USFOneHealthCodeathon2020).  
