@@ -11,6 +11,7 @@ permalink: /faq/
 
 * Our primary mission is to help build LONG-TERM, extramurally-funded research programs for USF Genomics and to support the USF community by facilitating cutting-edge omics research. 
 ***
+<br>
 
 ## Who are the people of the Hub?
 
@@ -18,6 +19,7 @@ permalink: /faq/
 
 * We are also employed full-time as researchers on various extramurally-funded projects. **We continue to build our careers through these as well as collaborative projects initiated through the Hub.**
 ***  		
+<br>
 
 ## What is included in consultation, and when would I have to start paying?
 * Once we receive your request, we schedule an approximately one-hour meeting with you to discuss your needs and how we can fulfill them. The content of this initial meeting will vary by request: for example if you are seeking quotes for sequencing and/or analysis and other details for a grant-application, you will meet with our Core Facility expert and lead data scientist/grant-writing expert. If you are developing an experimental plan or looking for trouble-shooting help on existing projects or analyses, you will meet with our Brain Trust of widely-experienced data-scientists who can offer you advice and ideas. We work with you.
@@ -27,6 +29,7 @@ permalink: /faq/
 <a href>Click here</a> to view our full Service Request Policies and Procedures.
 
 ***
+<br>
 
 ## Why can't you just be free forever?
 
@@ -37,11 +40,14 @@ permalink: /faq/
 * As an academic institutional Core, The USF Genomics Facility and Omics Hub consulting services are not actually allowed to make profit. And don't worry, we don't! We do, however, need to recoup a percentage of operating-costs to continue to justify our existence and ensure continued availability of these resources.
 		
 ***	
+<br>
+
 ## About how much money should I expect to allot for data analyses in my budget-planning?
 
 * **Rule of thumb: you should expect to budget around the same amount for data-analysis as you do for sequencing.** More accurate estimates will be provided upon consultation and our suggested data-analysis plan--including the people and time required.
 
 ***
+<br>
 		
 ## That sounds like a lot of money! How much work could it really be for you to push some buttons and give me an answer?
 
@@ -52,3 +58,4 @@ permalink: /faq/
 * There are some cases where one-size-fits-all data-analysis may be suitable for your purposes, and there are many fine bioinformatic for-profit, fee-for-service companies that can provide those analyses for you. Our focus as an academic institution is to educate you, provide context for our methods, and if needed, help you interpret your data biologically. The breadth of our experience as computational scientists, bench-scientists, and above all biologists makes us effective collaborators, and we are invested in the success of our USF Genomics Research Community.
 
 ***
+<br>
