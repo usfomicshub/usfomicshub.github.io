@@ -1,3 +1,9 @@
+---
+layout: "default"
+title: "Hub Policies and Procedures"
+permalink: /policies_and_procedures/
+---
+
 <h1 style align="center">USF Omics Hub Service-Request Policies and Procedures</h1>
 
 
