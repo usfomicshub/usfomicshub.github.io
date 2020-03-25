@@ -1,3 +1,9 @@
+---
+layout: "default"
+title: "Hub software-installs on USF's RRA-cluster"
+permalink: /hub_installs/
+---
+
 #  Hub software-installs on USF's RRA-cluster
 
 USF Research Computing maintains the High-Performance Computing (HPC) hardware and resources available to all USF Researchers.  They have gone above and beyond to provide installations of USF Genomics software-requests on both CIRCE and RRA clusters. Their list of available software and any documentation can be found <a href=https://wiki.rc.usf.edu/index.php/Applications>here</a>. A more updated list of pending and recently-completed installs can be found <a href=https://wiki.rc.usf.edu/index.php/Apps_Queue>here</a>, though most of these have not yet been documented due to the bulk of requests.
