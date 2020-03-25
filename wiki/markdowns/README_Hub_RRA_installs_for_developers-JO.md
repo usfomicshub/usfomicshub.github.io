@@ -1,3 +1,9 @@
+---
+layout: "default"
+title: "Software-installs for Hub developers"
+permalink: /hub_developers/
+---
+
 <h2> Software-installs for Hub developers</h2>
 We have three primary methods through which we install and maintain Hub software. 
 
