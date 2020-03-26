@@ -14,6 +14,8 @@
  
  ## News
  
+   * **UPDATE 3/25/2020**: Check [here](https://usfomicshub.github.io/coronavirus_misc) for helpful info about keeping your computational research going during coronavirus control-measures.
+ 
    * **UPDATE 3/13/2020**: The Hub Microbiome Data-Analysis Workshop has been postponed in accordance with USF's coronavirus control-measures. We will announce new dates when possible. 
  
    * [USF's One Health Codeathon repository](https://usfonehealthcodeathon2020.github.io/) is now online! Check the team-repos for live project-updates during the codeathon.
