@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=3b1ea14f0e4b9602ac90929571ec4593591de56a">
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>USF Omics Hub | USF Omics Hub official github-repository: your landing-spot for finding our USF Genomics community-resources.</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="USF Omics Hub" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="USF Omics Hub official github-repository: your landing-spot for finding our USF Genomics community-resources." />
+<meta property="og:description" content="USF Omics Hub official github-repository: your landing-spot for finding our USF Genomics community-resources." />
+<link rel="canonical" href="http://localhost:4000/Microbiome_Workshop_Materials/microbiome_workshop_demos/day3/ReadMe.html" />
+<meta property="og:url" content="http://localhost:4000/Microbiome_Workshop_Materials/microbiome_workshop_demos/day3/ReadMe.html" />
+<meta property="og:site_name" content="USF Omics Hub" />
+<script type="application/ld+json">
+{"headline":"USF Omics Hub","description":"USF Omics Hub official github-repository: your landing-spot for finding our USF Genomics community-resources.","@type":"WebPage","url":"http://localhost:4000/Microbiome_Workshop_Materials/microbiome_workshop_demos/day3/ReadMe.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>usfomicshub.github.io</h1>
+        <h2>USF Omics Hub official github-repository: your landing-spot for finding our USF Genomics community-resources.</h2>
+
+        <section id="downloads">
+          
+          <a href="https://github.com/usfomicshub/usfomicshub.github.io" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <p><em>Date: 11/06/2019</em></p>
+<h1 id="before-you-begin">Before you begin</h1>
+<p>See important notes for operating this tutorial <a href="https://github.com/usfomicshub/usfomicshub.github.io/tree/master/Microbiome_Workshop_Materials#using-the-tutorials">here</a>.</p>
+<h1 id="section"></h1>
+<pre><code class="language-{r">>knitr::opts_chunk$set(echo=TRUE)
+source(here::here(&quot;Rsource/microbiome.day3.source.scripts.R&quot;))
+</code></pre>
+<h1 id="phyloseq-object-creation-from-dada2-data">Phyloseq object creation from dada2 data</h1>
+<p>We'll first be plotting the example-data we analyzed yesterday. We've started a new project for day3 of the workshop, and you'll notice the directory structure is the same as the project we set up yesterday. Your &quot;Rdata&quot;&quot; folder contains the output-data from yesterday we need for plotting.</p>
+<p>First we'll read in and format our data for phyloseq.</p>
+<pre><code class="language-{r">>infile_asv_counts&lt;-here::here(&quot;Rdata/demo_asv_counts.tsv&quot;)
+infile_asv_tax&lt;-here::here(&quot;Rdata/demo_asvs_taxonomy.tsv&quot;)
+infile_sample_data&lt;-here::here(&quot;Rdata/made_up_sample_data.tsv&quot;)
+df_asv_counts&lt;-read.delim(infile_asv_counts)
+df_asv_tax&lt;-read.delim(infile_asv_tax)
+df_sample_data&lt;-read.delim(infile_sample_data)
+#rownames(df_sample_data)&lt;-df_sample_data[,1]
+#Convert the data to matrix format
+m_asv_counts&lt;-as.matrix(df_asv_counts[2:length(df_asv_counts)])
+rownames(m_asv_counts)&lt;-df_asv_counts[,1]
+m_asv_tax&lt;-as.matrix(df_asv_tax[2:length(df_asv_tax)])
+rownames(m_asv_tax)&lt;-df_asv_tax[,1]
+##There are 3 possible components to a phyloseq object: otu_table, sample_data, tax_table
+pseq&lt;-phyloseq(otu_table(m_asv_counts,taxa_are_rows = T),tax_table(m_asv_tax),sample_data(df_sample_data))
+</code></pre>
+<h1 id="inspecting-the-phyloseq-object">Inspecting the phyloseq object</h1>
+<pre><code class="language-{r">>##Lets look at the data in our phyloseq object
+##The functions used to create the components of a phyloseq object
+##can be used to view the components of a phyloseq object
+View(otu_table(pseq))
+View(sample_data(pseq))
+View(tax_table(pseq))
+</code></pre>
+<h1 id="get-yer-alpha-and-beta-diversities-here">Get yer alpha and beta diversities here</h1>
+<p>Step one/figure one in many/most microbiome-analyses is some description of the alpha/beta diversity. What are alpha and beta diversity? <em>alpha diversity</em> asks the questions</p>
+<pre><code>1) How many taxa/species, and 
+2) how different (are taxa/species equally abundant?)
+</code></pre>
+<p><em>Beta diversity</em> asks whether composition varies across environment.</p>
+<pre><code class="language-{r">>####Diversity####
+##Diversity measures are calculated using the function alpha
+tab&lt;-alpha(pseq,index=&quot;all&quot;)
+kable(head(tab))
+##Return observed richness with given detection thresholds
+tab&lt;-richness(pseq)
+kable(head(tab))
+##Returns measures of how unequal the taxa distrubtions are
+tab&lt;-dominance(pseq,index=&quot;all&quot;)
+kable(head(tab))
+##Returns the most abundant taxa in each sample
+dominant(pseq)
+##Can specify the taxonimic level you want to know the dominance for
+##Default is the OTU or ASV
+dominant(pseq,level=&quot;Phylum&quot;)
+##Evenness: Measures of how even the &quot;species&quot; are within a sample
+tab&lt;-evenness(pseq,index=&quot;all&quot;)
+kable(head(tab))
+####Alpha diversity plots####
+##Only retain taxa that are present and calculate diversity indices
+ps1&lt;-prune_taxa(taxa_sums(pseq)&gt;0,pseq)
+tab&lt;-diversity(ps1,index=&quot;all&quot;) #fix deprecation warning
+View(tab)
+##Get the sample meta data
+ps1.meta&lt;-meta(ps1)
+kable(head(ps1.meta))
+##Add the diversity table to the metadata
+ps1.meta$Shannon&lt;-tab$shannon
+ps1.meta$InverseSimpson&lt;-tab$inverse_simpson
+##We have created a table that we can use for plotting data
+View(ps1.meta)
+</code></pre>
+<h1 id="bmi-plots">bmi plots</h1>
+<pre><code class="language-{r">>##Compare the differences in Shannon index between BMI groups
+##Create a list of pairwise comparisions
+bmi&lt;-levels(ps1.meta$bmi_group) #get the variables
+bmi.pairs&lt;-combn(bmi,2,simplify = F)
+print(head(ps1.meta))
+##Create a violin plot
+p1&lt;-ggviolin(ps1.meta,x=&quot;bmi_group&quot;,y=&quot;Shannon&quot;,add=&quot;boxplot&quot;,fill=&quot;bmi_group&quot;,
+             palette = c(&quot;#a6cee3&quot;, &quot;#b2df8a&quot;, &quot;#fdbf6f&quot;))
+print(p1)
+dev.off()
+</code></pre>
+<p>We'll also save the plot to .pdf in our Rfigs directory for our records:</p>
+<pre><code class="language-{r">>pdf(here::here(&quot;Rfigs/bmi.plot.pdf&quot;), width = 10, height = 10, pointsize = 8)
+ggviolin(ps1.meta,x=&quot;bmi_group&quot;,y=&quot;Shannon&quot;,add=&quot;boxplot&quot;,fill=&quot;bmi_group&quot;,
+             palette = c(&quot;#a6cee3&quot;, &quot;#b2df8a&quot;, &quot;#fdbf6f&quot;))
+dev.off()
+</code></pre>
+<h1 id="beta-diversity-plots-on-larger-example-dataset">beta diversity plots on larger example dataset</h1>
+<p>Now that we've gone through most of the analysis-process with our small data-set--let's switch to using a real dataset so we can make more statistically valid comparisons. All the processing to generate the data-tables for visualization has already been done.</p>
+<pre><code class="language-{r">>####Beta diversity and microbiome divergence####
+data(dietswap)
+pseq&lt;-dietswap
+##Lets look at the new data set we will be using
+View(otu_table(pseq))
+View(tax_table(pseq))
+View(sample_data(pseq))
+##Calculate group divergences within the bmi groups
+##This measure is sensitive to sample size
+##If using NGS data it is recommended to subsample or bootstrap to avoid
+##bias. This sample data is from a microarray so we don't have to 
+##worry about uneven sample sizes
+b.obese&lt;-divergence(subset_samples(pseq,bmi_group=&quot;obese&quot;),method=&quot;bray&quot;)
+b.lean&lt;-divergence(subset_samples(pseq,bmi_group=&quot;lean&quot;),method=&quot;bray&quot;)
+boxplot(list(Obese=b.obese,Lean=b.lean))
+##The amount of diversity between samples in each group appears equal
+</code></pre>
+<h1 id="alpha-diversity-in-dietswap">alpha diversity in dietswap</h1>
+<pre><code class="language-{r">>##Lets Check the alpha diversity on this set
+##Only retain taxa that are present and calculate diversity indices
+ps1&lt;-prune_taxa(taxa_sums(pseq)&gt;0,pseq)
+tab&lt;-diversity(ps1,index=&quot;all&quot;) #update diversity function
+View(tab)
+##Get the sample meta data
+ps1.meta&lt;-meta(ps1)
+kable(head(ps1.meta))
+##Add the diversity table to the metadata
+ps1.meta$Shannon&lt;-tab$shannon
+ps1.meta$InverseSimpson&lt;-tab$inverse_simpson
+##We have created a table that we can use for plotting data
+View(ps1.meta)
+</code></pre>
+<h1 id="shannon-diversity-across-groups">Shannon Diversity across groups</h1>
+<pre><code class="language-{r">>##Compare the differences in Shannon index between BMI groups
+##Create a list of pairwise comparisions
+bmi&lt;-levels(ps1.meta$bmi_group) #get the variables
+bmi.pairs&lt;-combn(bmi,2,simplify = F)
+##Create a violin plot
+p1&lt;-ggviolin(ps1.meta,x=&quot;bmi_group&quot;,y=&quot;Shannon&quot;,add=&quot;boxplot&quot;,fill=&quot;bmi_group&quot;,
+             palette = c(&quot;#a6cee3&quot;, &quot;#b2df8a&quot;, &quot;#fdbf6f&quot;))
+print(p1)
+##Add stats (Wilcoxon test)--From the documentation. I think the warnings are because there are not enough replicates
+p1&lt;-p1+stat_compare_means(comparisons = bmi.pairs,method=&quot;wilcox.test&quot;)
+print(p1)
+##Diversity seems to be a little higher in the overweight group an not
+##significantly different between the lean and obese groups
+##This is different from what is usually reported.
+## Can anyone think of an explanation? 
+</code></pre>
+<h1 id="beta-diversity-over-time-helper-functions">beta diversity over time helper functions</h1>
+<p>Write some functions here to calculate beta diversity directly, also dropping the &quot;ED&quot; group because it has some problems.</p>
+<pre><code class="language-{r">>##Let's now quantify how a persons microbiome changes over time
+##Quantify beta diversity within subjects over time
+subject_beta_diversity_over_time&lt;-function(phyloseq_obj){
+  betas&lt;-list()
+  df_meta&lt;-meta(phyloseq_obj)
+  ##We're dropping the ED group because the way it is encoded
+  ##makes it difficult to interpret 
+  df_meta&lt;-df_meta[which(df_meta$group != &quot;ED&quot;),]
+  View(df_meta)
+  groups&lt;-as.character(unique(df_meta$group))
+  for(g in groups){
+    df&lt;-subset(meta(pseq),group==g)
+    beta&lt;-c()
+    
+    for(subj in df$subject){
+      dfs&lt;-subset(df,subject==subj)
+      #Check that subject has 2 time points
+      if(nrow(dfs)==2){
+        s&lt;-as.character(dfs$sample)
+        #Calculate the beta diversity directly
+        beta[[subj]]&lt;-1-cor(abundances(phyloseq_obj)[,s[[1]]],
+                            abundances(phyloseq_obj)[,s[[2]]],
+                            method=&quot;spearman&quot;)
+      }
+    }
+    betas[[g]]&lt;-beta
+  }
+  return(betas)
+}
+betas&lt;-subject_beta_diversity_over_time(pseq)
+##DI is during diet intervention HE is baseline
+##The end of dietary intervention
+##Subjects microbiomes became more similar when they were eating 
+##the experimental diets
+boxplot(betas)
+##Calculate change in beta diversity (community dismilarity) over time within a single individual
+##Identify the subject with the longest time series (most time points)
+s&lt;-names(which.max(sapply(split(meta(pseq)$timepoint,meta(pseq)$subject),function (x){length(unique(x))})))
+##Pick the metadata for this subject and sort the samples by time
+library(dplyr)
+df&lt;-meta(pseq) %&gt;% filter(subject==s) %&gt;% arrange(timepoint)
+calculate_individual_beta_diversity_over_time&lt;-function(df,pseq){
+  ##Calculate how the sample diversity changes relative to baseline
+  beta&lt;-c(0,0) #Baseline similarity
+  #s0&lt;-subset(df,time=0)$sample
+  s0&lt;-df[which(df$timepoint==1),]$sample
+  #print(s0)
+  for(tp in df$timepoint[-1]){
+    #Pick the samples for this subject
+    #If the same time point has more than one sample, pick one at random
+    st&lt;-sample(subset(df,timepoint==tp)$sample,1)
+    
+    a&lt;-abundances(pseq)
+    #print(a[,s0])
+    b&lt;-1-cor(a[,s0],a[,st],method=&quot;spearman&quot;)
+    beta&lt;-rbind(beta,c(tp,b))
+  }
+  colnames(beta)&lt;-c(&quot;time&quot;,&quot;beta&quot;)
+  beta&lt;-as.data.frame(beta)
+  return(beta)
+}
+df_beta&lt;-calculate_individual_beta_diversity_over_time(df,pseq)
+library(ggplot2)
+p&lt;-ggplot(df_beta,aes(x=time,y=beta))+geom_point()+geom_line()
+print(p)
+</code></pre>
+<h1 id="microbiome-composition">Microbiome Composition</h1>
+<p>What are the phylum composing the core microbiome?</p>
+<pre><code class="language-{r">>####Microbiome Composition plots####
+##Compute relative level of each taxa
+pseq.rel&lt;-microbiome::transform(pseq,&quot;compositional&quot;)
+##Return a phyloseq object of the core microbiota
+pseq.core&lt;-core(pseq.rel,detection = 0,prevalence = 0.5)
+pseq.core&lt;-subset_samples(pseq.core,group=&quot;HE&quot; &amp; timepoint.within.group==1)
+pseq.core.phylum&lt;-aggregate_taxa(pseq.core,level=&quot;Phylum&quot;)
+theme_set(theme_bw(21))
+##Remember to save as 10x10
+p &lt;- plot_composition(pseq.core.phylum,group_by=&quot;nationality&quot;) +
+  guides(fill = guide_legend(ncol = 1)) +
+  labs(x = &quot;Samples&quot;, y = &quot;Relative abundance&quot;,
+       title = &quot;Relative abundance data&quot;,
+       subtitle = &quot;Subtitle&quot;,
+       caption = &quot;Caption text.&quot;)+
+  scale_fill_manual(values = default_colors(&quot;Phylum&quot;))
+print(p)
+</code></pre>
+<h1 id="more-detailed-analysis-amp-plotting-of-the-core-microbiome">More detailed analysis &amp; plotting of the core microbiome</h1>
+<p>Core microbiome is calculated with a combination of detection (otu percentage), and prevalence (sample percentence)
+cutoffs).</p>
+<pre><code class="language-{r">> 
+ ####Core microbiome####
+##Return the names of the taxa that excede given prevelence and detection thresholds
+core.taxa.standard&lt;-core_members(pseq.rel,detection=0,prevalence = 50/100)
+##Return a phyloseq object of the core microbiota
+pseq.core&lt;-core(pseq.rel,detection = 0,prevalence = 0.5)
+##Get taxa names
+core.taxa&lt;-taxa(pseq.core)
+##Sum of abundances of the core members in each sample (Fraction of each sample composed of the
+##core groups)
+core.abundance&lt;-sample_sums(core(pseq.rel,detection = 0.01,prevalence = 0.95))
+##Core heatmaps
+##Core with compositionals
+prevalences &lt;- seq(.05, 1, .05)
+detections &lt;- 10^seq(log10(1e-3), log10(.2), length = 10)
+# Also define gray color palette
+gray &lt;- gray(seq(0,1,length=5))
+p &lt;- plot_core(pseq.rel, plot.type = &quot;heatmap&quot;, colours = gray,
+               prevalences = prevalences, detections = detections) +
+  xlab(&quot;Detection Threshold (Relative Abundance (%))&quot;)+
+  theme(axis.text=element_text(size=5),legend.text=element_text(size=10))
+print(p)
+##Check abundance of specific taxon
+plot_density(pseq.rel,variable = &quot;Dialister&quot;,log10=TRUE)+xlab(&quot;log10 Relative Abundance&quot;)
+</code></pre>
+<h1 id="ordination---representing-data-in-2d-space-usually-followed-by-some-clustering">ordination - representing data in 2d space, usually followed by some clustering</h1>
+<p>Ordination is a general ecological framework to recast the high-dimensional OTU data in a 2d plane, usually followed by some clustering. If things go well, samples will cluster relative to some sample/treatment data (eg bmi, or as seen below, nationality)</p>
+<p>There are a variety of ordination methods and distances, and all will affect the grouping slightly</p>
+<p>For a more extensive example on the differences between examples, <a href="https://joey711.github.io/phyloseq/plot_ordination-examples.html">see</a>, which is the underlying function called by plot_landscape().</p>
+<pre><code class="language-{r">>####Ordination plotting####
+p&lt;-plot_landscape(pseq.core,method=&quot;PCoA&quot;,distance=&quot;bray&quot;,col=&quot;nationality&quot;)+
+  labs(title=&quot;PCoA/Bray-Curtis&quot;)
+print(p)
+</code></pre><pre><code class="language-{r">>####Ordination plotting####
+set.seed(423542)
+p&lt;-plot_landscape(pseq.core,method=&quot;NMDS&quot;,distance=&quot;bray&quot;,col=&quot;nationality&quot;)+
+  labs(title=&quot;NMDS/Bray-Curtis&quot;)
+print(p)
+</code></pre><pre><code class="language-{r">>library(DESeq2)
+##Make AFR (African) the reference group
+sample_data(pseq)$nationality&lt;-relevel(sample_data(pseq)$nationality, &quot;AFR&quot;)
+##Subset the data so that you only have the first baseline measurements
+pseq.subset&lt;-subset_samples(pseq,group==&quot;HE&quot; &amp; timepoint.within.group==1)
+##Convert data into a format that can be used by DESeq
+##Group samples by nationality
+pseq.deseq&lt;-phyloseq_to_deseq2(pseq.subset, ~nationality)
+##Perform normalization and differential abundance tests
+pseq.deseq&lt;-DESeq(pseq.deseq,test=&quot;Wald&quot;,fitType=&quot;parametric&quot;)
+##Get and filter the results
+res&lt;-results(pseq.deseq,cooksCutoff = FALSE)
+alpha&lt;-0.01
+res.sig&lt;-res[which(res$padj&lt;=alpha),]
+res.sig &lt;-cbind(as(res.sig, &quot;data.frame&quot;), as(tax_table(pseq)[rownames(res.sig), ], &quot;matrix&quot;))
+##Write results to file
+write.csv(res.sig,file=here::here(&quot;Routput/differential_taxa_abundance.csv&quot;))
+</code></pre>
+      </section>
+    </div>
+
+    
+  </body>
+</html>

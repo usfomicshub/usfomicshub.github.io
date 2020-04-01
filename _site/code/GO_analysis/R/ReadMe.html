@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=3b1ea14f0e4b9602ac90929571ec4593591de56a">
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>USF Omics Hub | USF Omics Hub official github-repository: your landing-spot for finding our USF Genomics community-resources.</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="USF Omics Hub" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="USF Omics Hub official github-repository: your landing-spot for finding our USF Genomics community-resources." />
+<meta property="og:description" content="USF Omics Hub official github-repository: your landing-spot for finding our USF Genomics community-resources." />
+<link rel="canonical" href="http://localhost:4000/code/GO_analysis/R/ReadMe.html" />
+<meta property="og:url" content="http://localhost:4000/code/GO_analysis/R/ReadMe.html" />
+<meta property="og:site_name" content="USF Omics Hub" />
+<script type="application/ld+json">
+{"headline":"USF Omics Hub","description":"USF Omics Hub official github-repository: your landing-spot for finding our USF Genomics community-resources.","@type":"WebPage","url":"http://localhost:4000/code/GO_analysis/R/ReadMe.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>usfomicshub.github.io</h1>
+        <h2>USF Omics Hub official github-repository: your landing-spot for finding our USF Genomics community-resources.</h2>
+
+        <section id="downloads">
+          
+          <a href="https://github.com/usfomicshub/usfomicshub.github.io" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <p>Date: 7/18/2019</p>
+<pre><code class="language-{r">>knitr::opts_chunk$set(echo = TRUE)
+</code></pre>
+<p><em>This html-file was generated via an R Markdown document (file-extension &quot;.Rmd&quot;, in the same folder as this .html file). Open the .Rmd file in RStudio and follow directions below to regenerate this analysis and all accompanying output-files. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com">http://rmarkdown.rstudio.com</a>.</em></p>
+<p><em>Clicking the <strong>Knit</strong> button in RStudio generates an html-file that includes both content as well as the output of any embedded R code-chunks within the document. It may also be informative to use RStudio to run the code in the .Rmd document chunk-by-chunk by pressing the &quot;play&quot; buttons to better-understand each step.</em></p>
+<pre><code class="language-{r">>source(&quot;Ranalysis/GO.pipeline.source.071819.JO.R&quot;)
+</code></pre>
+<h2 id="go-enrichment-analyses">GO enrichment analyses</h2>
+<p>The basic principle behind GO analysis is to test for enrichment of terms for genes of interest vs. distribution in the entire &quot;gene universe&quot;, or the entire set of genes that have some representation in your dataset (for example, any gene that has RNAseq expression-data above threshold in your analysis).</p>
+<p>Though all our gene-sets of interest (such as &quot;increased.expression&quot; or &quot;decreased.expression&quot; from an RNAseq experiment) start with the same gene universe, different genes are classified as &quot;background&quot; depending on which gene-set you're interested in.</p>
+<h3 id="how-do-i-decide-which-genes-are-quotinterestingquot">How do I decide which genes are &quot;interesting&quot;?</h3>
+<p>That entirely depends on your biological question. You decide how to categorize your genes into gene-sets of interest, and you can have as many different categories as you want. Each gene-set of interest will be tested for GO-term enrichment against the background of every other gene in the gene-universe that is not in your gene-set of interest.</p>
+<p>Continuing with the RNAseq example, you could be interested in terms enriched in increased-abundance genes vs. background. Or decreased-abundance genes vs. background. Or any differentially-expressed gene against background. You could introduce more comparisons by treatment-type, such as genes increased, decreased, or unchanged in response to a drug vs. a no-drug control. <strong>Your categorizations don't need to arise from any particular type of experiment (e.g., RNAseq); all you need to provide is a table of all genes in your gene universe, with each gene labeled by gene-set of interest.</strong> Your labels can be whatever makes sense to you.</p>
+<p><strong>Example</strong></p>
+<p><em>RNAseq data classified into gene-sets of interest; each different &quot;Class_Code&quot; indicates another gene-set of interest</em></p>
+<pre><code class="language-{r">>input.genes &lt;- &quot;Rdata/genes.and.categories.txt&quot;
+mydf &lt;- read.delim(input.genes, header = TRUE)
+colnames(mydf) &lt;- c(&quot;Gene_ID&quot;, &quot;Class_Code&quot;)
+head(mydf)
+</code></pre>
+<p><em>add diagram of example experimental design with gene-sets of interest</em></p>
+<p><em>Note: I'll upload a truncated test-data set and example pipeline output suitable for sharing</em></p>
+<h3 id="enrichment-analyses-using-the-runtopgo-function">Enrichment-analyses using the run.topGO function</h3>
+<p>The run.topGO function will perform GO analysis using the topGO-package <strong>^a^</strong> by ontology (molecular function, MF; biological process, BP; cellular component, CC) on all gene-sets of interest at once and then output to a combined tab-delimited table. Logs detailing analyses performed on each gene-set of interest are created, as well as output-tables of all SIGNIFICANT genes annotated to each SIGNIFICANT GO-term for each comparison.</p>
+<ul>
+<li>run.topGO defines which genes are interesting and which should be defined as background for each comparison of interest. Genes are defined as interesting or not based on the user-supplied dataframe &quot;mydf&quot;--genes in the category of interest are tested for enrichment against all the OTHER genes in mydf.</li>
+<li>The &quot;gene universe&quot; consists of ALL genes in the comparison. topGO automatically accounts for genes that cannot be mapped to GO terms with the &quot;feasible genes&quot; indicated in the topGO GOdata object (which you can see in the <em>&quot;topGO.log.*.txt&quot;</em> output file for each gene-set of interest from this function).</li>
+</ul>
+<h4 id="arguments-user-provided-input-files">Arguments (user-provided input files)</h4>
+<p><strong>1. mydf</strong> : a data frame containing geneIDs in column 1, and group-of-interest classifications in column 2.</p>
+<p><strong>2. geneID2GO</strong> : a data frame containing geneIDs in column 1, and comma-separated GOterms in column2 (and will be used for the gene2GO setting in the GOdata object). This data frame should contain all your organism's geneIDs (not JUST genes of interest) and associated GO-terms, if any.</p>
+<h5 id="additional-optional-arguments-setting-parameters">Additional optional arguments (setting parameters)</h5>
+<ul>
+<li>p = p.value threshold for significance; default is p &lt;= 0.05</li>
+<li>fdr.p = FDR-corrected p.value for significance; default is fdr.p &lt;= 0.05</li>
+</ul>
+<pre><code class="language-{r">># for GO enrichment analyses:
+library(topGO)
+# if doing enrichment analyses on a species which has a bioconductor annotation package (such as mouse or human), also load AnnotationDbi:
+# library(AnnotationDbi)
+# for data-visualization:
+library(ggplot2)
+library(dplyr)
+library(scales)
+library(formatR)
+
+</code></pre><pre><code class="language-{r">># read in gene-universe with category-of-interest classifications
+input.genes &lt;- &quot;Rdata/genes.and.categories.txt&quot;
+mydf &lt;- read.delim(input.genes, header = TRUE)
+colnames(mydf) &lt;- c(&quot;Gene_ID&quot;, &quot;Class_Code&quot;)
+</code></pre><pre><code class="language-{r">># read in and format custom GO database
+  ## if you are using an organism for which a GO database is available through the AnnotationDbi package, you will follow a slightly different (and easier) procedure, which I'll detail in another example later.
+# make your custom GO database by first converting your input &quot;geneID2GO&quot; dataframe into the correct format (a named character-vector: each vector named by geneID, with GO terms as each element) using the readMappings function from topGO:
+input.GO &lt;- &quot;Rdata/PfGOdb_May2019.txt&quot;
+geneID2GO &lt;- readMappings(input.GO)
+</code></pre>
+<p>Now we're ready to perform our enrichment analyses using the run.topGO function. Additional documentation is available commented throughout the function (in the <strong>source.R</strong> file in the <strong>Ranalysis</strong> directory).</p>
+<pre><code class="language-{r">># run run.topGO using default parameters:
+run.topGO(mydf = mydf, geneID2GO = geneID2GO, p=0.05, fdr.p=0.05)
+</code></pre>
+<h2 id="coming-soon-data-visualization">COMING SOON: DATA VISUALIZATION</h2>
+<h3 id="including-plots">Including Plots</h3>
+<p><strong>a</strong> <em>For more information regarding topGO, see the topGO manual from Alexa et al.:</em> <a href="https://rdrr.io/bioc/topGO/f/inst/doc/topGO.pdf">https://rdrr.io/bioc/topGO/f/inst/doc/topGO.pdf</a>
+© 2020 GitHub, Inc.</p>
+
+      </section>
+    </div>
+
+    
+  </body>
+</html>
