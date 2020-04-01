@@ -14,9 +14,10 @@ To relieve some of the Genomics-software installation- and documentation-burden 
 
 #### Anaconda3 environments ####
 
+
    + humann2
-         + (version 2.8.1)
-         + [HUMAnN2: The HMP Unified Metabolic Analysis Network 2 documentation](http://huttenhower.sph.harvard.edu/humann)
+        + (version 2.8.1)
+        + [HUMAnN2: The HMP Unified Metabolic Analysis Network 2 documentation](http://huttenhower.sph.harvard.edu/humann)
    + fastq_dump
    + kera2
    + lumpy
