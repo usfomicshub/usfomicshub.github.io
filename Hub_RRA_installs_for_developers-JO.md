@@ -5,16 +5,17 @@ permalink: /hub_developers/
 ---
 
 <h2> Software-installs for Hub developers</h2>
-We have three primary methods through which we install and maintain Hub software. 
 
-**1. Anaconda environment-manager**
+We have three primary methods through which we install and maintain Hub software:
 
-   + Anaconda3
-   + Anaconda2
+   1. **Anaconda environment-manager.** *This is our preferred method.*
 
-**2. Homebrew package-manager**
+      + Anaconda3
+      + Anaconda2
 
-**3. Install direct from source**
+   2. **Homebrew package-manager**
+
+   3. **Install direct from source**
 
 <br>
 <br>
