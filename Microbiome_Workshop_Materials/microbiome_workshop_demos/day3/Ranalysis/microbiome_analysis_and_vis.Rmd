@@ -1,0 +1,284 @@
+---
+title: "Microbiome workshop: Data analysis and visualization"
+author: "J. Gibbons"
+output: html_document 
+---
+```{r setup}
+  library(microbiome)
+  library(ggplot2)
+  library(ggpubr)
+  library(knitr)
+  source(here::here("Rsource/microbiome.day3.source.scripts.R"))
+
+```
+####Create a phyloseq object from DADA2 output####
+```{r phyloseq-create}
+infile_asv_counts<-here::here("Rdata/demo_asv_counts.tsv")
+infile_asv_tax<-here::here("Rdata/demo_asvs_taxonomy.tsv")
+infile_sample_data<-here::here("Rdata/made_up_sample_data.tsv")
+
+df_asv_counts<-read.delim(infile_asv_counts)
+df_asv_tax<-read.delim(infile_asv_tax)
+df_sample_data<-read.delim(infile_sample_data)
+#rownames(df_sample_data)<-df_sample_data[,1]
+#Convert the data to matrix format
+m_asv_counts<-as.matrix(df_asv_counts[2:length(df_asv_counts)])
+rownames(m_asv_counts)<-df_asv_counts[,1]
+
+m_asv_tax<-as.matrix(df_asv_tax[2:length(df_asv_tax)])
+rownames(m_asv_tax)<-df_asv_tax[,1]
+
+##There are 3 possible components to a phyloseq object: otu_table, sample_data, tax_table
+
+pseq<-phyloseq(otu_table(m_asv_counts,taxa_are_rows = T),tax_table(m_asv_tax),sample_data(df_sample_data))
+
+
+##Lets look at the data in our phyloseq object
+##The functions used to create the components of a phyloseq object
+##can be used to view the components of a phyloseq object
+View(otu_table(pseq))
+View(meta(pseq))
+View(tax_table(pseq))
+```
+
+####Read in a dataset with interesting results and perform some initial processing####
+```{r phyloseq-create}
+
+infile<-here::here("Rdata/otu_table.biom")
+infile_meta<-here::here("Rdata/meta_data.csv")
+
+
+pseq<-read_biom2phyloseq(infile,metadata.file = infile_meta)
+
+####Let's filter out some of the samples to simplify the analysis####
+pseq<-subset_samples(pseq,group_name=="Without.comp.food" & diet !="Experimental infant formula")
+####Summarize data at the Genus level. Not required, but convienent####
+pseq<-aggregate_taxa(pseq,level="Genus")
+
+```
+
+##Inspect the phyloseq object
+```{r inspect-phyloseq}
+  View(otu_table(pseq))
+  View(meta(pseq)) #Alternative method View(sample_data(pseq))
+  View(tax_table(pseq))
+
+```
+
+
+####Calculate alpha diversity from milk study####
+##Remember alpha diversity is calculated within a sample so normalization is not neccessary
+```{r "alpha diversity"}
+tab<-microbiome::diversity(pseq,index="all")
+kable(tab)
+
+##Let's create a dataframe for plotting the results
+df_milk_meta<-meta(pseq)
+##Add Shannon divesity data to the dataframe
+df_milk_meta$Shannon<-tab$shannon
+
+##Let's create a plot comparing the diversity between breast milk and formula
+plot_div<-ggviolin(df_milk_meta,x="diet",y="Shannon",
+             add="boxplot",fill="diet")
+##Add stats (Wilcoxon test)
+plot_div<-plot_div+stat_compare_means(comparisons = list(c("Breast milk","Standard infant formula")),
+                          method="wilcox.test")
+print(plot_div)
+
+##Diversity is higher in the standard infant formula group
+```
+
+####Composition plot####
+```{r composition}
+##Compute the relative level for each taxa
+pseq.rel<-microbiome::transform(pseq,"compositional")
+##Remove rare OTUs
+pseq.rel.core<-core(pseq.rel,detection = 0,prevalence = 0.5)
+##aggregate taxa to the class level (so data will fit on graph)
+pseq.rel.core.family<-aggregate_taxa(pseq.rel.core,level="Family")
+
+##Recommend to save as 10X10
+comp_plot<-plot_composition(pseq.rel.core.family,group_by="diet")+
+  guides(fill=guide_legend(ncol=1))+
+    labs(x = "Samples", y = "Relative abundance",
+     title = "Relative abundance data")
+print(comp_plot)
+```
+
+
+####Beta diversity and microbiome divergence####
+```{r beta diversity}
+##Result is sensitive to sample size. Recommended to subsample or bootstrap to
+##avoid bias
+##Rarefying data is inappropriate for differential abundance testing,
+##but rarefying gives the best results when comparing sample similarity
+##Calculate the divergences within the diet groups
+pseq.rarefied<-rarefy_even_depth(pseq,rngseed=8675309,replace=F)
+b.breast_milk<-divergence(subset_samples(pseq.rarefied,diet=="Breast milk"),method="bray")
+b.formula<-divergence(subset_samples(pseq.rarefied,diet="Standard infant formula"))
+boxplot(list(Breast_Milk=b.breast_milk,Formula=b.formula))
+wilcox.test(x=b.breast_milk,y=b.formula,alternative = "less")
+##The breast milk feed infants have more similar microbiomes to each other
+##than the forumla fed infants to do each other
+```
+
+
+####Sample ordination####
+```{r sample ordination}
+library(vegan) #Perform statistics on ordination results
+##Rarefying data is inappropriate for differential abundance testing,
+##but rarefying gives the best results when comparing sample similarity
+##Calculate the divergences within the diet groups
+pseq.rarefied<-rarefy_even_depth(pseq,rngseed=8675309,replace=F)
+
+##First lets plot the sample ordination
+ ord_plot<-plot_landscape(pseq.rarefied,method="PCoA",distance = "bray",col="diet")+labs(title="PCoA/Bray-Curtis")
+ print(ord_plot)
+ 
+##We will use a PERMONVA to see if there are statistically distinguishable communties 
+dist<-vegdist(t(otu_table(pseq.rarefied)),method="bray")
+
+##Check if the variances are equal between the groups. If not assumtion for PERMOVNA not met
+print(anova(betadisper(dist,meta(pseq.rarefied)$diet)))
+
+##For this data the assumtion is not met, but here's the code
+permonva_results<-adonis(t(otu_table(pseq.rarefied))~diet,data=meta(pseq.rarefied),
+                 permutations = 100,method="bray")
+print(permonva_results)
+
+##Show coefficients for the top taxa separating the groups
+permonva_result_coefs<-coefficients(permonva_results)
+permonva_result_diet<-permonva_result_coefs["diet1",]
+
+top.diet.coef<-permonva_result_diet[rev(order(abs(permonva_result_diet)))[1:5]]
+par(mar=c(3,9,2,1)) #Setting margin sizes requires trial and error
+barplot(sort(top.diet.coef),horiz=T,las=1,main="Top taxa")
+```
+
+
+####To use metagenomeSeq need to create a new data object called MRexperiment####
+```{r Differential abundance analysis using metagenomeSeq}
+library(metagenomeSeq)
+pseq_mrexp<-phyloseq_to_metagenomeSeq(pseq)
+
+
+###Keep samples with at least 1 count. Keep features with at least 30 count###
+pseq_mrexp<-filterData(pseq_mrexp,present=30,depth=1)
+
+###Normalization###
+p<-cumNormStat(pseq_mrexp)
+pseq_mrexp<-cumNorm(pseq_mrexp,p=p) #Calculate the scaling factors
+
+###Create a design matrix and run statistical model###
+phenotype_data<-pData(pseq_mrexp) #Get the metadata associated with this experiment
+
+###Make breast milk the reference group (Reference is the denominator in logFC)###
+phenotype_data$diet<-relevel(phenotype_data$diet,"Breast milk")
+##A design matrix specicies what comparisons we want to make
+##For more on design matrices check this youtube video: https://www.youtube.com/watch?v=CqLGvwi-5Pc
+design_matrix<-model.matrix(~1+diet,data=phenotype_data) #Can drop 1, we're just explicitly showing an intercept
+
+feature_fit_model<-fitFeatureModel(obj=pseq_mrexp,mod=design_matrix)
+
+###Identify the differentially abundant microbes###
+taxas<-fData(pseq_mrexp)$unique
+sig_taxa<-MRcoefs(feature_fit_model,adjustMethod = "fdr",alpha = 0.1,taxa=taxas)
+write.csv(sig_taxa,"sig_taxa_table_metagenomeSeq.csv")
+####Graph the results###
+
+##Identify the rows containing the abundance info for the significant taxa
+sig_taxa_index<-which(rownames(MRcounts(pseq_mrexp)) %in% rownames(sig_taxa))
+##Get the descriptions of the significant taxa
+sig_taxa_desc<-rownames(MRcounts(pseq_mrexp))[sig_taxa_index]
+##Find data locations for the 2 groups
+classIndex<-list(Breast_milk=which(pData(pseq_mrexp)$diet=="Breast milk",arr.ind = T))
+classIndex$Infant_formula<-which(pData(pseq_mrexp)=="Standard infant formula",arr.ind = T)
+
+
+pdf("sig_taxa_metagenomeSeq.pdf")
+for(i in seq(1,length(sig_taxa_index))){
+  taxa_index<-sig_taxa_index[[i]]
+  taxa_desc<-sig_taxa_desc[[i]]
+  plotOTU(pseq_mrexp,otu=taxa_index,classIndex = classIndex,main=taxa_desc)
+}
+
+dev.off()
+
+```
+
+####Use DESeq2 to perform differential abundance analysis####
+```{r differential abundance analysis using DESeq2}
+library(DESeq2)
+sample_data(pseq)$diet<-relevel(sample_data(pseq)$diet, "Breast milk")
+
+##convert data to a format used by DESeq (group by diet)
+pseq.deseq<-phyloseq_to_deseq2(pseq,~diet)
+
+##Perform normalization and differential abundance test
+pseq.deseq<-DESeq(pseq.deseq,test="Wald",fitType = "parametric")
+
+##Get and filter the results
+res<-results(pseq.deseq,cooksCutoff = F,pAdjustMethod = "BH",alpha=0.1)
+
+res<-res[complete.cases(res),] ##Remove any NA results
+
+##Write the results to file
+res_table<-cbind(as(res,"data.frame"),as(tax_table(pseq)[rownames(res),],"matrix"))
+write.csv(res_table,"sig_taxa_table_deseq2.csv")
+
+##Graph the results
+
+##Normalize the expersion data
+pseq.clr<-microbiome::transform(pseq,"clr")
+exp_data_clr<-abundances(pseq.clr)
+
+##Keep only the differentially abundant microbes
+exp_data_clr_sig<-exp_data_clr[which(rownames(exp_data_clr) %in% rownames(res)),]
+exp_data_clr_sig<-melt(exp_data_clr_sig)
+colnames(exp_data_clr_sig)<-c("Taxa","Sample","CLR")
+
+##Extract the  metadata
+df_meta<-meta(pseq.clr)
+df_meta$Sample<-rownames(df_meta)
+df_meta<-df_meta %>% select(Sample,diet)
+
+df_dam<-left_join(exp_data_clr_sig,df_meta,by="Sample")
+
+##Create the graphs
+pdf("graph_deseq2_sig.pdf")
+for(taxon in unique(df_dam$Taxa)){
+
+  df_dam_taxon<-df_dam %>% filter(Taxa==taxon)
+  plot<-ggplot(df_dam_taxon,aes(x=diet,y=CLR))+geom_dotplot(binaxis = "y",stackdir = "center")
+  plot<-plot+ggtitle(taxon)+theme(plot.title = element_text(hjust=0.5))
+  print(plot)
+}
+dev.off()
+
+
+##Normalize the expersion data
+pseq.norm<-microbiome::transform(pseq,"compositional")
+exp_data_norm<-abundances(pseq.norm)
+
+##Keep only the differentially abundant microbes
+exp_data_norm_sig<-exp_data_norm[which(rownames(exp_data_norm) %in% rownames(res)),]
+exp_data_norm_sig<-melt(exp_data_norm_sig)
+colnames(exp_data_norm_sig)<-c("Taxa","Sample","Relative_Abundance")
+
+##Extract the  metadata
+df_meta<-meta(pseq.norm)
+df_meta$Sample<-rownames(df_meta)
+df_meta<-df_meta %>% select(Sample,diet)
+
+df_dam<-left_join(exp_data_norm_sig,df_meta,by="Sample")
+
+##Create the graphs
+pdf("graph_deseq2_sig_ra.pdf")
+for(taxon in unique(df_dam$Taxa)){
+  
+  df_dam_taxon<-df_dam %>% filter(Taxa==taxon)
+  plot<-ggplot(df_dam_taxon,aes(x=diet,y=Relative_Abundance))+geom_dotplot(binaxis = "y",stackdir = "center")
+  plot<-plot+ggtitle(taxon)+theme(plot.title = element_text(hjust=0.5))
+  print(plot)
+}
+dev.off()
