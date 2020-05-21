@@ -3,7 +3,8 @@
   # Guinea pig/guest-editor: T. E. Keller
 
 # install necessary general packages/dependencies if they aren't already installed (combining JG and JO package-requirements)
-packages <- c("BiocManager","knitr", "caTools", "ggpubr", "dplyr", "RColorBrewer", "reshape2", "ggplot2","here","hrbrthemes","gcookbook","RCurl","fs")
+packages <- c("BiocManager","knitr", "caTools", "ggpubr", "dplyr", "RColorBrewer", "reshape2", "ggplot2","here","hrbrthemes","gcookbook","RCurl","fs",
+             "vegan","metagenomeSeq")
 if (length(setdiff(packages, rownames(installed.packages()))) > 0) {
   install.packages(setdiff(packages, rownames(installed.packages())),repos='https://cloud.r-project.org') 
 }
