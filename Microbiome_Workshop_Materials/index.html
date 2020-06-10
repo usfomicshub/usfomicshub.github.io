@@ -1,0 +1,212 @@
+---
+layout: default
+---
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {
+  text-align: center;
+  }
+a:link {
+  color: deepskyblue;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: deepskyblue ;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.myDiv {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #75b5aa;
+  color: black;
+}
+.myDiv2 {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: lavender;
+  color: black;
+  }
+ .myDiv3 {
+   padding: 10px;
+   border-radius: 20px;
+   background-color: #aa759f;
+   color: black;
+  }
+hr.custom {
+  border-top: 1px dashed ;
+  }
+  table {
+  width:100%;
+}
+table, th, td {
+  
+  border: 3px solid black;
+  border-collapse: collapse;
+  
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+th { 
+  background-color: #303030;
+  color: #f4bf75;
+  }
+  
+tr {
+ background-color: #006150
+}  
+</style>
+
+
+<a href="https://usfomicshub.github.io/">
+<img src="https://github.com/usfomicshub/usfomicshub.github.io/blob/master/img/Hub_logo_2.0_small.PNG?raw=true" width="300" height="250" class="center">
+</a>
+                                                                                                                                      
+<h1 id="microbiome-data-analysis-workshop">Microbiome Data-Analysis Workshop</h1>
+<h2 id="goal"><span style = "color: white"> GOAL</span></h2>
+<blockquote>
+<p>In addition to understanding the importance of experimental design, we will walk through turning raw sequence data into useful counts data that we can use to visualize microbiome sample composition then discuss methods to extrapolate function from abundance data and ultimately arrive at biological insight.</p>
+</blockquote>
+
+
+<h3 id="table-of-contents">Table of Contents</h3>
+<ol>
+  <a href = "#pre-course-materials"><li>Pre course Materials</a>
+  <a href = "#day-one"><li>Day One<ul></a>
+  <a href = "#presentation-slides"><li> Presentation Slides</li></a>
+</ul>
+</li>
+<a href = "#day-two"><li>Day Two<ul></a>
+  <a href = "#presentation-slides"><li>Presentation Slides</li></a>
+  <a href = "#generating-asv-tables-from-microbiome-sample-sequencing-data"><li>Generating ASV Tables from Microbiome-sample Sequencing Data</li></a>
+</ul>
+</li>
+<a href="#day-three"><li>Day Three<ul></a>
+  <a href="#day-three"><li>Presentation Slides</li></a>
+  <a href="#microbiome-data-visualization"> <li> Microbiome Data Visualization </li></a>
+</ul>
+</li>
+
+</ol>
+
+<h2 id="pre-course-materials">Pre course Materials</h2>
+<hr class = "custom">
+
+<p> <span style = "color: #b5e853">&#11043;</span> <a href="https://www.nature.com/articles/s41579-018-0029-9.pdf">  Best Practices for Analyzing Microbiomes</a> - This article discusses how all stages of conducting a microbiome study, from designing the experiment to collecting and storing the samples to obtaining
+insight from graphical displays of the sequence data, can substantially impact the result.
+<p> <span style = "color: #b5e853"> &#11043; </span> If you do not have R and RStudio installed already, you can follow these<a href="https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/precoursematerials/r_installation_instructions_062020.pdf" download = "RInstallationInstructions"> instructions</a> for both Mac and Windows. If you already have RStudio, make sure the lastest R version is <span style = "color: #aa759f">4.0.1 -- "See Things Now"</span> by clicking on <span style = "color: black; background-color: lightgrey; padding: 2px;font-family: Helvetica;">Global Options...</span> in the <span style = "color: black; background-color: lightgrey; padding: 2px;font-family: Helvetica;">Tools</span> tab. The version is also stated in the first line of the console when you first open RStudio. Follow the previous link to get the new version then uninstall the old version from your computer.</p>
+<p> You can copy the library with your old packages from the previous version to the new version then update the packages by clicking <span style = "color: black; background-color: lightgrey;padding:2px;font-family: Helvetica;">Check for Package Updates...</span> also in the <span style = "color: black; background-color: lightgrey;padding=2px;font-family: Helvetica;">Tools</span> tab within RStudio.</p>
+<p> If you have Windows, then a very easy way to update your R version and packages is by simply running the following code in RStudio console: </p>
+<pre><code>install.packages(<span class="hljs-string">"installr"</span>)
+
+<span class="hljs-function"><span class="hljs-title">library</span><span class="hljs-params">(installr)</span></span>
+
+<span class="hljs-function"><span class="hljs-title">updateR</span><span class="hljs-params">()</span></span>
+</code></pre>
+<p> <span style = "color: #b5e853"> &#11043; </span> We recommend these two R tutorials to get you started: <a href= "https://www.datacamp.com/community/tutorials/basic-programming-skills-r">Basic Programming Skills in R</a> and <a href = "https://www.datacamp.com/community/tutorials/utilities-in-r">Utilities in R </a>
+  
+<h2 id="day-one">Day One</h2>
+<hr class = "custom">
+<h3 id="presentation-slides">Presentation Slides</h3>
+Day one of this workshop focuses on the methods and experimental design considering microbiome studies. The topics covered are listed in the following agenda where you can download the presentations.</p>
+<p>A more detailed schedule of the workshop should have been emailed to you. You can also download it <a href = "https://github.com/usfomicshub/microbiome_workshop/raw/master/Microbiome_Analysis_Training_Agenda_June_2020.xlsx download = "workshopschedule"> here</a>.
+<table>
+  <tr>
+    <th>AGENDA</th>
+    <th>INSTRUCTOR</th> 
+    
+  </tr>
+  <tr>
+    <td><a href= "https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/precoursematerials/r_installation_instructions_062020.pdf" download = "USFGenomicsInto">USF Genomics Introduction and Workshop Overview</a></td>
+    <td><span style = "color: white">Dr. Jenna Oberstaller</span></td>
+  </tr>
+  <tr>
+  <td><a href = "https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day1/USF%20Genomics%20Core%20Introduction-06102020-MZ.pdf" download = "USFGenomicsEquipCore"> USF Genomics Equipment Core</a></td>
+<td><span style = "color: white">Dr. Min Zhang</span></td>  
+  </tr>
+  <tr>
+    <td><a href="https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day1/Microbiome_talk_AS_Jun10_2020.pdf" downloaded = "IntroMDA"> Introduction to Microbiome Data Analysis</a></td>
+    <td><span style = "color: white">Dr. Anujit Sarkar</span></td>
+  </tr>
+    <tr>
+    <td><a href = "https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day1/Best%20practices%20for%20microbiome%20sample-handling%20and%20nucleic%20acid-processing.pdf" download = "BestPracticesMBsampling">Best Practices for Microbiome Sample-handling and Nucleic Acid-processing </a></td>
+    <td style = "color: white">Swamy Rakesh Adapa, MS</td>
+  </tr>
+  <tr>
+    <td><a href = "https://github.com/janelledonglasan/test.github.io/raw/master/Microbiome_Workshop_Materials/presentations/day2_analysis/dada2_AS_07Novnew.pdf"> Experimental Design</a></td>
+    <td style = "color: white">Swamy Rakesh Adapa, MS</td>
+  </tr>
+  <td><a href =""> Overview of Microbiome Data Analysis Visualization  </a></td>
+  <td><span style = "color: white">Dr. Justin Gibbons, Dr. Thomas Keller</span></td>
+</table>
+
+
+<h2 id="day-two">Day Two</h2>
+<hr class = "custom">
+<h3 id="presentation-slides">Presentation Slides</h3>
+<p><a href ="">Introduction to R and Plotting Data (Dr. Charley Wang)</a></p>
+<p><a href = "https://github.com/janelledonglasan/test.github.io/blob/master/Microbiome_Workshop_Materials/presentations/day2_analysis/dada2_AS_07Novnew.pdf"> Taxonomic Analysis (Dr. Anujit Sarkar)</a></p>
+
+<h3 id="generating-asv-tables-from-microbiome-sample-sequencing-data">Generating ASV Tables from Microbiome-sample Sequencing Data</h3>
+<h3 id="pipeline-overview"><span style = "color: #d28445">PIPELINE OVERVIEW</span></h3>
+<div class = "myDiv">
+<p><strong>Goal:</strong> The purpose of this analysis is to obtain an Amplicon Sequence Variant (ASV) table for all of our microbiome-sample example-data.</p>
+<p><strong>Input data:</strong> We will start with demultiplexed fastq files for all samples. This analysis is for paired-end data. Thus, for each sample, there will be two files, named according to Illumina platform conventions:</p>
+<ul>
+<li>Forward-reads, named *_R1_001.fastq </li>
+<li>Reverse-reads, named *_R2_001.fastq</li>
+   </ul>
+</div>
+<p>
+</p>
+  <h3 id="creating-the-project"><span style = "color: #d28445">CREATING THE PROJECT</span></h3>
+  <div class = "myDiv3">
+  <p><strong>1.</strong> Download the zip file, <a href= "">day2.zip</a>, and extract it to where you want it</p>
+  <p><strong>2.</strong> Open RStudio and click on <span style = "color: black; background-color: lightgrey;padding:2px;font-family: Helvetica;">New Project</span> in the <span style = "color: black; background-color: lightgrey;padding:2px;font-family: Helvetica;">File tab</span></p>
+  <p><strong>3.</strong> Create the new project by choosing 'Existing Directory'</p>
+  <p><strong>4.</strong> Browse to the directory where you extracted the zip file and click create project</p>
+ </div class = "myDiv3">
+ <p>
+  </p>
+<h3 id="tutorial-structure"><span style = "color: #d28445">TUTORIAL STRUCTURE</span></h3>
+
+<p>Before we begin, let’s take a moment to get organized. The importance of documentation and good record-keeping are essential to producing high-quality and reproducible computational analyses, just as they are at the bench!</p>
+
+<p>We recommend you keep your analyses organized by project (just as we organized this example).
+<p>Looking around:</p>
+
+<div class = "myDiv2">
+<p><strong>Rdata</strong>: this folder contains our input .fastq.gz files and our input database of 16S-sequences that we’ll use to identify taxa present in our samples.</p>
+<p><strong>Ranalysis</strong>: this folder contains any scripts we create to analyze our data, like this R-Markdown (.Rmd) document.</p>
+<p><strong>Routput</strong>: we will direct any output data-files from our analyses to this folder.</p>
+<p><strong>Rfigs</strong>: we will direct any figures we generate from our analyses to this folder.</p>
+<p><strong>Rsource</strong>: this folder contains any R source-scripts we create to set up our environment for our analyses–custom functions, which packages to load, etc. etc. You don’t need to worry about this one since we made it for you.</p>
+<p>You can think of these as set-up scripts–just load it at the beginning of your session and forget about it.</p>
+</div class = "myDiv2">  
+<p>
+</p>
+<h3 id="setting-up-the-environment"><span style = "color: #d28445">SETTING UP THE ENVIRONMENT</span></h3>
+<p> Now that we are familar with the project, we can set up the environment!<p>
+  <p style = "text-indent:20px"><span style = "color: #aa759f"> 1. Go to the <strong>Ranalysis</strong> folder and open the .Rmd file</span></p>
+  <p <p style = "text-indent:20px"><span style = "color: #aa759f"> 2. Run only the first chunk of code beginning at line 10 by clicking the green arrow within the upper right corner of the chunk.</span></p>
+ <p> Running this code calls a source script from the RSource folder that installs all of the packages needed to run the tutorial. </p>
+<h3 id="-lets-begin-https-janelledonglasan-github-io-test-github-io-microbiome_workshop_materials-microbiome_workshop_demos-day2-ranalysis-begin-analyses-"><a href="https://janelledonglasan.github.io/test.github.io/Microbiome_Workshop_Materials/microbiome_workshop_demos/day2/Ranalysis/#begin-analyses">LETS BEGIN!!</a></h3>
+
+
+
+<h2 id="day-three">Day Three</h2>
+<hr class = "custom">
+<h3 id="presentation-slides">Presentation Slides</h3>
+<p><a href="https://github.com/janelledonglasan/test.github.io/blob/master/Microbiome_Workshop_Materials/presentations/day3_plots/microbiome_plots_overview.pdf">Taxonomic Analysis: Visualization Dr. Justin Gibbons</a></p>
+<p><a href="">Taxonomic Analysis: Machine Learning (Dr. Thomas Keller)</a></p>
+<h3 id="microbiome-data-visualization">Microbiome Data Visualization</h3>
+<p>The tutorial structure of Day 3 follows the same organization as Day 2 project directory.</p>
