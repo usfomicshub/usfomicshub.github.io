@@ -13,7 +13,7 @@
   <h3 align="center"><p style = "color: #f4bf75">We post our materials for our data-analysis workshops here, information for upcoming events, as well as the code we've developed for various other omics-related data analyses. </p></h3>
   <br>
 
-<a href = "https://usfomicshub.github.io/usfomicshub.github.io/Microbiome_Workshop_Materials/index.htmll">
+<a href = "https://usfomicshub.github.io/usfomicshub.github.io/Microbiome_Workshop_Materials/index.html">
 <p align="center">
 <img src="https://i.ibb.co/r7YRS2F/bigban.jpg" width ="600" height = "120" style = "border: 4px solid #005858; border-radius:10px">
 </p>
