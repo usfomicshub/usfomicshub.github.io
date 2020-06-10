@@ -1,18 +1,28 @@
-
 <html>
 <body>
-
+<a href="https://usfomicshub.github.io/">
+<p align="center">
+<img src="https://github.com/usfomicshub/usfomicshub.github.io/blob/master/img/Hub_logo_2.0_small.PNG?raw=true" width="300" height="250" class="center">
+ </p>
+</a>
 
 <h1 align="center">Welcome to the USF Omics Hub git repository!</h1>
 
-
   
-<p align="center">
-  <h3 align="center">We post our materials for our data-analysis workshops here, information for upcoming events, as well as the code we've developed for various other omics-related data analyses.</h3>
+
+  <h3 align="center"><p style = "color: #f4bf75">We post our materials for our data-analysis workshops here, information for upcoming events, as well as the code we've developed for various other omics-related data analyses. </p></h3>
   <br>
- </p>
+
+<a href = "https://usfomicshub.github.io/usfomicshub.github.io/Microbiome_Workshop_Materials/index.html">
+<p align="center">
+<img src="https://i.ibb.co/r7YRS2F/bigban.jpg" width ="600" height = "120" style = "border: 4px solid #005858; border-radius:10px">
+</p>
+</a>
+
+---
  
  ## News
+   * [The Hub Microbiome Data-Analysis Workshop]() will be taking place June 10th - 12th!
  
    * **UPDATE 3/25/2020**: Check [here](https://usfomicshub.github.io/coronavirus_misc) for helpful info about keeping your computational research going during coronavirus control-measures.
  
@@ -29,32 +39,8 @@
   **See our [Wiki](https://github.com/usfomicshub/usfomicshub.github.io/wiki) page for documentation, walkthroughs for our pipelines, and other helpful information. See our [FAQ](https://usfomicshub.github.io/faq) for answers to common questions about the Omics Hub.**
 
 
-  
-![Hub logo](/img/Hub_logo_2.0_small.PNG)
-
- 
-
-
- **Other useful links:**
-  * [USF Genomics Home](https://health.usf.edu/publichealth/ghidr/genomics)
-  * [Hub service inquiries](https://health.usf.edu/publichealth/ghidr/genomics/request-services)
-  * [USF Research Computing Home*](https://wiki.rc.usf.edu/index.php/Main_Page)
-  * [USF Research Computing: Available software*](https://wiki.rc.usf.edu/index.php/Software_and_Libraries)
-
-
 
 
 <h6> * requires USF NetID login </h6>
 </body>
 </html>
-
-
-{% for item in site.data.samplelist.toc %}
-    <h3>{{ item.title }}</h3>
-      <ul>
-        {% for entry in item.subfolderitems %}
-          <li><a href="{{ entry.url }}">{{ entry.page }}</a></li>
-        {% endfor %}
-      </ul>
-  {% endfor %}
-
