@@ -1,8 +1,7 @@
 theme: jekyll-theme-hacker
-name: USF Omics Hub
-title: null
-# title: Welcome to the USF Omics Hub git repository!
+
 markdown: GFM
+
 
 defaults:
   -
