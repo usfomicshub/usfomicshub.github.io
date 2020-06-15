@@ -74,7 +74,7 @@ tr {
 <h1 id="microbiome-data-analysis-workshop">Microbiome Data-Analysis Workshop</h1>
 <h2 id="goal"><span style = "color: white"> GOAL</span></h2>
 <blockquote>
-<p>In addition to understanding the importance of experimental design, we will walk through turning raw sequence data into useful count data that we can use to visualize microbiome sample composition. We will then discuss methods to extrapolate function from abundance data and ultimately arrive at biological insight.</p>
+<p>In addition to understanding the importance of experimental design, we will walk through turning raw sequence data into useful counts-data that we can use to visualize microbiome sample-composition. We will then discuss methods to extrapolate function from these abundance-data (and limitations thereof) to ultimately arrive at biological insight.</p>
 </blockquote>
 
 
@@ -99,14 +99,14 @@ tr {
 </li>
 </ol>
 
-<h2 id="pre-course-materials">Pre course Materials</h2>
+<h2 id="pre-course-materials">Pre-course Materials</h2>
 <hr class = "custom">
 
 <p> <span style = "color: #b5e853">&#11043;</span> <a href="https://www.nature.com/articles/s41579-018-0029-9.pdf">  Best Practices for Analyzing Microbiomes</a> - This article discusses how all stages of conducting a microbiome study, from designing the experiment to collecting and storing the samples to obtaining
 insight from graphical displays of the sequence data, can substantially impact the result.
-<p> <span style = "color: #b5e853"> &#11043; </span> If you do not have R and RStudio installed already, you can follow these<a href="https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/precoursematerials/r_installation_instructions_062020.pdf" download = "RInstallationInstructions"> instructions</a> for both Mac and Windows. If you already have RStudio, make sure the lastest R version is <span style = "color: #aa759f">4.0.1 -- "See Things Now"</span> by clicking on <span style = "color: black; background-color: lightgrey; padding: 2px;font-family: Helvetica;">Global Options...</span> in the <span style = "color: black; background-color: lightgrey; padding: 2px;font-family: Helvetica;">Tools</span> tab. The version is also stated in the first line of the console when you first open RStudio. Follow the previous link to get the new version then uninstall the old version from your computer.</p>
+<p> <span style = "color: #b5e853"> &#11043; </span> If you do not have R and RStudio installed already, you can follow these<a href="https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/precoursematerials/r_installation_instructions_062020.pdf" download = "RInstallationInstructions"> instructions</a> for both Mac and Windows. If you already have RStudio, make sure you're using R version <span style = "color: #aa759f">4.0.1 -- "See Things Now"</span> by clicking on <span style = "color: black; background-color: lightgrey; padding: 2px;font-family: Helvetica;">Global Options...</span> in the <span style = "color: black; background-color: lightgrey; padding: 2px;font-family: Helvetica;">Tools</span> tab. The version is also stated in the first line of the console when you first open RStudio. </p>
 <p> You can copy the library with your old packages from the previous version to the new version then update the packages by clicking <span style = "color: black; background-color: lightgrey;padding:2px;font-family: Helvetica;">Check for Package Updates...</span> also in the <span style = "color: black; background-color: lightgrey;padding=2px;font-family: Helvetica;">Tools</span> tab within RStudio.</p>
-<p> If you have Windows, then a very easy way to update your R version and packages is by simply running the following code in RStudio console: </p>
+<p> If you have Windows, then a very easy way to update your R-version and packages is by simply running the following code in the RStudio console: </p>
 <pre><code>install.packages(<span class="hljs-string">"installr"</span>)
 
 <span class="hljs-function"><span class="hljs-title">library</span><span class="hljs-params">(installr)</span></span>
@@ -118,7 +118,7 @@ insight from graphical displays of the sequence data, can substantially impact t
 <h2 id="day-one">Day One</h2>
 <hr class = "custom">
 <h3 id="presentation-slides">Presentation Slides</h3>
-Day one of this workshop focuses on the methods and experimental design considering microbiome studies. You can download the individual presentations for each topic in the agenda below or you can view them <a href = "https://github.com/usfomicshub/microbiome_workshop/tree/master/slides/day1">here.</a></p>
+Day one of this workshop focuses on an overview of available methods and best-practice considerations for experimental design in microbiome studies. You can download the individual presentations for each topic in the agenda below or you can view them <a href = "https://github.com/usfomicshub/microbiome_workshop/tree/master/slides/day1">here.</a></p>
 <p>A more detailed schedule of the workshop should have been emailed to you. You can also download it <a href = "https://github.com/usfomicshub/microbiome_workshop/raw/master/Microbiome_Analysis_Training_Agenda_June_2020.xlsx download = "workshopschedule"> here</a>.
 <table>
   <tr>
@@ -253,7 +253,7 @@ Day one of this workshop focuses on the methods and experimental design consider
   <p style = "color:#8f5536"><strong>Taxonomic Analysis: Machine Learning</strong><p>
   <ul>
   <li>an OTU table (converted to relative abundance)</li>
-  <li>a table of metadata to associate the OTUs with</li>
+  <li>a table of metadata to associate with the OTUs</li>
 </ul>
 </div>
   
@@ -275,11 +275,8 @@ Day one of this workshop focuses on the methods and experimental design consider
   </p>
   <h3 id="tutorial-structure"><span style = "color: #d28445">TUTORIAL STRUCTURE</span></h3>
 
-  <p> Tutorial structure Day 3 also follows the same structure as Day 2 BUT we will have a new folder!</p>
-  <div class = "myDiv2">
-<p><strong>Rfigs</strong>: we will direct any figures we generate from our analyses to this folder</p>
-</div class = "myDiv2">  
-<p>
+  <p> Day 3 follows the same directory-structure as Day 2 above. </p>
+
 </p>
   <h3 id="setting-up-the-environment"><span style = "color: #d28445">SETTING UP THE ENVIRONMENT</span></h3>
 <p> If you succesfully ran Day 2 tutorial then you should already have the packages needed for Day 3. </p>
@@ -298,7 +295,7 @@ Day one of this workshop focuses on the methods and experimental design consider
  <p>
  <p style = "color: #aa759f">Here are some resources mentioned in this workshop and some extra information that you might find helpful in your microbiome research. </p>
   <p><details closed></p>
-<p><summary>Journals for Statistical Considerations for Microbiome studies</summary></p>
+<p><summary>Journal-articles Dr. Ji referenced as examples for different study-designs in his session (Statistical Considerations for Microbiome Studies)</summary></p>
 <ul>
   </p><li><a href="https://msystems.asm.org/content/msys/4/4/e00325-19.full.pdf">A Cross-Sectional Study of Compositional and Functional Profiles of Gut Microbiota in Sardinian Centenarians</a></li></p>
 
