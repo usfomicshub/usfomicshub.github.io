@@ -14,11 +14,12 @@ To relieve some of the Genomics-software installation- and documentation-burden 
 
 #### Anaconda3 environments ####
 
-
+   + fastq_dump
    + humann2
         + (version 2.8.1)
         + [HUMAnN2: The HMP Unified Metabolic Analysis Network 2 documentation](http://huttenhower.sph.harvard.edu/humann)
-   + fastq_dump
+   + isafe
+        + [iSAFE documentation](https://github.com/alek0991/iSAFE)
    + kera2
    + lumpy
         + (version 0.2.13)
