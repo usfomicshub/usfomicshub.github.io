@@ -294,7 +294,7 @@ hr.custom {
 
 <p></p>
 <h3 id="available-software-and-tools" style = "color: #f4bf75">AVAILABLE SOFWARE AND TOOLS</h3>
-<div class = "myDiv">
+
 <h4 id="anaconda3-environments">Anaconda3 environments</h4>
 <ul>
 <li>humann2
@@ -337,9 +337,10 @@ hr.custom {
 <ul>
 <li>SeekDeep</li>
 </ul>
-</div>
+
 
 <h3 id="loading-and-using-software" style = "color: #f4bf75">LOADING AND USING SOFTWARE</h3>
+<div class = "myDiv">
 <p>Omics data-analysis workflows often require chaining together several different programs, each with their own dependencies, quirks, and incompatibilities. For this reason, many programs commonly used together can be loaded all together in a virtual &quot;environment&quot; specifically designed to &quot;just work&quot; without the incompatibility-headaches. We use Anaconda to install, create and manage these virtual environments for you.</p>
 <h3 id="loading-hub-anaconda-environments-on-rra">Loading Hub Anaconda environments on RRA</h3>
 <p>Best practice when loading any environment or module is to start by purging your current environment to minimize the chance of loading incompatible programs.</p>
@@ -370,7 +371,10 @@ hr.custom {
 </code></pre>
 <p><em>alternatively you can logout and login to RRA again and your new settings will take effect automatically.</em></p>
 <p>That's it! Now you are ready to use conda and all environments we have built.</p>
+</div>
+
 <h3 id="using-hub-anaconda-environments-on-rra">Using Hub Anaconda environments on RRA</h3>
+<div class = "myDiv">
 <p>List the environments available to load:</p>
 <pre><code>  conda env list
 </code></pre>
@@ -389,6 +393,7 @@ hr.custom {
 <p><em>When you are finished using the environment, you should unload it to avoid introducing compatibility-issues with software-versions, etc.</em></p>
 <pre><code>  conda deactivate
 </code></pre>
+</div>
 
 <h2 id="more-about-usf-research-computing">More about USF Research Computing</h2>
 <hr class = "custom">
