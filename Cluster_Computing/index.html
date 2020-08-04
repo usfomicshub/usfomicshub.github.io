@@ -158,13 +158,15 @@ hr.custom {
   border-radius: 20px;
   background-color: #aa759f;
   color: black;
+  border: 4px solid #white;
 }
 
 .myDiv4 {
   padding: 10px;
-  border-radius: 20px;
   background-color: #FFFF99;
   color: black;
+  border: 4px solid #white; 
+  border-radius:20px;
 }
 
 </style>
@@ -343,13 +345,12 @@ hr.custom {
 
 <p>Omics data-analysis workflows often require chaining together several different programs, each with their own dependencies, quirks, and incompatibilities. For this reason, many programs commonly used together can be loaded all together in a virtual &quot;environment&quot; specifically designed to &quot;just work&quot; without the incompatibility-headaches. We use Anaconda to install, create and manage these virtual environments for you.</p>
 
-<h3 id="loading-hub-anaconda-environments-on-rra">Loading Hub Anaconda environments on RRA</h3>
 
 <p>Best practice when loading any environment or module is to start by purging your current environment to minimize the chance of loading incompatible programs.</p>
 <pre><code>  module purge
 </code></pre>
-<h4 id="the-first-time-you-use-the-hub-anaconda-install-do-these-three-steps">The FIRST time you use the Hub Anaconda-install, do these three steps:</h4>
-<h5 id="add-conda-to-your-path-for-this-login-session-and-permanently-so-you-never-have-to-do-this-again">1. add conda to your path for this login-session AND permanently so you never have to do this again.**</h5>
+<h3 id="the-first-time-you-use-the-hub-anaconda-install-do-these-three-steps">The FIRST time you use the Hub Anaconda-install, do these three steps:</h4>
+<h4 id="add-conda-to-your-path-for-this-login-session-and-permanently-so-you-never-have-to-do-this-again">1) add conda to your path for this login-session AND permanently so you never have to do this again.**</h4>
 <p><em>Your file-path is searched for programs etc. by the order in which directories appear in your path-variable. Pre-pending to your path ensures that the version of anaconda you load is the one you specify.</em></p>
 <ul>
 <li>
@@ -364,11 +365,13 @@ hr.custom {
 <pre><code> export PATH=/shares/omicshub/anaconda2/bin:$PATH
 </code></pre></li>
 </ul>
-<h5 id="initialize-conda">2. initialize conda</h5>
+
+<h4 id="initialize-conda">2) initialize conda</h4>
 <p>This command tells conda to automatically add a block of code to your default environment-settings--your ~/.bashrc file--so you never have to do this again.</p>
 <pre><code>conda init
 </code></pre>
-<h5 id="tell-it-to-use-the-environment-settings-you-just-upgraded">3. tell it to use the environment-settings you just upgraded</h5>
+
+<h4 id="tell-it-to-use-the-environment-settings-you-just-upgraded">3) tell it to use the environment-settings you just upgraded</h4>
 <pre><code>  source ~/.bashrc
 </code></pre>
 <p><em>alternatively you can logout and login to RRA again and your new settings will take effect automatically.</em></p>
@@ -376,7 +379,7 @@ hr.custom {
 
 
 <h3 id="using-hub-anaconda-environments-on-rra">Using Hub Anaconda environments on RRA</h3>
-<div class = "myDiv">
+
 <p>List the environments available to load:</p>
 <pre><code>  conda env list
 </code></pre>
@@ -395,7 +398,7 @@ hr.custom {
 <p><em>When you are finished using the environment, you should unload it to avoid introducing compatibility-issues with software-versions, etc.</em></p>
 <pre><code>  conda deactivate
 </code></pre>
-</div>
+
 
 <h2 id="more-about-usf-research-computing">More about USF Research Computing</h2>
 <hr class = "custom">
