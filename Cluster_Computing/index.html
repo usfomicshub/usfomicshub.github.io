@@ -349,30 +349,31 @@ hr.custom {
 <p>Best practice when loading any environment or module is to start by purging your current environment to minimize the chance of loading incompatible programs.</p>
 <pre style = "background: #434343"><code style = "background: #434343">  module purge
 </code></pre>
-<h3 id="the-first-time-you-use-the-hub-anaconda-install-do-these-three-steps">The FIRST time you use the Hub Anaconda-install, do these three steps:</h4>
-<h3 id="add-conda-to-your-path-for-this-login-session-and-permanently-so-you-never-have-to-do-this-again">1) add conda to your path for this login-session AND permanently so you never have to do this again.**</h3>
+<h3 id="the-first-time-you-use-the-hub-anaconda-install-do-these-three-steps" style = "color:#8f5536">The FIRST time you use the Hub Anaconda-install, do these three steps:</h3>
+
+<h3 id="add-conda-to-your-path-for-this-login-session-and-permanently-so-you-never-have-to-do-this-again" style = "color: #black"><strong>1) add conda to your path for this login-session AND permanently so you never have to do this again.**</strong></h3>
 <p><em>Your file-path is searched for programs etc. by the order in which directories appear in your path-variable. Pre-pending to your path ensures that the version of anaconda you load is the one you specify.</em></p>
 <ul>
 <li>
 <p>if your environment is provided via anaconda3 (the appropriate choice for most users):</p>
-<pre><code style = "background: #434343">export PATH=/shares/omicshub/apps/anaconda3/bin:$PATH &gt;&gt; ~/.bashrc
+<pre style = "background: #434343"><code style = "background: #434343">export PATH=/shares/omicshub/apps/anaconda3/bin:$PATH &gt;&gt; ~/.bashrc
 </code></pre></li>
 <li>
 <p>if your environment is provided via anaconda2:</p>
-<pre><code style = "background: #434343">export PATH=/shares/omicshub/anaconda2/bin:$PATH &gt;&gt; ~/.bashrc
+<pre style = "background: #434343"><code style = "background: #434343">export PATH=/shares/omicshub/anaconda2/bin:$PATH &gt;&gt; ~/.bashrc
 </code></pre>
 <p>**<em>Only use this option of permanently setting your anaconda-version if you're sure that's the one you want to use. If you need to switch back and forth between environments available via anaconda2 and anaconda3, it is better to set your path ONLY for your current login-session (meaning without appending the anaconda path to your environment-settings in ~/.bashrc). This example will set your path only for the current session:</em></p>
-<pre><code style = "background: #434343"> export PATH=/shares/omicshub/anaconda2/bin:$PATH
+<pre style = "background: #434343"><code style = "background: #434343"> export PATH=/shares/omicshub/anaconda2/bin:$PATH
 </code></pre></li>
 </ul>
 
-<h3 id="initialize-conda">2) initialize conda</h3>
+<h3 id="initialize-conda" style = "color: #black"><strong>2) initialize conda</strong></h3>
 <p>This command tells conda to automatically add a block of code to your default environment-settings--your ~/.bashrc file--so you never have to do this again.</p>
-<pre><code style = "background: #434343;">conda init
+<pre style = "background: #434343"><code style = "background: #434343;">conda init
 </code></pre>
 
 <h3 id="tell-it-to-use-the-environment-settings-you-just-upgraded">3) tell it to use the environment-settings you just upgraded</h3>
-<pre><code style = "background: #434343;">  source ~/.bashrc
+<pre style = "background: #434343"><code style = "background: #434343;">  source ~/.bashrc
 </code></pre>
 <p><em>alternatively you can logout and login to RRA again and your new settings will take effect automatically.</em></p>
 </div>
@@ -380,7 +381,7 @@ hr.custom {
 <p>That's it! Now you are ready to use conda and all environments we have built.</p>
 
 
-<h3 id="using-hub-anaconda-environments-on-rra">Using Hub Anaconda environments on RRA</h3>
+<h3 id="using-hub-anaconda-environments-on-rra" style = "color: #black"><strong>Using Hub Anaconda environments on RRA</strong></h3>
 
 <p>List the environments available to load:</p>
 <pre><code>  conda env list
