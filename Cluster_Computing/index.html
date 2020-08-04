@@ -345,7 +345,7 @@ hr.custom {
 
 <p>Omics data-analysis workflows often require chaining together several different programs, each with their own dependencies, quirks, and incompatibilities. For this reason, many programs commonly used together can be loaded all together in a virtual &quot;environment&quot; specifically designed to &quot;just work&quot; without the incompatibility-headaches. We use Anaconda to install, create and manage these virtual environments for you.</p>
 
-
+<div class = "myDiv">
 <p>Best practice when loading any environment or module is to start by purging your current environment to minimize the chance of loading incompatible programs.</p>
 <pre><code>  module purge
 </code></pre>
@@ -355,11 +355,11 @@ hr.custom {
 <ul>
 <li>
 <p>if your environment is provided via anaconda3 (the appropriate choice for most users):</p>
-<pre><code>export PATH=/shares/omicshub/apps/anaconda3/bin:$PATH &gt;&gt; ~/.bashrc
+<pre><code style = "background: #F6F6F6; color: black">export PATH=/shares/omicshub/apps/anaconda3/bin:$PATH &gt;&gt; ~/.bashrc
 </code></pre></li>
 <li>
 <p>if your environment is provided via anaconda2:</p>
-<pre><code>export PATH=/shares/omicshub/anaconda2/bin:$PATH &gt;&gt; ~/.bashrc
+<pre><code style = "background: #F6F6F6; color: black">export PATH=/shares/omicshub/anaconda2/bin:$PATH &gt;&gt; ~/.bashrc
 </code></pre>
 <p>**<em>Only use this option of permanently setting your anaconda-version if you're sure that's the one you want to use. If you need to switch back and forth between environments available via anaconda2 and anaconda3, it is better to set your path ONLY for your current login-session (meaning without appending the anaconda path to your environment-settings in ~/.bashrc). This example will set your path only for the current session:</em></p>
 <pre><code> export PATH=/shares/omicshub/anaconda2/bin:$PATH
@@ -368,13 +368,15 @@ hr.custom {
 
 <h3 id="initialize-conda">2) initialize conda</h3>
 <p>This command tells conda to automatically add a block of code to your default environment-settings--your ~/.bashrc file--so you never have to do this again.</p>
-<pre><code>conda init
+<pre><code style = "background: #F6F6F6; color: black">conda init
 </code></pre>
 
 <h3 id="tell-it-to-use-the-environment-settings-you-just-upgraded">3) tell it to use the environment-settings you just upgraded</h3>
-<pre><code>  source ~/.bashrc
+<pre><code style = "background: #F6F6F6; color: black">  source ~/.bashrc
 </code></pre>
 <p><em>alternatively you can logout and login to RRA again and your new settings will take effect automatically.</em></p>
+</div>
+
 <p>That's it! Now you are ready to use conda and all environments we have built.</p>
 
 
