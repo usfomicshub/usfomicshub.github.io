@@ -140,6 +140,10 @@ tr {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+hr.custom {
+  border-top: 1px dashed ;
+  }
 </style>
 
 
@@ -220,19 +224,19 @@ tr {
 </ol>
 
 <h2 id="usf-clusters">USF Clusters</h2>
-
+<hr class = "custom">
 <p>USF Genomics researchers requiring high-performance computing have two primary cluster-computing options (both maintained by USF Research Computing):</p>
-<ul>
-<li><strong>The Research-Restricted Access cluster (RRA)</strong>, to which USF Genomics Program members have priority access, and</li>
-<li><strong>CIRCE</strong>, the primary cluster servicing all USF researchers.</li>
-</ul>
+
+<p><span style = "color: #b5e853">&#11043;</span><span style = "color: #aa759f"><strong> Research-Restricted Access cluster (RRA)</strong></span>, to which USF Genomics Program members have priority access.</p>
+<p><span style = "color: #b5e853">&#11043;</span><span style = "color: #aa759f"><strong> CIRCE</strong></span>, the primary cluster servicing all USF researchers.</p>
+
 <br>
-<h2 id="whats-the-difference-and-which-one-do-i-use">What's the difference, and which one do I use?</h2>
+<h3 id="whats-the-difference-and-which-one-do-i-use" style = "color: #f4bf75">WHATS THE DIFFERENCE AND WHICH ONE DO I USE?</h3>
 <p>Both clusters have excellent capabilities. As the name implies, <strong>RRA</strong> has stringent security measures in place to limit access and to protect potentially-sensitive human-subjects data. <em>Your research does not NEED to include HIPAA-protected data for you to use RRA.</em> Everybody requesting an RRA-account will, however, need to obtain HIPAA-training before their account can be created. Jobs run on RRA typically have faster turnaround-time as it is currently at lower utilization.</p>
 <p>The <strong>CIRCE</strong> cluster, on the other hand, does not have as many restrictions on access and does not require additional certification for account-creation. Wait-times for job completions using CIRCE are likely to be longer due to much-higher utilization.</p>
 <p>Please follow the instructions below to gain access to the appropriate cluster. Once the requirements have been satisfied, Research Computing is typically very quick to create your account.</p>
 <br>
-<h2 id="creating-an-rra-cluster-account">Creating an RRA Cluster Account</h2>
+<h3 id="creating-an-rra-cluster-account" style = "color: #f4bf75">CREATING AN RRA CLUSTER ACCOUNT</h3>
 <br>
 <p>To request an RRA-Cluster account, email <a href="mailto:rc-help@usf.edu">rc-help@usf.edu</a> <em><strong>from your official USF email address</strong></em> with the following information:</p>
 <ul>
@@ -245,7 +249,7 @@ tr {
 <p><em><strong>All RRA accounts are automatically granted access to CIRCE. If requesting an RRA account, do not send in a request for a CIRCE account as well.</strong></em></p>
 <br>
 <br>
-<h2 id="creating-a-circe-account">Creating a CIRCE account</h2>
+<h3 id="creating-a-circe-account" style = "color: #f4bf75">CREATING A CIRCE ACCOUNT</h3>
 <br>
 <p>To request a CIRCE account, email <a href="mailto:rc-help@usf.edu">rc-help@usf.edu</a> <em><strong>from your official USF email address</strong></em> with the following information:</p>
 <ul>
@@ -260,10 +264,10 @@ tr {
 
 
 <h2 id="hub-software-installs-on-usfs-rra-cluster">Hub software installs on USF's RRA cluster</h2>
-
+<hr class = "custom">
 <p>USF Research Computing maintains the High-Performance Computing (HPC) hardware and resources available to all USF Researchers.  They have gone above and beyond to provide installations of USF Genomics software-requests on both CIRCE and RRA clusters. Their list of available software and any documentation can be found <a href=https://wiki.rc.usf.edu/index.php/Applications>here</a>. A more updated list of pending and recently-completed installs can be found <a href=https://wiki.rc.usf.edu/index.php/Apps_Queue>here</a>, though most of these have not yet been documented due to the bulk of requests.</p>
 <p>To relieve some of the Genomics-software installation- and documentation-burden from RC, the Hub (with guidance from RC) has established an independently-maintained repository on RRA of mostly omics-related software available for all RRA account-holders.</p>
-<h2 id="available-software-and-tools"> Available software and tools </h2>
+<h3 id="available-software-and-tools" style = "color: #f4bf75">AVAILABLE SOFWARE AND TOOLS</h3>
 <h4 id="anaconda3-environments">Anaconda3 environments</h4>
 <ul>
 <li>humann2
@@ -306,7 +310,7 @@ tr {
 <ul>
 <li>SeekDeep</li>
 </ul>
-<h2 id="loading-and-using-software">Loading and using software</h2>
+<h3 id="loading-and-using-software" style = "color: #f4bf75">LOADING AND USING SOFTWARE</h3>
 <p>Omics data-analysis workflows often require chaining together several different programs, each with their own dependencies, quirks, and incompatibilities. For this reason, many programs commonly used together can be loaded all together in a virtual &quot;environment&quot; specifically designed to &quot;just work&quot; without the incompatibility-headaches. We use Anaconda to install, create and manage these virtual environments for you.</p>
 <h3 id="loading-hub-anaconda-environments-on-rra">Loading Hub Anaconda environments on RRA</h3>
 <p>Best practice when loading any environment or module is to start by purging your current environment to minimize the chance of loading incompatible programs.</p>
@@ -358,4 +362,5 @@ tr {
 </code></pre>
 
 <h2 id="more-about-usf-research-computing">More about USF Research Computing</h2>
+<hr class = "custom">
 <p>You can find more information about USF's clusters as well as Linux tutorials and high performance computing basics on USF's Research Computing main wiki page <a href=https://wiki.rc.usf.edu/index.php/Main_Page>here</a>.
