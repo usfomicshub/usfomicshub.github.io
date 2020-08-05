@@ -237,11 +237,15 @@ hr.custom {
 
 </ul>
 </li>
-<a href = "#hub-software-installs-on-usfs-rra-cluster"><li>Hub software installs on USFs RRA cluster<ul></a>
-  <a href = "#available-software-and-tools"><li>Available Software and Tools</li></a>
-  <a href = "#loading-and-using-software"><li>Loading and using Software</li></a>
+
+<a href = "#available-software-and-tools"><li>Available Software and Tools<ul></a>
 </ul>
 </li>
+
+<a href = "#loading-and-using-software"><li>Loading and using Software<ul></a>
+</ul>
+</li>
+
 <a href="#more-about-usf-research-computing"><li>More about USF Research Computing<ul></a>
 </ul>
 </li>
@@ -295,9 +299,9 @@ hr.custom {
 <p>To relieve some of the Genomics-software installation- and documentation-burden from RC, the Hub (with guidance from RC) has established an independently-maintained repository on RRA of mostly omics-related software available for all RRA account-holders.</p>
 
 <p></p>
-<h3 id="available-software-and-tools" style = "color: #f4bf75">AVAILABLE SOFWARE AND TOOLS</h3>
+<h2 id="available-software-and-tools">AVAILABLE SOFWARE AND TOOLS</h2>
 
-<h4 id="anaconda3-environments">Anaconda3 environments</h4>
+<h3 id="anaconda3-environments" style = "color: #f4bf75">Anaconda3 environments</h3>
 <ul>
 <li>humann2
 <ul>
@@ -326,22 +330,22 @@ hr.custom {
 <li>selene</li>
 <li>qiime2-2019.7</li>
 </ul>
-<h4 id="anaconda2-environments">Anaconda2 environments</h4>
+<h3 id="anaconda2-environments" style = "color: #f4bf75">Anaconda2 environments</h3>
 <ul>
 <li>epiGBS_shared</li>
 <li>kera2</li>
 </ul>
-<h4 id="homebrew-packages">Homebrew packages</h4>
+<h3 id="homebrew-packages" style = "color: #f4bf75">Homebrew packages</h3>
 <ul>
 <li>homebrew</li>
 </ul>
-<h4 id="other-load-via-hub-supplied-modules">Other (load via Hub-supplied modules)</h4>
+<h3 id="other-load-via-hub-supplied-modules" style = "color: #f4bf75">Other (load via Hub-supplied modules)</h3>
 <ul>
 <li>SeekDeep</li>
 </ul>
 
 
-<h3 id="loading-and-using-software" style = "color: #f4bf75">LOADING AND USING SOFTWARE</h3>
+<h2 id="loading-and-using-software">LOADING AND USING SOFTWARE</h2>
 
 <p>Omics data-analysis workflows often require chaining together several different programs, each with their own dependencies, quirks, and incompatibilities. For this reason, many programs commonly used together can be loaded all together in a virtual &quot;environment&quot; specifically designed to &quot;just work&quot; without the incompatibility-headaches. We use Anaconda to install, create and manage these virtual environments for you.</p>
 
@@ -383,8 +387,6 @@ black"><strong>3.</strong> tell it to use the environment-settings you just upgr
 
 <p>That's it! Now you are ready to use conda and all environments we have built.</p>
 
-
-<h3 id="using-hub-anaconda-environments-on-rra"><strong>Using Hub Anaconda environments on RRA</strong></h3>
 <div class = "myDiv">
 <p>List the environments available to load:</p>
 <pre style = "background: #434343"><code style = "background: #434343;">  conda env list
