@@ -350,7 +350,7 @@ hr.custom {
 
 
 <p>Best practice when loading any environment or module is to start by purging your current environment to minimize the chance of loading incompatible programs.</p>
-<pre><code>  module purge
+<pre style = "background: #DCDCDC;border-style: solid;border-width: 2px; border-color: #C0C0C0"><code style = "background: #DCDCDC; color: black"> module purge
 </code></pre>
 <div class = "myDiv">
 <h3 id="the-first-time-you-use-the-hub-anaconda-install-do-these-three-steps" style = "color:black; text-align: center;"><strong><u>The FIRST time you use the Hub Anaconda-install, do these three steps:</u></strong></h3>
@@ -361,25 +361,25 @@ black"><strong>1.</strong> add conda to your path for this login-session AND per
 <ul>
 <li>
 <p>if your environment is provided via anaconda3 (the appropriate choice for most users):</p>
-<pre style = "background: #DCDCDC;border-style: solid;border-width: 2px; border-color: #D8D8D8"><code style = "background: #DCDCDC; color: black">export PATH=/shares/omicshub/apps/anaconda3/bin:$PATH &gt;&gt; ~/.bashrc
+<pre style = "background: #DCDCDC;border-style: solid;border-width: 2px; border-color: #C0C0C0"><code style = "background: #DCDCDC; color: black">export PATH=/shares/omicshub/apps/anaconda3/bin:$PATH &gt;&gt; ~/.bashrc
 </code></pre></li>
 <li>
 <p>if your environment is provided via anaconda2:</p>
-<pre style = "background: #DCDCDC;border-style: solid;border-width: 2px; border-color: #D8D8D8"><code style = "background: #DCDCDC; color: black">export PATH=/shares/omicshub/anaconda2/bin:$PATH &gt;&gt; ~/.bashrc
+<pre style = "background: #DCDCDC;border-style: solid;border-width: 2px; border-color: #C0C0C0"><code style = "background: #DCDCDC; color: black">export PATH=/shares/omicshub/anaconda2/bin:$PATH &gt;&gt; ~/.bashrc
 </code></pre>
 <p>**<em>Only use this option of permanently setting your anaconda-version if you're sure that's the one you want to use. If you need to switch back and forth between environments available via anaconda2 and anaconda3, it is better to set your path ONLY for your current login-session (meaning without appending the anaconda path to your environment-settings in ~/.bashrc). This example will set your path only for the current session:</em></p>
-<pre style = "background: #434343"><code style = "background: #434343"> export PATH=/shares/omicshub/anaconda2/bin:$PATH
+<pre style = "background: #DCDCDC;border-style: solid;border-width: 2px; border-color: #C0C0C0"><code style = "background: #DCDCDC; color: black"> export PATH=/shares/omicshub/anaconda2/bin:$PATH
 </code></pre></li>
 </ul>
 
 <h3 id="initialize-conda" style = "color: black"><strong>2.</strong> initialize conda</h3>
 <p>This command tells conda to automatically add a block of code to your default environment-settings--your ~/.bashrc file--so you never have to do this again.</p>
-<pre style = "background: #434343"><code style = "background: #434343;">conda init
+<pre style = "background: #DCDCDC;border-style: solid;border-width: 2px; border-color: #C0C0C0"><code style = "background: #DCDCDC; color: black">conda init
 </code></pre>
 
 <h3 id="tell-it-to-use-the-environment-settings-you-just-upgraded" style = "color:
 black"><strong>3.</strong> tell it to use the environment-settings you just upgraded</h3>
-<pre style = "background: #434343"><code style = "background: #434343;">  source ~/.bashrc
+<pre style = "background: #DCDCDC;border-style: solid;border-width: 2px; border-color: #C0C0C0"><code style = "background: #DCDCDC; color: black"> source ~/.bashrc
 </code></pre>
 <p><em>alternatively you can logout and login to RRA again and your new settings will take effect automatically.</em></p>
 </div>
@@ -388,27 +388,27 @@ black"><strong>3.</strong> tell it to use the environment-settings you just upgr
 
 <div class = "myDiv">
 <p><strong>List the environments available to load</strong></p>
-<pre style = "background: #434343"><code style = "background: #434343;">  conda env list
+<pre style = "background: #DCDCDC;border-style: solid;border-width: 2px; border-color: #C0C0C0"><code style = "background: #DCDCDC; color: black">  conda env list
 </code></pre>
 
 <p><strong>Load the environment</strong> (using qiime2 as an example)</p>
 <p><em>loading an environment adds all the programs necessary to run a given analysis-pipeline directly to your path.</em></p>
-<pre style = "background: #434343"><code style = "background: #434343;">  conda activate qiime2-2019.7
+<pre style = "background: #DCDCDC;border-style: solid;border-width: 2px; border-color: #C0C0C0"><code style = "background: #DCDCDC; color: black">  conda activate qiime2-2019.7
 </code></pre>
 
 <p>Each environment will have many programs/packages/tools installed. <strong>To see packages and their versions installed in the loaded environment</strong></p>
-<pre style = "background: #434343"><code style = "background: #434343;">  conda list
+<pre style = "background: #DCDCDC;border-style: solid;border-width: 2px; border-color: #C0C0C0"><code style = "background: #DCDCDC; color: black">  conda list
 </code></pre>
 
 <p>Sometimes you will want to check the <strong>available executable commands in an environment</strong>. All executables are stored in the same place for each anaconda3 environment so you can easily check. Using qiime2-2019.7 as an example:</p>
-<pre style = "background: #434343"><code style = "background: #434343;">  ls -l /shares/omicshub/apps/anaconda3/envs/qiime2-2019.7/bin
+<pre style = "background: #DCDCDC;border-style: solid;border-width: 2px; border-color: #C0C0C0"><code style = "background: #DCDCDC; color: black">  ls -l /shares/omicshub/apps/anaconda3/envs/qiime2-2019.7/bin
 </code></pre>
 
 <p><em>This command will list all the executables installed in the qiime2-2019.7 environment. Typically these file-names are the commands you can use from programs loaded in the given environment.</em></p>
 
 <p><strong>Unloading the environment</strong></p>
 <p><em>When you are finished using the environment, you should unload it to avoid introducing compatibility-issues with software-versions, etc.</em></p>
-<pre style = "background: #434343"><code style = "background: #434343;">  conda deactivate
+<pre style = "background: #DCDCDC;border-style: solid;border-width: 2px; border-color: #C0C0C0"><code style = "background: #DCDCDC; color: black">  conda deactivate
 </code></pre>
 </div>
 <p></p>
