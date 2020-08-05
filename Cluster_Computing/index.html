@@ -354,7 +354,7 @@ hr.custom {
 <pre><code>  module purge
 </code></pre>
 <div class = "myDiv">
-<h3 id="the-first-time-you-use-the-hub-anaconda-install-do-these-three-steps" style = "color:black"><strong><u>The FIRST time you use the Hub Anaconda-install, do these three steps:</u></strong></h3>
+<h3 id="the-first-time-you-use-the-hub-anaconda-install-do-these-three-steps" style = "color:black; text-align: center;"><strong><u>The FIRST time you use the Hub Anaconda-install, do these three steps:</u></strong></h3>
 
 <h3 id="add-conda-to-your-path-for-this-login-session-and-permanently-so-you-never-have-to-do-this-again" style = "color:
 black"><strong>1.</strong> add conda to your path for this login-session AND permanently so you never have to do this again.**</h3>
@@ -388,21 +388,26 @@ black"><strong>3.</strong> tell it to use the environment-settings you just upgr
 <p>That's it! Now you are ready to use conda and all environments we have built.</p>
 
 <div class = "myDiv">
-<p>List the environments available to load:</p>
+<p><strong>List the environments available to load</strong></p>
 <pre style = "background: #434343"><code style = "background: #434343;">  conda env list
 </code></pre>
-<p>Load the environment (using qiime2 as an example):</p>
+
+<p><strong>Load the environment</strong> (using qiime2 as an example)</p>
 <p><em>loading an environment adds all the programs necessary to run a given analysis-pipeline directly to your path.</em></p>
 <pre style = "background: #434343"><code style = "background: #434343;">  conda activate qiime2-2019.7
 </code></pre>
-<p>Each environment will have many programs/packages/tools installed. To see packages and their versions installed in the loaded environment:</p>
+
+<p>Each environment will have many programs/packages/tools installed. <strong>To see packages and their versions installed in the loaded environment</strong></p>
 <pre style = "background: #434343"><code style = "background: #434343;">  conda list
 </code></pre>
-<p>Sometimes you will want to check the available executable commands in an environment. All executables are stored in the same place for each anaconda3 environment so you can easily check. Using qiime2-2019.7 as an example:</p>
+
+<p>Sometimes you will want to check the <strong>available executable commands in an environment</strong>. All executables are stored in the same place for each anaconda3 environment so you can easily check. Using qiime2-2019.7 as an example:</p>
 <pre style = "background: #434343"><code style = "background: #434343;">  ls -l /shares/omicshub/apps/anaconda3/envs/qiime2-2019.7/bin
 </code></pre>
+
 <p><em>This command will list all the executables installed in the qiime2-2019.7 environment. Typically these file-names are the commands you can use from programs loaded in the given environment.</em></p>
-<p>Unloading the environment:</p>
+
+<p><strong>Unloading the environment</strong></p>
 <p><em>When you are finished using the environment, you should unload it to avoid introducing compatibility-issues with software-versions, etc.</em></p>
 <pre style = "background: #434343"><code style = "background: #434343;">  conda deactivate
 </code></pre>
