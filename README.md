@@ -22,7 +22,7 @@
 ---
  
  ## News
-   * [The Hub Microbiome Data-Analysis Workshop]() will be taking place June 10th - 12th!
+   * [The Hub Microbiome Data-Analysis Workshop](https://usfomicshub.github.io/usfomicshub.github.io/Microbiome_Workshop_Materials/index.html) will be taking place June 10th - 12th!
  
    * **UPDATE 3/25/2020**: Check [here](https://usfomicshub.github.io/coronavirus_misc) for helpful info about keeping your computational research going during coronavirus control-measures.
  
