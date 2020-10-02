@@ -374,12 +374,12 @@ The My_Scripts folder contains six shell-scripts comprising the UNIX portions of
 <strong>Lets Begin!</strong>
 <p></p>
 
-Run "vim" to open a file in Vim editor. To insert and modify text, you can enter INSERT mode by pressing the i key. To exit and return to normal mode, hit the escape key. To save changes and quit, press the colon in normal mode to switch to Command Line mode then type "wq" or w to just save(:w) or q to just quit without making changes(:q). <i>*Do not forget to change the mail-user settings to your usf email address!</i>
+Use <strong>vim</strong> to open a file in Vim editor. To insert and modify text, you can enter INSERT mode by pressing the i key. To exit and return to normal mode, hit the escape key. To save changes and quit, press the colon in normal mode to switch to Command Line mode then type "wq" or w to just save(:w) or q to just quit without making changes(:q). <i>*Do not forget to change the mail-user settings to your usf email address!</i>
 <p></p>
 <pre style = "background: black;border-style: solid;border-width: 2px; border-color: #black"><code style = "background: black; color: whitesmoke"> vim 01_check_fastq_qc.sh
 </code></pre>
 <p></p>
-After saving and quiting, we can submit this job using "sbatch" as shown below. If you specified your email, then you should receive an email confirming the submitted job and whether it was successful. If the job was successful, then you should see the output files in the output directory, "./Genomics_Training/FASTQ_QC". 
+After saving and quiting, we can submit this job using <strong>sbatch</strong> as shown below. If you specified your email, then you should receive an email confirming the submitted job and whether it was successful. If the job was successful, then you should see the output files in the output directory, "./Genomics_Training/FASTQ_QC". 
 
 <pre style = "background: black;border-style: solid;border-width: 2px; border-color: #black"><code style = "background: black; color: whitesmoke"> sbatch 01_check_fastq_qc.sh
 </code></pre>
@@ -423,11 +423,11 @@ Run the following code to generate the MultiQC Report. The input "FASTQ_QC/" is 
 
 Lets use FileZilla to transfer this MultiQC_Report to our local server. To log in:
 <p></p>
-<strong>Host</strong>: sftp://sc.rc.usf.edu
+<strong>Host</strong>: <u>sftp://sc.rc.usf.edu</u>
 <p></p>
-<strong>Username</strong>: your USF net ID
+<strong>Username</strong>: <u>your USF net ID</u>
 <p></p>
-<strong>Password</strong>: your USF net ID password
+<strong>Password</strong>: <u>your USF net ID password</u>
 <p></p>
 
 The right-hand side of FileZilla should show your files in the remote site(your student cluster) and the left-hand side shows all of your files in your local site. Make sure your local site is directed to the path you want your MultiQC report to be in then right click on the MultiQC_Report folder within the files under the remote site and click download. Launch the MultiQC_Report.html to see the summary statistics and the aggregated FastQC results. Below is a screenshot of what the report looks like. Sequence Counts is one of the graphs MultiQC displays but it also includes sequence quality histograms and per base content.
@@ -446,13 +446,13 @@ Lets go back to running the rest of the scripts. 02_build_hisat_index.sh builds 
 
 <p></p>
 
-While in the ./Genomics_Training/Work directory, we can run the following code to check our hisat_index.out file. The "less" command displays the contents of a file. There should be no error messages.
+While in the ./Genomics_Training/Work directory, we can run the following code to check our hisat_index.out file. The <strong>less</strong> command displays the contents of a file. There should be no error messages.
 <pre style = "background: black;border-style: solid;border-width: 2px; border-color: black"><code style = "background: black; color: whitesmoke">less hisat_index.out
 </code></pre>
 
 <p></p>
 
-Now, we can allign our reads to this but first, make sure to go back to the ./Genomics_Training/My_Scripts folder before editing the script in vim. We are loading hisat2 again, to perform the alignment. In this script, you can see we are also loading an application called samtools. We will use this to organize the allignments from hisat2. The hisat2 allignment outputs sam(sequence alignment maps) files. We use use samtools to organze these files by position and convert them to bam files which are smaller. The script includes the variables we want but again, we have write the hisat command. The hisat2 command is made up of the following arguments:
+Now, we can allign our reads to this but first, make sure to go back to the ./Genomics_Training/My_Scripts folder before editing the script in vim. We are loading hisat2 again, to perform the alignment. In this script, you can see we are also loading an application called samtools. We will use this to organize the allignments from hisat2. The hisat2 allignment outputs sam(sequence alignment maps) files. We use use samtools to organze these files by position and convert them to bam files which are smaller. The script includes the variables we want but again, we have write the hisat command. <u>The hisat2 command is made up of the following arguments:</u>
 <p></p>
 <DD>--r : files wth unpaired reads</DD>
 <p></p>
@@ -480,7 +480,7 @@ More information on the hisat2 commands can be found <a href="http://daehwankiml
 
 <p></p>
 
-To break down the samtool command:
+<u>The samtool command arguments:</u>
 <p></p>
 <DD>sort: sort alignments by leftmost coordinates</DD>
 <p></p>
@@ -503,7 +503,7 @@ These lines are repeated for all four samples. The first two are shown in this s
 <img src="https://github.com/usfomicshub/RNASeq_workshop_Sept2020/blob/master/img/day2_jg_pt4.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa">
 
 <p></p>
-Next, we run cufflinks to assemble reads into transcripts. The cufflink command is made up of the following arguments:
+Next, we run cufflinks to assemble reads into transcripts. <u>The cufflink command is made up of the following arguments:</u>
 <p></p>
 <DD>-p : number of prosessors</DD>
 <p></p>
@@ -512,13 +512,13 @@ Next, we run cufflinks to assemble reads into transcripts. The cufflink command 
 <DD>-o : output files</DD>
 <p></p>
 
-More information on the cufflinks command can be found <a href = "http://cole-trapnell-lab.github.io/cufflinks/cufflinks/index.html">here</a>. We can use the command, "ls -lht", in the /Work directory to see the Cufflinks output. There should be four cufflinks folders for each sample. 
+More information on the cufflinks command can be found <a href = "http://cole-trapnell-lab.github.io/cufflinks/cufflinks/index.html">here</a>. We can use the  <strong>ls -lht</strong> command in the /Work directory to see the Cufflinks output. There should be four cufflinks folders for each sample. 
 
 <p></p>
 <img src="https://github.com/usfomicshub/RNASeq_workshop_Sept2020/blob/master/img/day2_jg_pt5.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa">
 
 <p></p>
-Now, we get the normalized gene counts using cuffnorm. The cuffnorm command is similar to the cufflinks command:</DD>
+Now, we get the normalized gene counts using cuffnorm. <u>The cuffnorm command is similar to the cufflinks command:</u>
 <p></p>
 <DD>–quiet: suppress messages other than serious warnings and errors.</DD>
 <p></p>
@@ -532,7 +532,7 @@ The cuffnorm outputs in the /Work directory has its own folder inlcuding a set o
 <img src="https://github.com/usfomicshub/RNASeq_workshop_Sept2020/blob/master/img/day2_jg_pt6.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa">
 <p></p>
 
-Finally, we run featureCounts to get raw gene counts. The featureCounts command is made up of the following arguments:
+Finally, we run featureCounts to get raw gene counts. <u>The featureCounts command is made up of the following arguments:</u>
 <p></p>
 <DD>-T : number of threads</DD>
 <p></p>
