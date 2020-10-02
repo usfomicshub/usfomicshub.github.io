@@ -434,7 +434,7 @@ The right-hand side of FileZilla should show your files in the remote site(your 
 
 <p></p>
 
-<img src="https://github.com/usfomicshub/RNASeq_workshop_Sept2020/blob/master/img/day2_jg_pt2.png?raw=TRUE" width = 900>
+<img src="https://github.com/usfomicshub/RNASeq_workshop_Sept2020/blob/master/img/day2_jg_pt2.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa">
 
 <p></p>
 
@@ -442,7 +442,7 @@ Lets go back to running the rest of the scripts. 02_build_hisat_index.sh builds 
 
 <p></p>
 
-<img src="https://github.com/usfomicshub/RNASeq_workshop_Sept2020/blob/master/img/day2_jg_pt3.png?raw=TRUE" width = 900>
+<img src="https://github.com/usfomicshub/RNASeq_workshop_Sept2020/blob/master/img/day2_jg_pt3.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa">
 
 <p></p>
 
@@ -500,7 +500,7 @@ These lines are repeated for all four samples. The first two are shown in this s
 
 <p></p>
 
-<img src="https://github.com/usfomicshub/RNASeq_workshop_Sept2020/blob/master/img/day2_jg_pt4.png?raw=TRUE" width = 900>
+<img src="https://github.com/usfomicshub/RNASeq_workshop_Sept2020/blob/master/img/day2_jg_pt4.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa">
 
 <p></p>
 Next, we run cufflinks to assemble reads into transcripts. The cufflink command is made up of the following arguments:
@@ -515,7 +515,7 @@ Next, we run cufflinks to assemble reads into transcripts. The cufflink command 
 More information on the cufflinks command can be found <a href = "http://cole-trapnell-lab.github.io/cufflinks/cufflinks/index.html">here</a>. We can use the command, "ls -lht", in the /Work directory to see the Cufflinks output. There should be four cufflinks folders for each sample. 
 
 <p></p>
-<img src="https://github.com/usfomicshub/RNASeq_workshop_Sept2020/blob/master/img/day2_jg_pt5.png?raw=TRUE" width = 900>
+<img src="https://github.com/usfomicshub/RNASeq_workshop_Sept2020/blob/master/img/day2_jg_pt5.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa">
 
 <p></p>
 Now, we get the normalized gene counts using cuffnorm. The cuffnorm command is similar to the cufflinks command:</DD>
@@ -529,7 +529,7 @@ Now, we get the normalized gene counts using cuffnorm. The cuffnorm command is s
 More information on the cuffnorm command can be found <a href = "http://cole-trapnell-lab.github.io/cufflinks/cuffnorm/index.html">here</a>.
 The cuffnorm outputs in the /Work directory has its own folder inlcuding a set of files containing normalized expression levels for each gene, transcript, TSS group, and CDS group in the experiment. It does not perform differential expression analysis.
 <p></p>
-<img src="https://github.com/usfomicshub/RNASeq_workshop_Sept2020/blob/master/img/day2_jg_pt6.png?raw=TRUE" width = 900>
+<img src="https://github.com/usfomicshub/RNASeq_workshop_Sept2020/blob/master/img/day2_jg_pt6.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa">
 <p></p>
 
 Finally, we run featureCounts to get raw gene counts. The featureCounts command is made up of the following arguments:
@@ -549,7 +549,7 @@ of reads.</DD>
 <p></p>
 More information on the featureCounts command can be found <a href = "https://bioconductor.org/packages/release/bioc/vignettes/Rsubread/inst/doc/SubreadUsersGuide.pdf">here</a>. It outputs numbers of reads assigned to features (or meta-features). It also outputs stat info for the overall summrization results, including number of successfully assigned reads and number of reads that failed to be assigned due to various reasons (these reasons are included in the stat info). We will be using the vehicle_drug_feature_counts.txt file tommorow!
 <p></p>
-<img src="https://github.com/usfomicshub/RNASeq_workshop_Sept2020/blob/master/img/day2_jg_pt7.png?raw=TRUE" width = 900>
+<img src="https://github.com/usfomicshub/RNASeq_workshop_Sept2020/blob/master/img/day2_jg_pt7.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa">
 <p></p>
 </div>
 
@@ -615,7 +615,7 @@ More information on the featureCounts command can be found <a href = "https://bi
 
 <h3 id="rna-seq-tuxedo-pipeline">RNA-Seq: TUXEDO PIPELINE</h3>
 
-
+<div class = "myDiv2" style="border: 5px solid #303030">
 <p style = "color:  #DCDCDC">Let's copy the materials we will use today into our home directory to set up our practice directory. This is similar to what we did in Day 1 for Day 2 materials but we are creating our own RNA-seq_Project_Data folder. <i>* Remember to make sure you are in your home directory before copying the directory</i></p>
 
 <pre style = "background: black;border-style: solid;border-width: 2px; border-color: black"><code style = "background: black; color: whitesmoke">cp -r /shares/biocomputing/RNA-Seq_Project_Data/ .
@@ -633,7 +633,7 @@ More information on the featureCounts command can be found <a href = "https://bi
 <p></p>
 <img src= "https://github.com/usfomicshub/RNASeq_workshop_Sept2020/blob/master/img/day4_jg_p2.png?raw=TRUE" width =900 style= "border : 5px solid #75b5aa">
 <p></p>
-
+</div>
 <h3 id="ilab-review">iLab Review<h3> 
 
 
