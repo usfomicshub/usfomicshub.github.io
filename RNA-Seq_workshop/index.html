@@ -258,7 +258,7 @@ tr {
 <p></p>
 <p style = "color:  #DCDCDC"> <span style = "color: #b5e853"> &#11043; </span>  <a href= "https://wiki.rc.usf.edu/index.php/Connecting_To_SC"> USF Research Computing</a>  offers additional information on connecting to thr SC for MAC and windows. RC also provides a collection Linux tutorials.
 
-<p style = "color:  #DCDCDC"><span style = "color: #b5e853"> &#11043; </span> <a href="https://askubuntu.com/questions/506510/what-is-the-difference-between-terminal-console-shell-and-command-line#:~:text=Shell%20is%20a%20program%20which,software%20%2C%20like%20Gnome%2DTerminal%20.">What is the difference between Terminal, Console, Shell, and Command Line?</a> Terminal, shell and command line are often used interchangeably to indicate a text based system for navigating your operating system. Command line is very windows centric terminology, terminal is very mac centric. There are different flavors you can use in a shell including bash. Bash is both a shell and language you can use to interact with the operating system and what we will be using in this course. 
+<p style = "color:  #DCDCDC"><span style = "color: #b5e853"> &#11043; </span> <a href="https://askubuntu.com/questions/506510/what-is-the-difference-between-terminal-console-shell-and-command-line#:~:text=Shell%20is%20a%20program%20which,software%20%2C%20like%20Gnome%2DTerminal%20.">What is the difference between Terminal, Console, Shell, and Command Line?</a> Terminal, shell and command line are often used interchangeably to indicate a text based system for navigating your operating system. Command line is windows centric terminology, terminal is very mac centric. There are different flavors you can use in a shell including bash. Bash is both a shell and language you can use to interact with the operating system and what we will be using in this course. 
 
 </p>
 
@@ -345,7 +345,7 @@ to copy all the contents in the "/shares/biocomputing/Genomics_Training/" folder
 
 <h3 id ="read-mapping-hands-on-practice">Read-mapping Hands-on Practice</h3>
  
- <p style = "color:  #DCDCDC"> Now, we run the scripts within the "Gemonics_Training" directory that we copied yesterday.To get to the scripts, we can run the following lines from our home directory.</p>
+ <p style = "color:  #DCDCDC"> Now, we run the scripts within the "Genomics_Training" directory that we copied yesterday. To get to the scripts, we can run the following lines from our home directory.</p>
 
 <p></p>
 
@@ -355,7 +355,7 @@ to copy all the contents in the "/shares/biocomputing/Genomics_Training/" folder
 
 
  <p style = "color:  #DCDCDC"> 
-The My_Scripts folder contains six shell-scripts comprising the UNIX portions of the RNAseq data-analysis pipeline we run during the workshop. The scripts should be edited appropriately with the email-settings edited to YOUR email address.</p>
+The My_Scripts folder contains six shell-scripts comprising the UNIX portions of the RNAseq data-analysis pipeline we run during the workshop. The scripts should be edited appropriately with the email-settings edited to <u>YOUR</u> email address.</p>
 <p></p>
  <p style = "color:  #DCDCDC"> The scripts are numbered in the order you should run them (via commandline, while logged-in to your student-cluster account). The programs they call and purpose of each step:</p>
 <p></p>
@@ -376,7 +376,7 @@ The My_Scripts folder contains six shell-scripts comprising the UNIX portions of
 <strong>Lets Begin!</strong>
 <p></p>
 
-Use <strong>vim</strong> to open a file in Vim editor. To insert and modify text, you can enter INSERT mode by pressing the i key. To exit and return to normal mode, hit the escape key. To save changes and quit, press the colon in normal mode to switch to Command Line mode then type "wq" or w to just save(:w) or q to just quit without making changes(:q). <i>*Do not forget to change the mail-user settings to your usf email address!</i>
+Use <strong>vim</strong> to open a file in Vim editor. To insert and modify text, you can enter INSERT mode by pressing the i key. To exit and return to normal mode, hit the escape key. To save changes and quit, press the colon in normal mode to switch to Command Line mode then type "wq" or w to just save(:w) or q to just quit without making changes(:q). <i>*Do not forget to change the mail-user settings to your USF email address!</i>
 <p></p>
 <pre style = "background: black;border-style: solid;border-width: 2px; border-color: #black"><code style = "background: black; color: whitesmoke"> vim 01_check_fastq_qc.sh
 </code></pre>
@@ -432,7 +432,7 @@ Lets use FileZilla to transfer this MultiQC_Report to our local server. To log i
 <strong>Password</strong>: <u>your USF net ID password</u>
 <p></p>
 
-The right-hand side of FileZilla should show your files in the remote site(your student cluster) and the left-hand side shows all of your files in your local site. Make sure your local site is directed to the path you want your MultiQC report to be in then right click on the MultiQC_Report folder within the files under the remote site and click download. Launch the MultiQC_Report.html to see the summary statistics and the aggregated FastQC results. Below is a screenshot of what the report looks like. Sequence Counts is one of the graphs MultiQC displays but it also includes sequence quality histograms and per base content.
+The right-hand side of FileZilla should show your files in the remote site(your student cluster) and the left-hand side shows all of your files in your local site. Make sure your local site is directed to the path you want your MultiQC report to be in then right click on the MultiQC_Report folder within the files under the remote site and click download. Launch the MultiQC_Report.html file to see the summary statistics and the aggregated FastQC results. Below is a screenshot of what the report looks like. Sequence Counts is one of the graphs MultiQC displays but it also includes sequence quality histograms and per base content.
 
 <p></p>
 
@@ -454,7 +454,7 @@ While in the ./Genomics_Training/Work directory, we can run the following code t
 
 <p></p>
 
-Now, we can allign our reads to this but first, make sure to go back to the ./Genomics_Training/My_Scripts folder before editing the script in vim. We are loading hisat2 again, to perform the alignment. In this script, you can see we are also loading an application called samtools. We will use this to organize the allignments from hisat2. The hisat2 allignment outputs sam(sequence alignment maps) files. We use use samtools to organze these files by position and convert them to bam files which are smaller. The script includes the variables we want but again, we have write the hisat command. <u>The hisat2 command is made up of the following arguments:</u>
+Now, we can allign our reads to this but first, make sure to go back to the ./Genomics_Training/My_Scripts folder before editing the script in vim. We are loading hisat2 again, to perform the alignment. In this script, you can see we are also loading an application called samtools. We will use this to organize the allignments from hisat2. The hisat2 allignment outputs sam(sequence alignment maps) files. We use use samtools to organze these files by position and convert them to bam files which are smaller. The script includes the variables we want but again, we have to write the hisat command. <u>The hisat2 command is made up of the following arguments:</u>
 <p></p>
 <DD>--r : files wth unpaired reads</DD>
 <p></p>
@@ -607,13 +607,13 @@ More information on the featureCounts command can be found <a href = "https://bi
 <p>Make a new directory called RNA-seq_Practice in home directory</p>
 <pre style = "background: black;border-style: solid;border-width: 2px; border-color: black"><code style = "background: black; color: whitesmoke">mkdir RNA-seq_Practice
 </code></pre>
-<p>Now, we make a directory called FASTQs within RNA-seq_Practice older. Within this directory, we will create a "Work" and "Reference_Data" folder similar to yesterdays folders. We will copy the files from yesterdays Genomics_Training/Reference_Data folder to our new RNA-seq_Practice/Reference_Data folder.</p>
+<p>Now, we make a directory called FASTQs within RNA-seq_Practice older. Within this directory, we will create a "Work" and "Reference_Data" folder similar to Day 2's folders. We will copy the files from Day 2's Genomics_Training/Reference_Data folder to our new RNA-seq_Practice/Reference_Data folder.</p>
 <p></p>
 
 <img src= "https://github.com/usfomicshub/RNASeq_workshop_Sept2020/blob/master/img/day4_jg_pt1.png?raw=TRUE" width =900 style= "border : 5px solid #75b5aa">
 
 <p></p>
-<p> We will also make a "Code" and a "FASTQ_QC" output folder for our fastq results. Within /Code, we can create new bash scripts that echo our /Genomics_Training/RNA-seq_Training_Scripts using our new fastq files in vim. An easy way to go about this is opening a second terminal window with the old bash scripts and copy-pasting into your new script. Save the scripts and submit the job then continue with the next script!</p>
+<p> We will also make a "Code" and a "FASTQ_QC" output folder for our fastq results. Within /Code, we can create new bash scripts that echo our /Genomics_Training/RNA-seq_Training_Scripts using our new fastq files in vim. An easy way to go about this is opening a second terminal window with the old bash scripts and copy-pasting into your new script. Save the scripts and submit the job then continue with the next script! As you continue, make sure the variables correspond to the new fastqs and results. For example, remember to change the input file paths as well as the output file names so that they reflect the new sample names (control1_rep1,control_rep2,treatment_rep1,treatment_rep2) when running the third script.</p>
 <p></p>
 <img src= "https://github.com/usfomicshub/RNASeq_workshop_Sept2020/blob/master/img/day4_jg_p2.png?raw=TRUE" width =900 style= "border : 5px solid #75b5aa">
 <p></p>
