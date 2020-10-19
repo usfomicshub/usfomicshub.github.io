@@ -23,6 +23,9 @@ To relieve some of the Genomics-software installation- and documentation-burden 
    + kera2
    + lumpy
         + (version 0.2.13)
+   + multiqc
+        + (version 1.9)
+        + [MultiQC documentation](https://multiqc.info/)
    + picrust2
         + (version 2.3.0_b)
         + [PICRUSt2 documentation](https://github.com/picrust/picrust2/wiki)
@@ -31,7 +34,7 @@ To relieve some of the Genomics-software installation- and documentation-burden 
    + selene
    + qiime2-2019.7
 
-#### Anaconda2 environments ####
+#### Anaconda2 environments (deprecated) ####
 
    + epiGBS_shared
    + kera2
@@ -66,11 +69,11 @@ Best practice when loading any environment or module is to start by purging your
    
          export PATH=/shares/omicshub/apps/anaconda3/bin:$PATH >> ~/.bashrc
          
-   + if your environment is provided via anaconda2:
+   + if your environment is provided via anaconda2 (DEPRECATED--you probably don't want to use this one):
         
          export PATH=/shares/omicshub/anaconda2/bin:$PATH >> ~/.bashrc
 
-      ***Only use this option of permanently setting your anaconda-version if you're sure that's the one you want to use. If you need to switch back and forth between environments available via anaconda2 and anaconda3, it is better to set your path ONLY for your current login-session (meaning without appending the anaconda path to your environment-settings in ~/.bashrc). This example will set your path only for the current session:*
+      ***Only use this option of permanently setting your anaconda path if you're sure that's the one you want to use. If you need to switch back and forth between environments available via the Hub's anaconda3 install or the system anaconda3 module provided by Research Computing, it is better to set your path ONLY for your current login-session (meaning without appending the anaconda path to your environment-settings in ~/.bashrc). This example below will set your path only for the current session:*
 
           export PATH=/shares/omicshub/anaconda2/bin:$PATH
 
