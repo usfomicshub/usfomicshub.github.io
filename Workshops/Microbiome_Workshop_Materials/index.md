@@ -149,7 +149,7 @@ Now that we are familar with the project, we can set up the environment!
 
 **2.** Make sure your Knit Directory is set to project directory as shown below.
 
-<img src="https://github.com/usfomicshub/usfomicshub.github.io/raw/master/Microbiome_Workshop_Materials/microbiome_workshop_demos/day2/MB_Day2_environsetup.png?raw=TRUE" width =400 height="190" style= "border : 3px solid black">
+<img src="https://github.com/usfomicshub/usfomicshub.github.io/raw/master/Workshops/Microbiome_Workshop_Materials/microbiome_workshop_demos/day2/MB_Day2_environsetup.png?raw=TRUE" width =400 height="190" style= "border : 3px solid black">
 
 **3.** Run only the second chunk of code beginning at line 48 by clicking the green arrow within the upper right corner of the chunk. Running this code calls a source script from the RSource folder that installs all of the packages needed to run the tutorial.
 
@@ -207,7 +207,7 @@ Biom file and mapping files that will be converted to phyloseq-class
 
 **We'll follow the same steps to create the Day3 project in RStudio as we did to create the Day2 project.**
 
-**1.** Follow this [link](https://usf.box.com/s/eeze6tggv4ciyxjzplygaew4wzke3aa3) and download a zipped file of this folder going to this unsophisticated icon  <img src="https://github.com/usfomicshub/usfomicshub.github.io/raw/master/Microbiome_Workshop_Materials/microbiome_workshop_demos/day2/MB_Day2_projsetup.png?raw=TRUE" width="35" height="35"> in the top right corner and clicking "Download" or if you are not already logged on to your Box account, it will just say download. You will not need a Box account to download this folder.
+**1.** Follow this [link](https://usf.box.com/s/eeze6tggv4ciyxjzplygaew4wzke3aa3) and download a zipped file of this folder going to this unsophisticated icon  <img src="https://github.com/usfomicshub/usfomicshub.github.io/raw/master/Workshops/Microbiome_Workshop_Materials/microbiome_workshop_demos/day2/MB_Day2_projsetup.png?raw=TRUE" width="35" height="35"> in the top right corner and clicking "Download" or if you are not already logged on to your Box account, it will just say download. You will not need a Box account to download this folder.
 
 **2.** Extract the downloaded zip file to where you want it.
 
