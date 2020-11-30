@@ -5,6 +5,7 @@ sidebar:
   nav: "docs"
 classes: wide
 ---
+
 <img src="https://github.com/usfomicshub/usfomicshub.github.io/blob/master/images/microbiome.png?raw=TRUE" class="center"> 
 
 GOAL
