@@ -1,11 +1,11 @@
----
+  ---
 layout: posts
 title: "Microbiome Analysis Workshop"
 sidebar:
   nav: "docs"
 classes: wide
 ---
-<img src="https://github.com/janelledonglasan/testomicswed/blob/master/images/microbiome.png?raw=TRUE" class="center"> 
+<img src="https://github.com/usfomicshub/usfomicshub.github.io/blob/master/images/microbiome.png?raw=TRUE" class="center"> 
 
 GOAL
 > In addition to understanding the importance of experimental design, we will walk through turning raw sequence data into useful counts-data that we can use to visualize microbiome sample-composition. We will then discuss methods to extrapolate function from these abundance-data (and limitations thereof) to ultimately arrive at biological insight.
