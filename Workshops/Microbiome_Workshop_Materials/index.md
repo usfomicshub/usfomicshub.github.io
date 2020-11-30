@@ -155,7 +155,7 @@ Now that we are familar with the project, we can set up the environment!
 
 This pipeline is written in R Markdown, a file format for making dynamic documents with R. An R Markdown document is written in markdown (an easy-to-write plain text format) and contains chunks of embedded R code. We rendered this R markdown script into an HTML file linked below that shows the results of the code so you can follow along.
 
-### [Let's begin the day2 tutorial!](https://janelledonglasan.github.io/testomicswed/Workshops/Microbiome_Workshop_Materials/microbiome_workshop_demos/day2/Ranalysis/)
+### [Let's begin the day2 tutorial!](https://usfomicshub.github.io/usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/microbiome_workshop_demos/day2/Ranalysis/)
 
  
 
