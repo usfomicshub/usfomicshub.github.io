@@ -100,7 +100,7 @@ Day one of this workshop focuses on an overview of available methods and best-pr
 
 ### Creating the Project
 
-**1.** Follow this [link](https://usf.box.com/s/x5svt1ac4wqhepcly6p0ximqn6en3xfs) and download a zipped file of this folder going to this unsophisticated icon <img src="https://github.com/usfomicshub/usfomicshub.github.io/raw/master/Microbiome_Workshop_Materials/microbiome_workshop_demos/day2/MB_Day2_projsetup.png?raw=TRUE" width="35" height="35"> in the top right corner and clicking "Download" or if you are not already logged on to your Box account, it will just say "Download". You will not need a Box account to download this folder.
+**1.** Follow this [link](https://usf.box.com/s/x5svt1ac4wqhepcly6p0ximqn6en3xfs) and download a zipped file of this folder going to this unsophisticated icon <img src="https://github.com/usfomicshub/usfomicshub.github.io/raw/master/Workshops/Microbiome_Workshop_Materials/microbiome_workshop_demos/day2/MB_Day2_projsetup.png?raw=TRUE" width="35" height="35"> in the top right corner and clicking "Download" or if you are not already logged on to your Box account, it will just say "Download". You will not need a Box account to download this folder.
 
 **2.** Extract the downloaded zip file to where you want it.
 
