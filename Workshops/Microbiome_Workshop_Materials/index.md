@@ -1,4 +1,4 @@
-  ---
+---
 layout: posts
 title: "Microbiome Analysis Workshop"
 sidebar:
