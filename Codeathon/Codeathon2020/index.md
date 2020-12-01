@@ -1,12 +1,12 @@
 ---
-title: <a style="color:black">USF Codeathon 2020</a>
+title: <a style="background-color:black;color:white">USF Codeathon 2020</a>
 layout: single
 header:
   overlay_image: /images/codeathon2020.png
   actions:
     - label: "See the teams repositories"
       url: "https://github.com/USFOneHealthCodeathon2020"
-excerpt: <a style="color:black">Host Microbiome Interactions in a Global System</a>
+excerpt: <a style="background-color:black;color:white">Host Microbiome Interactions in a Global System</a>
 sidebar:
   nav: "Codeathon2020"
 classes: wide
