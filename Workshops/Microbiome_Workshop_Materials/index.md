@@ -207,7 +207,7 @@ Biom file and mapping files that will be converted to phyloseq-class
 
 **We'll follow the same steps to create the Day3 project in RStudio as we did to create the Day2 project.**
 
-**1.** Follow this [link](https://usf.box.com/s/eeze6tggv4ciyxjzplygaew4wzke3aa3) and download a zipped file of this folder going to this unsophisticated icon  <img src="https://github.com/usfomicshub/usfomicshub.github.io/raw/master/Workshops/Microbiome_Workshop_Materials/microbiome_workshop_demos/day2/MB_Day2_projsetup.png?raw=TRUE" width="35" height="35"> in the top right corner and clicking "Download" or if you are not already logged on to your Box account, it will just say download. You will not need a Box account to download this folder.
+**1.** Follow this [link](https://usf.box.com/s/yjla05zyo9bompwtl4hrxoj91jwsi1m6) and download a zipped file of this folder going to this unsophisticated icon  <img src="https://github.com/usfomicshub/usfomicshub.github.io/raw/master/Workshops/Microbiome_Workshop_Materials/microbiome_workshop_demos/day2/MB_Day2_projsetup.png?raw=TRUE" width="35" height="35"> in the top right corner and clicking "Download" or if you are not already logged on to your Box account, it will just say download. You will not need a Box account to download this folder.
 
 **2.** Extract the downloaded zip file to where you want it.
 
@@ -233,11 +233,11 @@ However, the same instructions for Day 2 go for Day 3 if needed.
 
 As you run the tutorial chunk by chunk, you can follow along with the output document linked below that includes the R code and its output.
 
-### [Let's begin the day3: visualization part I tutorial!](https://usfomicshub.github.io/usfomicshub.github.io/Microbiome_Workshop_Materials/microbiome_workshop_demos/day3/Ranalysis/PartI/#microbiome-workshop-data-analysis-and-visualization)
+### [Let's begin the day3: visualization part I tutorial!](https://usfomicshub.github.io/usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/microbiome_workshop_demos/day3/Ranalysis/PartI/#microbiome-workshop-data-analysis-and-visualization)
 
-### [Let's begin the day3: visualization part II tutorial!](https://usfomicshub.github.io/usfomicshub.github.io/Microbiome_Workshop_Materials/microbiome_workshop_demos/day3/Ranalysis/PartII/#usf-omics-hub-microbiome-workshop-day-3-part-ii-functional-analyses)
+### [Let's begin the day3: visualization part II tutorial!](https://usfomicshub.github.io/usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/microbiome_workshop_demos/day3/Ranalysis/PartII/#usf-omics-hub-microbiome-workshop-day-3-part-ii-functional-analyses)
 
-### [Let's begin the day3: machine learning tutorial!](https://usfomicshub.github.io/usfomicshub.github.io/Microbiome_Workshop_Materials/microbiome_workshop_demos/day3/Ranalysis/PartIII/#usf-omics-hub-microbiome-workshop-day-3-part-ii-machine-learning-approaches-to-functional-analyses)
+### [Let's begin the day3: machine learning tutorial!](https://usfomicshub.github.io/usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/microbiome_workshop_demos/day3/Ranalysis/PartIII/#usf-omics-hub-microbiome-workshop-day-3-part-ii-machine-learning-approaches-to-functional-analyses)
 
   
   
