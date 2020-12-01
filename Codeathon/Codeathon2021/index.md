@@ -1,5 +1,5 @@
 ---
-title: <a style="color:black">USF Codeathon 2021</a>
+title: <a style="background-color:black;color:white">USF Codeathon 2021</a>
 layout: single
 header:
   overlay_image: /images/codeathon2021.png
@@ -7,7 +7,7 @@ header:
     - label: "Coming Soon"
       url: "https://github.com/USFOneHealthCodeathon2020"
   caption: "Pauline Senseng"
-excerpt: <a style="color:black">"Harnessing Data Sciences Against Pandemics"</a>
+excerpt: <a style="background-color:black;color:white">"Harnessing Data Sciences Against Pandemics"</a>
 sidebar:
   nav: "docs-2"
 classes: wide
