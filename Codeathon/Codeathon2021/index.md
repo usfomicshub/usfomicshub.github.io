@@ -4,7 +4,7 @@ layout: single
 header:
   overlay_image: /images/codeathon2021.png
   actions:
-    - label: <a style="color:black">Coming Soon</a>
+    - label: "Coming Soon"
       url: "https://github.com/USFOneHealthCodeathon2020"
   caption: "Pauline Senseng"
 excerpt: <a style="color:black">"Harnessing Data Sciences Against Pandemics"</a>
