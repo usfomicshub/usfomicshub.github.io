@@ -62,7 +62,7 @@ Finally, update your packages by clicking 'Check for Package Updates...' in Tool
 
 Day one of this workshop focuses on an overview of available methods and best-practice considerations for experimental design in microbiome studies. You can download the individual presentations for each topic in the agenda below.
 
-*NOTE*: Speakers may change with each workshop event. Presentation slides from every workshop is still listed here.  
+*NOTE*: Speakers may change with each workshop event. Presentation slides from every workshop are still listed here.  
 
 
 | AGENDA  |  INSTRUCTOR |
