@@ -7,7 +7,7 @@ header:
     - label: "Coming Soon"
       url: "https://github.com/USFOneHealthCodeathon2020"
   caption: "Pauline Senseng"
-excerpt: <a style="background-color:black;color:white">"Harnessing Data Sciences Against Pandemics"</a>
+excerpt: <a style="background-color:black;color:white">Harnessing Data Sciences Against Pandemics</a>
 sidebar:
   nav: "docs-2"
 classes: wide
