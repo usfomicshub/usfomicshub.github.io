@@ -17,10 +17,11 @@ GOAL
 2. [Day One](#day-one)
   - [Presentation Slides](#day-one)
 3. [Day Two](#day-two)
-  - [Presentation Slides](#presentation-slides)
+  - [Presentation Slides](#day-two)
+  - [Introduction to R](#introduction-to-r)
   - [DADA2 Pipeline](#dada2-pipeline)
 4. [Day Three](#day-three)
-  - [Presentation Slides](#presentation-slides)
+  - [Presentation Slides](#day-three)
   - [Microbiome Data Visualization](#microbiome-data-visualization)
 5. [Resources](#resources)
 
@@ -87,6 +88,19 @@ Day one of this workshop focuses on an overview of available methods and best-pr
 [Introduction to R and Plotting Data (Dr. Charley Wang)](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day2/R%20Tutorial.pdf)
 
 [Taxonomic Analysis (Dr. Anujit Sarkar)](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day2/AS_11June_talk_dada2.pdf)
+
+## Initial ASV Analysis 
+
+Download the zip file [here](https://github.com/usfomicshub/usfomicshub.github.io/raw/master/microbiome_workshop/exercises/Day2/Ranalysis/microbiome_BasicR.zip) and extract it to get started on Charley's initial ASV analysis tutorial. Open the .Rmd file in RStudio by going to File tab and clicking 'Open.' Depending on where you extracted your folder to on your computer, your directory path will be different. We will need to change the paths in the first chunk of code in this Rscript which loads the text files we need to run the tutorial. The path is the first part of the read.table function surrounded by single quotations.
+
+To find our file paths..
+
+**On Windows**: Browse through Windows Explorer to where you extracted the zip file and find the asv.table.txt file. Hold down the Shift key and Right-click on the file name. In the pop-up context menu, click on the option to ‘Copy as path‘. Open the .Rmd file and replace the first path surrounded by quotation marks at line 11 with the path we just copied. The new path should still be in quotation marks. R interprets the backslash "\" file path seperators as something else, so replace all backslashses with forwardslashes "/" and now, R knows where to go to find the file we want to upload. Repeat the same process for the taxa_for_asv.txt file for the path at line 14.
+
+**On Mac**: In Finder, browse to where you extracted your zip file and click on the asv.table.txt file to highlight it then press Command+i to open the Get Info window. In the "General" section near the top, there is a "Where" component. Copy everything in this component. This does not include the file name so we need to make sure we add it after we paste it into our path. Open the .Rmd file and replace the first path surrounded by quotation marks at line 11 with the path we just copied. The new path should still be in quotation marks. Within the quotations, add a forward slash "/" at the end of the path and type the name of the file 'asv.table.txt' then repeat the same process for the taxa_for_asv.txt file for the path at line 14
+
+
+[Follow along Charleys tutorial here!!](https://usfomicshub.github.io/usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/microbiome_workshop_demos/day2/init_asv_analysis/)
 
 ## DADA2 Pipeline
 
