@@ -260,7 +260,7 @@ Follow Charley's R Tutorials in order!
 
 **6.** [More DE Gene Visualizations](https://usfomicshub.github.io/usfomicshub.github.io/RNA-Seq_workshop/day3/Rtutorial-morevis/) - How to create boxplots and histograms for significantly DE genes.
 
-These are html files that include the R code and its outputs. Rmarkdown(.Rmd) creates these files in a html or pdf format that allow you to attractively present code and text in one report. You can download the .Rmd files [here](https://github.com/usfomicshub/usfomicshub.github.io/raw/master/RNA-Seq_workshop/day2/Sept2020_RNAseqWorkshop_Day2_Rscripts.zip) and upload them in R so you can interactively run it as well.
+These are html files that include the R code and its outputs. Rmarkdown(.Rmd) creates these files in a html or pdf format that allow you to attractively present code and text in one report. You can download the .Rmd files <a href= "https://github.com/usfomicshub/usfomicshub.github.io/raw/master/RNA-Seq_workshop/day2/Sept2020_RNAseqWorkshop_Day2_Rscripts.zip" class="a.tablelink" download = "rtutorials">here</a>  and upload them in R so you can interactively run it as well.
 
 <h2 style="color:#005440"> Day Four</h2>
 ***
