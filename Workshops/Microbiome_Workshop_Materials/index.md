@@ -70,7 +70,7 @@ Day one of this workshop focuses on an overview of available methods and best-pr
 | ---     |   --------  |
 | [USF Genomics Introduction and Workshop Overview](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day1/JO.Hub.Microbiome.06102020.pdf) | Dr. Jenna Oberstaller |
 | [USF Genomics Equipment Core](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day1/USF%20Genomics%20Core%20Introduction-06102020-MZ.pdf) | Dr. Min Zhang |
-| [Introduction to Microbiome Data Analysis](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day1/Microbiome_talk_AS_Jun10_2020.pdf) | Dr. Anujit Sarkar |
+| [Introduction to Microbiome Data Analysis](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day1/Microbiome_talk_AS_Dec02_2020.pptx) | Dr. Anujit Sarkar |
 | [Best Practices for Microbiome Sample-handling and Nucleic Acid-processing](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day1/Best%20practices%20for%20microbiome%20sample-handling%20and%20nucleic%20acid-processing.pdf) | Swamy Rakesh Adapa, MS |
 | [Statistical Considerations for Microbiome Studies](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day1/Statistical%20considerations%20of%20microbiome%20studies.pdf) | Dr. Ming Ji |
 [Experimental Design](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day1/Microbiome_ED_compressed.pdf) | Swamy Rakesh Adapa, MS | 
@@ -91,7 +91,7 @@ Day one of this workshop focuses on an overview of available methods and best-pr
 
 ## Initial ASV Analysis 
 
-Download the zip file <a href= "https://github.com/usfomicshub/microbiome_workshop/raw/master/exercises/Day2/Ranalysis/microbiome_BasicR.zip" class="a.tablelink" download = "rtutorials">here</a> and extract it to get started on Charley's initial ASV analysis tutorial. Open the .Rmd file in RStudio by going to File tab and clicking 'Open.' Depending on where you extracted your folder to on your computer, your directory path will be different. We will need to change the paths in the first chunk of code in this Rscript which loads the text files we need to run the tutorial. The path is the first part of the read.table function surrounded by single quotations.
+Download the zip file [here](https://github.com/usfomicshub/microbiome_workshop/raw/master/exercises/Day2/Ranalysis/microbiome_BasicR.zip) and extract it to get started on Charley's initial ASV analysis tutorial. Open the .Rmd file in RStudio by going to File tab and clicking 'Open.' Depending on where you extracted your folder to on your computer, your directory path will be different. We will need to change the paths in the first chunk of code in this Rscript which loads the text files we need to run the tutorial. The path is the first part of the read.table function surrounded by single quotations.
 
 To find our file paths..
 
