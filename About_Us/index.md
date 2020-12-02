@@ -3,7 +3,7 @@ layout: single
 title: "About Us"
 header:
   overlay_image: /images/aboutus.png
-excerpt: "Our primary mission is to help build LONG-TERM, extramurally-funded research programs for USF Genomics and to support the USF community by facilitating cutting-edge omics research."
+excerpt: "Supporting the USF Genomics community in building long-term, extramurally-funded research programs through omics research-partnerships and training."
 ---
 
 ### WHO ARE THE PEOPLE OF THE HUB?
