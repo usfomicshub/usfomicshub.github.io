@@ -18,7 +18,7 @@ GOAL
   - [Presentation Slides](#day-one)
 3. [Day Two](#day-two)
   - [Presentation Slides](#day-two)
-  - [Introduction to R](#introduction-to-r)
+  - [Initial ASV Analysis ](#initial-asv-analysis)
   - [DADA2 Pipeline](#dada2-pipeline)
 4. [Day Three](#day-three)
   - [Presentation Slides](#day-three)
@@ -99,8 +99,9 @@ To find our file paths..
 
 **On Mac**: In Finder, browse to where you extracted your zip file and click on the asv.table.txt file to highlight it then press Command+i to open the Get Info window. In the "General" section near the top, there is a "Where" component. Copy everything in this component. This does not include the file name so we need to make sure we add it after we paste it into our path. Open the .Rmd file and replace the first path surrounded by quotation marks at line 11 with the path we just copied. The new path should still be in quotation marks. Within the quotations, add a forward slash "/" at the end of the path and type the name of the file 'asv.table.txt' then repeat the same process for the taxa_for_asv.txt file for the path at line 14
 
+*NOTE*: We will be using an R Project format for the rest of our tutorials so we will not need to worry about changing paths for the remainder of the workshop but it is still important to understand how file paths and directories work when loading data from our local computer since you will most likely be doing it a lot.
 
-[Follow along Charleys tutorial here!!](https://usfomicshub.github.io/usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/microbiome_workshop_demos/day2/init_asv_analysis/)
+### [Follow along Charleys tutorial here!!](https://usfomicshub.github.io/usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/microbiome_workshop_demos/day2/init_asv_analysis/)
 
 ## DADA2 Pipeline
 
