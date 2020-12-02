@@ -91,7 +91,7 @@ Day one of this workshop focuses on an overview of available methods and best-pr
 
 ## Initial ASV Analysis 
 
-Download the zip file [here](https://github.com/usfomicshub/microbiome_workshop/raw/master/exercises/Day2/Ranalysis/microbiome_BasicR.zip) and extract it to get started on Charley's initial ASV analysis tutorial. Open the .Rmd file in RStudio by going to File tab and clicking 'Open.' Depending on where you extracted your folder to on your computer, your directory path will be different. We will need to change the paths in the first chunk of code in this Rscript which loads the text files we need to run the tutorial. The path is the first part of the read.table function surrounded by single quotations.
+Download the zip file <a href= "https://github.com/usfomicshub/microbiome_workshop/raw/master/exercises/Day2/Ranalysis/microbiome_BasicR.zip" class="a.tablelink" download = "rtutorials">here</a> and extract it to get started on Charley's initial ASV analysis tutorial. Open the .Rmd file in RStudio by going to File tab and clicking 'Open.' Depending on where you extracted your folder to on your computer, your directory path will be different. We will need to change the paths in the first chunk of code in this Rscript which loads the text files we need to run the tutorial. The path is the first part of the read.table function surrounded by single quotations.
 
 To find our file paths..
 
