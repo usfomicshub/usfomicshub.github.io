@@ -15,13 +15,13 @@ GOAL
 
 1. [Pre-course Materials](#pre-course-materials)
 2. [Day One](#day-one)
-  - [Presentation Slides](#day-one)
+  - [Presentation Slides](#presentation-slides)
 3. [Day Two](#day-two)
   - [Presentation Slides](#day-two)
   - [Initial ASV Analysis ](#initial-asv-analysis)
   - [DADA2 Pipeline](#dada2-pipeline)
 4. [Day Three](#day-three)
-  - [Presentation Slides](#day-three)
+  - [Presentation Slides](#presentation-slides)
   - [Microbiome Data Visualization](#microbiome-data-visualization)
 5. [Resources](#resources)
 
