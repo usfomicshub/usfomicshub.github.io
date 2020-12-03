@@ -416,16 +416,16 @@ summary {
 </div>
 
 
-<pre class="r"><code>source(here::here(&quot;Rsource/Hub_microbiome_workshop_source.R&quot;))
+<pre class="r"><code>source(&quot;Rsource/Hub_microbiome_workshop_source.R&quot;)
 library(microbiome)
 library(ggplot2)
 library(ggpubr)
 library(knitr)</code></pre>
 <div id="create-a-phyloseq-object-from-dada2-output" class="section level4">
 <h4>Create a phyloseq object from DADA2 output</h4>
-<pre class="r"><code>infile_asv_counts&lt;-here::here(&quot;Rdata/demo_asv_counts.tsv&quot;)
-infile_asv_tax&lt;-here::here(&quot;Rdata/demo_asvs_taxonomy.tsv&quot;)
-infile_sample_data&lt;-here::here(&quot;Rdata/made_up_sample_data.tsv&quot;)
+<pre class="r"><code>infile_asv_counts&lt;-&quot;Rdata/demo_asv_counts.tsv&quot;
+infile_asv_tax&lt;-&quot;Rdata/demo_asvs_taxonomy.tsv&quot;
+infile_sample_data&lt;-&quot;Rdata/made_up_sample_data.tsv&quot;
 
 df_asv_counts&lt;-read.delim(infile_asv_counts)
 df_asv_tax&lt;-read.delim(infile_asv_tax)
@@ -451,8 +451,8 @@ View(tax_table(pseq)@.Data)</code></pre>
 </div>
 <div id="read-in-a-dataset-with-interesting-results-and-perform-some-initial-processing" class="section level4">
 <h4>Read in a dataset with interesting results and perform some initial processing</h4>
-<pre class="r"><code>infile&lt;-here::here(&quot;Rdata/otu_table.biom&quot;)
-infile_meta&lt;-here::here(&quot;Rdata/meta_data.csv&quot;)
+<pre class="r"><code>infile&lt;-&quot;Rdata/otu_table.biom&quot;
+infile_meta&lt;-&quot;Rdata/meta_data.csv&quot;
 
 
 pseq&lt;-read_biom2phyloseq(infile,metadata.file = infile_meta)
@@ -1150,7 +1150,7 @@ feature_fit_model&lt;-fitFeatureModel(obj=pseq_mrexp,mod=design_matrix)
 ###Identify the differentially abundant microbes###
 taxas&lt;-fData(pseq_mrexp)$unique
 sig_taxa&lt;-MRcoefs(feature_fit_model,adjustMethod = &quot;fdr&quot;,alpha = 0.1,taxa=taxas)
-write.csv(sig_taxa,here::here(&quot;Routput/sig_taxa_table_metagenomeSeq.csv&quot;))
+write.csv(sig_taxa,&quot;Routput/sig_taxa_table_metagenomeSeq.csv&quot;)
 ####Graph the results###
 
 ##Identify the rows containing the abundance info for the significant taxa
@@ -1162,7 +1162,7 @@ classIndex&lt;-list(Breast_milk=which(pData(pseq_mrexp)$diet==&quot;Breast milk&
 classIndex$Infant_formula&lt;-which(pData(pseq_mrexp)==&quot;Standard infant formula&quot;,arr.ind = T)
 
 
-pdf(here::here(&quot;Rfigs/sig_taxa_metagenomeSeq.pdf&quot;))
+pdf(&quot;Rfigs/sig_taxa_metagenomeSeq.pdf&quot;)
 for(i in seq(1,length(sig_taxa_index))){
   taxa_index&lt;-sig_taxa_index[[i]]
   taxa_desc&lt;-sig_taxa_desc[[i]]
@@ -1191,7 +1191,7 @@ res&lt;-res[complete.cases(res),] ##Remove any NA results
 
 ##Write the results to file
 res_table&lt;-cbind(as(res,&quot;data.frame&quot;),as(tax_table(pseq)[rownames(res),],&quot;matrix&quot;))
-write.csv(res_table,here::here(&quot;Routput/sig_taxa_table_deseq2.csv&quot;))
+write.csv(res_table,&quot;Routput/sig_taxa_table_deseq2.csv&quot;)
 
 ##Graph the results
 
@@ -1212,7 +1212,7 @@ df_meta&lt;-df_meta %&gt;% dplyr::select(Sample,diet)
 df_dam&lt;-left_join(exp_data_clr_sig,df_meta,by=&quot;Sample&quot;)
 
 ##Create the graphs
-pdf(here::here(&quot;Rfigs/graph_deseq2_sig.pdf&quot;))
+pdf(&quot;Rfigs/graph_deseq2_sig.pdf&quot;)
 for(taxon in unique(df_dam$Taxa)){
 
   df_dam_taxon&lt;-df_dam %&gt;% filter(Taxa==taxon)
@@ -1240,7 +1240,7 @@ df_meta&lt;-df_meta %&gt;% dplyr::select(Sample,diet)
 df_dam&lt;-left_join(exp_data_norm_sig,df_meta,by=&quot;Sample&quot;)
 
 ##Create the graphs
-pdf(here::here(&quot;Rfigs/graph_deseq2_sig_ra.pdf&quot;))
+pdf(&quot;Rfigs/graph_deseq2_sig_ra.pdf&quot;)
 for(taxon in unique(df_dam$Taxa)){
   
   df_dam_taxon&lt;-df_dam %&gt;% filter(Taxa==taxon)
