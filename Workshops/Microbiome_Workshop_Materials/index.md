@@ -87,7 +87,7 @@ Day one of this workshop focuses on an overview of available methods and best-pr
 
 [Introduction to R and Plotting Data (Dr. Charley Wang)](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day2/R%20Tutorial.pdf)
 
-[Taxonomic Analysis (Dr. Anujit Sarkar)](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day2/AS_11June_talk_dada2.pdf)
+[Taxonomic Analysis (Dr. Anujit Sarkar)](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day2/AS_03Dec2020_talk_dada2.pdf)
 
 ## Initial ASV Analysis 
 
