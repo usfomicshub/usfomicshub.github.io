@@ -19,12 +19,12 @@ locale                   : "en-US"
 title                    : #
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "USF Omics Hub"
+description              : "We post our materials for our data-analysis workshops here, information for upcoming events, as well as the code we’ve developed for various other omics-related data analyses."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   :  "/images/Hub_logo_2.0.png"
 logo                     : /images/Hub_logo_2.0_small.PNG
 masthead_title           : "USF Omics Hub"
 #breadcrumbs              :  true #, false (default)
