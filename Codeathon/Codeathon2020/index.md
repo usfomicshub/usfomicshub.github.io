@@ -48,8 +48,4 @@ Dr. Ren Tao's Geospatial Data-Science in microbiome-research presentation is now
 
 ## Thank you to our sponsors, organizers, and collaborators!
 
-USF Genomics Program
-USF Omics Hub
-USF Institute for the Advanced Study of Culture and the Environment
-USF Computational Science Club
-USF Initiative on Microbiomes
+<img src="https://github.com/usfomicshub/usfomicshub.github.io/blob/master/images/codeathon2020sponsors.png?raw=TRUE" class="center"> 
