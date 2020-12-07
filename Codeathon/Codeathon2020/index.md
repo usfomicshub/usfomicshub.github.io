@@ -46,6 +46,6 @@ Dr. Ren Tao's Geospatial Data-Science in microbiome-research presentation is now
 
 
 
-## Thank you to our sponsors, organizers, and collaborators!
+## Special thanks to our sponsors, organizers, and collaborators!
 
 <img src="https://github.com/usfomicshub/usfomicshub.github.io/blob/master/images/codeathon2020sponsors.png?raw=TRUE" class="center"> 
