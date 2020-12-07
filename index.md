@@ -29,7 +29,7 @@ feature_row:
     alt: "About Us"
     title: "About Us"
     excerpt: "We are a small, interdisciplinary team of PhD-level biologists, bench scientists, bioinformaticians, programmers, statisticians, and scientific-writing experts here to help you design experiments.."
-    url: "https://janelledonglasan.github.io/testomicswed/About_Us/"
+    url: "https://usfomicshub.github.io/About_Us/"
     btn_label: "Read More"
     btn_class: "btn--primary"
 ---
