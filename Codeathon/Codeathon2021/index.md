@@ -2,7 +2,7 @@
 title: <a style="background-color:black;color:white"> USF Codeathon 2021 </a>
 layout: single
 header:
-  overlay_image: /images/codeathon2021.png
+  overlay_image: /images/codeathon2021.pn
   actions:
     - label: "Coming Soon"
       url: "https://github.com/USFOneHealthCodeathon2020"
