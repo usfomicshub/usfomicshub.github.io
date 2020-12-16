@@ -3,6 +3,7 @@ title: <a style="background-color:black;color:white">USF Codeathon 2020</a>
 layout: single
 header:
   overlay_image: /images/codeathon2020.png
+  overlay_color: 0.2
   actions:
     - label: "See the teams repositories"
       url: "https://github.com/USFOneHealthCodeathon2020"
@@ -27,7 +28,7 @@ classes: wide
 
 - A closing-ceremony announcement from Dr. Rays Jiang:
 
-"What a fabulous tournament — I am speechless :star2: Congratulations Team ZERO and Team Animal again. ALL teams (in alphabetical order), Team GEO, Team PublixPower, Team TRACK, and Team YOLO excelled in data science problem solving, cross-field communication, and top-notch team working. The judges are impressed by the scope and results coming out of this event. We will re-convene after work over drinks, to celebrate our camaraderie. Swamy will update you with the details in a link. Three cheers to our collective sweat, stress and joy!"
+"What a fabulous tournament — I am speechless. Congratulations Team ZERO and Team Animal again. ALL teams (in alphabetical order), Team GEO, Team PublixPower, Team TRACK, and Team YOLO excelled in data science problem solving, cross-field communication, and top-notch team working. The judges are impressed by the scope and results coming out of this event. We will re-convene after work over drinks, to celebrate our camaraderie. Swamy will update you with the details in a link. Three cheers to our collective sweat, stress and joy!"
 
 - Dr. Elizabeth Miller's Codeathon-opening Anthropology in microbiome-research presentation provides important context for the power and necessity of interdisciplinary approaches to answer the complex questions inherent to human microbiomes-research--check it out!
 
