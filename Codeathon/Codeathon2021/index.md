@@ -3,7 +3,7 @@ title: <a style="color:white"> USF Codeathon 2021 </a>
 layout: single
 header:
   overlay_image: /images/codeathon2021.png
-  overlay_filter: rgba(104, 183, 233,0.4)
+  overlay_filter: rgba(53, 65, 136,0.4)
   actions:
     - label: "Coming Soon"
       url: "https://github.com/USFOneHealthCodeathon2020"
