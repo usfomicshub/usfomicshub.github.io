@@ -3,7 +3,7 @@ title: <a style="background-color:black;color:white">USF Codeathon 2020</a>
 layout: single
 header:
   overlay_image: /images/codeathon2020.png
-  overlay_color: 0.2
+  overlay_filter: 0.2
   actions:
     - label: "See the teams repositories"
       url: "https://github.com/USFOneHealthCodeathon2020"
