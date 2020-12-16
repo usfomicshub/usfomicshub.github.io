@@ -6,7 +6,7 @@ header:
   actions:
     - label: "See the teams repositories"
       url: "https://github.com/USFOneHealthCodeathon2020"
-excerpt: <a style="background-color:black;color:white">Host Microbiome Interactions in a Global System</a>
+excerpt: <a style="background-color:white;color:black">Host Microbiome Interactions in a Global System</a>
 sidebar:
   nav: "Codeathon2020"
 classes: wide
