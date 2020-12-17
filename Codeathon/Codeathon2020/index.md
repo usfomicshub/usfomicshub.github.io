@@ -1,5 +1,5 @@
 ---
-title: <a style="background-color:black;color:white">USF Codeathon 2020</a>
+title: <a style="color:white">USF Codeathon 2020</a>
 layout: single
 header:
   overlay_image: /images/codeathon2020.png
