@@ -5,9 +5,9 @@ layout: splash
 header:
   overlay_image: /images/header2.png
   actions:
-    - label: "See our repositories"
-      url: "https://github.com/usfomicshub"
-excerpt: <p style="opacity:0">We post our materials for our data-analysis workshops here, information for upcoming events, as well as the code we’ve developed for various other omics-related data analyses. Check out materials of our most recent events and more about us below! We post our materials for our data-analysis workshops here, information for upcoming events, as well as the code we’ve developed for various other omics-related data analyses. Check out materials of our most recent events and more about us below! We post our materials for our data-analysis workshops here, information for upcoming events, as well as</p>
+    - label: "Supporting the USF Genomics community in building long-term, extramurally-funded research programs through omics research-partnerships and training."
+      url: https://usfomicshub.github.io/
+excerpt: <p style="opacity:0">We post our materials for our data-analysis workshops here, information for upcoming events, as well as the code we’ve developed for various other omics-related data analyses. Check out materials of our most recent events and more about us below! We post our materials for our data-analysis workshops here, information for upcoming events, as well as the code we’ve developed for various other omics-related data analyses. Check out materials of o</p>
 intro: 
   - excerpt: "We post our materials for our data-analysis workshops here, information for upcoming events, as well as the code we’ve developed for various other omics-related data analyses. Check out materials of our most recent events and more about us below!"
 feature_row:
