@@ -5,8 +5,8 @@ header:
   overlay_image: /images/codeathon2021.png
   overlay_filter: rgba(19, 76, 116,0.4)
   actions:
-    - label: "Coming Soon"
-      url: "https://github.com/USFOneHealthCodeathon2020"
+    - label: "REGISTER"
+      url: "https://usf.az1.qualtrics.com/jfe/form/SV_50zH4lG2bdRY8lL"
   caption: "Rays Jiang"
 excerpt: <a style="color:white"> Harnessing Data Sciences Against Pandemics </a>
 sidebar:
@@ -14,7 +14,6 @@ sidebar:
 classes: wide
 ---
 
-## REGISTER [HERE](#https://usf.az1.qualtrics.com/jfe/form/SV_50zH4lG2bdRY8lL)
 
 ## USF Codeathon 2021 will be held February 24-26, 2021. Check out this page for updates!
 
