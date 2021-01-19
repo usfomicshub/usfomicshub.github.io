@@ -18,7 +18,7 @@ classes: wide
 ## USF Codeathon 2021 will be held February 24-26, 2021. Check out this page for updates!
 
 ### January 19
-If you missed it, you can watch a recording of the USF Intro to Codeathons Genomics Forum [here](#https://web.microsoftstream.com/video/3b8fb3f6-a89b-4f10-b2e1-3bc338acc076).
+If you missed it, you can watch a recording of the USF Intro to Codeathons Genomics Forum [here](https://web.microsoftstream.com/video/3b8fb3f6-a89b-4f10-b2e1-3bc338acc076).
 
 ## Main Objectives: 
 
