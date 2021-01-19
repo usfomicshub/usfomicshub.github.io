@@ -40,7 +40,7 @@ Codeathon2020:
     children: 
       - title: "Schedule"
         url: https://github.com/USFOneHealthCodeathon2020/USFOneHealthCodeathon2020.github.io/raw/master/Codeathon%202020%20Agenda.pdf
-      - title: "Objectives"
+      - title: "Data Sources"
         url: https://github.com/oberstal/USFOneHealthCodeathon2020/raw/master/DataSources_OneHealthCodeathonMicrobiome.pdf
       - title: "Team Lead Goals"
         url: https://github.com/USFOneHealthCodeathon2020/USFOneHealthCodeathon2020.github.io/raw/master/codeathon.teamleads.022020_JO.pdf
@@ -57,10 +57,9 @@ Codeathon2021:
 
   - title: Download Event Info
     children: 
-      
-      - title: "Objectives and Data Resources"
-        url: https://github.com/oberstal/USFOneHealthCodeathon2020/raw/master/DataSources_OneHealthCodeathonMicrobiome.pdf
-      - title: "Team Lead Goals"
-        url: https://github.com/USFOneHealthCodeathon2020/USFOneHealthCodeathon2020.github.io/raw/master/codeathon.teamleads.022020_JO.pdf
+      - title: "Intro to Codeathon"
+        url: https://github.com/usfomicshub/USFOneHealthCodeathon2021/raw/master/OHCodeathon_2021_onboarding_20210119_JO.pdf
+      - title: "Pre-Codeathon Materials"
+        url: https://github.com/usfomicshub/USFOneHealthCodeathon2021/raw/master/PreCodeathonResourcesandTutorials.pdf
       - title: "Code of Conduct"
         url: "https://hackcodeofconduct.org/1362-one_health"
