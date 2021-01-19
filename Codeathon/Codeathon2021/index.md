@@ -10,7 +10,7 @@ header:
   caption: "Rays Jiang"
 excerpt: <a style="color:white">    Harnessing Data Sciences Against Pandemics</a>
 sidebar:
-  nav: "docs-2"
+  nav: "Codeathon2021"
 classes: wide
 ---
 
