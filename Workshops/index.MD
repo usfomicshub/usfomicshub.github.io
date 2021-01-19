@@ -1,5 +1,5 @@
 ---
-title: "Genomics Core Training Workshop Materials"
+title: "Genomics Core Training Workshops"
 layout: collection
 sidebar:
   nav: "docs"
