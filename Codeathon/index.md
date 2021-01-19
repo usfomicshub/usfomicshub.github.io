@@ -5,6 +5,7 @@ classes: wide
 sidebar:
   nav: "docs-2"
 ---
+<img src="https://github.com/usfomicshub/usfomicshub.github.io/blob/master/images/codeathonsimage.png?raw=TRUE" class="center"> 
 
 ## What is it?
 
