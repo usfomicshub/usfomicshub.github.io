@@ -8,7 +8,7 @@ header:
     - label: "REGISTER"
       url: "https://usf.az1.qualtrics.com/jfe/form/SV_50zH4lG2bdRY8lL"
   caption: "Rays Jiang"
-excerpt: <a style="color:white"> Harnessing Data Sciences Against Pandemics <p style="opacity:0">We post our materials for our data-analysis workshops here, information for upcoming events, as well as the code we’ve developed for various other omics-related data analyses. Check out materials of our most recent events and more about us below! </p></a>
+excerpt: <a style="color:white">    Harnessing Data Sciences Against Pandemics</a>
 sidebar:
   nav: "docs-2"
 classes: wide
