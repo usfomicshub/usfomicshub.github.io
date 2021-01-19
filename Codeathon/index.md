@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: "Codeathon"
+title: "One Health Codeathon"
 classes: wide
 sidebar:
   nav: "docs-2"
