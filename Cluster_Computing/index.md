@@ -215,13 +215,13 @@ _When you are finished using the environment, you should unload it to avoid intr
     
 ## How to Transfer Files to Local Computer
 
-We reccommend these two file-transfer clients:
+When tranfersing files from your cluster account to your local computer, you will need to use a file-transfer client. We reccommend these two file-transfer clients:
 
 [FileZilla](https://filezilla-project.org/download.php) 
 
 [Cyberduck](https://cyberduck.io/download/)
 
-
+The logging in process is similar to connecting to the cluster. The interface makes it easy to drag and drop files. 
 
 ## More about USF Research Computing
 ***
