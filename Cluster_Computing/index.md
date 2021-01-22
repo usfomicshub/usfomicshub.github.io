@@ -9,9 +9,10 @@ classes: wide
 1. [RRA and CIRCE: Whats the difference and which one do I use?](#whats-the-difference)
 - [How to Create an RRA Cluster Account](#how-to-create-an-rra-cluster-account)
 - [How to Create a CIRCE Cluster Account](#how-to-create-a-circe-cluster-account)
-2. [Available Sofware and Tools](#available-software-and-tools)
-3. [How to Load Software](#loading-and-using-software)
-4. [More About USF Research Computing](#more-about-usf-research-computing)
+2. [How to Connect to your RRA or CIRCE Cluster Account](#how-to-connect-to-your-rra-or-circe-cluster-account)
+3. [Available Sofware and Tools](#available-software-and-tools)
+4. [How to Load Software](#loading-and-using-software)
+5. [More About USF Research Computing](#more-about-usf-research-computing)
 
 
 USF Genomics researchers requiring high-performance computing have two primary cluster-computing options(both maintained by USF Research Computing) :
@@ -56,6 +57,39 @@ To request a CIRCE account, email [help@usf.edu](mailto:help@usf.edu) _from your
 _**Only send a request for a CIRCE account if you do not currently have (or are not actively requesting) an RRA account.**_
 
 You can refer to [Research Computing's documentation-wiki](https://wiki.rc.usf.edu/index.php/Main_Page) for further information on HPC-basics, CIRCE hardware and other useful topics. Refer to [our Genomics Facilities and Resources](https://github.com/usfomicshub/usfomicshub.github.io/blob/master/wiki/markdowns/facilities_and_resources.md) for information on RRA hardware and specifications.
+
+## How to Connect to your RRA or CIRCE Cluster Account
+
+Now that you have your account created, you will need to use an SSH client to connect. 
+
+#### SSH Clients for Windows 
+
+*   PuTTY: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+Note: PuTTY is the recommended client to use when connecting to CIRCE. IT staff will provide full support for users utilizing this connection method, however, graphical (X11) connections are not provided.
+
+*   Cygwin (Includes OpenSSH): http://www.cygwin.com/
+Note: Cygwin is for advanced users who are familiar with using a UNIX/Linux environment! We can only provide limited support for this method… So be warned!
+
+#### SSH Clients for Mac OSX an Linux
+
+*   OSX SSH Tutorial
+http://osxdaily.com/2017/04/28/howto-ssh-client-mac/
+
+*   Linux SSH Tutorial
+https://acloudguru.com/blog/engineering/ssh-and-scp-howto-tips-tricks
+
+#### Connecting via SSH
+
+The following information will be needed to connect via SSH:
+
+*   Your USF NetID and Password
+*   Hostname for RRA: rra.rc.usf.edu 
+*   Hostname for CIRCE: circe.rc.usf.edu
+*   SSH Port: 22 (This is the default)
+
+Windows SSH Clients will have boxes to fill this information. Mac users will simply need to open Terminal and run the same information but in the following command:
+
+     ssh yourUSFNetID@rra.rc.usf.edu
 
 ## Available Software and Tools
 ***
