@@ -12,7 +12,8 @@ classes: wide
 2. [How to Connect to your RRA or CIRCE Cluster Account](#how-to-connect-to-your-rra-or-circe-cluster-account)
 3. [Available Sofware and Tools](#available-software-and-tools)
 4. [How to Load Software](#loading-and-using-software)
-5. [More About USF Research Computing](#more-about-usf-research-computing)
+5. [How to Transfer Files to Local Computer](#how-to-transfer-files-to-local-computer)
+6. [More About USF Research Computing](#more-about-usf-research-computing)
 
 
 USF Genomics researchers requiring high-performance computing have two primary cluster-computing options(both maintained by USF Research Computing) :
@@ -64,19 +65,19 @@ Now that you have your account created, you will need to use an SSH client to co
 
 #### SSH Clients for Windows 
 
-*   PuTTY: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+*   [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
+
 Note: PuTTY is the recommended client to use when connecting to CIRCE. IT staff will provide full support for users utilizing this connection method, however, graphical (X11) connections are not provided.
 
-*   Cygwin (Includes OpenSSH): http://www.cygwin.com/
+*   [Cygwin (Includes OpenSSH)](http://www.cygwin.com/)
+
 Note: Cygwin is for advanced users who are familiar with using a UNIX/Linux environment! We can only provide limited support for this method… So be warned!
 
 #### SSH Clients for Mac OSX an Linux
 
-*   OSX SSH Tutorial
-http://osxdaily.com/2017/04/28/howto-ssh-client-mac/
+*   [OSX SSH Tutorial](http://osxdaily.com/2017/04/28/howto-ssh-client-mac/)
 
-*   Linux SSH Tutorial
-https://acloudguru.com/blog/engineering/ssh-and-scp-howto-tips-tricks
+*   [Linux SSH Tutorial](https://acloudguru.com/blog/engineering/ssh-and-scp-howto-tips-tricks)
 
 #### Connecting via SSH
 
@@ -90,6 +91,7 @@ The following information will be needed to connect via SSH:
 Windows SSH Clients will have boxes to fill this information. Mac users will simply need to open Terminal and run the same information but in the following command:
 
      ssh yourUSFNetID@rra.rc.usf.edu
+
 
 ## Available Software and Tools
 ***
@@ -169,7 +171,7 @@ _Your file-path is searched for programs etc. by the order in which directories 
 
 This command tells conda to automatically add a block of code to your default environment-settings--your ~/.bashrc file--so you never have to do this again.
 
-    conda init
+     conda init
     
 
 ### **3.** tell it to use the environment-settings you just updated
@@ -211,6 +213,15 @@ _When you are finished using the environment, you should unload it to avoid intr
 
       conda deactivate
     
+## How to Transfer Files to Local Computer
+
+We reccommend these two file-transfer clients:
+
+[FileZilla](https://filezilla-project.org/download.php) 
+
+[Cyberduck](https://cyberduck.io/download/)
+
+
 
 ## More about USF Research Computing
 ***
