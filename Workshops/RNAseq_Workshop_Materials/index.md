@@ -40,7 +40,7 @@ These additional resources may also be helpful..
 
 ⬣ [FileZilla](https://filezilla-project.org/download.php) - FileZilla makes it easy to copy and download files between your local computer and remote clusters.
 
-⬣ If you do not have R and RStudio installed already, you can follow these [instructions](https://github.com/usfomicshub/usfomicshub.github.io/raw/master/RNA-Seq_workshop/precoursematerials/r_installation_instructions_062020.pdf) for both Mac and Windows.
+⬣ If you do not have R and RStudio installed already, you can follow these [instructions](https://github.com/usfomicshub/RNASeq_workshop/raw/master/pre_course_materials/r_installation_instructions_062020.pdf) for both Mac and Windows.
 
 ⬣ We recommend these two R tutorials to get you started: [Basic Programming Skills in R](https://www.datacamp.com/community/tutorials/basic-programming-skills-r) and [Utilities in R](https://www.datacamp.com/community/tutorials/utilities-in-r)
 
@@ -55,14 +55,14 @@ These additional resources may also be helpful..
 Day one of this workshop focuses on an overview of available methods and best-practice considerations for experimental design in microbiome studies. You can download the individual presentations for each topic in the agenda below.
 
 
-[Introduction to Unix (Dr. Justin Gibbons)](https://github.com/usfomicshub/RNASeq_workshop_Sept2020/raw/master/slides/day1/introtounix.pptx)  
+[Introduction to Unix (Dr. Justin Gibbons)](https://github.com/usfomicshub/RNASeq_workshop/raw/master/slides/day1/introtounix.pptx)  
 
-[RNA-Seq Workflow (Dr. Charley Wang)](https://github.com/usfomicshub/RNASeq_workshop_Sept2020/raw/master/slides/day1/Lesson1_slide.pdf) 
+[RNA-Seq Workflow (Dr. Charley Wang)](https://github.com/usfomicshub/RNASeq_workshop/raw/master/slides/day1/Lesson1_slide.pdf) 
 
   
 ## Linux Hands-on Practice
 
-Download Charley's [Linux Shell Tutorial](https://github.com/usfomicshub/RNASeq_workshop_Sept2020/raw/master/slides/day1/LinuxServer.pptx) to get started.
+Download Charley's [Linux Shell Tutorial](https://github.com/usfomicshub/RNASeq_workshop/raw/master/slides/day1/LinuxServer.pptx) to get started.
 
 **Additional Resources:**
 
@@ -73,7 +73,7 @@ Download Charley's [Linux Shell Tutorial](https://github.com/usfomicshub/RNASeq_
 
 To prepare for running tomorrow's scripts, we copy a shared folder into our home directory. 
 
-<img src="https://github.com/usfomicshub/RNASeq_workshop_Sept2020/blob/master/img/day1_jg.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa" class="center">
+<img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day1_jg.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa" class="center">
 
 In the first line of code shown above by Justin, the **cd** command by itself takes you to your home directory(any path specified after the cd command will take you to that directory.) You can check this by running **pwd** which prints the directory you are currently in. After making sure you are in your home directory, use **cp -r** to copy all the contents in the "/shares/biocomputing/Genomics_Training/" folder to your home directory denoted by the period. We can use **ls -lht** to print all the folders and files along with its readable file size sorted by time and date. You should now see "Genomics_Training" in your directory.
 
@@ -82,14 +82,14 @@ In the first line of code shown above by Justin, the **cd** command by itself ta
 
 ## Presentation Slides
 
-[Introduction to RNA-Sequencing (Dr. Justin Gibbons)](https://github.com/usfomicshub/RNASeq_workshop_Sept2020/raw/master/slides/day2/intro_rna-seq_brief.pptx)
+[Introduction to RNA-Sequencing (Dr. Justin Gibbons)](https://github.com/usfomicshub/RNASeq_workshop/raw/master/slides/day2/intro_rna-seq_brief.pptx)
 
 
 ## Read-mapping Hands-on Practice
 
 Now, we run the scripts within the "Genomics_Training" directory that we copied yesterday. To get to the scripts, we can run the following lines from our home directory.
 
-<img src="https://github.com/usfomicshub/RNASeq_workshop_Sept2020/blob/master/img/day2_jg_pt1.png?raw=TRUE" width=900 style= "border : 5px solid #75b5aa">
+<img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day2_jg_pt1.png?raw=TRUE" width=900 style= "border : 5px solid #75b5aa">
 
 The My_Scripts folder contains six shell-scripts comprising the UNIX portions of the RNAseq data-analysis pipeline we run during the workshop. The scripts should be edited appropriately with the email-settings edited to YOUR email address.
 
@@ -109,7 +109,7 @@ The scripts are numbered in the order you should run them (via commandline, whil
 
 ###          RNA-Seq Pipeline Workflow 
 
-<img src="https://github.com/usfomicshub/RNASeq_workshop_Sept2020/blob/master/img/rnaseqpipeline.png?raw=TRUE" width =520 height="500" style= "border : 5px solid #75b5aa" class="center">
+<img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/rnaseqpipeline.png?raw=TRUE" width =520 height="500" style= "border : 5px solid #75b5aa" class="center">
 
 **LETS BEGIN!**
 
@@ -147,11 +147,11 @@ Lets use FileZilla to transfer this MultiQC_Report to our local server. To log i
 
 The right-hand side of FileZilla should show your files in the remote site(your student cluster) and the left-hand side shows all of your files in your local site. Make sure your local site is directed to the path you want your MultiQC report to be in then right click on the MultiQC_Report folder within the files under the remote site and click download. Launch the MultiQC_Report.html file to see the summary statistics and the aggregated FastQC results. Below is a screenshot of what the report looks like. Sequence Counts is one of the graphs MultiQC displays but it also includes sequence quality histograms and per base content.
 
-<img src="https://github.com/usfomicshub/RNASeq_workshop_Sept2020/blob/master/img/day2_jg_pt2.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa">
+<img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day2_jg_pt2.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa">
 
 Lets go back to running the rest of the scripts. 02_build_hisat_index.sh builds the index of our reference genome. *It may be a good idea to write "module purge" before loading hisat2*. Remember these scripts are written in bash. In the following script, a path is being assigned to the variable, INPUT_REF_FASTA, highlighted in blue which is the fasta file of the genome we want to feed hisat2-build. The base name of the index files (\*.ht2)\ is being assigned to the variable, "INDEX_FILES_BASE_NAME." To call these variables in bash, we use $. After building the index to hisat2, save and submit the job. The output files to go to our ./Genomics_Training/Work folder.
 
-<img src="https://github.com/usfomicshub/RNASeq_workshop_Sept2020/blob/master/img/day2_jg_pt3.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa">
+<img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day2_jg_pt3.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa">
 
 While in the ./Genomics_Training/Work directory, we can run the following code to check our hisat_index.out file. The **less** command displays the contents of a file. There should be no error messages.
 
@@ -193,7 +193,7 @@ More Information on the samtools commands can be found [here](http://www.htslib.
 
 These lines are repeated for all four samples. The first two are shown in this screenshot. After repeating the code for all four samples, save, and submit the job. You can can check for the bam files in the /Work output directory; there should be four .bam files.
 
-<img src="https://github.com/usfomicshub/RNASeq_workshop_Sept2020/blob/master/img/day2_jg_pt4.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa">
+<img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day2_jg_pt4.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa">
 
 Next, we run cufflinks to assemble reads into transcripts. <u>The cufflink command is made up of the following arguments:</u>
 
@@ -205,7 +205,7 @@ Next, we run cufflinks to assemble reads into transcripts. <u>The cufflink comma
 
 More information on the cufflinks command can be found [here](http://cole-trapnell-lab.github.io/cufflinks/cufflinks/index.html). We can use the ls -lht command in the /Work directory to see the Cufflinks output. There should be four cufflinks folders for each sample.
 
-<img src="https://github.com/usfomicshub/RNASeq_workshop_Sept2020/blob/master/img/day2_jg_pt5.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa">
+<img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day2_jg_pt5.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa">
 
 Now, we get the normalized gene counts using cuffnorm. <u>The cuffnorm command is similar to the cufflinks command:</u>
 
@@ -217,7 +217,7 @@ Now, we get the normalized gene counts using cuffnorm. <u>The cuffnorm command i
 
 More information on the cuffnorm command can be found [here](http://cole-trapnell-lab.github.io/cufflinks/cuffnorm/index.html). The cuffnorm outputs in the /Work directory has its own folder inlcuding a set of files containing normalized expression levels for each gene, transcript, TSS group, and CDS group in the experiment. It does not perform differential expression analysis.
 
-<img src="https://github.com/usfomicshub/RNASeq_workshop_Sept2020/blob/master/img/day2_jg_pt6.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa">
+<img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day2_jg_pt6.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa">
 
 Finally, we run featureCounts to get raw gene counts. <u>The featureCounts command is made up of the following arguments:</u>
 
@@ -235,7 +235,7 @@ Finally, we run featureCounts to get raw gene counts. <u>The featureCounts comma
 
 More information on the featureCounts command can be found [here](https://bioconductor.org/packages/release/bioc/vignettes/Rsubread/inst/doc/SubreadUsersGuide.pdf). It outputs numbers of reads assigned to features (or meta-features). It also outputs stat info for the overall summrization results, including number of successfully assigned reads and number of reads that failed to be assigned due to various reasons (these reasons are included in the stat info). We will be using the vehicle_drug_feature_counts.txt file tommorow!
 
-<img src="https://github.com/usfomicshub/RNASeq_workshop_Sept2020/blob/master/img/day2_jg_pt7.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa">
+<img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day2_jg_pt7.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa">
 
 <h2 style="color:#005440"> Day Three</h2>
 ***
