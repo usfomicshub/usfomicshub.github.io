@@ -260,7 +260,7 @@ Follow Charley's R Tutorials in order!
 
 **6.** [More DE Gene Visualizations](https://usfomicshub.github.io/usfomicshub.github.io/RNA-Seq_workshop/day3/Rtutorial-morevis/) - How to create boxplots and histograms for significantly DE genes.
 
-These are html files that include the R code and its outputs. Rmarkdown(.Rmd) creates these files in a html or pdf format that allow you to attractively present code and text in one report. You can download the .Rmd files <a href= "https://github.com/usfomicshub/usfomicshub.github.io/raw/master/RNA-Seq_workshop/day2/Sept2020_RNAseqWorkshop_Day2_Rscripts.zip" class="a.tablelink" download = "rtutorials">here</a>  and upload them in R so you can interactively run it as well.
+These are html files that include the R code and its outputs. Rmarkdown(.Rmd) creates these files in a html or pdf format that allow you to attractively present code and text in one report. You can download the .Rmd files <a href= "https://github.com/usfomicshub/RNASeq_workshop/raw/master/exercises/day3/R_code_Training_and_Reference/Sept2020_RNAseqWorkshop_Day2_Rscripts.zip" class="a.tablelink" download = "rtutorials">here</a>  and upload them in R so you can interactively run it as well.
 
 <h2 style="color:#005440"> Day Four</h2>
 ***
@@ -277,10 +277,10 @@ Make a new directory called RNA-seq_Practice in home directory
 
 Now, we make a directory called FASTQs within RNA-seq_Practice older. Within this directory, we will create a "Work" and "Reference_Data" folder similar to Day 2's folders. We will copy the files from Day 2's Genomics_Training/Reference_Data folder to our new RNA-seq_Practice/Reference_Data folder.
 
-<img src= "https://github.com/usfomicshub/RNASeq_workshop_Sept2020/blob/master/img/day4_jg_pt1.png?raw=TRUE" width =900 style= "border : 5px solid #75b5aa">
+<img src= "https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day4_jg_pt1.png?raw=TRUE" width =900 style= "border : 5px solid #75b5aa">
 
 We will also make a "Code" and a "FASTQ_QC" output folder for our fastq results. Within /Code, we can create new bash scripts that echo our /Genomics_Training/RNA-seq_Training_Scripts using our new fastq files in vim. An easy way to go about this is opening a second terminal window with the old bash scripts and copy-pasting into your new script. Save the scripts and submit the job then continue with the next script! As you continue, make sure the variables correspond to the new fastqs and results. For example, remember to change the input file paths as well as the output file names so that they reflect the new sample names (control1_rep1,control_rep2,treatment_rep1,treatment_rep2) when running the third script.
 
-<img src= "https://github.com/usfomicshub/RNASeq_workshop_Sept2020/blob/master/img/day4_jg_p2.png?raw=TRUE" width =900 style= "border : 5px solid #75b5aa">
+<img src= "https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day4_jg_p2.png?raw=TRUE" width =900 style= "border : 5px solid #75b5aa">
 
 
