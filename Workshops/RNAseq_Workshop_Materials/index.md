@@ -248,17 +248,17 @@ More information on the featureCounts command can be found [here](https://biocon
 
 Follow Charley's R Tutorials in order! 
 
-**1.** [The Basics : part 1](https://usfomicshub.github.io/usfomicshub.github.io/RNA-Seq_workshop/day3/Rtutorial-basics1/) - Introducing basic R including all data types
+**1.** [The Basics : part 1](https://usfomicshub.github.io/usfomicshub.github.io/Workshops/RNAseq_Workshop_Materials/rnaseq_workshop_demos/day3/Rtutorial-basics1/) - Introducing basic R including all data types
 
-**2.** [The Basics : part 2](https://usfomicshub.github.io/usfomicshub.github.io/RNA-Seq_workshop/day3/Rtutorial-basics2/) - How to load/save data and use control structures
+**2.** [The Basics : part 2](https://usfomicshub.github.io/usfomicshub.github.io/Workshops/RNAseq_Workshop_Materials/rnaseq_workshop_demos/day3/Rtutorial-basics2/) - How to load/save data and use control structures
 
-**3.** [Data Normalization](https://usfomicshub.github.io/usfomicshub.github.io/RNA-Seq_workshop/day3/Rtutorial-datanorm/) - How to normalize data and plot it
+**3.** [Data Normalization](https://usfomicshub.github.io/usfomicshub.github.io/Workshops/RNAseq_Workshop_Materials/rnaseq_workshop_demos/day3/Rtutorial-datanorm/) - How to normalize data and plot it
 
-**4.** [FPKM Correlation](https://usfomicshub.github.io/usfomicshub.github.io/RNA-Seq_workshop/day3/Rtutorial-corrheatmap/) - How to create heatmaps to check the correlation between each biological replicates
+**4.** [FPKM Correlation](https://usfomicshub.github.io/usfomicshub.github.io/Workshops/RNAseq_Workshop_Materials/rnaseq_workshop_demos/day3/Rtutorial-corrheatmap/) - How to create heatmaps to check the correlation between each biological replicates
 
-**5.** [Differential Gene Expression](https://usfomicshub.github.io/usfomicshub.github.io/RNA-Seq_workshop/day3/Rtutorial-DEgenesanal/) - How to perform differential gene expression analysis using DESeq2 and visualizing results using heatmaps. * use FileZilla to transfer our vehicle_drug_feature_counts.txt output file from day 2 to a path we can call
+**5.** [Differential Gene Expression](https://usfomicshub.github.io/usfomicshub.github.io/Workshops/RNAseq_Workshop_Materials/rnaseq_workshop_demos/day3/Rtutorial-DEgenesanal/) - How to perform differential gene expression analysis using DESeq2 and visualizing results using heatmaps. * use FileZilla to transfer our vehicle_drug_feature_counts.txt output file from day 2 to a path we can call
 
-**6.** [More DE Gene Visualizations](https://usfomicshub.github.io/usfomicshub.github.io/RNA-Seq_workshop/day3/Rtutorial-morevis/) - How to create boxplots and histograms for significantly DE genes.
+**6.** [More DE Gene Visualizations](https://usfomicshub.github.io/usfomicshub.github.io/Workshops/RNAseq_Workshop_Materials/rnaseq_workshop_demos/day3/Rtutorial-morevis/) - How to create boxplots and histograms for significantly DE genes.
 
 These are html files that include the R code and its outputs. Rmarkdown(.Rmd) creates these files in a html or pdf format that allow you to attractively present code and text in one report. You can download the .Rmd files <a href= "https://github.com/usfomicshub/RNASeq_workshop/raw/master/exercises/day3/R_code_Training_and_Reference/Sept2020_RNAseqWorkshop_Day2_Rscripts.zip" class="a.tablelink" download = "rtutorials">here</a>  and upload them in R so you can interactively run it as well.
 
