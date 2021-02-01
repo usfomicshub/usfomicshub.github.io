@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: "RNAseq Analysis Workshop"
+title: "RNAseq Laboratory Workshop"
 sidebar:
   nav: "docs"
 classes: wide
