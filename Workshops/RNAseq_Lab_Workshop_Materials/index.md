@@ -27,7 +27,7 @@ These additional resources may also be helpful..
 
 ⬣ [Introduction to MiSeq and the NextSeq](https://github.com/usfomicshub/RNASeq_workshop/raw/master/lab/pre_course_materials/Introduction%20to%20the%20MiSeq%20and%20the%20NextSeq%20USF.pdf)
 
-⬣ [Best Practices for TruSeq Stranded mRNA]](https://github.com/usfomicshub/RNASeq_workshop/raw/master/lab/pre_course_materials/TruSeqStrandedmRNA_BestPractices.pdf)
+⬣ [Best Practices for TruSeq Stranded mRNA](https://github.com/usfomicshub/RNASeq_workshop/raw/master/lab/pre_course_materials/TruSeqStrandedmRNA_BestPractices.pdf)
 
 ⬣ [Overview of Illumina NGS Library Preparation Workflow](https://www.illumina.com/science/technology/next-generation-sequencing/beginners/ngs-workflow.html) Overview of Illumina NGS library preparation workflows include understanding the basics of NGS chemistry, library multiplexing and the difference between the library preparations in all NSG methods such as whole genome sequencing (WGS), targeted sequencing (16s sequencing or exome seq), RNA sequencing, Methylation sequencing and ChIP sequencing, etc. 
 
