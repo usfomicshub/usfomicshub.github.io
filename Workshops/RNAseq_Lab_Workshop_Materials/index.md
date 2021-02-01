@@ -5,7 +5,7 @@ sidebar:
   nav: "docs"
 classes: wide
 --- 
-
+<img src="https://github.com/usfomicshub/usfomicshub.github.io/blob/master/images/rnaseqlabimage.png?raw=TRUE" class="center"> 
 
 GOAL
 > This training course includes presentations on  technology theory  and practical experience with  the entire laboratory  sample prep workflow.  Experienced trainers will lead you through  using TapeStationand Miseqequipment.  By the end  of this training, participants will be able to  complete the  Illumina library preparation process and set up a sequencing run  using Illumina MiseqControl  Software.
