@@ -53,7 +53,7 @@ These additional resources may also be helpful..
 ## Presentation Slides
 
 
-[Introduction to Unix (Dr. Justin Gibbons)](https://github.com/usfomicshub/RNASeq_workshop/raw/master/slides/day1/introtounix.pptx)  
+[Introduction to Unix (Dr. Justin Gibbons)](https://github.com/usfomicshub/RNASeq_workshop/raw/master/slides/day1/intro_to_unix_simplified_version.pptx)  
 
 [RNA-Seq Workflow (Dr. Charley Wang)](https://github.com/usfomicshub/RNASeq_workshop/raw/master/slides/day1/Lesson1_slide.pdf) 
 
