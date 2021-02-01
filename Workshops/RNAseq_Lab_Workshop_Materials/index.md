@@ -38,9 +38,11 @@ These additional resources may also be helpful..
 
 ## Presentation Slides
 
+Download the slides here: 
+
 [Introduction to the USF Genomics Core and iLab System by Min Zhang](https://github.com/usfomicshub/RNASeq_workshop/raw/master/lab/slides/1-MZ-Core%20Indroduction-RNAseq%20Workshop-20210129.pdf)  
 
-[Illumina Sequencing Overview](https://github.com/usfomicshub/RNASeq_workshop/raw/master/lab/slides/1_Ryan_USF_Illumina_Intro_01272021.pdf)
+[Illumina Sequencing Overview by Ryan Gentry](https://github.com/usfomicshub/RNASeq_workshop/raw/master/lab/slides/1_Ryan_USF_Illumina_Intro_01272021.pdf)
 
 [Library Preparation for Next-Gen Sequencing by Min Zhang](https://github.com/usfomicshub/RNASeq_workshop/raw/master/lab/slides/2-MZ-Library%20construction%20for%20NGS%20sequencing-20210129.pdf) 
 
