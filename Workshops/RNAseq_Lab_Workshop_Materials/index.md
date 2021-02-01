@@ -8,7 +8,7 @@ classes: wide
 <img src="https://github.com/usfomicshub/usfomicshub.github.io/blob/master/images/rnaseqlabimage.png?raw=TRUE" class="center"> 
 
 GOAL
-> This training course includes presentations on  technology theory  and practical experience with  the entire laboratory  sample prep workflow.  Experienced trainers will lead you through  using TapeStationand Miseqequipment.  By the end  of this training, participants will be able to  complete the  Illumina library preparation process and set up a sequencing run  using Illumina MiseqControl  Software.
+> This training course includes presentations on technology theory and practical experience with  the entire laboratory sample prep workflow.  Experienced trainers will lead you through using TapeStationand Miseqequipment. By the end of this training, participants will be able to complete the  Illumina library preparation process and set up a sequencing run  using Illumina MiseqControl Software.
 
 ### Table of Contents
 
@@ -47,12 +47,10 @@ Download the slides here:
 
 [Library Preparation for Next-Gen Sequencing by Min Zhang](https://github.com/usfomicshub/RNASeq_workshop/raw/master/lab/slides/2-MZ-Library%20construction%20for%20NGS%20sequencing-20210129.pdf) 
 
-<!--
+[Sequencing set up and Illumina Customer Resources Overview by Matt Mercurio](https://github.com/usfomicshub/RNASeq_workshop/raw/master/lab/pre_course_materials/Introduction%20to%20the%20MiSeq%20and%20the%20NextSeq%20USF.pdf)
 
-[Sequencing set up and Illumina Customer Resources Overview by Matt Mercurio]()
+[Library QC, Trouble-shooting, Sequencing Data QC and Illumina BaseSpace Tour by Min Zhang](https://github.com/usfomicshub/RNASeq_workshop/raw/master/lab/slides/4-Library%20QC_Troubleshooting_BestPractices.pdf)
 
-[Library QC, Trouble-shooting, Sequencing Data QC and Illumina BaseSpace Tour]
---> 
 
 
 
