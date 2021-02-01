@@ -52,8 +52,6 @@ These additional resources may also be helpful..
 
 ## Presentation Slides
 
-Day one of this workshop focuses on an overview of available methods and best-practice considerations for experimental design in microbiome studies. You can download the individual presentations for each topic in the agenda below.
-
 
 [Introduction to Unix (Dr. Justin Gibbons)](https://github.com/usfomicshub/RNASeq_workshop/raw/master/slides/day1/introtounix.pptx)  
 
