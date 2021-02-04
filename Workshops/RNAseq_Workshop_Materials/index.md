@@ -73,7 +73,9 @@ To prepare for running tomorrow's scripts, we copy a shared folder into our home
 
 <img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day1_jg.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa" class="center">
 
-In the first line of code shown above by Justin, the **cd** command by itself takes you to your home directory(any path specified after the cd command will take you to that directory.) You can check this by running **pwd** which prints the directory you are currently in. After making sure you are in your home directory, use **cp -r** to copy all the contents in the "/shares/biocomputing/Genomics_Training/" folder to your home directory denoted by the period. We can use **ls -lht** to print all the folders and files along with its readable file size sorted by time and date. You should now see "Genomics_Training" in your directory.
+**UPDATE (02/02/2021)**: The genomics training folder is now located in /shares/biocomputing.jg/Genomics_Training/ - please adjust the code
+
+In the first line of code shown above by Justin, the **cd** command by itself takes you to your home directory(any path specified after the cd command will take you to that directory.) You can check this by running **pwd** which prints the directory you are currently in. After making sure you are in your home directory, use **cp -r** to copy all the contents in the "/shares/biocomputing.jg/Genomics_Training/" folder to your home directory denoted by the period. We can use **ls -lht** to print all the folders and files along with its readable file size sorted by time and date. You should now see "Genomics_Training" in your directory.
 
 <h2 style="color:#005440"> Day Two</h2>
 ***
