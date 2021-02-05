@@ -5,7 +5,7 @@ header:
   overlay_image: /images/codeathon2021.png
   overlay_filter: rgba(19, 76, 116,0.4)
   actions:
-    - label: "REGISTER"
+    - label: "REGISTER NOW"
       url: "https://usf.az1.qualtrics.com/jfe/form/SV_50zH4lG2bdRY8lL"
   caption: "Rays Jiang"
 excerpt: <a style="color:white">    Harnessing Data Sciences Against Pandemics</a>
