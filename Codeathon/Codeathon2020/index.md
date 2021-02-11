@@ -7,6 +7,7 @@ header:
   actions:
     - label: "See the teams repositories"
       url: "https://github.com/USFOneHealthCodeathon2020"
+  caption: "Artwork by Rays Jiang"
 excerpt: <a style="color:white">Host Microbiome Interactions in a Global System</a>
 sidebar:
   nav: "Codeathon2020"
