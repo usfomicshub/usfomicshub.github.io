@@ -7,7 +7,7 @@ header:
   actions:
     - label: "REGISTER NOW"
       url: "https://usf.az1.qualtrics.com/jfe/form/SV_50zH4lG2bdRY8lL"
-  caption: "Rays Jiang"
+  caption: "Artwork by Rays Jiang"
 excerpt: <a style="color:white">    Harnessing Data Sciences Against Pandemics</a>
 sidebar:
   nav: "Codeathon2021"
