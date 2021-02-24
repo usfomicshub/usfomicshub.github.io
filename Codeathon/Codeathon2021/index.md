@@ -5,8 +5,8 @@ header:
   overlay_image: /images/codeathon2021.png
   overlay_filter: rgba(19, 76, 116,0.4)
   actions:
-    - label: "REGISTER NOW"
-      url: "https://usf.az1.qualtrics.com/jfe/form/SV_50zH4lG2bdRY8lL"
+    - label: "See our teams repositories"
+      url: "https://github.com/USFOneHealthCodeathon2021"
   caption: "Artwork by Rays Jiang"
 excerpt: <a style="color:white">    Harnessing Data Sciences Against Pandemics</a>
 sidebar:
@@ -14,10 +14,8 @@ sidebar:
 classes: wide
 ---
 
+<h2>The USF Codeathon has begun! Join us <a href="https://www.airmeet.com/e/6c1e1bc0-4396-11eb-bd6c-597038b87a94">here<a></h2>
 
-## USF Codeathon 2021 will be held February 24-26, 2021. Check out this page for updates!
-
-<h2 style="background-color:#FFFF63"> DEADLINE TO REGISTER IS FRIDAY, FEB 5TH</h2>
 
 ### January 19
 If you missed the USF Intro to Codeathons Genomics Forum, you can catch up [here](https://web.microsoftstream.com/video/3b8fb3f6-a89b-4f10-b2e1-3bc338acc076).
