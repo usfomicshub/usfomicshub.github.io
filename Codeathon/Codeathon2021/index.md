@@ -16,6 +16,10 @@ classes: wide
 
 <h2>The USF Codeathon has begun! Join us <a href="https://www.airmeet.com/e/6c1e1bc0-4396-11eb-bd6c-597038b87a94">here</a></h2>
 
+## Updates:
+
+### February 24 
+Presentations from the Keynote Symposium will be made available here.
 
 ### January 19
 If you missed the USF Intro to Codeathons Genomics Forum, you can catch up [here](https://web.microsoftstream.com/video/3b8fb3f6-a89b-4f10-b2e1-3bc338acc076).
