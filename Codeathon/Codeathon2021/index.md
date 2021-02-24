@@ -14,7 +14,7 @@ sidebar:
 classes: wide
 ---
 
-<h2>The USF Codeathon has begun! Join us <a href="https://www.airmeet.com/e/6c1e1bc0-4396-11eb-bd6c-597038b87a94">here<a></h2>
+<h2>The USF Codeathon has begun! Join us <a href="https://www.airmeet.com/e/6c1e1bc0-4396-11eb-bd6c-597038b87a94">here</a></h2>
 
 
 ### January 19
