@@ -19,7 +19,18 @@ classes: wide
 ## Updates:
 
 ### February 24 
-Presentations from the Keynote Symposium will be made available here.
+Presentations from the Keynote Symposium are below: 
+
+[Data-driven, systems-modelling approaches to forecasting Pandemics](https://github.com/usfomicshub/USFOneHealthCodeathon2021/raw/master/SEIRcast%20forecasting%20system%202.23.2021.pptx)
+by Dr. Edwin Michael, Professor 
+Center for Global Health Infectious Disease Research, USF 
+
+
+[Early warning system for SARS-CoV-2 Variants of Concern](https://github.com/usfomicshub/USFOneHealthCodeathon2021/raw/master/USF%20OneHealth%20Codeathon_24FEB2021.pptx)
+by Dr. Richard Scheuermann, Director 
+J. Craig Venter Institute at La Jolla Campus 
+
+
 
 ### January 19
 If you missed the USF Intro to Codeathons Genomics Forum, you can catch up [here](https://web.microsoftstream.com/video/3b8fb3f6-a89b-4f10-b2e1-3bc338acc076).
