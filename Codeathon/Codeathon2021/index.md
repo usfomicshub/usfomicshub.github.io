@@ -22,7 +22,9 @@ classes: wide
 
 ⬣ What are the urgently needed ‘dream applications’ for future pandemic prevention and management?
 
+## Congratulations to the winning teams! 
 
+<img src="https://github.com/usfomicshub/usfomicshub.github.io/blob/master/images/2021codeathon1st.png?raw=TRUE" class="center" width="800" height="450"> 
 
 ## Updates:
 
