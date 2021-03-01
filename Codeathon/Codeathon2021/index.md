@@ -36,7 +36,7 @@ In order to explore the factors that lead to faster pathogen evolution, Team 3 l
 
 ### Third Place: Team 2 - Zoo-Cov
 
-| ![thirdplace](/images/2021Codeathon3rd.png=500x275){:height="500px" width="275px"} | Team 2 created an interactive application/web app that can identify putative host-shifts where recent human-hosted SARS-CoV-2 sequences have evolved and infected a non-human host. | 
+| ![thirdplace](/images/2021Codeathon3rd.png){:height="500px" width="275px"} | Team 2 created an interactive application/web app that can identify putative host-shifts where recent human-hosted SARS-CoV-2 sequences have evolved and infected a non-human host. | 
 
 ## Updates:
 
