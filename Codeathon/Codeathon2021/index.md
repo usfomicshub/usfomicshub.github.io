@@ -24,13 +24,18 @@ classes: wide
 
 ## Congratulations to the winning teams! 
 
-### First Place: Team 3 - Viral Spactime
+### First Place: Team 3 (Viral Spacetime) - Exploring COVID-19 mutation rate covariates
 
 In order to explore the factors that lead to faster pathogen evolution, Team 3 linked geographic information from sequenced COVID genomes to the degree of divergence from inferred ancestral states, and built a Shiny app hosted on GitHub that will correlate arbitrary geographic metadata with these divergence rates. 
 
 <img src="https://github.com/usfomicshub/usfomicshub.github.io/blob/master/images/2021codeathon1st.png?raw=TRUE" class="center" width="800" height="450"> 
 
+### Second Place: Team 4 - Social Cost 
 <img src="https://github.com/usfomicshub/usfomicshub.github.io/blob/master/images/2021Codeathon2nd.png?raw=TRUE" class="left" width="500" height="275"> 
+
+Team 4 addressed vaccine and resource distribution and disparities as well as vaccine hesitancy by providing the public with pertinent and easily accessible data on COVID-19 cases and risk factors/vulnerability indices, as well as social media-derived sentiment analysis.
+
+### Third Place: Team 2 - 
 
 ## Updates:
 
