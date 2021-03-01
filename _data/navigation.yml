@@ -59,6 +59,8 @@ Codeathon2021:
 
   - title: Download Event Info
     children: 
+      - title: "Team Projects"
+        url: https://github.com/usfomicshub/USFOneHealthCodeathon2021/raw/master/USF%202021%20Codeathon%20Team%20Project%20Goals%20Descriptions.docx
       - title: "Schedule"
         url: https://github.com/usfomicshub/USFOneHealthCodeathon2021/raw/master/2021_Codeathon_Agenda.docx
       - title: "Intro to Codeathon"
