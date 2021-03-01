@@ -5,7 +5,7 @@ header:
   overlay_image: /images/codeathon2021.png
   overlay_filter: rgba(19, 76, 116,0.4)
   actions:
-    - label: "See our teams repositories"
+    - label: "See the teams repositories"
       url: "https://github.com/USFOneHealthCodeathon2021"
   caption: "Artwork by Rays Jiang"
 excerpt: <a style="color:white">    Harnessing Data Sciences Against Pandemics</a>
