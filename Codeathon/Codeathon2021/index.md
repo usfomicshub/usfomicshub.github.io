@@ -31,13 +31,13 @@ In order to explore the factors that lead to faster pathogen evolution, Team 3 l
 <img src="https://github.com/usfomicshub/usfomicshub.github.io/blob/master/images/2021codeathon1st.png?raw=TRUE" class="center" width="800" height="450"> 
 
 ### Second Place: Team 4 - Social Cost 
-<p>
+
 <img src="https://github.com/usfomicshub/usfomicshub.github.io/raw/master/images/2021Codeathon2nd.png?raw=TRUE" class="left" width="500" height="275">
-Team 4 addressed vaccine and resource distribution and disparities as well as vaccine hesitancy by providing the public with pertinent and easily accessible data on COVID-19 cases and risk factors/vulnerability indices, as well as social media-derived sentiment analysis.</p>
+Team 4 addressed vaccine and resource distribution and disparities as well as vaccine hesitancy by providing the public with pertinent and easily accessible data on COVID-19 cases and risk factors/vulnerability indices, as well as social media-derived sentiment analysis.
 
 ### Third Place: Team 2 - Zoo-Cov
 
-Team 2 created an interactive application/web app that can identify putative host-shifts where recent human-hosted SARS-CoV-2 sequences have evolved and infected a non-human host. <img src="https://github.com/usfomicshub/usfomicshub.github.io/raw/master/images/2021Codeathon3rd.png?raw=TRUE" class="left" width="500" height="275">
+<img src="https://github.com/usfomicshub/usfomicshub.github.io/raw/master/images/2021Codeathon3rd.png?raw=TRUE" class="left" width="500" height="275"> 
 Team 2 created an interactive application/web app that can identify putative host-shifts where recent human-hosted SARS-CoV-2 sequences have evolved and infected a non-human host. 
 
 ## Updates:
