@@ -37,9 +37,7 @@ Team 4 addressed vaccine and resource distribution and disparities as well as va
 
 ### Third Place: Team 2 - Zoo-Cov
 
-<img src="https://github.com/usfomicshub/usfomicshub.github.io/blob/master/images/2021Codeathon3rd.png?raw=TRUE" class="float:left" width="500" height="275"> 
-
-Team 2 created an interactive application/web app that can identify putative host-shifts where recent human-hosted SARS-CoV-2 sequences have evolved and infected a non-human host.
+| ![thirdplace](/images/2021Codeathon3rd.png) | Team 2 created an interactive application/web app that can identify putative host-shifts where recent human-hosted SARS-CoV-2 sequences have evolved and infected a non-human host. | 
 
 ## Updates:
 
