@@ -32,11 +32,11 @@ In order to explore the factors that lead to faster pathogen evolution, Team 3 l
 
 ### Second Place: Team 4 - Social Cost 
 
-| ![secondplace](/images/2021Codeathon2nd.png =500x275) | Team 4 addressed vaccine and resource distribution and disparities as well as vaccine hesitancy by providing the public with pertinent and easily accessible data on COVID-19 cases and risk factors/vulnerability indices, as well as social media-derived sentiment analysis. |
+| ![secondplace](/images/2021Codeathon2nd.png=500x275) | Team 4 addressed vaccine and resource distribution and disparities as well as vaccine hesitancy by providing the public with pertinent and easily accessible data on COVID-19 cases and risk factors/vulnerability indices, as well as social media-derived sentiment analysis. |
 
 ### Third Place: Team 2 - Zoo-Cov
 
-| ![thirdplace](/images/2021Codeathon3rd.png =500x275) | Team 2 created an interactive application/web app that can identify putative host-shifts where recent human-hosted SARS-CoV-2 sequences have evolved and infected a non-human host. | 
+| ![thirdplace](/images/2021Codeathon3rd.png=500x275) | Team 2 created an interactive application/web app that can identify putative host-shifts where recent human-hosted SARS-CoV-2 sequences have evolved and infected a non-human host. | 
 
 ## Updates:
 
