@@ -26,7 +26,7 @@ classes: wide
 
 ### First Place: Team 3 - Exploring COVID-19 mutation rate covariates
 
-In order to explore the factors that lead to faster pathogen evolution, Team 3 linked geographic information from sequenced COVID genomes to the degree of divergence from inferred ancestral states, and built a Shiny app hosted on GitHub that will correlate arbitrary geographic metadata with these divergence rates. 
+In order to explore the factors that lead to faster pathogen evolution, Team 3 linked geographic information from sequenced COVID genomes to the degree of divergence from inferred ancestral states, and built a Shiny app hosted on GitHub that correlates arbitrary geographic metadata with these divergence rates. 
 
 <img src="https://github.com/usfomicshub/usfomicshub.github.io/blob/master/images/2021codeathon1st.png?raw=TRUE" class="center" width="800" height="450"> 
 
