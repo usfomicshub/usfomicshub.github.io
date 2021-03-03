@@ -66,4 +66,9 @@ J. Craig Venter Institute at La Jolla Campus
 <h3 style="background-color: #FFFF00">January 19</h3>
 If you missed the USF Intro to Codeathons Genomics Forum, you can catch up [here](https://web.microsoftstream.com/video/3b8fb3f6-a89b-4f10-b2e1-3bc338acc076).
 
+## Special thanks to our sponsors, organizers, and collaborators!
+
+<img src="https://github.com/usfomicshub/usfomicshub.github.io/blob/master/images/codeathon2021sponsors.png?raw=TRUE" class="center"> 
+
+
 
