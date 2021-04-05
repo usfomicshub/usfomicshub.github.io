@@ -247,7 +247,7 @@ As you run the tutorial chunk by chunk, you can follow along with the output doc
 
 ### [Let's begin the day3: visualization part II tutorial!](https://usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/microbiome_workshop_demos/day3/Ranalysis/PartII/#usf-omics-hub-microbiome-workshop-day-3-part-ii-functional-analyses)
 
-### [Let's begin the day3: machine learning tutorial!](https://usfomicshub.github.io//Workshops/Microbiome_Workshop_Materials/microbiome_workshop_demos/day3/Ranalysis/PartIII/#usf-omics-hub-microbiome-workshop-day-3-part-ii-machine-learning-approaches-to-functional-analyses)
+### [Let's begin the day3: machine learning tutorial!](https://usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/microbiome_workshop_demos/day3/Ranalysis/PartIII/#usf-omics-hub-microbiome-workshop-day-3-part-ii-machine-learning-approaches-to-functional-analyses)
 
   
   
