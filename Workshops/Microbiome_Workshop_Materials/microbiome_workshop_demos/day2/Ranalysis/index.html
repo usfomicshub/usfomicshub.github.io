@@ -389,7 +389,7 @@ datacleantime &lt;- toc(log = FALSE, quiet = TRUE) #  Computes elapsed time sinc
 time_clean &lt;- datacleantime$toc - datacleantime$tic
 time_clean </code></pre>
 <pre><code>## elapsed 
-##  58.689</code></pre>
+##  58.904</code></pre>
 </div>
 <div id="dereplication" class="section level3">
 <h3>DEREPLICATION</h3>
@@ -471,7 +471,7 @@ demo_error_R &lt;- learnErrors(derep_demo_R,
 time_errormodel &lt;- errmodel$toc - errmodel$tic
 time_errormodel</code></pre>
 <pre><code>## elapsed 
-##    18.1</code></pre>
+##  17.476</code></pre>
 <p>We’ll also save both plots to .pdf in our Rfigs directory for our records:</p>
 <pre class="r"><code>pdf(&quot;Rfigs/demo_error_F_plot.pdf&quot;,
     width = 10,
@@ -703,17 +703,17 @@ write.table(demo_final, &quot;Routput/demo_final_count_table.txt&quot;, sep = &q
 <p>Let’s see how much time the more important steps take</p>
 <pre class="r"><code>cat(&quot;\nThe total time for data clean:&quot;, time_clean , &quot;seconds\n&quot;)</code></pre>
 <pre><code>## 
-## The total time for data clean: 58.689 seconds</code></pre>
+## The total time for data clean: 58.904 seconds</code></pre>
 <pre class="r"><code>cat(&quot;The total time for error models:&quot;, time_errormodel , &quot;seconds\n&quot;)</code></pre>
-<pre><code>## The total time for error models: 18.1 seconds</code></pre>
+<pre><code>## The total time for error models: 17.476 seconds</code></pre>
 <pre class="r"><code>cat(&quot;The total time for generating ASVs:&quot;, time_asv_generation , &quot;seconds\n&quot;)</code></pre>
-<pre><code>## The total time for generating ASVs: 25.843 seconds</code></pre>
+<pre><code>## The total time for generating ASVs: 24.896 seconds</code></pre>
 <pre class="r"><code>cat(&quot;The total time for merging paired-end reads:&quot;, time_merge_reads , &quot;seconds\n&quot;)</code></pre>
-<pre><code>## The total time for merging paired-end reads: 2.945 seconds</code></pre>
+<pre><code>## The total time for merging paired-end reads: 2.904 seconds</code></pre>
 <pre class="r"><code>cat(&quot;The total time to remove chimera:&quot;, time_chimera_removal , &quot;seconds\n&quot;)</code></pre>
-<pre><code>## The total time to remove chimera: 1.363 seconds</code></pre>
+<pre><code>## The total time to remove chimera: 1.291 seconds</code></pre>
 <pre class="r"><code>cat(&quot;The total time to assign taxonomies to ASVs:&quot;, time_taxonomy , &quot;seconds\n&quot;)</code></pre>
-<pre><code>## The total time to assign taxonomies to ASVs: 60.419 seconds</code></pre>
+<pre><code>## The total time to assign taxonomies to ASVs: 59.485 seconds</code></pre>
 <p>We’ll also need to make fake sample-bmi data for tomorrow’s visualization-exercises (phyloseq)</p>
 <pre class="r"><code>bmi &lt;- c(&#39;obese&#39;,
          &#39;obese&#39;,
