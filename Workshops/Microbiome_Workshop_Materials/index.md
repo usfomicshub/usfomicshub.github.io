@@ -46,7 +46,7 @@ You can also use latest version of RStudio. You can check this within RStudio by
 Finally, update your packages by clicking 'Check for Package Updates...' in Tools.
 
 
-⬣ We know that programming can be very intimidating at first, so we created this introductory course to help researchers such as you start your programming journey. 
+⬣ We know that programming can be very intimidating at first, so we created this [introductory course](https://usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/rtutorial/index.html) to help researchers such as you start your programming journey. 
 If you are a bit familiar with R, please still check out this resource as it covers how the workshop tutorials will be set up. We'll be moving quickly through basic concepts in R to get to the actual data-analysis. We strongly recommend reviewing the R tutorial to get you started/help you keep up.  
 
   
