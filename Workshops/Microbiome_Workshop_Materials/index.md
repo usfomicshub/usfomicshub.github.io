@@ -31,7 +31,7 @@ GOAL
 
 ⬣ [Best Practices for Analyzing Microbiomes](https://www.nature.com/articles/s41579-018-0029-9.pdf) - This article discusses how all stages of conducting a microbiome study, from designing the experiment to collecting and storing the samples to obtaining insight from graphical displays of the sequence data, can substantially impact the result.
 
-⬣ If you do not have R and RStudio installed already, you can follow these [instructions](https://github.com/usfomicshub/microbiome_workshop/raw/master/pre_course_materials/r_installation_instructions_062020.pdf) for both Mac and Windows. The R versions listed in the instructions might be outdated but the links are the correct. If you already have RStudio, make sure you're using R version 4.0.3 -- "Bunny-Wunnies Freak Out" by clicking on 'Global Options...' in the **Tools** tab. The version is also stated in the first line of the console when you first open RStudio. If you are not using the most recent version, follow the previous installation instructions and restart R.
+⬣ If you do not have R and RStudio installed already, you can follow these [instructions](https://github.com/usfomicshub/microbiome_workshop/raw/master/pre_course_materials/r_installation_instructions_062020.pdf) for both Mac and Windows. The R versions listed in the instructions might be outdated but the links are the correct. If you already have RStudio, make sure you're using R version 4.0.4  by clicking on 'Global Options...' in the **Tools** tab. The version is also stated in the first line of the console when you first open RStudio. If you are not using the most recent version, follow the previous installation instructions and restart R.
 
 If you have Windows, then a very easy way to update your R-version and packages is by simply running the following code in the RStudio console:
 
@@ -45,15 +45,10 @@ You can also use latest version of RStudio. You can check this within RStudio by
 
 Finally, update your packages by clicking 'Check for Package Updates...' in Tools.
 
-⬣ During the workshop, we might ask to use [Teamviewer](https://www.teamviewer.com/en/download/). This is a desktop sharing application and helps us troubleshoot any issues you may have running your code.
 
-⬣ We'll be moving quickly through basic concepts in R to get to the actual data-analysis. We strongly recommend reviewing these two R tutorials to get you started/help you keep up:  
+⬣ We know that programming can be very intimidating at first, so we created this introductory course to help researchers such as you start your programming journey. 
+If you are a bit familiar with R, please still check out this resource as it covers how the workshop tutorials will be set up. We'll be moving quickly through basic concepts in R to get to the actual data-analysis. We strongly recommend reviewing the R tutorial to get you started/help you keep up.  
 
-*   [Basic Programming Skills in R](https://www.datacamp.com/community/tutorials/basic-programming-skills-r)
-  
-*   [Utilities in R](https://www.datacamp.com/community/tutorials/utilities-in-r)
-
-  
   
 
 <h2 style="color:#005440">Day One</h2>
