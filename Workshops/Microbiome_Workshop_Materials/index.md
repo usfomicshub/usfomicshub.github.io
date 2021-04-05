@@ -96,7 +96,7 @@ To find our file paths..
 
 *NOTE*: We will be using an R Project format for the rest of our tutorials so we will not need to worry about changing paths for the remainder of the workshop but it is still important to understand how file paths and directories work when loading data from our local computer since you will most likely be doing it a lot.
 
-### [Follow along Charleys tutorial here!!](https://usfomicshub.github.io/usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/microbiome_workshop_demos/day2/init_asv_analysis/)
+### [Follow along Charleys tutorial here!!](https://usfomicshub.github.io/usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/microbiome_workshop_demos/day2/init_asv_analysis/index.html)
 
 ## DADA2 Pipeline
 
@@ -165,7 +165,7 @@ Now that we are familar with the project, we can set up the environment!
 
 This pipeline is written in R Markdown, a file format for making dynamic documents with R. An R Markdown document is written in markdown (an easy-to-write plain text format) and contains chunks of embedded R code. We rendered this R markdown script into an HTML file linked below that shows the results of the code so you can follow along.
 
-### [Let's begin the day2 tutorial!](https://usfomicshub.github.io/usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/microbiome_workshop_demos/day2/Ranalysis/)
+### [Let's begin the day2 tutorial!](https://usfomicshub.github.io/usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/microbiome_workshop_demos/day2/Ranalysis/index.html)
 
  
 
