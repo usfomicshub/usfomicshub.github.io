@@ -56,7 +56,7 @@ If you are a bit familiar with R, please still check out this resource as it cov
 
 ### Presentation Slides
 
-Day one of this workshop focuses on an overview of available methods and best-practice considerations for experimental design in microbiome studies. You can download the individual presentations for each topic in the agenda below.
+Day one of this workshop focuses on an overview of available methods and best-practice considerations for experimental design in microbiome studies. You can download the individual presentations for each topic in the agenda below. The full agenda can be downloaded [here](https://github.com/usfomicshub/usfomicshub.github.io/raw/master/Workshops/Microbiome_Workshop_Materials/precourse/3_Day_Microbiome_Analysis_Training_Agenda_April_2021.pdf)
 
 *NOTE*: Speakers may change with each workshop event. Presentation slides from every workshop are still listed here.  
 
