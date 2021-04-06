@@ -25,17 +25,17 @@ docs:
 docs-2:
   - title: USF Codeathons 
     children:
-      - title: "2021 - Harnessing Data Sciences Against Pandemics"
+      - title: "> 2021 - Harnessing Data Sciences Against Pandemics"
         url: /Codeathon/Codeathon2021/
-      - title: "2020 - Host Microbiome Interactions in a Global System"
+      - title: "> 2020 - Host Microbiome Interactions in a Global System"
         url: /Codeathon/Codeathon2020/
 
 Codeathon2020: 
   - title: USF Codeathons 
     children:
-      - title: "2021 - Harnessing Data Sciences Against Pandemics"
+      - title: "> 2021 - Harnessing Data Sciences Against Pandemics"
         url: /Codeathon/Codeathon2021/
-      - title: "2020 - Host Microbiome Interactions in a Global System"
+      - title: "> 2020 - Host Microbiome Interactions in a Global System"
         url: /Codeathon/Codeathon2020/
 
   - title: Download Event Info
@@ -52,9 +52,9 @@ Codeathon2020:
 Codeathon2021: 
   - title: USF Codeathons 
     children:
-      - title: "2021 - Harnessing Data Sciences Against Pandemics"
+      - title: "> 2021 - Harnessing Data Sciences Against Pandemics"
         url: /Codeathon/Codeathon2021/
-      - title: "2020 - Host Microbiome Interactions in a Global System"
+      - title: "> 2020 - Host Microbiome Interactions in a Global System"
         url: /Codeathon/Codeathon2020/
 
   - title: Download Event Info
