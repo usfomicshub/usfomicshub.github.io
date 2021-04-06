@@ -69,7 +69,7 @@ Day one of this workshop focuses on an overview of available methods and best-pr
 | [Best Practices for Microbiome Sample-handling and Nucleic Acid-processing](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day1/Best%20practices%20for%20microbiome%20sample-handling%20and%20nucleic%20acid-processing.pdf) | Swamy Rakesh Adapa, MS |
 | [Statistical Considerations for Microbiome Studies](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day1/Statistical%20considerations%20of%20microbiome%20studies.pdf) | Dr. Ming Ji |
 [Experimental Design](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day1/Microbiome_ED_compressed.pdf) | Swamy Rakesh Adapa, MS | 
-[Overview of Microbiome Data-Visualization](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day1/jg_microbiome_plots_march2020.pdf) | Dr. Justin Gibbons | 
+[Overview of Microbiome Data-Visualization](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day1/jg_microbiome_plots_april_2021.pdf) | Dr. Justin Gibbons | 
 [Functional Profiling with PICRUSt2 ](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day1/Functional_profiling_with_Picrust2_workshopTEK_June2020.pdf) | Dr. Thomas Keller |
 
   
