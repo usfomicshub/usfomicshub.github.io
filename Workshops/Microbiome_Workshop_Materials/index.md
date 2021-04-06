@@ -65,7 +65,7 @@ Day one of this workshop focuses on an overview of available methods and best-pr
 | ---     |   --------  |
 | [[Intro to Microbiome Studies](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day1/USFGenomicsMicrobiomeWorkshopApril2021_BreifIntro_RaysJiang.pptx)
 | [USF Genomics Introduction and Workshop Overview](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day1/JO.Hub.Microbiome.06102020.pdf) | Dr. Jenna Oberstaller |
-| [USF Genomics Equipment Core](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day1/USF%20Genomics%20Core%20Introduction-06102020-MZ.pdf) | Dr. Min Zhang |
+| [USF Genomics Equipment Core](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day1/Introduction-USF_Genomics_Core_and_Sequencing_Services-MZ.pdf) | Dr. Min Zhang |
 | [Introduction to Microbiome Data Analysis](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day1/AS_07Apr2021_Microbiome_talk.pptx) | Dr. Anujit Sarkar |
 | [Best Practices for Microbiome Sample-handling and Nucleic Acid-processing](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day1/Best%20practices%20for%20microbiome%20sample-handling%20and%20nucleic%20acid-processing.pdf) | Swamy Rakesh Adapa, MS |
 | [Statistical Considerations for Microbiome Studies](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day1/Statistical%20considerations%20of%20microbiome%20studies.pdf) | Dr. Ming Ji |
