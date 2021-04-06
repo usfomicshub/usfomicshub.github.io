@@ -122,7 +122,7 @@ NOTE: We will be using an R Project format for the rest of our tutorials so we w
 
 *You should see the folders(Ranalysis,Rdata,etc..) when you open the Day2 folder.*
 
-**6.** Click create project. You should now see a Day2.Rproj file in the lower right files pane. Double click it to make sure you are within the project. If you are not already within your R project, you will be asked to open it but if you are already in your R project, project options will be displayed.
+**6.** Click create project. You should now see a Day2.Rproj file in the lower right files pane. Double click it to make sure you are within the project. If you are not already within your R project, you will be asked to open it. You can tell you are in your R Project if you see the name of your R Project at the top of your RStudio window.
 
 
 For more info behind the logic of creating RStudio projects and adhering to an organizational directory-structure as you build your data-analysis skills, see this [post on reproducible scientific data-analyses](https://swcarpentry.github.io/r-novice-gapminder/02-project-intro/) from Software Carpentry. We don't use exactly the same structure they do, but the concepts are the same: structured analyses make sharing and reproducing analyses much easier!
@@ -231,7 +231,8 @@ Biom file and mapping files that will be converted to phyloseq-class
 
 You should see the folders(Ranalysis,Rdata,etc..) when you open the day3 folder.
 
-**6.** Click create project. You should now see a day3.Rproj file in the lower right files pane. Double click it to make sure you are within the project. If you are not already within your R project, you will be asked to open it but if you are already in your R project, project options will be displayed.
+**6.** Click create project. You should now see a day3.Rproj file in the lower right files pane. Double click it to make sure you are within the project. If you are not already within your R project, you will be asked to open it. You can tell you are in your R Project if you see the name of your R Project at the top of your RStudio window.
+
 
 ### Tutorial Structure
 
