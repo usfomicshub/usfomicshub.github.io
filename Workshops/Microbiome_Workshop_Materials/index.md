@@ -65,7 +65,7 @@ Day one of this workshop focuses on an overview of available methods and best-pr
 | ---     |   --------  |
 | [USF Genomics Introduction and Workshop Overview](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day1/JO.Hub.Microbiome.06102020.pdf) | Dr. Jenna Oberstaller |
 | [USF Genomics Equipment Core](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day1/USF%20Genomics%20Core%20Introduction-06102020-MZ.pdf) | Dr. Min Zhang |
-| [Introduction to Microbiome Data Analysis](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day1/Microbiome_talk_AS_Dec02_2020.pptx) | Dr. Anujit Sarkar |
+| [Introduction to Microbiome Data Analysis](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day1/AS_07Apr2021_Microbiome_talk.pptx) | Dr. Anujit Sarkar |
 | [Best Practices for Microbiome Sample-handling and Nucleic Acid-processing](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day1/Best%20practices%20for%20microbiome%20sample-handling%20and%20nucleic%20acid-processing.pdf) | Swamy Rakesh Adapa, MS |
 | [Statistical Considerations for Microbiome Studies](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day1/Statistical%20considerations%20of%20microbiome%20studies.pdf) | Dr. Ming Ji |
 [Experimental Design](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day1/Microbiome_ED_compressed.pdf) | Swamy Rakesh Adapa, MS | 
@@ -82,7 +82,7 @@ Day one of this workshop focuses on an overview of available methods and best-pr
 
 [Introduction to R and Plotting Data (Dr. Charley Wang)](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day2/R%20Tutorial.pdf)
 
-[Taxonomic Analysis (Dr. Anujit Sarkar)](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day2/AS_03Dec2020_talk_dada2.pdf)
+[Taxonomic Analysis (Dr. Anujit Sarkar)](AS_08Apr2021_talk_dada2.pptx)
 
 ## Initial ASV Analysis 
 
