@@ -15,11 +15,11 @@ main:
 docs:
   - title: Workshop Materials
     children:
-      - title: "Microbiome Analysis Workshop"
+      - title: "> Microbiome Analysis Workshop"
         url: /Workshops/Microbiome_Workshop_Materials/
-      - title: "RNAseq Analysis Workshop"
+      - title: "> RNAseq Analysis Workshop"
         url: /Workshops/RNAseq_Workshop_Materials/
-      - title: "RNAseq Laboratory Workshop"
+      - title: "> RNAseq Laboratory Workshop"
         url: /Workshops/RNAseq_Lab_Workshop_Materials/       
 
 docs-2:
