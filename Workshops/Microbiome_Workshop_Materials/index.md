@@ -46,7 +46,7 @@ You can also use latest version of RStudio. You can check this within RStudio by
 Finally, update your packages by clicking 'Check for Package Updates...' in Tools.
 
 
-⬣ We know that programming can be very intimidating at first, so we created this [introductory course](https://usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/rtutorial/index.html) to help researchers such as you start your programming journey. 
+⬣ We know that programming can be very intimidating at first, so we created this [introductory R course](https://usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/rtutorial/index.html) to help researchers such as you start your programming journey. 
 If you are a bit familiar with R, please still check out this resource as it covers how the workshop tutorials will be set up. We'll be moving quickly through basic concepts in R to get to the actual data-analysis. We strongly recommend reviewing the R tutorial to get you started/help you keep up.  
 
   
@@ -86,17 +86,12 @@ Day one of this workshop focuses on an overview of available methods and best-pr
 
 ## Initial ASV Analysis 
 
-Download the zip file [here](https://github.com/usfomicshub/microbiome_workshop/raw/master/exercises/microbiome_BasicR.zip) and extract it to get started on Charley's initial ASV analysis tutorial. Open the .Rmd file in RStudio by going to File tab and clicking 'Open.' Depending on where you extracted your folder to on your computer, your directory path will be different. We will need to change the paths in the first chunk of code in this Rscript which loads the text files we need to run the tutorial. The path is the first part of the read.table function surrounded by single quotations.
+Download the zip file [here](https://github.com/usfomicshub/microbiome_workshop/raw/master/exercises/microbiome_BasicR.zip) and extract it to get started on Charley's initial ASV analysis tutorial. Open the .Rmd file in RStudio by going to File tab and clicking 'Open.' Depending on where you extracted your folder to on your computer, your directory path will be different. More on working directories can be found [here](https://usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/rtutorial/index.html#Working_directories). We will need to change the paths in the first chunk of code in this Rscript which loads the text files we need to run the tutorial. The path is the first part of the read.table function surrounded by single quotations.
 
-To find our file paths..
-
-**On Windows**: Browse through Windows Explorer to where you extracted the zip file and find the asv.table.txt file. Hold down the Shift key and Right-click on the file name. In the pop-up context menu, click on the option to ‘Copy as path‘. Open the .Rmd file and replace the first path surrounded by quotation marks at line 11 with the path we just copied. The new path should still be in quotation marks. R interprets the backslash "\" file path seperators as something else, so replace all backslashses with forwardslashes "/" and now, R knows where to go to find the file we want to upload. Repeat the same process for the taxa_for_asv.txt file for the path at line 14.
-
-**On Mac**: In Finder, browse to where you extracted your zip file and click on the asv.table.txt file to highlight it then press Command+i to open the Get Info window. In the "General" section near the top, there is a "Where" component. Copy everything in this component. This does not include the file name so we need to make sure we add it after we paste it into our path. Open the .Rmd file and replace the first path surrounded by quotation marks at line 11 with the path we just copied. The new path should still be in quotation marks. Within the quotations, add a forward slash "/" at the end of the path and type the name of the file 'asv.table.txt' then repeat the same process for the taxa_for_asv.txt file for the path at line 14
-
-*NOTE*: We will be using an R Project format for the rest of our tutorials so we will not need to worry about changing paths for the remainder of the workshop but it is still important to understand how file paths and directories work when loading data from our local computer since you will most likely be doing it a lot.
 
 ### [Follow along Charleys tutorial here!!](https://usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/microbiome_workshop_demos/day2/init_asv_analysis/index.html)
+
+NOTE: We will be using an R Project format for the rest of our tutorials so we will not need to worry about changing paths for the remainder of the workshop but it is still important to understand how file paths and directories work when loading data from our local computer since you will most likely be doing it a lot.
 
 ## DADA2 Pipeline
 
@@ -119,13 +114,16 @@ To find our file paths..
 
 **4.** Create the new project by choosing 'Existing Directory'
 
+<center>
+<img src="https://github.com/usfomicshub/usfomicshub.github.io/blob/master/images/rtutorial_createproj.png?raw=true" width="420" height="320" style="border: 1px solid lightgrey">
+</center>
+
 **5.** Browse to the directory where you extracted the zip file and make sure 'Day2' is the base name in your project directory file path.
 
 *You should see the folders(Ranalysis,Rdata,etc..) when you open the Day2 folder.*
 
 **6.** Click create project. You should now see a Day2.Rproj file in the lower right files pane. Double click it to make sure you are within the project. If you are not already within your R project, you will be asked to open it but if you are already in your R project, project options will be displayed.
 
-  
 
 For more info behind the logic of creating RStudio projects and adhering to an organizational directory-structure as you build your data-analysis skills, see this [post on reproducible scientific data-analyses](https://swcarpentry.github.io/r-novice-gapminder/02-project-intro/) from Software Carpentry. We don't use exactly the same structure they do, but the concepts are the same: structured analyses make sharing and reproducing analyses much easier!
 
@@ -224,6 +222,10 @@ Biom file and mapping files that will be converted to phyloseq-class
 **3.** Open RStudio and click on New Project in the File tab.
 
 **4.** Create the new project by choosing 'Existing Directory'
+
+<center>
+<img src="https://github.com/usfomicshub/usfomicshub.github.io/blob/master/images/rtutorial_createproj.png?raw=true" width="420" height="320" style="border: 1px solid lightgrey">
+</center>
 
 **5.** Browse to the directory where you extracted the zip file and make sure 'day3' is the base name in your project directory file path.
 
