@@ -63,7 +63,7 @@ Day one of this workshop focuses on an overview of available methods and best-pr
 
 | AGENDA  |  INSTRUCTOR |
 | ---     |   --------  |
-| [[Intro to Microbiome Studies](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day1/USFGenomicsMicrobiomeWorkshopApril2021_BreifIntro_RaysJiang.pptx)
+| [Intro to Microbiome Studies](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day1/USFGenomicsMicrobiomeWorkshopApril2021_BreifIntro_RaysJiang.pptx)
 | [USF Genomics Introduction and Workshop Overview](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day1/JO.Hub.Microbiome.06102020.pdf) | Dr. Jenna Oberstaller |
 | [USF Genomics Equipment Core](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day1/Introduction-USF_Genomics_Core_and_Sequencing_Services-MZ.pdf) | Dr. Min Zhang |
 | [Introduction to Microbiome Data Analysis](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day1/AS_07Apr2021_Microbiome_talk.pptx) | Dr. Anujit Sarkar |
