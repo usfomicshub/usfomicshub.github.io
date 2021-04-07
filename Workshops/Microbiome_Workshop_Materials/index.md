@@ -85,9 +85,23 @@ Day one of this workshop focuses on an overview of available methods and best-pr
 
 [Taxonomic Analysis (Dr. Anujit Sarkar)](https://github.com/usfomicshub/microbiome_workshop/raw/master/slides/day2/AS_08Apr2021_talk_dada2.pptx)
 
+## R Hands-on Practice
+
+[Download Charley's tutorial](https://github.com/usfomicshub/microbiome_workshop/raw/master/exercises/R_tutorial.zip). Follow along below! 
+
+1. [Creating Boxplots](https://usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/microbiome_workshop_demos/day2/R_tutorial/boxplot/index.html)
+
+2. [Creating Histograms](https://usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/microbiome_workshop_demos/day2/R_tutorial/Heatmap/index.html)
+
+3. [Creating Scatterplots](https://usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/microbiome_workshop_demos/day2/R_tutorial/Scatter_plot/index.html)
+
+4. [Creating Heatmaps](https://usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/microbiome_workshop_demos/day2/R_tutorial/Heatmap/index.html)
+
+
+
 ## Initial ASV Analysis 
 
-Download the zip file [here](https://github.com/usfomicshub/microbiome_workshop/raw/master/exercises/microbiome_BasicR.zip) and extract it to get started on Charley's initial ASV analysis tutorial. Open the .Rmd file in RStudio by going to File tab and clicking 'Open.' Depending on where you extracted your folder to on your computer, your directory path will be different. More on working directories can be found [here](https://usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/rtutorial/index.html#Working_directories). We will need to change the paths in the first chunk of code in this Rscript which loads the text files we need to run the tutorial. The path is the first part of the read.table function surrounded by single quotations.
+[Download the zip file](https://github.com/usfomicshub/microbiome_workshop/raw/master/exercises/microbiome_BasicR.zip) and extract it to get started on Charley's initial ASV analysis tutorial. Open the .Rmd file in RStudio by going to File tab and clicking 'Open.' Depending on where you extracted your folder to on your computer, your directory path will be different. More on working directories can be found [here](https://usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/rtutorial/index.html#Working_directories). We will need to change the paths in the first chunk of code in this Rscript which loads the text files we need to run the tutorial. The path is the first part of the read.table function surrounded by single quotations.
 
 
 ### [Follow along Charleys tutorial here!!](https://usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/microbiome_workshop_demos/day2/init_asv_analysis/index.html)
