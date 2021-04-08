@@ -91,7 +91,7 @@ Day one of this workshop focuses on an overview of available methods and best-pr
 
 1. [Creating Boxplots](https://usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/microbiome_workshop_demos/day2/R_tutorial/boxplot/index.html)
 
-2. [Creating Histograms](https://usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/microbiome_workshop_demos/day2/R_tutorial/Heatmap/index.html)
+2. [Creating Histograms](https://usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/microbiome_workshop_demos/day2/R_tutorial/Hist_Density/index.html)
 
 3. [Creating Scatterplots](https://usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/microbiome_workshop_demos/day2/R_tutorial/Scatter_plot/index.html)
 
