@@ -2,7 +2,7 @@
 layout: slpash
 title: "Cluster Computing"
 feature_row:
-  - image_path: /images/microbiomeworkshopsquare.png
+  - image_path: /images/HPC.png
     alt: "Microbiome Analysis Workshop"
     title: "Microbiome Analysis Workshop"
     excerpt: "Check out our materials for our Microbiome Analysis Workshop"
