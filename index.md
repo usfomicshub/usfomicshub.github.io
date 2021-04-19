@@ -9,7 +9,7 @@ header:
       url: https://usfomicshub.github.io/
 excerpt: <p style="opacity:0">We post our materials for our data-analysis workshops here, information for upcoming events, as well as the code we’ve developed for various other omics-related data analyses. Check out materials of our most recent events and more about us below! We post our materials for our data-analysis workshops here, information for upcoming events, as well as the code we’ve developed for various other omics-related data analyses. Check out materials of o</p>
 intro: 
-  - excerpt: "We post our materials for our data-analysis workshops here, information for upcoming events, as well as the code we’ve developed for various other omics-related data analyses. Check out materials of our most recent events and more about us below!"
+  - excerpt: "We post our materials for our data-analysis workshops here, information for upcoming events, as well as the code we’ve developed for various other omics-related data analyses. Check out materials of our most recent events and read more about us below!"
 feature_row:
   - image_path: /images/microbiomeworkshopsquare.png
     alt: "Microbiome Analysis Workshop"
