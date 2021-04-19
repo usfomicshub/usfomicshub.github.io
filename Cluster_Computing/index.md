@@ -1,5 +1,5 @@
 --- 
-layout: posts
+layout: splash
 title: "USF Cluster Accounts"
 classes: wide
 ---
