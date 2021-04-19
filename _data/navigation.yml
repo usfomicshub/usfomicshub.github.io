@@ -30,6 +30,12 @@ docs-2:
       - title: "> 2020 - Host Microbiome Interactions in a Global System"
         url: /Codeathon/Codeathon2020/
 
+docs-3:
+  - title: OmicsHub Modules
+    children:
+      - title: "> RNAseq Pipeline"
+
+
 Codeathon2020: 
   - title: USF Codeathons 
     children:
