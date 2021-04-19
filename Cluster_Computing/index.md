@@ -5,9 +5,9 @@ feature_row:
   - image_path: /images/HPC.png
     alt: "USF Cluster Computing"
     title: "USF Cluster Computing"
-    excerpt: "Check out our materials for our Microbiome Analysis Workshop"
+    excerpt: "Information about High Performance Cluster computing and getting started with USF cluster accounts"
     url: "https://usfomicshub.github.io/Clust_Computing/USF_Cluster_Accounts/"
-    btn_label: "Visit Workshop Page"
+    btn_label: "Learn more.."
     btn_class: "btn--primary"
   - image_path: /images/codeathon2021square.jpg
     alt: "Codeathon 2021"
@@ -17,3 +17,5 @@ feature_row:
     btn_label: "Check Out Updates"
     btn_class: "btn--primary"
 ---
+{% include feature_row layout="third"%}
+
