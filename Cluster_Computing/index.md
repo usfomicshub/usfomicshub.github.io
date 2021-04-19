@@ -3,10 +3,10 @@ layout: slpash
 title: "Cluster Computing"
 feature_row:
   - image_path: /images/HPC.png
-    alt: "Microbiome Analysis Workshop"
-    title: "Microbiome Analysis Workshop"
+    alt: "USF Cluster Computing"
+    title: "USF Cluster Computing"
     excerpt: "Check out our materials for our Microbiome Analysis Workshop"
-    url: "https://usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/"
+    url: "https://usfomicshub.github.io/Clust_Computing/USF_Cluster_Accounts/"
     btn_label: "Visit Workshop Page"
     btn_class: "btn--primary"
   - image_path: /images/codeathon2021square.jpg
