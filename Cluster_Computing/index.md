@@ -1,5 +1,5 @@
 ---
-layout: slpash
+layout: splash
 title: "Cluster Computing"
 feature_row:
   - image_path: /images/HPC.png
