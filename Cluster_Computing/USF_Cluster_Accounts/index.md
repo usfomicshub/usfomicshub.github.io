@@ -1,6 +1,8 @@
 --- 
 layout: posts
 title: "USF Cluster Accounts"
+sidebar:
+  nav: "docs-3"
 classes: wide
 ---
 
