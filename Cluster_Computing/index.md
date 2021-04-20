@@ -6,9 +6,7 @@ sidebar:
 classes: wide
 ---
 
-#### Check out the information below to get started with cluster computing through your USF account. 
-
-#### <-- You may also find modules that the OmicsHub has created to make running your analyses easier! 
+#### Check out the information below to get started with cluster computing through your USF account. You may also navigate the side menu to find modules that the OmicsHub has created to make running your analyses easier! 
 
  > "High Performance Computing most generally refers to the practice of aggregating computing power in a way that delivers much higher performance than one could get out of a typical desktop computer or workstation in order to solve large problems in science, engineering, or business." 
 
