@@ -13,11 +13,14 @@ The OmicsHub has created a module for running the entire RNAseq pipeline in just
 *   access to the RRA or CIRCE cluster
 
 *   Suggested naming convention for fastq files:
+
       strain_timepoint_replicate_R1.fastq.gz
       strain_timepoint_replicate_R2.fastq.gz
 
 *   Paired reads must have identical file names except for R1 and R2.
+
       Note: the use of R1 and R2 to denote read pair 1 and read pair 2 is not optional. Any text to the right of R1 or R2 will not be included in the output so don't put any important information there.
+
   If you follow this convention your data will be sorted by strain, timepoint and replicate. 
 
 ### To load the module:
