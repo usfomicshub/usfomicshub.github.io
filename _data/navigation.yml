@@ -34,7 +34,7 @@ docs-3:
   - title: OmicsHub Modules
     children:
       - title: "> RNAseq Pipeline"
-
+        url: /Cluster_Computing/RNAseq_Pipeline/
 
 Codeathon2020: 
   - title: USF Codeathons 
