@@ -1,8 +1,14 @@
 --- 
 layout: posts
 title: "USF Cluster Accounts"
+sidebar:
+  nav: "docs-3"
 classes: wide
+intro: 
+  - excerpt: "We post our materials for our data-analysis workshops here, information for upcoming events, as well as the code we’ve developed for various other omics-related data analyses. Check out materials of our most recent events and read more about us below!"
 ---
+
+{% include feature_row id="intro" type="center" %}
 
 ### Table of Contents
 
