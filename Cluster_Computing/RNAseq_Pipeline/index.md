@@ -6,8 +6,8 @@ sidebar:
 classes: wide
 ---
 
-The OmicsHub has created a module for running the entire RNAseq pipeline in just a few lines. 
-  
+#### An easy-to-use environment for running the entire RNAseq pipeline in just a few lines!
+
 ### Requirements 
 
 *   access to the RRA or CIRCE cluster
