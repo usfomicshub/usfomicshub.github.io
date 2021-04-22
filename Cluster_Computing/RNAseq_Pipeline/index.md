@@ -60,3 +60,5 @@ classes: wide
   The slurm files for this example would be called rna_seq_pipeline_commands.sh rna_seq_pipeline_commands2.sh. 
 
   These scripts are automatically submitted to slurm to run, but should be saved for your records.
+
+Contact **genomics@usf.edu** for questions. 
