@@ -35,6 +35,8 @@ docs-3:
     children:
       - title: "> RNAseq Pipeline"
         url: /Cluster_Computing/RNAseq_Pipeline/
+      - title: "> Basespace Downloader"
+        url: /Cluster_Computing/Basespace/
 
 Codeathon2020: 
   - title: USF Codeathons 
