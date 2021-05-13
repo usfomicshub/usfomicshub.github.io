@@ -68,7 +68,7 @@ You can refer to [Research Computing's documentation-wiki](https://wiki.rc.usf.e
 
 ## How to Connect to your RRA or CIRCE Cluster Account
 
-Now that you have your account created, you will need to use an SSH client to connect. If you are connecting to your RRA account, you will first need to install and be connected to the Palo Alto GlobalProtect VPN. Follow the instructions [here](https://www.usf.edu/it/documentation/virtual-private-network.aspx) to download the VPN. Due to the sensitive datasets employed on RRA, use of DUO mobile is required to successfully authenticate and login to the cluster. Research Computing staff highly recommends use of the DUO mobile app with push notifications as the default.
+Now that you have your account created, you will need to use an SSH client to connect. <u>If you are connecting to your RRA account</u>, you will first need to install and be connected to the Palo Alto GlobalProtect VPN. Follow the instructions [here](https://www.usf.edu/it/documentation/virtual-private-network.aspx) to download the VPN. Due to the sensitive datasets employed on RRA, use of DUO mobile is required to successfully authenticate and login to the cluster. Research Computing staff highly recommends use of the DUO mobile app with push notifications as the default.
 
 #### SSH Clients for Windows 
 
