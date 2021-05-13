@@ -6,7 +6,7 @@ sidebar:
 classes: wide
 ---
 
-#### Step-by-step guide to loading the Hub's basespace downloader-module and transferring your files from basespace to RRA
+#### Step-by-step guide to loading the Hub's basespace downloader-module and transferring your files from Basespace to RRA
 
 NOTE: this module is in beta-testing 
 
@@ -14,7 +14,7 @@ NOTE: this module is in beta-testing
 
 After logging in to RRA, run these steps..
 
-1. Add the hub's module files to your path for this session.
+1. Add the Hub's module files to your path for this session.
 
         export MODULEPATH=/shares/omicshub/modulefiles:$MODULEPATH
 
@@ -23,11 +23,11 @@ After logging in to RRA, run these steps..
         module purge
 
 
-3. Load the hub's basespace module.
+3. Load the Hub's basespace module.
 
         module load hub.apps/basespace/april.2021
 
-Now the basespace client and the downloader-script have been added to your path. For further documentation on options available using the bs command-line client, if you're curious: https://developer.basespace.illumina.com/docs/content/documentation/cli/cli-overview#CommandStructure
+Now the Basespace client and the downloader-script have been added to your path. For further documentation on options available using the bs command-line client, if you're curious: https://developer.basespace.illumina.com/docs/content/documentation/cli/cli-overview#CommandStructure
 
 ### To transfer files from Basespace to RRA 
 
