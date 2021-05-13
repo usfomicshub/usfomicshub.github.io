@@ -13,7 +13,7 @@ classes: wide
 
 ### Table of Contents
 
-1. [RRA and CIRCE: Whats the difference and which one do I use?](#whats-the-difference)
+1. [RRA and CIRCE: What's the difference and which one do I use?](#what's-the-difference)
 - [How to Create an RRA Cluster Account](#how-to-create-an-rra-cluster-account)
 - [How to Create a CIRCE Cluster Account](#how-to-create-a-circe-cluster-account)
 2. [How to Connect to your RRA or CIRCE Cluster Account](#how-to-connect-to-your-rra-or-circe-cluster-account)
@@ -31,7 +31,7 @@ USF Genomics researchers requiring high-performance computing have two primary c
 
   
 
-## Whats the difference and which one do I use? 
+## What's the difference and which one do I use? 
 ***
 
 Both clusters have excellent capabilities. As the name implies, **RRA** has stringent security measures in place to limit access and to protect potentially-sensitive human-subjects data. Your research does not need to include HIPAA-protected data for you to use RRA. Everybody requesting an RRA-account will, however, need to obtain HIPAA-training before their account can be created. Jobs run on RRA typically have faster turnaround-time as it is currently at lower utilization.
@@ -51,7 +51,7 @@ To request an RRA-Cluster account, email [help@usf.edu](mailto:help@usf.edu) fro
 
 Once contacted, RC administrators will send over all applicable SabaCloud/Docusign links/information, which will include instructions for completing your online HIPAA-certification. HIPAA Training is required for access to the Genomics RRA cluster.
 
-If you or your supporting USF Faculty member are NOT listed on the [USF Genomics Faculty page](https://health.usf.edu/publichealth/ghidr/genomics/researchers), please email [genomics@usf.edu](mailto:genomics@usf.edu) for clearance BEFORE requesting an account.
+If you or your supporting USF Faculty member are NOT listed on the [USF Genomics Faculty page](https://health.usf.edu/publichealth/ghidr/genomics/researchers), please email [genomics@usf.edu](mailto:genomics@usf.edu) for clearance before requesting an account.
 
 _**All RRA accounts are automatically granted access to CIRCE. If requesting an RRA account, do not send in a request for a CIRCE account as well.**_
 
@@ -103,9 +103,9 @@ Windows SSH Clients will have boxes to fill this information. Mac users will sim
 ## Available Software and Tools
 ***
 
-USF Research Computing maintains the High-Performance Computing (HPC) hardware and resources available to all USF Researchers. They have gone above and beyond to provide installations of USF Genomics software-requests on both CIRCE and RRA clusters. Their list of available software and any documentation can be found [here](https://wiki.rc.usf.edu/index.php/Applications). A more updated list of pending and recently-completed installs can be found [here](https://wiki.rc.usf.edu/index.php/Apps_Queue), though most of these have not yet been documented due to the bulk of requests.
+USF Research Computing maintains the High-Performance Computing (HPC) hardware and resources available to all USF Researchers. They have provided installations of many USF Genomics software-requests on both CIRCE and RRA clusters. Their list of available software and any documentation can be found [here](https://wiki.rc.usf.edu/index.php/Applications). A more updated list of pending and recently-completed installs can be found [here](https://wiki.rc.usf.edu/index.php/Apps_Queue), though most of these have not yet been documented due to the bulk of requests.
 
-To relieve some of the Genomics-software installation- and documentation-burden from RC, the Hub (with guidance from RC) has established an independently-maintained repository on RRA of mostly omics-related software available for all RRA account-holders.
+To relieve some of the Genomics-software installation- and documentation-burden from RC, the Hub has established an independently-maintained repository on RRA of mostly omics-related software available for all RRA account-holders.
 
 ### Anaconda3 environments
 
@@ -222,7 +222,7 @@ _When you are finished using the environment, you should unload it to avoid intr
     
 ## How to Transfer Files to Local Computer
 
-When tranfersing files from your cluster account to your local computer, you will need to use a file-transfer client. We reccommend these two file-transfer clients:
+When transfering files from your cluster account to your local computer, you will need to use a file-transfer client. We reccommend these two file-transfer clients:
 
 [FileZilla](https://filezilla-project.org/download.php) 
 
@@ -233,6 +233,6 @@ The logging in process is similar to connecting to the cluster. The interface ma
 ## More about USF Research Computing
 ***
 
-You can find more information about USF's clusters as well as Linux tutorials and high performance computing basics on USF's Research Computing main wiki page [here](https://wiki.rc.usf.edu/index.php/Main_Page).
+You can find more information about USF's clusters as well as Linux tutorials and high-performance computing basics on USF's Research Computing main wiki page [here](https://wiki.rc.usf.edu/index.php/Main_Page).
 
 
