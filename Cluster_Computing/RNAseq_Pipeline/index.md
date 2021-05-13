@@ -26,7 +26,7 @@ classes: wide
 ### To load the module:
 
     
-1. Add the hub's module files to your path for this session.
+1. Add the Hub's module files to your path for this session.
 
         export MODULEPATH=/shares/omicshub/modulefiles:$MODULEPATH
 
@@ -36,7 +36,7 @@ classes: wide
         module purge
 
 
-3. Load everything you need to run Justin Gibbon's RNAseq pipeline into your path.
+3. Load everything you need to run the Hub's RNAseq pipeline into your path.
 
         module load hub.apps/rnaseqpipeline/april.2021
 
