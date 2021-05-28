@@ -23,6 +23,8 @@ classes: wide
 6. [More About USF Research Computing](#more-about-usf-research-computing)
 
 
+## Available resources
+
 USF Genomics researchers requiring high-performance computing have two primary cluster-computing options(both maintained by USF Research Computing) :
 
 ⬣ [**Research-Restricted Access cluster (RRA)**](https://wiki.rc.usf.edu/index.php/RRA_Hardware), to which USF Genomics Program members have priority access.
