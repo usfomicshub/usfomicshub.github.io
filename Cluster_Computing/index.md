@@ -13,9 +13,9 @@ classes: wide
 
 ### Table of Contents
 
-1. [RRA and CIRCE: What's the difference and which one do I use?](#what's-the-difference)
+1. [RRA and CIRCE: What's the difference and which one do I use?](#whats-the-difference-and-which-one-do-i-use)
 - [How to Create an RRA Cluster Account](#how-to-create-an-rra-cluster-account)
-- [How to Create a CIRCE Cluster Account](#how-to-create-a-circe-account)
+- [How to Create a CIRCE Cluster Account](#how-to-create-a-circe-cluster-account)
 2. [How to Connect to your RRA or CIRCE Cluster Account](#how-to-connect-to-your-rra-or-circe-cluster-account)
 3. [Available Sofware and Tools](#available-software-and-tools)
 4. [How to Load Software](#loading-and-using-software)
@@ -57,7 +57,7 @@ See [RC's wiki](https://wiki.rc.usf.edu/index.php/RRA) for additional useful inf
 
 _**All RRA accounts are automatically granted access to CIRCE.**_
 
-### How to Create a CIRCE Account: 
+### How to Create a CIRCE Cluster Account: 
 
 To request a CIRCE account, email [help@usf.edu](mailto:rc-help@usf.edu) _from your official USF email address_ with the following information:
 
