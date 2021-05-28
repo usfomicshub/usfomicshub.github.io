@@ -15,7 +15,7 @@ classes: wide
 
 1. [RRA and CIRCE: What's the difference and which one do I use?](#what's-the-difference)
 - [How to Create an RRA Cluster Account](#how-to-create-an-rra-cluster-account)
-- [How to Create a CIRCE Cluster Account](#how-to-create-a-circe-cluster-account)
+- [How to Create a CIRCE Cluster Account](#how-to-create-a-circe-account)
 2. [How to Connect to your RRA or CIRCE Cluster Account](#how-to-connect-to-your-rra-or-circe-cluster-account)
 3. [Available Sofware and Tools](#available-software-and-tools)
 4. [How to Load Software](#loading-and-using-software)
@@ -25,7 +25,7 @@ classes: wide
 
 USF Genomics researchers requiring high-performance computing have two primary cluster-computing options(both maintained by USF Research Computing) :
 
-⬣ **Research-Restricted Access cluster (RRA)**, to which USF Genomics Program members have priority access.
+⬣ [**Research-Restricted Access cluster (RRA)**](https://wiki.rc.usf.edu/index.php/RRA_Hardware), to which USF Genomics Program members have priority access.
 
 ⬣ **CIRCE**, the primary cluster servicing all USF researchers.
 
@@ -44,7 +44,7 @@ Please follow the instructions below to gain access to the appropriate cluster. 
 
 ### How to Create an RRA Cluster Account:
 
-To request an RRA-Cluster account, email [help@usf.edu](mailto:help@usf.edu) from your _official USF email address_ with the following information:
+To request an RRA-Cluster account, email [help@usf.edu](mailto:rc-help@usf.edu) from your _official USF email address_ with the following information:
 
 *   Supporting USF Faculty-member full name
 *   Supporting USF Faculty-member email address
@@ -53,11 +53,13 @@ Once contacted, RC administrators will send over all applicable SabaCloud/Docusi
 
 If you or your supporting USF Faculty member are NOT listed on the [USF Genomics Faculty page](https://health.usf.edu/publichealth/ghidr/genomics/researchers), please email [genomics@usf.edu](mailto:genomics@usf.edu) for clearance before requesting an account.
 
-_**All RRA accounts are automatically granted access to CIRCE. If requesting an RRA account, do not send in a request for a CIRCE account as well.**_
+See [RC's wiki](https://wiki.rc.usf.edu/index.php/RRA) for additional useful information.
+
+_**All RRA accounts are automatically granted access to CIRCE.**_
 
 ### How to Create a CIRCE Account: 
 
-To request a CIRCE account, email [help@usf.edu](mailto:help@usf.edu) _from your official USF email address_ with the following information:
+To request a CIRCE account, email [help@usf.edu](mailto:rc-help@usf.edu) _from your official USF email address_ with the following information:
 
 *   Supporting USF Faculty-member full name
 *   Supporting USF Faculty-member email address
