@@ -30,7 +30,7 @@ GOAL
 <h2 style="color:#005440"> Pre-course Materials</h2>
 * * *
 
-You should have received an email regarding the agenda and pre-course materials for this workshop as well as been added to the Canvas Course. This canvas course includes all of the installation and tutorials that must be completed prior to the workshop. Those enrolled in this course will have a Student Cluster account created for them. You will need to be able to login to your SC account, install RStudio and TeamViewer prior to the workshop.
+You should have received an email regarding the agenda and pre-course materials for this workshop as well as been added to the Canvas Course. This canvas course includes all of the installation and tutorials that must be completed prior to the workshop. Those enrolled in this course will have a Student Cluster account created for them. Prior to the workshop, you will need to be able to login to your SC account and install R and RStudio.
 
 These additional resources may also be helpful..
 
@@ -40,9 +40,11 @@ These additional resources may also be helpful..
 
 ⬣ [FileZilla](https://filezilla-project.org/download.php) - FileZilla makes it easy to copy and download files between your local computer and remote clusters.
 
-⬣ If you do not have R and RStudio installed already, you can follow these [instructions](https://github.com/usfomicshub/RNASeq_workshop/raw/master/pre_course_materials/r_installation_instructions_062020.pdf) for both Mac and Windows.
+⬣ If you do not have R and RStudio installed already, follow these [instructions](https://github.com/usfomicshub/RNASeq_workshop/raw/master/pre_course_materials/r_installation_instructions_062020.pdf).
 
-⬣ We recommend these two R tutorials to get you started: [Basic Programming Skills in R](https://www.datacamp.com/community/tutorials/basic-programming-skills-r) and [Utilities in R](https://www.datacamp.com/community/tutorials/utilities-in-r)
+⬣ We know that programming can be very intimidating at first, so we created this [introductory R course](https://usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/rtutorial/index.html) to help researchers such as you start your programming journey. 
+If you are a bit familiar with R, please still check out this resource as it covers how the workshop tutorials will be set up. We'll be moving quickly through basic concepts in R to get to the actual data-analysis. We strongly recommend reviewing the R tutorial to get you started/help you keep up.
+
 
 
   
