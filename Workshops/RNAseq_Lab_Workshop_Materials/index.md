@@ -20,8 +20,7 @@ GOAL
 <h2 style="color:#005440"> Pre-course Materials</h2>
 * * *
 
-You should have received an email regarding the agenda and pre-course materials for this workshop as well as been added to the Canvas Course. 
-These additional resources may also be helpful..
+You should have received an email including the agenda and pre-course materials for this workshop. 
 
 ⬣ [Illumina Sequencing Overview](https://github.com/usfomicshub/RNASeq_workshop/raw/master/lab/pre_course_materials/Illumina_Sequencing_Overview.pdf) 
 
