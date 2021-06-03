@@ -111,7 +111,7 @@ The scripts are numbered in the order you should run them (via commandline, whil
 
 ###          RNA-Seq Pipeline Workflow 
 
-<img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/rnaseqpipeline.png?raw=TRUE" width =520 height="500" style= "border : 5px solid #75b5aa" class="center">
+<img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/rnaseqpipeline.png?raw=TRUE" width =520 height="500" style= "border : 5px solid #75b5aa" align="center">
 
 **LETS BEGIN!**
 
