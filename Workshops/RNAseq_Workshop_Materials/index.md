@@ -167,21 +167,21 @@ Now, we can allign our reads to this but first, make sure to go back to the ./Ge
 
 <u>The hisat2 command is made up of the following arguments:</u>
 
-   --r : files wth unpaired reads
+   &nbsp;&nbsp;&nbsp;&nbsp;--r : files wth unpaired reads
 
-   -p : a performance option defining the number of threads. ncreasing -p increases HISAT2’s memory footprint. E.g. when aligning to a human genome index, increasing -p from 1 to 8 increases the memory footprint by a few hundred megabytes. The number of threads we are using is defined by the NUMBER_OF_PROCESSOR variable.
+   &nbsp;&nbsp;&nbsp;&nbsp;-p : a performance option defining the number of threads. ncreasing -p increases HISAT2’s memory footprint. E.g. when aligning to a human genome index, increasing -p from 1 to 8 increases the memory footprint by a few hundred megabytes. The number of threads we are using is defined by the NUMBER_OF_PROCESSOR variable.
 
-   --dta-cufflinks : Report alignments tailored specifically for Cufflinks. In addition to what HISAT2 does with the above option (–dta), With this option, HISAT2 looks for novel splice sites with three signals (GT/AG, GC/AG, AT/AC), but all user-provided splice sites are used irrespective of their signals.
+   &nbsp;&nbsp;&nbsp;&nbsp;--dta-cufflinks : Report alignments tailored specifically for Cufflinks. In addition to what HISAT2 does with the above option (–dta), With this option, HISAT2 looks for novel splice sites with three signals (GT/AG, GC/AG, AT/AC), but all user-provided splice sites are used irrespective of their signals.
 
-   -x : main argument; the basename of the index for the reference genome follows this.
+   &nbsp;&nbsp;&nbsp;&nbsp;-x : main argument; the basename of the index for the reference genome follows this.
 
-  --rna-strandness : specifies strand-specific information(default is unstranded). For single-end reads, use F or R. For paired-end read, use either FR or RF.
+  &nbsp;&nbsp;&nbsp;&nbsp;--rna-strandness : specifies strand-specific information(default is unstranded). For single-end reads, use F or R. For paired-end read, use either FR or RF.
 
-  -1 : main argument; Comma-separated list of files containing mate 1s (filename usually includes _1), e.g. -1 flyA_1.fq,flyB_1.fq.
+  &nbsp;&nbsp;&nbsp;&nbsp;-1 : main argument; Comma-separated list of files containing mate 1s (filename usually includes _1), e.g. -1 flyA_1.fq,flyB_1.fq.
 
-  -2 : Comma-separated list of files containing mate 2s (filename usually includes _2), e.g. -2 flyA_2.fq,flyB_2.fq.
+  &nbsp;&nbsp;&nbsp;&nbsp;-2 : Comma-separated list of files containing mate 2s (filename usually includes _2), e.g. -2 flyA_2.fq,flyB_2.fq.
 
-  -S : File to write SAM alignments to
+  &nbsp;&nbsp;&nbsp;&nbsp;-S : File to write SAM alignments to
 
   More information on the hisat2 commands can be found [here](http://daehwankimlab.github.io/hisat2/manual/)
 
