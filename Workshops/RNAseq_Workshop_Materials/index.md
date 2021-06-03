@@ -184,6 +184,8 @@ Now, we can allign our reads to this but first, make sure to go back to the ./Ge
 <p>-2 : Comma-separated list of files containing mate 2s (filename usually includes _2), e.g. -2 flyA_2.fq,flyB_2.fq.</p>
 
 <p>-S : File to write SAM alignments to</p>
+  
+ </div>
 
   More information on the hisat2 commands can be found [here](http://daehwankimlab.github.io/hisat2/manual/)
 
