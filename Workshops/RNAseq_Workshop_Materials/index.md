@@ -109,9 +109,10 @@ The scripts are numbered in the order you should run them (via commandline, whil
 
 **06_run_featureCounts.sh:** Get raw gene counts
 
-###          RNA-Seq Pipeline Workflow 
+<div align="center"><h3>         RNA-Seq Pipeline Workflow </h3>
 
 <img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/rnaseqpipeline.png?raw=TRUE" width =520 height="500" style= "border : 5px solid #75b5aa" align="center">
+  </div>
 
 **LETS BEGIN!**
 
