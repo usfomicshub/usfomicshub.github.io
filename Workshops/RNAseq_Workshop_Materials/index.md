@@ -167,33 +167,39 @@ Now, we can allign our reads to this but first, make sure to go back to the ./Ge
 
 <strong><u>The hisat2 command is made up of the following arguments:</u></strong>
 
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**--r** : files wth unpaired reads
+  <div style="padding-left: 1.5em;background-color:	#F7F6F3">
 
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**-p** : a performance option defining the number of threads. ncreasing -p increases HISAT2’s memory footprint. E.g. when aligning to a human genome index, increasing -p from 1 to 8 increases the memory footprint by a few hundred megabytes. The number of threads we are using is defined by the NUMBER_OF_PROCESSOR variable.
+<p>--r : files wth unpaired reads</p>
 
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**--dta-cufflinks** : Report alignments tailored specifically for Cufflinks. In addition to what HISAT2 does with the above option (–dta), With this option, HISAT2 looks for novel splice sites with three signals (GT/AG, GC/AG, AT/AC), but all user-provided splice sites are used irrespective of their signals.
+<p>-p : a performance option defining the number of threads. ncreasing -p increases HISAT2’s memory footprint. E.g. when aligning to a human genome index, increasing -p from 1 to 8 increases the memory footprint by a few hundred megabytes. The number of threads we are using is defined by the NUMBER_OF_PROCESSOR variable.</p>
 
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**-x** : main argument; the basename of the index for the reference genome follows this.
+<p>--dta-cufflinks : Report alignments tailored specifically for Cufflinks. In addition to what HISAT2 does with the above option (–dta), With this option, HISAT2 looks for novel splice sites with three signals (GT/AG, GC/AG, AT/AC), but all user-provided splice sites are used irrespective of their signals.</p>
 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**--rna-strandness** : specifies strand-specific information(default is unstranded). For single-end reads, use F or R. For paired-end read, use either FR or RF.
+<p>-x : main argument; the basename of the index for the reference genome follows this.</p>
 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**-1** : main argument; Comma-separated list of files containing mate 1s (filename usually includes _1), e.g. -1 flyA_1.fq,flyB_1.fq.
+<p>--rna-strandness : specifies strand-specific information(default is unstranded). For single-end reads, use F or R. For paired-end read, use either FR or RF.</p>
 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**-2** : Comma-separated list of files containing mate 2s (filename usually includes _2), e.g. -2 flyA_2.fq,flyB_2.fq.
+<p>-1 : main argument; Comma-separated list of files containing mate 1s (filename usually includes _1), e.g. -1 flyA_1.fq,flyB_1.fq.</p>
 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**-S** : File to write SAM alignments to
+<p>-2 : Comma-separated list of files containing mate 2s (filename usually includes _2), e.g. -2 flyA_2.fq,flyB_2.fq.</p>
+
+<p>-S : File to write SAM alignments to</p>
 
   More information on the hisat2 commands can be found [here](http://daehwankimlab.github.io/hisat2/manual/)
 
         hisat2 --r -p $NUMBER_OF_PROCESSOR --da-cufflinks -x $REF_GENOME --rna-strandess $RNA_STRANDNESS -1 $SAMPLE_R1 -2 $SAMPLE1_R2 -S $SAMPLE1_SAM_OUTFILE
 
-<u>The samtool command arguments:<u>
+<strong><u>The samtool command arguments:<u></strong>
+  
+  <div style="padding-left: 1.5em;background-color:	#F7F6F3">
 
-  sort: sort alignments by leftmost coordinates 
+  <p>sort: sort alignments by leftmost coordinates </p>
 
-  -@: number of threads
+  <p>-@: number of threads</p>
 
-  -o: where the sorted output is written to 
+  <p>-o: where the sorted output is written to</p>
+    
+  </div>
 
 More Information on the samtools commands can be found [here](http://www.htslib.org/doc/samtools.html#COMMANDS)
 
@@ -203,13 +209,19 @@ These lines are repeated for all four samples. The first two are shown in this s
 
 <img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day2_jg_pt4.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa">
 
-Next, we run cufflinks to assemble reads into transcripts. <u>The cufflink command is made up of the following arguments:</u>
+Next, we run cufflinks to assemble reads into transcripts. 
+  
+  <strong><u>The cufflink command arguments:</u></strong>
 
- -p : number of prosessors
+  <div style="padding-left: 1.5em;background-color:	#F7F6F3">
+  
+ <p>-p : number of prosessors</p>
 
- -G : supplied reference annotation
+<p>-G : supplied reference annotation</p>
 
- -o : output files
+ <p>-o : output files</p>
+    
+  </div>
 
 More information on the cufflinks command can be found [here](http://cole-trapnell-lab.github.io/cufflinks/cufflinks/index.html). We can use the ls -lht command in the /Work directory to see the Cufflinks output. There should be four cufflinks folders for each sample.
 
@@ -219,7 +231,7 @@ Now, we get the normalized gene counts using cuffnorm.
   
 
   
-  <strong><u>The cuffnorm command:</u></strong>
+  <strong><u>The cuffnorm command arguments:</u></strong>
   
 <div style="padding-left: 1.5em;background-color:	#F7F6F3">
   <p>–quiet: suppress messages other than serious warnings and errors.</p>
@@ -237,7 +249,7 @@ Finally, we run featureCounts to get raw gene counts.
  
 
   
-  <strong><u>The featureCounts command is made up of the following arguments:</u></strong>
+  <strong><u>The featureCounts command arguments:</u></strong>
 
   <div style="padding-left: 1.5em;background-color:	#F7F6F3">
 
