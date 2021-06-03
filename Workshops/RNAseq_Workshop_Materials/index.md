@@ -224,7 +224,7 @@ Now, we get the normalized gene counts using cuffnorm.
 <div style="background-color:	#F7F6F3">
   <p>–quiet: suppress messages other than serious warnings and errors.</p>
 
-  <p>–library-norm-method : specifies the library normalization method</p><
+  <p>–library-norm-method : specifies the library normalization method</p>
 
   <p>-L : specifies a label for each sample</p>
   </div>
