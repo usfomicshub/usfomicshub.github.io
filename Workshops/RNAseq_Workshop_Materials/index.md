@@ -219,7 +219,7 @@ Now, we get the normalized gene counts using cuffnorm.
   
 <div style="background-color:	#F7F6F3">
   
-  <u>The cuffnorm command is similar to the cufflinks command:</u>
+  <strong><u>The cuffnorm command is similar to the cufflinks command:</u></strong>
   
 <div style="padding-left: 4em;">
   <p>–quiet: suppress messages other than serious warnings and errors.</p>
@@ -236,10 +236,11 @@ More information on the cuffnorm command can be found [here](http://cole-trapnel
 
 Finally, we run featureCounts to get raw gene counts. 
  
-<div style="background-color:	#F7F6F3">
-  
-<u>The featureCounts command is made up of the following arguments:</u>
 
+  
+  <strong><u>The featureCounts command is made up of the following arguments:</u></strong>
+
+  <div style="background-color:	#F7F6F3">
  <div style="padding-left: 4em;">
    <p>-T : number of threads</p>
 
