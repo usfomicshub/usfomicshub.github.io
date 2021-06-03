@@ -231,7 +231,7 @@ Finally, we run featureCounts to get raw gene counts.
   
 <u>The featureCounts command is made up of the following arguments:</u>
 
- <div style="margin-left: 4em;">
+ <div style="padding-left: 4em;">
 -T : number of threads
 
 -t : Specify the type of input sequencing data. Possible valuesinclude 0, denoting RNA-seq data, or 1, denoting genomic DNA-seq data.
