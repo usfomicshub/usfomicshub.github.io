@@ -219,9 +219,9 @@ Now, we get the normalized gene counts using cuffnorm.
   
 
   
-  <strong><u>The cuffnorm command is similar to the cufflinks command:</u></strong>
+  <strong><u>The cuffnorm command:</u></strong>
   
-<div style="padding-left: 4em;background-color:	#F7F6F3">
+<div style="background-color:	#F7F6F3">
   <p>–quiet: suppress messages other than serious warnings and errors.</p>
 
   <p>–library-norm-method : specifies the library normalization method</p><
