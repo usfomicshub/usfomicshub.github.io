@@ -1,9 +1,7 @@
 --- 
-layout: posts
+layout: single
 title: "USF Genomics Facilities and Resources"
 classes: wide
-sidebar:
-  nav: "docs-2"
 ---
 
 # FACILITIES AND RESOURCES
