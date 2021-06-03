@@ -38,6 +38,11 @@ docs-3:
       - title: "> Basespace Downloader"
         url: /Cluster_Computing/Basespace/
 
+docs-4: # don't need this to show up on main page, but need to link to it...just experimenting. has no children links
+  - title: USF Genomics Facilities and Resources
+    url: /Cluster_Computing/FacilitiesResources/
+
+
 Codeathon2020: 
   - title: USF Codeathons 
     children:
