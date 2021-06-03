@@ -4,7 +4,6 @@ title: "USF Genomics Facilities and Resources"
 classes: wide
 ---
 
-# FACILITIES AND RESOURCES
 
 **Laboratory:**  The **USF Genomics Equipment Core** laboratory facilities are on the 3rd floor of the Interdisciplinary Research Building (IDRB) in the USF Research Park.  The ~3000 sq. ft. BSL2 laboratory space is equipped for cell biological and molecular biological experiments. The USF Genomics Core facility offers/encourages one-on-one consultation with a team of experienced bench and computational scientists on experimental design, sample preparation and data analysis for USF researchers. Certified users can reserve time in the Core to complete
 sample preparation and sequencing with Core staff available to assist as needed. The USF
