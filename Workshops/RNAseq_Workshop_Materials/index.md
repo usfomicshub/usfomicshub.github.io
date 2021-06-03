@@ -215,36 +215,46 @@ More information on the cufflinks command can be found [here](http://cole-trapne
 
 <img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day2_jg_pt5.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa">
 
-Now, we get the normalized gene counts using cuffnorm. <u>The cuffnorm command is similar to the cufflinks command:</u>
+Now, we get the normalized gene counts using cuffnorm.
+  
+<div style="background-color:	#F7F6F3">
+  
+  <u>The cuffnorm command is similar to the cufflinks command:</u>
+  
+<div style="padding-left: 4em;">
+  <p>–quiet: suppress messages other than serious warnings and errors.</p>
 
-–quiet: suppress messages other than serious warnings and errors.
+  <p>–library-norm-method : specifies the library normalization method</p><
 
-–library-norm-method : specifies the library normalization method
-
--L : specifies a label for each sample
+  <p>-L : specifies a label for each sample</p>
+  </div>
+ </div>
 
 More information on the cuffnorm command can be found [here](http://cole-trapnell-lab.github.io/cufflinks/cuffnorm/index.html). The cuffnorm outputs in the /Work directory has its own folder inlcuding a set of files containing normalized expression levels for each gene, transcript, TSS group, and CDS group in the experiment. It does not perform differential expression analysis.
 
 <img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day2_jg_pt6.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa">
 
 Finally, we run featureCounts to get raw gene counts. 
+ 
+<div style="background-color:	#F7F6F3">
   
 <u>The featureCounts command is made up of the following arguments:</u>
 
  <div style="padding-left: 4em;">
    <p>-T : number of threads</p>
 
-<p>-t : Specify the type of input sequencing data. Possible valuesinclude 0, denoting RNA-seq data, or 1, denoting genomic DNA-seq data.</p>
+   <p>-t : Specify the type of input sequencing data. Possible valuesinclude 0, denoting RNA-seq data, or 1, denoting genomic DNA-seq data.</p>
 
-<p>-g : gene identifier</p>
+   <p>-g : gene identifier</p>
 
-<p>-a : name of annotation file</p>
+   <p>-a : name of annotation file</p>
 
-<p>-o : name of output file</p>
+   <p>-o : name of output file</p>
 
-<p>-p : If specified, fragments (or templates) will be counted instead of reads.</p>
+   <p>-p : If specified, fragments (or templates) will be counted instead of reads.</p>
   </div>
-
+ </div> 
+  
 More information on the featureCounts command can be found [here](https://bioconductor.org/packages/release/bioc/vignettes/Rsubread/inst/doc/SubreadUsersGuide.pdf). It outputs numbers of reads assigned to features (or meta-features). It also outputs stat info for the overall summrization results, including number of successfully assigned reads and number of reads that failed to be assigned due to various reasons (these reasons are included in the stat info). We will be using the vehicle_drug_feature_counts.txt file tommorow!
 
 <img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day2_jg_pt7.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa">
