@@ -43,6 +43,8 @@ analytics:
 include:
   - .htaccess
   - _pages
+  - /Cluster_Computing/FacilitiesResources/index.md # testing adding path directly to make into web page
+
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -117,6 +119,11 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-relative-links # added to test if turning .md into html pages is easier
+
+relative_links:
+  enabled: true
+  collections: true
 
 # mimic GitHub Pages with --safe
 whitelist:
