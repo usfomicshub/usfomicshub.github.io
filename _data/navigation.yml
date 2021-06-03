@@ -1,0 +1,79 @@
+# main links
+main:
+  - title: "Workshops"
+    url: /Workshops/
+  - title: "Cluster Computing"
+    url: /Cluster_Computing/
+  - title: "Codeathons"
+    url: /Codeathon/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
+
+
+docs:
+  - title: Workshop Materials
+    children:
+      - title: "> Microbiome Analysis Workshop"
+        url: /Workshops/Microbiome_Workshop_Materials/
+      - title: "> RNAseq Analysis Workshop"
+        url: /Workshops/RNAseq_Workshop_Materials/
+      - title: "> RNAseq Laboratory Workshop"
+        url: /Workshops/RNAseq_Lab_Workshop_Materials/       
+
+docs-2:
+  - title: USF Codeathons 
+    children:
+      - title: "> 2021 - Harnessing Data Sciences Against Pandemics"
+        url: /Codeathon/Codeathon2021/
+      - title: "> 2020 - Host Microbiome Interactions in a Global System"
+        url: /Codeathon/Codeathon2020/
+
+docs-3:
+  - title: OmicsHub Modules
+    children:
+      - title: "> RNAseq Pipeline"
+        url: /Cluster_Computing/RNAseq_Pipeline/
+      - title: "> Basespace Downloader"
+        url: /Cluster_Computing/Basespace/
+
+Codeathon2020: 
+  - title: USF Codeathons 
+    children:
+      - title: "> 2021 - Harnessing Data Sciences Against Pandemics"
+        url: /Codeathon/Codeathon2021/
+      - title: "> 2020 - Host Microbiome Interactions in a Global System"
+        url: /Codeathon/Codeathon2020/
+
+  - title: Download Event Info
+    children: 
+      - title: "Schedule"
+        url: https://github.com/USFOneHealthCodeathon2020/USFOneHealthCodeathon2020.github.io/raw/master/Codeathon%202020%20Agenda.pdf
+      - title: "Data Sources"
+        url: https://github.com/oberstal/USFOneHealthCodeathon2020/raw/master/DataSources_OneHealthCodeathonMicrobiome.pdf
+      - title: "Team Lead Goals"
+        url: https://github.com/USFOneHealthCodeathon2020/USFOneHealthCodeathon2020.github.io/raw/master/codeathon.teamleads.022020_JO.pdf
+      - title: "Code of Conduct"
+        url: "https://hackcodeofconduct.org/1362-one_health"
+
+Codeathon2021: 
+  - title: USF Codeathons 
+    children:
+      - title: "> 2021 - Harnessing Data Sciences Against Pandemics"
+        url: /Codeathon/Codeathon2021/
+      - title: "> 2020 - Host Microbiome Interactions in a Global System"
+        url: /Codeathon/Codeathon2020/
+
+  - title: Download Event Info
+    children: 
+      - title: "Team Projects"
+        url: https://github.com/usfomicshub/USFOneHealthCodeathon2021/raw/master/USF%202021%20Codeathon%20Team%20Project%20Goals%20Descriptions.docx
+      - title: "Schedule"
+        url: https://github.com/usfomicshub/USFOneHealthCodeathon2021/raw/master/2021_Codeathon_Agenda.docx
+      - title: "Intro to Codeathon"
+        url: https://github.com/usfomicshub/USFOneHealthCodeathon2021/raw/master/OHCodeathon_2021_onboarding_20210119_JO.pdf
+      - title: "Pre-Codeathon Materials"
+        url: https://github.com/usfomicshub/USFOneHealthCodeathon2021/raw/master/PreCodeathonResourcesandTutorials.pdf
+      - title: "Code of Conduct"
+        url: "https://hackcodeofconduct.org/1362-one_health"

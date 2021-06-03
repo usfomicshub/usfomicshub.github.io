@@ -1,42 +1,8 @@
+# usfomicshub.github.io
+USF Omics Hub official github-repository: your landing-spot for finding our USF Genomics community-resources.
 
-<html>
-<body>
+Hello! You may have noticed that the repos has been changed quite a bit. This theme is forked from the [minimal mistakes](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/) theme
+which you can check out to see how this repos works. You can also email me for any changes to the site! -JD 
 
+The old repos can be found [here](https://usf.box.com/s/ttelspvcsbo8mfsuwv66sgozd90ix3k1).
 
-<h1 align="center">Welcome to the USF Omics Hub git repository!</h1>
-
-
-  
-<p align="center">
-  <h3 align="center">We post our materials for our data-analysis workshops here, information for upcoming events, as well as the code we've developed for various other omics-related data analyses.</h3>
-  <br>
- </p>
- 
- ## News
-   * USF's One Health Codeathon: Host-Microbiome Interactions in Global Health will be taking place February 26th - 28th! More information is available at the [Genomics Program website](https://health.usf.edu/publichealth/ghidr/genomics).
- 
-   * Presentations from our Genomics Forum One Health Codeathon 2020 onboarding-meeting are now available [here](https://github.com/oberstal/USFOneHealthCodeathon2020/blob/master/README.md).  
-   
-   
- ## Info
-  **See our [Wiki](https://github.com/usfomicshub/usfomicshub.github.io/wiki) page for documentation, walkthroughs for our pipelines, and other helpful information. See our [FAQ](https://github.com/usfomicshub/usfomicshub.github.io/blob/master/wiki/markdowns/Hub_FAQ.md) for answers to common questions about the Omics Hub.**
-  <br>
-  <br>
-  ![Hub logo](https://github.com/usfomicshub/usfomicshub.github.io/blob/master/img/Hub_logo_2.0_small.PNG)
-
-  
-  <br>
-
-
- **Other useful links:**
-  * [USF Genomics Home](https://health.usf.edu/publichealth/ghidr/genomics)
-  * [Hub service inquiries](https://health.usf.edu/publichealth/ghidr/genomics/request-services)
-  * [USF Research Computing Home*](https://wiki.rc.usf.edu/index.php/Main_Page)
-  * [USF Research Computing: Available software*](https://wiki.rc.usf.edu/index.php/Software_and_Libraries)
-
-
-
-
-<h6> * requires USF NetID login </h6>
-</body>
-</html>
