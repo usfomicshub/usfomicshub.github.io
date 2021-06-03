@@ -172,6 +172,8 @@ defaults:
       type: posts
     values:
       layout: single
+      show_date: true # show dates on posts
+      search: true # enable site-search
       author_profile: true
       read_time: true
       comments: # true
