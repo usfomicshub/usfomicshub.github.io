@@ -70,8 +70,8 @@ _**Only send a request for a CIRCE account if you do not currently have (or are 
 
 You can refer to [Research Computing's documentation-wiki](https://wiki.rc.usf.edu/index.php/Main_Page) for further information on HPC-basics, CIRCE hardware and other useful topics. Refer to our [Genomics Facilities and Resources](Cluster_Computing/FacilitiesResources/) for information on RRA hardware and specifications.
 
-[Genomics Facilities and Resources](/Cluster_Computing/FacilitiesResources/index.md)
-[Genomics Facilities and Resources](Cluster_Computing/FacilitiesResources/index.md)
+[Genomics Facilities and Resources](FacilitiesResources/index.md)
+
 
 ## How to Connect to your RRA or CIRCE Cluster Account
 
