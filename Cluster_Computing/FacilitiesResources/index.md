@@ -1,8 +1,6 @@
 --- 
 layout: single
 title: "USF Genomics Facilities and Resources"
-sidebar:
-  nav: "docs-3"
 classes: wide
 ---
 <br>
