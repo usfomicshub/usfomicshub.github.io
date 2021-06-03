@@ -153,7 +153,7 @@ The right-hand side of FileZilla should show your files in the remote site(your 
 
 Lets go back to running the rest of the scripts. 02_build_hisat_index.sh builds the index of our reference genome. *It may be a good idea to write "module purge" before loading hisat2*. 
 
-<div style="background-color:	#FFFFE0">📌 Remember these scripts are written in bash. In the following script, a path is being assigned to the variable, INPUT_REF_FASTA, highlighted in blue which is the fasta file of the genome we want to feed hisat2-build. The base name of the index files (\*.ht2)\ is being assigned to the variable, "INDEX_FILES_BASE_NAME." To call these variables in bash, we use $. After building the index to hisat2, save and submit the job. The output files to go to our ./Genomics_Training/Work folder.</div>
+<div style="background-color:	#FFFFE0">📌  Remember these scripts are written in bash. In the following script, a path is being assigned to the variable, INPUT_REF_FASTA, highlighted in blue which is the fasta file of the genome we want to feed hisat2-build. The base name of the index files (\*.ht2)\ is being assigned to the variable, "INDEX_FILES_BASE_NAME." To call these variables in bash, we use $. After building the index to hisat2, save and submit the job. The output files to go to our ./Genomics_Training/Work folder.</div>
 
 <img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day2_jg_pt3.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa">
 
@@ -161,15 +161,19 @@ While in the ./Genomics_Training/Work directory, we can run the following code t
 
         less hisat_index.out
 
-Now, we can allign our reads to this but first, make sure to go back to the ./Genomics_Training/My_Scripts folder before editing the script in vim. We are loading hisat2 again, to perform the alignment. In this script, you can see we are also loading an application called samtools. We will use this to organize the allignments from hisat2. The hisat2 allignment outputs sam(sequence alignment maps) files. We use use samtools to organze these files by position and convert them to bam files which are smaller. The script includes the variables we want but again, we have to write the hisat command. <u>The hisat2 command is made up of the following arguments:</u>
+Now, we can allign our reads to this but first, make sure to go back to the ./Genomics_Training/My_Scripts folder before editing the script in vim. We are loading hisat2 again, to perform the alignment. 
 
-  --r : files wth unpaired reads
+<div style="background-color:	#FFFFE0">📌  In this script, you can see we are also loading an application called samtools. We will use this to organize the allignments from hisat2. The hisat2 allignment outputs sam(sequence alignment maps) files. We use use samtools to organze these files by position and convert them to bam files which are smaller. The script includes the variables we want but again, we have to write the hisat command. </div>
 
-  -p : a performance option defining the number of threads. ncreasing -p increases HISAT2’s memory footprint. E.g. when aligning to a human genome index, increasing -p from 1 to 8 increases the memory footprint by a few hundred megabytes. The number of threads we are using is defined by the NUMBER_OF_PROCESSOR variable.
+<u>The hisat2 command is made up of the following arguments:</u>
 
-  --dta-cufflinks : Report alignments tailored specifically for Cufflinks. In addition to what HISAT2 does with the above option (–dta), With this option, HISAT2 looks for novel splice sites with three signals (GT/AG, GC/AG, AT/AC), but all user-provided splice sites are used irrespective of their signals.
+    --r : files wth unpaired reads
 
-  -x : main argument; the basename of the index for the reference genome follows this.
+    -p : a performance option defining the number of threads. ncreasing -p increases HISAT2’s memory footprint. E.g. when aligning to a human genome index, increasing -p from 1 to 8 increases the memory footprint by a few hundred megabytes. The number of threads we are using is defined by the NUMBER_OF_PROCESSOR variable.
+
+    --dta-cufflinks : Report alignments tailored specifically for Cufflinks. In addition to what HISAT2 does with the above option (–dta), With this option, HISAT2 looks for novel splice sites with three signals (GT/AG, GC/AG, AT/AC), but all user-provided splice sites are used irrespective of their signals.
+
+    -x : main argument; the basename of the index for the reference genome follows this.
 
   --rna-strandness : specifies strand-specific information(default is unstranded). For single-end reads, use F or R. For paired-end read, use either FR or RF.
 
