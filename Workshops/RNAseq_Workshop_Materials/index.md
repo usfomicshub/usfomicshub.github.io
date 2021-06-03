@@ -217,18 +217,17 @@ More information on the cufflinks command can be found [here](http://cole-trapne
 
 Now, we get the normalized gene counts using cuffnorm.
   
-<div style="background-color:	#F7F6F3">
+
   
   <strong><u>The cuffnorm command is similar to the cufflinks command:</u></strong>
   
-<div style="padding-left: 4em;">
+<div style="padding-left: 4em;background-color:	#F7F6F3">
   <p>–quiet: suppress messages other than serious warnings and errors.</p>
 
   <p>–library-norm-method : specifies the library normalization method</p><
 
   <p>-L : specifies a label for each sample</p>
   </div>
- </div>
 
 More information on the cuffnorm command can be found [here](http://cole-trapnell-lab.github.io/cufflinks/cuffnorm/index.html). The cuffnorm outputs in the /Work directory has its own folder inlcuding a set of files containing normalized expression levels for each gene, transcript, TSS group, and CDS group in the experiment. It does not perform differential expression analysis.
 
