@@ -227,8 +227,11 @@ More information on the cuffnorm command can be found [here](http://cole-trapnel
 
 <img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day2_jg_pt6.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa">
 
-Finally, we run featureCounts to get raw gene counts. <u>The featureCounts command is made up of the following arguments:</u>
+Finally, we run featureCounts to get raw gene counts. 
+  
+<u>The featureCounts command is made up of the following arguments:</u>
 
+ <div style="margin-left: 4em;">
 -T : number of threads
 
 -t : Specify the type of input sequencing data. Possible valuesinclude 0, denoting RNA-seq data, or 1, denoting genomic DNA-seq data.
@@ -240,6 +243,7 @@ Finally, we run featureCounts to get raw gene counts. <u>The featureCounts comma
 -o : name of output file
 
 -p : If specified, fragments (or templates) will be counted instead of reads.
+  </div>
 
 More information on the featureCounts command can be found [here](https://bioconductor.org/packages/release/bioc/vignettes/Rsubread/inst/doc/SubreadUsersGuide.pdf). It outputs numbers of reads assigned to features (or meta-features). It also outputs stat info for the overall summrization results, including number of successfully assigned reads and number of reads that failed to be assigned due to various reasons (these reasons are included in the stat info). We will be using the vehicle_drug_feature_counts.txt file tommorow!
 
