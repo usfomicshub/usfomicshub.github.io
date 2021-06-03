@@ -232,17 +232,17 @@ Finally, we run featureCounts to get raw gene counts.
 <u>The featureCounts command is made up of the following arguments:</u>
 
  <div style="padding-left: 4em;">
--T : number of threads
+   <p>-T : number of threads</p>
 
--t : Specify the type of input sequencing data. Possible valuesinclude 0, denoting RNA-seq data, or 1, denoting genomic DNA-seq data.
+<p>-t : Specify the type of input sequencing data. Possible valuesinclude 0, denoting RNA-seq data, or 1, denoting genomic DNA-seq data.</p>
 
--g : gene identifier
+<p>-g : gene identifier</p>
 
--a : name of annotation file
+<p>-a : name of annotation file</p>
 
--o : name of output file
+<p>-o : name of output file</p>
 
--p : If specified, fragments (or templates) will be counted instead of reads.
+<p>-p : If specified, fragments (or templates) will be counted instead of reads.</p>
   </div>
 
 More information on the featureCounts command can be found [here](https://bioconductor.org/packages/release/bioc/vignettes/Rsubread/inst/doc/SubreadUsersGuide.pdf). It outputs numbers of reads assigned to features (or meta-features). It also outputs stat info for the overall summrization results, including number of successfully assigned reads and number of reads that failed to be assigned due to various reasons (these reasons are included in the stat info). We will be using the vehicle_drug_feature_counts.txt file tommorow!
