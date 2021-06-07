@@ -214,7 +214,7 @@ These lines are repeated for all four samples. The first two are shown in this s
 
 Next, we run cufflinks to assemble reads into transcripts. 
   
-  <strong><u>The cufflink command arguments:</u></strong>
+<strong><u>The cufflink command arguments:</u></strong>
 
   <div style="padding-left: 1.5em;background-color:	#F7F6F3">
   
