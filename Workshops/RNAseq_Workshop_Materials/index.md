@@ -287,6 +287,7 @@ More information on the featureCounts command can be found [here](https://biocon
 
 ## Presentation Slides
 
+  [PENDING R and RStudio for biologists (Dr. Jenna Oberstaller)](https://github.com/usfomicshub/RNASeq_workshop/tree/master/slides/day3/)
 [Introduction to R (Dr. Charley Wang)](https://github.com/usfomicshub/RNASeq_workshop_Sept2020/raw/master/slides/day3/R%20Tutorial.pdf)
 
   
