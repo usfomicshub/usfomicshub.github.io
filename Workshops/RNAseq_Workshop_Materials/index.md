@@ -22,11 +22,12 @@ GOAL
   - [Read-mapping Hands-on Practice](#read-mapping-hands-on-practice)
 4. [Day Three](#day-three)
   - [Presentation Slides](#day-three)
-  - [R and Bioconductor Hands-on Practice](#microbiome-data-visualization)
+  - [R and Bioconductor Hands-on Practice](#r-and-bioconductor-hands-on-practice)
 5. [Day Four](#day-four)
   - [RNA-Seq: TUXEDO Pipeline](#rna-seq-tuxedo-pipeline)
 
 
+  <a id="pre-course-materials"></a>
 <h2 style="color:#005440"> Pre-course Materials</h2>
 * * *
 
@@ -48,7 +49,7 @@ If you are a bit familiar with R, please still check out this resource as it cov
 
 
   
-
+  <a id="day-one"></a>
 <h2 style="color:#005440">Day One</h2>
 ***
 
@@ -60,6 +61,7 @@ If you are a bit familiar with R, please still check out this resource as it cov
 [RNA-Seq Workflow (Dr. Charley Wang)](https://github.com/usfomicshub/RNASeq_workshop/raw/master/slides/day1/Lesson1_slide.pdf) 
 
   
+  <a id="linux-hands-on-practice"></a>  
 ## Linux Hands-on Practice
 
 Download Charley's [Linux Shell Tutorial](https://github.com/usfomicshub/RNASeq_workshop/raw/master/slides/day1/LinuxServer.pptx) to get started.
@@ -79,6 +81,8 @@ To prepare for running tomorrow's scripts, we copy a shared folder into our home
 
 In the first line of code shown above by Justin, the **cd** command by itself takes you to your home directory(any path specified after the cd command will take you to that directory.) You can check this by running **pwd** which prints the directory you are currently in. After making sure you are in your home directory, use **cp -r** to copy all the contents in the "/shares/biocomputing.jg/Genomics_Training/" folder to your home directory denoted by the period. We can use **ls -lht** to print all the folders and files along with its readable file size sorted by time and date. You should now see "Genomics_Training" in your directory.
 
+
+  <a id="day-two"></a>
 <h2 style="color:#005440"> Day Two</h2>
 ***
 
@@ -87,6 +91,7 @@ In the first line of code shown above by Justin, the **cd** command by itself ta
 [Introduction to RNA-Sequencing (Dr. Justin Gibbons)](https://github.com/usfomicshub/RNASeq_workshop/raw/master/slides/day2/intro_rna-seq_brief.pptx)
 
 
+  <a id="read-mapping-hands-on-practice"></a>
 ## Read-mapping Hands-on Practice
 
 Now, we run the scripts within the "Genomics_Training" directory that we copied yesterday. To get to the scripts, we can run the following lines from our home directory.
@@ -275,6 +280,8 @@ More information on the featureCounts command can be found [here](https://biocon
 
 <img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day2_jg_pt7.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa">
 
+  
+  <a id="day-three"></a>
 <h2 style="color:#005440"> Day Three</h2>
 ***
 
@@ -282,6 +289,8 @@ More information on the featureCounts command can be found [here](https://biocon
 
 [Introduction to R (Dr. Charley Wang)](https://github.com/usfomicshub/RNASeq_workshop_Sept2020/raw/master/slides/day3/R%20Tutorial.pdf)
 
+  
+  <a id="r-and-bioconductor-hands-on-practice"></a>
 ### R and Bioconductor Hands-on Practice
 
 Follow Charley's R Tutorials in order! 
@@ -300,9 +309,11 @@ Follow Charley's R Tutorials in order!
 
 These links are output html files created from the original Rmarkdown(.Rmd) file. Rmarkdown creates these files in a html or pdf format that allow you to attractively present code and text in one report (No more screenshoting code into a Word doc!). You can download the .Rmd files <a href= "https://github.com/usfomicshub/RNASeq_workshop/raw/master/exercises/day3/R_code_Training_and_Reference/Sept2020_RNAseqWorkshop_Day2_Rscripts.zip" class="a.tablelink" download = "rtutorials">here</a>  and upload them in R so you can interactively run it as well. Try knitting it to create the html file.
 
+  
+  <a id="day-four"></a>
 <h2 style="color:#005440"> Day Four</h2>
 ***
-
+  <a id="rna-seq-tuxedo-pipeline"></a>
 ### RNA-seq: TUXEDO Pipeline
 
 Let's copy the materials we will use today into our home directory to set up our practice directory. This is similar to what we did in Day 1 for Day 2 materials but we are creating our own RNA-seq_Project_Data folder. * *Remember to make sure you are in your home directory before copying the directory*
