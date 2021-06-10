@@ -68,7 +68,8 @@ To request a CIRCE account, email [help@usf.edu](mailto:rc-help@usf.edu) _from y
 
 _**Only send a request for a CIRCE account if you do not currently have (or are not actively requesting) an RRA account.**_
 
-You can refer to [Research Computing's documentation-wiki](https://wiki.rc.usf.edu/index.php/Main_Page) for further information on HPC-basics, CIRCE hardware and other useful topics. Refer to [our Genomics Facilities and Resources](https://github.com/usfomicshub/usfomicshub.github.io/blob/master/wiki/markdowns/facilities_and_resources.md) for information on RRA hardware and specifications.
+You can refer to [Research Computing's documentation-wiki](https://wiki.rc.usf.edu/index.php/Main_Page) for further information on HPC-basics, CIRCE hardware and other useful topics. Refer to our [Genomics Facilities and Resources](FacilitiesResources/) for information on RRA hardware and specifications for inclusion in grant applications.
+
 
 ## How to Connect to your RRA or CIRCE Cluster Account
 
