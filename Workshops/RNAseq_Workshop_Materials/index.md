@@ -75,7 +75,7 @@ To prepare for running tomorrow's scripts, we copy a shared folder into our home
 
 <img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day1_jg.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa" class="center">
 
-<div style="background-color:	#FFF7F7">. ❗❗ **UPDATE (02/02/2021)**: The genomics training folder is now located in /shares/biocomputing.jg/Genomics_Training/ - please adjust the code</div>
+<div style="background-color:	#FFF7F7">❗❗ <strong>UPDATE (02/02/2021)</strong> : The genomics training folder is now located in /shares/biocomputing.jg/Genomics_Training/ - please adjust the code</div>
 
 In the first line of code shown above by Justin, the **cd** command by itself takes you to your home directory(any path specified after the cd command will take you to that directory.) You can check this by running **pwd** which prints the directory you are currently in. After making sure you are in your home directory, use **cp -r** to copy all the contents in the "/shares/biocomputing.jg/Genomics_Training/" folder to your home directory denoted by the period. We can use **ls -lht** to print all the folders and files along with its readable file size sorted by time and date. You should now see "Genomics_Training" in your directory.
 
@@ -109,9 +109,10 @@ The scripts are numbered in the order you should run them (via commandline, whil
 
 **06_run_featureCounts.sh:** Get raw gene counts
 
-###          RNA-Seq Pipeline Workflow 
+<div align="center"><h3>         RNA-Seq Pipeline Workflow </h3>
 
-<img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/rnaseqpipeline.png?raw=TRUE" width =520 height="500" style= "border : 5px solid #75b5aa" class="center">
+<img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/rnaseqpipeline.png?raw=TRUE" width =520 height="500" style= "border : 5px solid #75b5aa" align="center">
+  </div>
 
 **LETS BEGIN!**
 
@@ -167,33 +168,41 @@ Now, we can allign our reads to this but first, make sure to go back to the ./Ge
 
 <strong><u>The hisat2 command is made up of the following arguments:</u></strong>
 
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**--r** : files wth unpaired reads
+  <div style="padding-left: 1.5em;background-color:	#F7F6F3">
 
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**-p** : a performance option defining the number of threads. ncreasing -p increases HISAT2’s memory footprint. E.g. when aligning to a human genome index, increasing -p from 1 to 8 increases the memory footprint by a few hundred megabytes. The number of threads we are using is defined by the NUMBER_OF_PROCESSOR variable.
+<p>--r : files wth unpaired reads</p>
 
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**--dta-cufflinks** : Report alignments tailored specifically for Cufflinks. In addition to what HISAT2 does with the above option (–dta), With this option, HISAT2 looks for novel splice sites with three signals (GT/AG, GC/AG, AT/AC), but all user-provided splice sites are used irrespective of their signals.
+<p>-p : a performance option defining the number of threads. ncreasing -p increases HISAT2’s memory footprint. E.g. when aligning to a human genome index, increasing -p from 1 to 8 increases the memory footprint by a few hundred megabytes. The number of threads we are using is defined by the NUMBER_OF_PROCESSOR variable.</p>
 
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**-x** : main argument; the basename of the index for the reference genome follows this.
+<p>--dta-cufflinks : Report alignments tailored specifically for Cufflinks. In addition to what HISAT2 does with the above option (–dta), With this option, HISAT2 looks for novel splice sites with three signals (GT/AG, GC/AG, AT/AC), but all user-provided splice sites are used irrespective of their signals.</p>
 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**--rna-strandness** : specifies strand-specific information(default is unstranded). For single-end reads, use F or R. For paired-end read, use either FR or RF.
+<p>-x : main argument; the basename of the index for the reference genome follows this.</p>
 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**-1** : main argument; Comma-separated list of files containing mate 1s (filename usually includes _1), e.g. -1 flyA_1.fq,flyB_1.fq.
+<p>--rna-strandness : specifies strand-specific information(default is unstranded). For single-end reads, use F or R. For paired-end read, use either FR or RF.</p>
 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**-2** : Comma-separated list of files containing mate 2s (filename usually includes _2), e.g. -2 flyA_2.fq,flyB_2.fq.
+<p>-1 : main argument; Comma-separated list of files containing mate 1s (filename usually includes _1), e.g. -1 flyA_1.fq,flyB_1.fq.</p>
 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**-S** : File to write SAM alignments to
+<p>-2 : Comma-separated list of files containing mate 2s (filename usually includes _2), e.g. -2 flyA_2.fq,flyB_2.fq.</p>
+
+<p>-S : File to write SAM alignments to</p>
+  
+ </div>
 
   More information on the hisat2 commands can be found [here](http://daehwankimlab.github.io/hisat2/manual/)
 
         hisat2 --r -p $NUMBER_OF_PROCESSOR --da-cufflinks -x $REF_GENOME --rna-strandess $RNA_STRANDNESS -1 $SAMPLE_R1 -2 $SAMPLE1_R2 -S $SAMPLE1_SAM_OUTFILE
 
-<u>The samtool command arguments:<u>
+<strong><u>The samtool command arguments:<u></strong>
+  
+  <div style="padding-left: 1.5em;background-color:	#F7F6F3">
 
-  sort: sort alignments by leftmost coordinates 
+  <p>sort: sort alignments by leftmost coordinates </p>
 
-  -@: number of threads
+  <p>-@: number of threads</p>
 
-  -o: where the sorted output is written to 
+  <p>-o: where the sorted output is written to</p>
+    
+  </div>
 
 More Information on the samtools commands can be found [here](http://www.htslib.org/doc/samtools.html#COMMANDS)
 
@@ -203,44 +212,65 @@ These lines are repeated for all four samples. The first two are shown in this s
 
 <img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day2_jg_pt4.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa">
 
-Next, we run cufflinks to assemble reads into transcripts. <u>The cufflink command is made up of the following arguments:</u>
+Next, we run cufflinks to assemble reads into transcripts. 
+  
+<strong><u>The cufflink command arguments:</u></strong>
 
- -p : number of prosessors
+  <div style="padding-left: 1.5em;background-color:	#F7F6F3">
+  
+ <p>-p : number of prosessors</p>
 
- -G : supplied reference annotation
+<p>-G : supplied reference annotation</p>
 
- -o : output files
+ <p>-o : output files</p>
+    
+  </div>
 
 More information on the cufflinks command can be found [here](http://cole-trapnell-lab.github.io/cufflinks/cufflinks/index.html). We can use the ls -lht command in the /Work directory to see the Cufflinks output. There should be four cufflinks folders for each sample.
 
 <img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day2_jg_pt5.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa">
 
-Now, we get the normalized gene counts using cuffnorm. <u>The cuffnorm command is similar to the cufflinks command:</u>
+Now, we get the normalized gene counts using cuffnorm.
+  
 
-–quiet: suppress messages other than serious warnings and errors.
+  
+  <strong><u>The cuffnorm command arguments:</u></strong>
+  
+<div style="padding-left: 1.5em;background-color:	#F7F6F3">
+  <p>–quiet: suppress messages other than serious warnings and errors.</p>
 
-–library-norm-method : specifies the library normalization method
+  <p>–library-norm-method : specifies the library normalization method</p>
 
--L : specifies a label for each sample
+  <p>-L : specifies a label for each sample</p>
+  </div>
 
 More information on the cuffnorm command can be found [here](http://cole-trapnell-lab.github.io/cufflinks/cuffnorm/index.html). The cuffnorm outputs in the /Work directory has its own folder inlcuding a set of files containing normalized expression levels for each gene, transcript, TSS group, and CDS group in the experiment. It does not perform differential expression analysis.
 
 <img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day2_jg_pt6.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa">
 
-Finally, we run featureCounts to get raw gene counts. <u>The featureCounts command is made up of the following arguments:</u>
+Finally, we run featureCounts to get raw gene counts. 
+ 
 
--T : number of threads
+  
+  <strong><u>The featureCounts command arguments:</u></strong>
 
--t : Specify the type of input sequencing data. Possible valuesinclude 0, denoting RNA-seq data, or 1, denoting genomic DNA-seq data.
+  <div style="padding-left: 1.5em;background-color:	#F7F6F3">
 
--g : gene identifier
+   <p>-T : number of threads</p>
 
--a : name of annotation file
+   <p>-t : Specify the type of input sequencing data. Possible valuesinclude 0, denoting RNA-seq data, or 1, denoting genomic DNA-seq data.</p>
 
--o : name of output file
+   <p>-g : gene identifier</p>
 
--p : If specified, fragments (or templates) will be counted instead of reads.
+   <p>-a : name of annotation file</p>
 
+   <p>-o : name of output file</p>
+
+   <p>-p : If specified, fragments (or templates) will be counted instead of reads.</p>
+    
+  </div>
+
+  
 More information on the featureCounts command can be found [here](https://bioconductor.org/packages/release/bioc/vignettes/Rsubread/inst/doc/SubreadUsersGuide.pdf). It outputs numbers of reads assigned to features (or meta-features). It also outputs stat info for the overall summrization results, including number of successfully assigned reads and number of reads that failed to be assigned due to various reasons (these reasons are included in the stat info). We will be using the vehicle_drug_feature_counts.txt file tommorow!
 
 <img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day2_jg_pt7.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa">

@@ -40,15 +40,21 @@ You should have received an email including the agenda and pre-course materials 
 
 Download the slides here: 
 
-[Introduction to the USF Genomics Core and iLab System by Min Zhang](https://github.com/usfomicshub/RNASeq_workshop/raw/master/lab/slides/1-MZ-Core%20Indroduction-RNAseq%20Workshop-20210129.pdf)  
+[Introduction to the USF Genomics Core and iLab System by Min Zhang](https://github.com/usfomicshub/RNASeq_workshop/raw/master/lab/slides/Core%20Indroduction-RNAseq%20Workshop-20210607-MZ.pdf)  
 
-[Illumina Sequencing Overview by Ryan Gentry](https://github.com/usfomicshub/RNASeq_workshop/raw/master/lab/slides/1_Ryan_USF_Illumina_Intro_01272021.pdf)
+[Illumina Sequencing Overview by Ryan Gentry (OLD)](https://github.com/usfomicshub/RNASeq_workshop/raw/master/lab/slides/1_Ryan_USF_Illumina_Intro_01272021.pdf)
+
+[Understanding Illumina sequencing technology (SBS) by Meredith Millis](https://github.com/usfomicshub/RNASeq_workshop/raw/master/lab/slides/USF_Illumina_Intro_07JUN2021_Meredith.pdf)
 
 [Library Preparation for Next-Gen Sequencing by Min Zhang](https://github.com/usfomicshub/RNASeq_workshop/raw/master/lab/slides/2-MZ-Library%20construction%20for%20NGS%20sequencing-20210129.pdf) 
 
+[Library QC, Trouble-shooting, Sequencing Data QC and Illumina BaseSpace Tour by Min Zhang](https://github.com/usfomicshub/RNASeq_workshop/raw/master/lab/slides/4-Library%20QC_Troubleshooting_BestPractices.pdf)
+
+[Illumina BaseSpace Tour and Sequencing data QC by Matt Angel](https://github.com/usfomicshub/RNASeq_workshop/raw/master/lab/slides/USF%20BaseSpace%20Slides_060721_Matt.pdf)
+
 [Sequencing set up and Illumina Customer Resources Overview by Matt Mercurio](https://github.com/usfomicshub/RNASeq_workshop/raw/master/lab/pre_course_materials/Introduction%20to%20the%20MiSeq%20and%20the%20NextSeq%20USF.pdf)
 
-[Library QC, Trouble-shooting, Sequencing Data QC and Illumina BaseSpace Tour by Min Zhang](https://github.com/usfomicshub/RNASeq_workshop/raw/master/lab/slides/4-Library%20QC_Troubleshooting_BestPractices.pdf)
+
 
 
 
