@@ -114,12 +114,18 @@ To relieve some of the Genomics-software installation- and documentation-burden 
 
 ### Anaconda3 environments
 
+*   blast
+    *   (version 2.9.0+)
+*   dada2
 *   fastq\_dump
 *   humann2
     *   (version 2.8.1)
     *   [HUMAnN2: The HMP Unified Metabolic Analysis Network 2 documentation](http://huttenhower.sph.harvard.edu/humann)
 *   isafe
     *   [iSAFE documentation](https://github.com/alek0991/iSAFE)
+*   kaiju
+    *   (version 1.7.4)
+    *   [kaiju documentation](https://github.com/bioinformatics-centre/kaiju/blob/master/README.md)  
 *   kera2
 *   lumpy
     *   (version 0.2.13)
@@ -132,6 +138,9 @@ To relieve some of the Genomics-software installation- and documentation-burden 
 *   Rdeseq
     *   R version 3.6.2 (2019-12-12)
 *   selene
+*   sunbeam
+    *   (version 2.1.1)
+    *   [running sunbeam metagenomics pipeline](https://sunbeam.readthedocs.io/en/latest/usage.html#setup)
 *   qiime2-2019.7
 
 ### Anaconda2 environments
@@ -146,6 +155,10 @@ To relieve some of the Genomics-software installation- and documentation-burden 
 ### Other (load via Hub-supplied modules)
 
 *   SeekDeep
+*   Anaconda 3
+*   MetaBAT 2
+    *   (version 2.0)
+    *   [MetaBAT 2 documentation](https://bitbucket.org/berkeleylab/metabat/src/master/)
 
 ## Loading and using Software
 ***
