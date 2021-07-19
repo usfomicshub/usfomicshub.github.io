@@ -1,6 +1,8 @@
 ---
 layout: posts
 title: "Metagenomics Analysis Workshop"
+sidebar:
+  nav: "docs"
 classes: wide
 --- 
 
