@@ -6,7 +6,7 @@ sidebar:
 classes: wide
 --- 
 
-<img src="https://github.com/usfomicshub/usfomicshub.github.io/blob/master/images/RNAseq.png?raw=TRUE" class="center"> 
+<img src="https://github.com/usfomicshub/usfomicshub.github.io/blob/master/images/Metagenome_workshop.png?raw=TRUE" class="center"> 
 
 GOAL
 > This 5-day, hands-on crash-course targeted at biologists introduces participants to metagenomics data analysis using popular open-source programs at the UNIX command-line and in R. Participants will learn how to perform their own analyses using their own USF computational research-cluster accounts.
@@ -33,20 +33,20 @@ GOAL
 
 You should have received an email regarding the agenda and pre-course materials for this workshop as well as been added to the Canvas Course. This canvas course includes Linux tutorials that must be completed prior to the workshop. You must also have access to your RRA account before the workshop. Instructions to set up your RRA account are [here](https://usfomicshub.github.io/Cluster_Computing/#how-to-create-an-rra-cluster-account). You also need to have R and R Studio downloaded. You can find step-by-step instructions in our Introductory R course found below.
 
-These additional resources may also be helpful..
 
 ⬣ [USF Research Computing](https://wiki.rc.usf.edu/index.php/Connecting_To_SC) offers additional information on connecting to thr SC for MAC and windows. RC also provides a collection Linux tutorials.
 
 ⬣ [What is the difference between Terminal, Console, Shell, and Command Line?](https://askubuntu.com/questions/506510/what-is-the-difference-between-terminal-console-shell-and-command-line#:~:text=Shell%20is%20a%20program%20which,software%20%2C%20like%20Gnome%2DTerminal%20.) Terminal, shell and command line are often used interchangeably to indicate a text based system for navigating your operating system. Command line is windows centric terminology, terminal is very mac centric. There are different flavors you can use in a shell including bash. Bash is both a shell and language you can use to interact with the operating system and what we will be using in this course.
 
-⬣ [FileZilla](https://filezilla-project.org/download.php) - FileZilla makes it easy to copy and download files between your local computer and remote clusters.
-
-⬣ If you do not have R and RStudio installed already, follow these [instructions](https://github.com/usfomicshub/RNASeq_workshop/raw/master/pre_course_materials/r_installation_instructions_062020.pdf).
-
 ⬣ We know that programming can be very intimidating at first, so we created this [introductory R course](https://usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/rtutorial/index.html) to help researchers such as you start your programming journey. 
 If you are a bit familiar with R, please still check out this resource as it covers how the workshop tutorials will be set up. We'll be moving quickly through basic concepts in R to get to the actual data-analysis. We strongly recommend reviewing the R tutorial to get you started/help you keep up.
 
+⬣ [A review of methods and databases for metagenomic
+classification and assembly](https://github.com/usfomicshub/usfomicshub.github.io/raw/master/Workshops/Metagenomics_Workshop_Materials/precourse/BreitwieserF_oxford.pdf) - a review two of the primary types of methods for analyzing microbiome data: read classification
+and metagenomic assembly, and some of the challenges facing these methods.
 
+⬣ [Shotgun metagenomics, from sampling
+to analysis](https://github.com/usfomicshub/usfomicshub.github.io/raw/master/Workshops/Metagenomics_Workshop_Materials/precourse/QuinceC_naturebiotechnology.pdf) - a review of best practices for shotgun metagenomics studies, including identification and tackling of limitations, and outlooks for metagenomics in the future.
 
   
   <a id="day-one"></a>
