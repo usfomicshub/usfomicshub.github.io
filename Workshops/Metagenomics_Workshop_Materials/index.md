@@ -6,7 +6,7 @@ sidebar:
 classes: wide
 --- 
 
-<img src="https://github.com/usfomicshub/usfomicshub.github.io/blob/master/images/Metagenome_workshop.png?raw=TRUE" class="center"> 
+<img src="https://github.com/usfomicshub/usfomicshub.github.io/blob/master/images/Metagenome_workshop.png?raw=TRUE" class="center"> <right><em>image from Quince, C. Shotgun metagenomics, from sampling to analysis. nature biotechnology.</em></right>
 
 GOAL
 > This 5-day, hands-on crash-course targeted at biologists introduces participants to metagenomics data analysis using popular open-source programs at the UNIX command-line and in R. Participants will learn how to perform their own analyses using their own USF computational research-cluster accounts.
