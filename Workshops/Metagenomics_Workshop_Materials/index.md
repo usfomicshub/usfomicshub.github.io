@@ -73,6 +73,23 @@ You can check where you are by running **pwd**. This command prints your working
 
         pwd
 
+To see the contents of this directory that you are currently in, you can use **ls** which stands for list. If this is your first time using the cluster, it may not print anything. 
+
+        ls 
+
+We will make a sub-directory or folder named "Unix_Practice"  using the **mkdir** command. 
+
+        mkdir Unix_Practice        
+
+*NOTE*: sometimes running commands on Terminal won't always look like it did something - no messages typically indicate that the code ran successfully. In this case, we can use **ls** to see if our folder was created. 
+
+Now that we have a new folder, we can move into it using **cd** which stands for "change directory."
+
+      cd Unix_Practice
+
+At our prompt, we see something like ```[studentNetID@rra-login1]```. Displayed after the prompt is the name of the directory we are in. Until now, it has displayed ```~``` which is a shortcut representing your home directory. Running ```cd ~``` will move you to your home directory. Now, it should display "Unix_Practice" as in Justin's example below.
+
+<img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day1_jg_pt1.png?raw=TRUE" width=900 style= "border : 5px solid #75b5aa">
 
 
 
