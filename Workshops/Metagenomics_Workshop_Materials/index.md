@@ -73,7 +73,7 @@ You can check where you are by running **pwd**. This command prints your working
 
         pwd
 
-To see the contents of this directory that you are currently in, you can use **ls** which stands for list. If this is your first time using the cluster, it may not print anything. 
+To see the contents of this directory that you are currently in, you can use **ls** which stands for list. If this is your first time using the cluster, it may not print anything. However, there are extra parameters to the command, such as ```ls -l``` which will print a more detailed list of the contents including permissions. 
 
         ls 
 
@@ -90,13 +90,15 @@ Now that we have a new folder, we can move into it using **cd** which stands for
 At our prompt, we see something like ```[studentNetID@rra-login1]```. Displayed after the prompt is the name of the directory we are in. Until now, it has displayed ```~``` which is a shortcut representing your home directory. Running ```cd ~``` or ```cd ``` will move you to your home directory. Now, it should display "Unix_Practice" as in Justin's example below.
 
 
-<img src="https://github.com/usfomicshub/metagenomics_workshop/blob/master/img/day1_jg1.png?raw=TRUE" width=900 style= "border : 5px solid #75b5aa">
-
-*NOTE*: another shortcut for changing directories is ```..``` which will move you up one directory level.
-
+<img src="https://github.com/usfomicshub/metagenomics_workshop/blob/master/main/img/day1_jg1.png?raw=true" width=900 style= "border : 5px solid #75b5aa">
+https://github.com/usfomicshub/metagenomics_workshop/blob/main/img/day1_jg1.png?raw=true
 Now, we will make two folders in our Unix_Practice folder named "Letters" and "Numbers" - we will move into our Letters folder first. 
 
-<img src="https://github.com/usfomicshub/metagenomics_workshop/blob/master/img/day1_jg2.png?raw=TRUE" width=900 style= "border : 5px solid #75b5aa">
+<img src="https://github.com/usfomicshub/metagenomics_workshop/blob/main/master/img/day1_jg2.png?raw=true" width=900 style= "border : 5px solid #75b5aa">
+
+*NOTE*: another shortcut for changing directories is ```..``` which will move you up one directory level. For example, ```cd ..``` will move you up to "Unix_Practice" if you are in your "Letters" folder. 
+
+
 
 
 **Additional Resources:**
