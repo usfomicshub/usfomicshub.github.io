@@ -96,6 +96,7 @@ At our prompt, we see something like ```[studentNetID@rra-login1]```. Displayed 
 
 Now, we will make two folders in our Unix_Practice folder named "Letters" and "Numbers" - we will move into our Letters folder first. 
 
+<img src="https://github.com/usfomicshub/metagenomics_workshop/blob/master/img/day1_jg2.png?raw=TRUE" width=900 style= "border : 5px solid #75b5aa">
 
 
 **Additional Resources:**
