@@ -33,7 +33,7 @@ GOAL
 <h2 style="color:#005440"> Pre-course Materials</h2>
 * * *
 
-You should have received an email regarding the agenda and pre-course materials for this workshop as well as been added to the Canvas Course. This canvas course includes Linux tutorials that must be completed prior to the workshop. You must also have access to your RRA account before the workshop. Instructions to set up your RRA account are [here](https://usfomicshub.github.io/Cluster_Computing/#how-to-create-an-rra-cluster-account). You also need to have R and R Studio downloaded. You can find step-by-step instructions in our Introductory R course found below.
+You should have received an email regarding the agenda and pre-course materials for this workshop as well as been added to the Canvas Course. This canvas course includes Linux tutorials that must be completed prior to the workshop. You must also have access to your RRA account before the workshop. Instructions to set up your RRA account and connect to it are [here](https://usfomicshub.github.io/Cluster_Computing/#how-to-create-an-rra-cluster-account). You will also need to have R and R Studio downloaded. You can find step-by-step instructions in our Introductory R course found below.
 
 
 ⬣ [USF Research Computing](https://wiki.rc.usf.edu/index.php/Connecting_To_SC) offers additional information on connecting to thr SC for MAC and windows. RC also provides a collection Linux tutorials.
@@ -60,13 +60,22 @@ to analysis](https://github.com/usfomicshub/usfomicshub.github.io/raw/master/Wor
 
 [Introduction to Microbiomes and Metagenomic Data Analysis (Dr. Anujit Sarkar)](https://github.com/usfomicshub/metagenomics_workshop/raw/main/slides/day1/Anujit_talk_microbiome_workshop_July22_2021_final.pptx)  
 
-[RNA-Seq Workflow (Dr. Charley Wang)](https://github.com/usfomicshub/RNASeq_workshop/raw/master/slides/day1/Lesson1_slide.pdf) 
+[Considerations for metagenomic experimental design (Swamy Rakesh) - unavailable](/) 
 
+[Linux for Biologists (Dr. Justin Gibbons)](https://github.com/usfomicshub/metagenomics_workshop/raw/main/slides/day1/intro_to_unix_simplified_version.pptx)
   
   <a id="linux-hands-on-practice"></a>  
 ## Linux Hands-on Practice
 
-Download Charley's [Linux Shell Tutorial](https://github.com/usfomicshub/RNASeq_workshop/raw/master/slides/day1/LinuxServer.pptx) to get started.
+After connecting to the RRA cluster using the Secure Shell Protocal (SSH) through Terminal, you should be in your home directory.
+
+You can check where you are by running **pwd**. This command prints your working directory. If you student NetID is lisa06, then your working directory may look something like ```/home/l/lisa06```. 
+
+        pwd
+
+
+
+
 
 **Additional Resources:**
 
