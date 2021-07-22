@@ -89,7 +89,7 @@ Now that we have a new folder, we can move into it using **cd** which stands for
 
 At our prompt, we see something like ```[studentNetID@rra-login1]```. Displayed after the prompt is the name of the directory we are in. Until now, it has displayed ```~``` which is a shortcut representing your home directory. Running ```cd ~``` will move you to your home directory. Now, it should display "Unix_Practice" as in Justin's example below.
 
-<img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day1_jg_pt1.png?raw=TRUE" width=900 style= "border : 5px solid #75b5aa">
+<img src="https://github.com/usfomicshub/metagenomics_workshop/blob/master/img/day1_jg_pt1.png?raw=TRUE" width=900 style= "border : 5px solid #75b5aa">
 
 
 
