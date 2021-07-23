@@ -81,7 +81,7 @@ We will make a sub-directory or folder named "Unix_Practice"  using the **mkdir*
 
         mkdir Unix_Practice        
 
-*NOTE*: sometimes running commands on Terminal won't always look like it did something - no messages typically indicate that the code ran successfully. In this case, we can use **ls** to see if our folder was created. 
+<div style="background-color: #FFFFE0">📌 sometimes running commands on Terminal won't always look like it did something - no messages typically indicate that the code ran successfully. In this case, we can use **ls** to see if our folder was created.</div>
 
 Now that we have a new folder, we can move into it using **cd** which stands for "change directory."
 
@@ -96,7 +96,7 @@ Now, we will make two folders in our Unix_Practice folder named "Letters" and "N
 
 <img src="https://github.com/usfomicshub/metagenomics_workshop/blob/main/img/day1_jg2.png?raw=true" width=900 style= "border : 5px solid #75b5aa">
 
-*NOTE*: another shortcut for changing directories is ```..``` which will move you up one directory level. For example, ```cd ..``` will move you up to "Unix_Practice" if you are in your "Letters" folder. 
+<div style="background-color: #FFFFE0">📌 another shortcut for changing directories is <code>..</code> which will move you up one directory level. For example, <code>cd ..</code> will move you up to "Unix_Practice" if you are in your "Letters" folder. </div>
 
 
 
