@@ -19,6 +19,11 @@ GOAL
 2. [Day One](#day-one)
   - [Presentation Slides](#day-one)
   - [Linux Hands-on Practice](#linux-hands-on-practice)
+3. [Day Two](#day-two)
+  - [Presentation Slides](#day-two)
+  - [Linux: Shell Scripting](#linux-shell-scripting)
+  - [Linux: Cluster Computing at USF](#linux-cluster-computing-at-usf)
+  - [Linux: Intro to Conda/Containers](#linux-intro-to-conda-containers)
 
 
   <a id="pre-course-materials"></a>
@@ -52,11 +57,11 @@ to analysis](https://github.com/usfomicshub/usfomicshub.github.io/raw/master/Wor
 
 [Introduction to Microbiomes and Metagenomic Data Analysis (Dr. Anujit Sarkar)](https://github.com/usfomicshub/metagenomics_workshop/raw/main/slides/day1/Anujit_talk_microbiome_workshop_July22_2021_final.pptx)  
 
-[Considerations for metagenomic experimental design (Swamy Rakesh) - unavailable](/) 
+[Considerations for metagenomic experimental design (Swamy Rakesh)](https://github.com/usfomicshub/metagenomics_workshop/raw/main/slides/day1/Microbiome_ED_Metagenomics.pptx) 
 
 [Linux for Biologists (Dr. Justin Gibbons)](https://github.com/usfomicshub/metagenomics_workshop/raw/main/slides/day1/intro_to_unix_simplified_version.pptx)
   
-  <a id="linux-hands-on-practice"></a>  
+<a id="linux-hands-on-practice"></a>  
 ## Linux Hands-on Practice
 
 After connecting to the RRA cluster using the Secure Shell Protocal (SSH) through Terminal, you should be in your home directory.
@@ -129,30 +134,99 @@ You can review these commands and find more helpful commands below!
 - [Linux Cheat Sheet](http://windowsbulletin.com/linuxcommands/)
 - [Vim Cheat Sheet](http://windowsbulletin.com/vimcheat/)
 
-<!--
-### Copying Training Folder
-
-To prepare for running tomorrow's scripts, we copy a shared folder into our home directory. 
-
-<img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day1_jg.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa" class="center">
-
-<div style="background-color:	#FFF7F7">❗❗ <strong>UPDATE (02/02/2021)</strong> : The genomics training folder is now located in /shares/biocomputing.jg/Genomics_Training/ - please adjust the code</div>
-
-In the first line of code shown above by Justin, the **cd** command by itself takes you to your home directory(any path specified after the cd command will take you to that directory.) You can check this by running **pwd** which prints the directory you are currently in. After making sure you are in your home directory, use **cp -r** to copy all the contents in the "/shares/biocomputing.jg/Genomics_Training/" folder to your home directory denoted by the period. We can use **ls -lht** to print all the folders and files along with its readable file size sorted by time and date. You should now see "Genomics_Training" in your directory.
-
-
   <a id="day-two"></a>
 <h2 style="color:#005440"> Day Two</h2>
 ***
 
 ## Presentation Slides
 
-[Introduction to RNA-Sequencing (Dr. Justin Gibbons)](https://github.com/usfomicshub/RNASeq_workshop/raw/master/slides/day2/intro_rna-seq_brief.pptx)
+[Linux for Biologists II (Dr. Jenna Oberstaller) - unavailable](/)
+
+<a id="linux-shell-scripting"></a>  
+## Linux: Shell Scripting 
+
+Shell scripts (.sh) are plain text files that are executable on command line. You can create shell scripts using vim. For example, ```vim testscript.sh```. Below is an example shell script open in vim. 
+
+<img src="https://github.com/usfomicshub/metagenomics_workshop/blob/main/img/day2_jo1.png?raw=true" width=900 style= "border : 5px solid #75b5aa">
+
+<div style="padding-left: 1.5em;background-color: #F7F6F3">
+
+<p><strong>"She-bang" or script header</strong> - the she-bang <code>#!</code> tells the system that this file is a set of commands to be executed using the specified interpreter. Our interpreter Bash, is located in /bin/bash. We can check this using the <strong>which</strong> command by running <code>which bash</code>. </p>
+
+<p><strong>Comments</strong> - comments, unlike the she-bang, just begins with a hash <code>#</code>. Comments are not read by the system and are usually used to describe what a certain piece of code is doing. This is good practice when sharing code between others or returning to a script after a long period of time away.</p>
+  
+</div>
+
+Create the above shell script using vim and save it as mktest2.sh. Run the script using **bash**. Use **ls** to see if your directory was created.
+
+      bash mktest2.sh
 
 
-  <a id="read-mapping-hands-on-practice"></a>
-## Read-mapping Hands-on Practice
+<div style="background-color: #FFFFE0">📌 For editing shell scripts, it is somtimes helpful to use a file transfer program such as FileZilla, WinSCP, or Cyberduck. To login in its similar to using SSH. 
 
+
+<p><strong>Host</strong>: <u>sftp://sc.rc.usf.edu</u></p>
+
+
+<p><strong>Username</strong>: <u>your USF net ID</u></p>
+
+
+<p><strong>Password</strong>: <u>your USF net ID password</u></p>
+
+These programs are useful from transferring files from the cluster and your local computer but it can also make it easier to edit text files. From these programs, you can right-click on a .txt or .sh file and edit with more sophisticated text editor interface like <a href= "https://www.sublimetext.com/"> Sublime text </a> or <a href = "https://code.visualstudio.com">Visual Studio Code</a>. Saving any edits you make in these programs will save it on the cluster. 
+
+</div>
+
+<a id="linux-cluster-computing-at-USF"></a>  
+## Linux: Cluster Computing at USF 
+
+Research Computing has hundred of programs already downloaded on the cluster. We can see what these are by running the following:
+
+       module avail 
+
+Before loading any of these programs, lets check our PATH. PATH is an environment variable that specifies a set of directories, separated with semicolons (;), where executable programs are located. Run the following the print your path. You most likely will not have a long path with any executable programs listed. You can comfirm this by running ```module list``` which will list any loaded modules. 
+
+      echo $PATH. 
+
+
+To load one of these programs, use **module load**. Below is an example loading fastqc. We can check to see if this loaded by running ```module list``` or ```echo $PATH```. You should now be able to run fastqc commands. 
+
+        module load apps/fastqc/0.11.5
+
+To unload all your modules and reset everything to the original state:
+
+        module purge
+
+<a id="linux-intro-to-conda-containers"></a>  
+## Linux: Intro to Conda/Containers 
+
+After purging your module, you can add more modules the Hub has made available. Running the following code will permanently copy the programs in the Hub shares module files folder to your /.bash_profile, or your user environment. 
+
+        echo "export MODULEPATH=$MODULEPATH:/shares/omicshub/modulefiles" >> ~/.bash_profile
+
+Source the .bash_profile to read and execute the new contents of the file. You can see the new modules added at the bottom after running ```module avail```.
+
+        source ~/.bash_profile 
+
+Load anaconda3. This is an environment manager. 
+
+        module load hub.apps/anaconda3/2020.11
+
+List all available environments 
+
+        conda env list 
+
+To load one of these environments use **conda active**. Below is an example using multiqc.  If you are getting an error saying that your shell has not been properly configured. Run this first: ```conda init bash; source ~/.bashrc```. 
+
+        conda activate multiqc
+
+After running this successfully, you should see "(multiqc)" before your prompt. 
+
+To exit this environment, run ```conda deactivate```. The "(multiqc)" should be gone. 
+
+<img src="https://github.com/usfomicshub/metagenomics_workshop/blob/main/img/day2_jo2.png?raw=true" width=800 style= "border : 5px solid #75b5aa">
+
+<!--
 Now, we run the scripts within the "Genomics_Training" directory that we copied yesterday. To get to the scripts, we can run the following lines from our home directory.
 
 <img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day2_jg_pt1.png?raw=TRUE" width=900 style= "border : 5px solid #75b5aa">
