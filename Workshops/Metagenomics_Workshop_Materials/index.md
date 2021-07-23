@@ -19,6 +19,8 @@ GOAL
 2. [Day One](#day-one)
   - [Presentation Slides](#day-one)
   - [Linux Hands-on Practice](#linux-hands-on-practice)
+3. [Day Two](#day-two)
+  - [Presentation Slides](#day-two)
 
 
   <a id="pre-course-materials"></a>
@@ -52,7 +54,7 @@ to analysis](https://github.com/usfomicshub/usfomicshub.github.io/raw/master/Wor
 
 [Introduction to Microbiomes and Metagenomic Data Analysis (Dr. Anujit Sarkar)](https://github.com/usfomicshub/metagenomics_workshop/raw/main/slides/day1/Anujit_talk_microbiome_workshop_July22_2021_final.pptx)  
 
-[Considerations for metagenomic experimental design (Swamy Rakesh) - unavailable](/) 
+[Considerations for metagenomic experimental design (Swamy Rakesh)](https://github.com/usfomicshub/metagenomics_workshop/raw/main/slides/day1/Microbiome_ED_Metagenomics.pptx) 
 
 [Linux for Biologists (Dr. Justin Gibbons)](https://github.com/usfomicshub/metagenomics_workshop/raw/main/slides/day1/intro_to_unix_simplified_version.pptx)
   
@@ -128,18 +130,6 @@ You can review these commands and find more helpful commands below!
 
 - [Linux Cheat Sheet](http://windowsbulletin.com/linuxcommands/)
 - [Vim Cheat Sheet](http://windowsbulletin.com/vimcheat/)
-
-<!--
-### Copying Training Folder
-
-To prepare for running tomorrow's scripts, we copy a shared folder into our home directory. 
-
-<img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day1_jg.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa" class="center">
-
-<div style="background-color:	#FFF7F7">❗❗ <strong>UPDATE (02/02/2021)</strong> : The genomics training folder is now located in /shares/biocomputing.jg/Genomics_Training/ - please adjust the code</div>
-
-In the first line of code shown above by Justin, the **cd** command by itself takes you to your home directory(any path specified after the cd command will take you to that directory.) You can check this by running **pwd** which prints the directory you are currently in. After making sure you are in your home directory, use **cp -r** to copy all the contents in the "/shares/biocomputing.jg/Genomics_Training/" folder to your home directory denoted by the period. We can use **ls -lht** to print all the folders and files along with its readable file size sorted by time and date. You should now see "Genomics_Training" in your directory.
-
 
   <a id="day-two"></a>
 <h2 style="color:#005440"> Day Two</h2>
