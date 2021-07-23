@@ -59,7 +59,7 @@ to analysis](https://github.com/usfomicshub/usfomicshub.github.io/raw/master/Wor
 [Linux for Biologists (Dr. Justin Gibbons)](https://github.com/usfomicshub/metagenomics_workshop/raw/main/slides/day1/intro_to_unix_simplified_version.pptx)
   
   <a id="linux-hands-on-practice"></a>  
-## Linux Hands-on Practice
+## Linux: Hands-on Practice
 
 After connecting to the RRA cluster using the Secure Shell Protocal (SSH) through Terminal, you should be in your home directory.
 
@@ -137,11 +137,41 @@ You can review these commands and find more helpful commands below!
 
 ## Presentation Slides
 
-[Introduction to RNA-Sequencing (Dr. Justin Gibbons)](https://github.com/usfomicshub/RNASeq_workshop/raw/master/slides/day2/intro_rna-seq_brief.pptx)
+[Linux for Biologist II (Dr. Jenna Oberstaller)](/)
 
 
   <a id="read-mapping-hands-on-practice"></a>
-## Read-mapping Hands-on Practice
+## Linux: Shell Scripting 
+
+Shell scripts (.sh) are plain text files that are executable on command line. You can create shell scripts using vim. For example, ```vim testscript.sh```. Below is an example shell script open in vim. 
+
+<img src="https://github.com/usfomicshub/metagenomics_workshop/blob/main/img/day2_jo1.png?raw=true" width=900 style= "border : 5px solid #75b5aa">
+
+<div style="padding-left: 1.5em;background-color: #F7F6F3">
+
+<p><strong>"She-bang" or script header</strong> - the she-bang <code>#!</code> tells the system that this file is a set of commands to be executed</p>
+
+<p><strong>Comments</strong> - comments, unlike the she-bang, just begin with a hash <code>#</code>. Comments are not read by the system and are usually used to describe what a certain piece of code is doing. This is good practice when coming back to coding after long periods of time or sharing code between others</p>
+  
+</div>
+
+
+For editing shell scripts, it is somtimes helpful to use a file transfer program such as FileZilla, WinSCP, or Cyberduck. To login in its similar to using SSH. 
+
+**Host**: <u>sftp://sc.rc.usf.edu</u>
+
+**Username**: <u>your USF net ID</u>
+
+**Password**: <u>your USF net ID password</u>
+
+
+
+
+## Linux: Cluster Computing at USF 
+
+## Linux: Intro to Conda/Containers 
+
+
 
 Now, we run the scripts within the "Genomics_Training" directory that we copied yesterday. To get to the scripts, we can run the following lines from our home directory.
 
