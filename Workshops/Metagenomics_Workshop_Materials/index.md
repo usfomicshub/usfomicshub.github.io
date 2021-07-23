@@ -149,7 +149,7 @@ Shell scripts (.sh) are plain text files that are executable on command line. Yo
 
 <div style="padding-left: 1.5em;background-color: #F7F6F3">
 
-<p><strong>"She-bang" or script header</strong> - the she-bang <code>#!</code> tells the system that this file is a set of commands to be executed using the specified interpreter.</p>
+<p><strong>"She-bang" or script header</strong> - the she-bang <code>#!</code> tells the system that this file is a set of commands to be executed using the specified interpreter. Our interpreter Bash, is located in /bin/bash. We can check this using the **which** command by running <code>which bash</code>. </p>
 
 <p><strong>Comments</strong> - comments, unlike the she-bang, just begins with a hash <code>#</code>. Comments are not read by the system and are usually used to describe what a certain piece of code is doing. This is good practice when sharing code between others or returning to a script after a long period of time away.</p>
   
