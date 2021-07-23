@@ -106,7 +106,7 @@ This will open Vim.  To insert and modify text, you can enter INSERT mode by pre
 
 Practice switching modes and saving/writing the file by typing a few lines of letters. After creating your letters.txt file, you can view it different ways:
 
-  <div style="padding-left: 1.5em;background-color: #F7F6F3">
+<div style="padding-left: 1.5em;background-color: #F7F6F3">
 
 <p><strong>cat</strong> - displays the contents of the file(s) specified on to the output terminal</p>
 
@@ -116,9 +116,9 @@ Practice switching modes and saving/writing the file by typing a few lines of le
 
 <p><strong>head</strong> - prints the first 10 lines of a file. Passing the <em>-n</em> option will print n number of lines. For example <code>head -n -5 letters.txt</code> will print just the first five lines.</p>
 
-<p><strong>tail</strong> - similar to the head command but gets the last lines of a file. 
+<p><strong>tail</strong> - similar to the head command but gets the last lines of a file. </p>
   
- </div>
+</div>
 
 
 
