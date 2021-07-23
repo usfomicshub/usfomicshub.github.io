@@ -19,21 +19,13 @@ GOAL
 2. [Day One](#day-one)
   - [Presentation Slides](#day-one)
   - [Linux Hands-on Practice](#linux-hands-on-practice)
-3. [Day Two](#day-two)
-  - [Presentation Slides](#day-two)
-  - [Read-mapping Hands-on Practice](#read-mapping-hands-on-practice)
-4. [Day Three](#day-three)
-  - [Presentation Slides](#day-three)
-  - [R and Bioconductor Hands-on Practice](#r-and-bioconductor-hands-on-practice)
-5. [Day Four](#day-four)
-  - [RNA-Seq: TUXEDO Pipeline](#rna-seq-tuxedo-pipeline)
 
 
   <a id="pre-course-materials"></a>
 <h2 style="color:#005440"> Pre-course Materials</h2>
 * * *
 
-You should have received an email regarding the agenda and pre-course materials for this workshop as well as been added to the Canvas Course. This canvas course includes Linux tutorials that must be completed prior to the workshop. You must also have access to your RRA account before the workshop. Instructions to set up your RRA account are [here](https://usfomicshub.github.io/Cluster_Computing/#how-to-create-an-rra-cluster-account). You also need to have R and R Studio downloaded. You can find step-by-step instructions in our Introductory R course found below.
+You should have received an email regarding the agenda and pre-course materials for this workshop as well as been added to the Canvas Course. This canvas course includes Linux tutorials that must be completed prior to the workshop. You must also have access to your RRA account before the workshop. Instructions to set up your RRA account and connect to it are [here](https://usfomicshub.github.io/Cluster_Computing/#how-to-create-an-rra-cluster-account). You will also need to have R and R Studio downloaded. You can find step-by-step instructions in our Introductory R course found below.
 
 
 ⬣ [USF Research Computing](https://wiki.rc.usf.edu/index.php/Connecting_To_SC) offers additional information on connecting to thr SC for MAC and windows. RC also provides a collection Linux tutorials.
@@ -60,19 +52,84 @@ to analysis](https://github.com/usfomicshub/usfomicshub.github.io/raw/master/Wor
 
 [Introduction to Microbiomes and Metagenomic Data Analysis (Dr. Anujit Sarkar)](https://github.com/usfomicshub/metagenomics_workshop/raw/main/slides/day1/Anujit_talk_microbiome_workshop_July22_2021_final.pptx)  
 
-[RNA-Seq Workflow (Dr. Charley Wang)](https://github.com/usfomicshub/RNASeq_workshop/raw/master/slides/day1/Lesson1_slide.pdf) 
+[Considerations for metagenomic experimental design (Swamy Rakesh) - unavailable](/) 
 
+[Linux for Biologists (Dr. Justin Gibbons)](https://github.com/usfomicshub/metagenomics_workshop/raw/main/slides/day1/intro_to_unix_simplified_version.pptx)
   
   <a id="linux-hands-on-practice"></a>  
 ## Linux Hands-on Practice
 
-Download Charley's [Linux Shell Tutorial](https://github.com/usfomicshub/RNASeq_workshop/raw/master/slides/day1/LinuxServer.pptx) to get started.
+After connecting to the RRA cluster using the Secure Shell Protocal (SSH) through Terminal, you should be in your home directory.
+
+You can check where you are by running **pwd**. This command prints your working directory. If you student NetID is lisa06, then your working directory may look something like ```/home/l/lisa06```. 
+
+        pwd
+
+To see the contents of this directory that you are currently in, you can use **ls** which stands for list. If this is your first time using the cluster, it may not print anything. However, there are extra parameters or options to the command, such as ```ls -l``` which will print a more detailed list of the contents including permissions. You can check our [this resource](https://www.rapidtables.com/code/linux/ls.html) to look at more ls command options. 
+
+        ls 
+
+We will make a sub-directory or folder named "Unix_Practice"  using the **mkdir** command. 
+
+        mkdir Unix_Practice        
+
+<div style="background-color: #FFFFE0">📌 Sometimes commands won't always look like it did something - no messages typically indicate that the code ran successfully. In this case, we can use <strong>ls</strong> to see if our folder was created.</div>
+
+Now that we have a new folder, we can move into it using **cd** which stands for "change directory."
+
+      cd Unix_Practice
+
+At our prompt, we see something like ```[studentNetID@rra-login1]```. Displayed after the prompt is the name of the directory we are in. Until now, it has displayed ```~``` which is a shortcut representing your home directory. Running ```cd ~``` or ```cd ``` will move you to your home directory. Now, it should display "Unix_Practice" as in Justin's example below.
+
+
+<img src="https://github.com/usfomicshub/metagenomics_workshop/blob/main/img/day1_jg1.png?raw=true" width=800 style= "border : 5px solid #75b5aa">
+
+Now, we will make two folders in our Unix_Practice folder named "Letters" and "Numbers" - we will move into our Letters folder first. 
+
+<img src="https://github.com/usfomicshub/metagenomics_workshop/blob/main/img/day1_jg2.png?raw=true" width=900 style= "border : 5px solid #75b5aa">
+
+<div style="background-color: #FFFFE0">📌 Another shortcut for changing directories is <code>..</code> which will move you up one directory level. For example, <code>cd ..</code> will move you up to "Unix_Practice" if you are in your "Letters" folder. </div>
+
+Now, we will will create a text file using the text editor program Vim. 
+
+      vim letters.txt
+
+This will open Vim.  To insert and modify text, you can enter INSERT mode by pressing the i key. To exit and return to normal mode, hit the escape key. To save changes and quit, press the colon in normal mode to switch to Command Line mode then type "wq" or w to just save(:w) or q to just quit without making changes(:q).
+
+Practice switching modes and saving/writing the file by typing a few lines of letters. After creating your letters.txt file, you can view it different ways:
+
+<div style="padding-left: 1.5em;background-color: #F7F6F3">
+
+<p><strong>cat</strong> - displays the contents of the file(s) specified on to the output terminal. We can also use this to combine files. For example, if you want to combine the contents of file1 and file2 as a new file then the code would look something like this <code>cat file1.txt file2.txt > newfile.txt </code></p>
+
+<p><strong>more</strong> - displays the contents of the file one screen at a time for large files</p>
+
+<p><strong>less</strong> - similar to the more command but provides extensive features, such as backward and forward movement in the file</p>
+
+<p><strong>head</strong> - prints the first 10 lines of a file. Passing the <em>-n</em> option will print n number of lines. For example <code>head -n -5 letters.txt</code> will print just the first five lines.</p>
+
+<p><strong>tail</strong> - similar to the head command but gets the last lines of a file. </p>
+  
+</div>
+
+If we want to create a backup file then we can use the **cp** command. This is the copy command. The file or directory specified first is want we want copied and second file or directory specified is where we want our copy to go. If you run this command in your /Unix_Practice/Letters/ directory where you letters.txt file is then, it should create a copy in /Unix_Practice/. 
+
+      cp letters.txt ../letters_copy.txt
+
+You can change directories to /Unix_Practice and list the contents. You should now see your back up file in there but it might make more sense to keep it in your /Letters folder.
+
+To move files, we use the **move** command. This works similarly to the copy command. While in the /Unix_Practice folder run the following:
+
+      mv letters_copy.txt Letters
+
+You can review these commands and find more helpful commands below! 
 
 **Additional Resources:**
 
 - [Linux Cheat Sheet](http://windowsbulletin.com/linuxcommands/)
 - [Vim Cheat Sheet](http://windowsbulletin.com/vimcheat/)
 
+<!--
 ### Copying Training Folder
 
 To prepare for running tomorrow's scripts, we copy a shared folder into our home directory. 
@@ -336,4 +393,4 @@ We will also make a "Code" and a "FASTQ_QC" output folder for our fastq results.
 
 <img src= "https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day4_jg_p2.png?raw=TRUE" width =900 style= "border : 5px solid #75b5aa">
 
-
+-->
