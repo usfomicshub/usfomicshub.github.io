@@ -73,7 +73,7 @@ You can check where you are by running **pwd**. This command prints your working
 
         pwd
 
-To see the contents of this directory that you are currently in, you can use **ls** which stands for list. If this is your first time using the cluster, it may not print anything. However, there are extra parameters to the command, such as ```ls -l``` which will print a more detailed list of the contents including permissions. 
+To see the contents of this directory that you are currently in, you can use **ls** which stands for list. If this is your first time using the cluster, it may not print anything. However, there are extra parameters or options to the command, such as ```ls -l``` which will print a more detailed list of the contents including permissions. You can check our [this resource](https://www.rapidtables.com/code/linux/ls.html) to look at more ls command options. 
 
         ls 
 
@@ -104,7 +104,22 @@ Now, we will will create a text file using the text editor program Vim.
 
 This will open Vim.  To insert and modify text, you can enter INSERT mode by pressing the i key. To exit and return to normal mode, hit the escape key. To save changes and quit, press the colon in normal mode to switch to Command Line mode then type "wq" or w to just save(:w) or q to just quit without making changes(:q).
 
-Practice switching modes and saving/writing the file by typing a few lines of letters. 
+Practice switching modes and saving/writing the file by typing a few lines of letters. After creating your letters.txt file, you can view it different ways:
+
+  <div style="padding-left: 1.5em;background-color: #F7F6F3">
+
+<p><strong>cat</strong> - displays the contents of the file(s) specified on to the output terminal</p>
+
+<p><strong>more</strong> - displays the contents of the file one screen at a time for large files</p>
+
+<p><strong>less</strong> - similar to the more command but provides extensive features, such as backward and forward movement in the file</p>
+
+<p><strong>head</strong> - prints the first 10 lines of a file. Passing the <em>-n</em> option will print n number of lines. For example <code>head -n -5 letters.txt</code> will print just the first five lines.</p>
+
+<p><strong>tail</strong> - similar to the head command but gets the last lines of a file. 
+  
+ </div>
+
 
 
 
