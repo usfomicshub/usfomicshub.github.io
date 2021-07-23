@@ -19,16 +19,7 @@ GOAL
 2. [Day One](#day-one)
   - [Presentation Slides](#day-one)
   - [Linux Hands-on Practice](#linux-hands-on-practice)
-<!--
-3. [Day Two](#day-two)
-  - [Presentation Slides](#day-two)
-  - [Read-mapping Hands-on Practice](#read-mapping-hands-on-practice)
-4. [Day Three](#day-three)
-  - [Presentation Slides](#day-three)
-  - [R and Bioconductor Hands-on Practice](#r-and-bioconductor-hands-on-practice)
-5. [Day Four](#day-four)
-  - [RNA-Seq: TUXEDO Pipeline](#rna-seq-tuxedo-pipeline)
--->
+
 
   <a id="pre-course-materials"></a>
 <h2 style="color:#005440"> Pre-course Materials</h2>
