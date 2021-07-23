@@ -162,11 +162,14 @@ Create the above shell script using vim and save it as mktest2.sh. Run the scrip
 
 <div style="background-color: #FFFFE0">📌 For editing shell scripts, it is somtimes helpful to use a file transfer program such as FileZilla, WinSCP, or Cyberduck. To login in its similar to using SSH. 
 
-<strong>Host</strong>: <u>sftp://sc.rc.usf.edu</u>
 
-<strong>Username</strong>: <u>your USF net ID</u>
+<p><strong>Host</strong>: <u>sftp://sc.rc.usf.edu</u></p>
 
-<strong>Password</strong>: <u>your USF net ID password</u>
+
+<p><strong>Username</strong>: <u>your USF net ID</u></p>
+
+
+<p><strong>Password</strong>: <u>your USF net ID password</u></p>
 
 These programs are useful from transferring files from the cluster and your local computer but it can also make it easier to edit text files. From these programs, you can right-click on a .txt or .sh file and edit with more sophisticated text editor interface like <a href= "https://www.sublimetext.com/"> Sublime text </a> or <a href = "https://code.visualstudio.com">Visual Studio Code</a>. Saving any edits you make in these programs will save it on the cluster. 
 
