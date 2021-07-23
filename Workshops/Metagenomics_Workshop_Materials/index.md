@@ -149,23 +149,28 @@ Shell scripts (.sh) are plain text files that are executable on command line. Yo
 
 <div style="padding-left: 1.5em;background-color: #F7F6F3">
 
-<p><strong>"She-bang" or script header</strong> - the she-bang <code>#!</code> tells the system that this file is a set of commands to be executed</p>
+<p><strong>"She-bang" or script header</strong> - the she-bang <code>#!</code> tells the system that this file is a set of commands to be executed using the specified interpreter.</p>
 
-<p><strong>Comments</strong> - comments, unlike the she-bang, just begin with a hash <code>#</code>. Comments are not read by the system and are usually used to describe what a certain piece of code is doing. This is good practice when sharing code between others or returning to a script after a long period of time away.</p>
+<p><strong>Comments</strong> - comments, unlike the she-bang, just begins with a hash <code>#</code>. Comments are not read by the system and are usually used to describe what a certain piece of code is doing. This is good practice when sharing code between others or returning to a script after a long period of time away.</p>
   
 </div>
 
+Create the above shell script using vim and save it as mktest2.sh. Run the script using **bash**. Use **ls** to see if your directory was created.
 
-For editing shell scripts, it is somtimes helpful to use a file transfer program such as FileZilla, WinSCP, or Cyberduck. To login in its similar to using SSH. 
-
-**Host**: <u>sftp://sc.rc.usf.edu</u>
-
-**Username**: <u>your USF net ID</u>
-
-**Password**: <u>your USF net ID password</u>
+      bash mktest2.sh
 
 
+<div style="background-color: #FFFFE0">📌 For editing shell scripts, it is somtimes helpful to use a file transfer program such as FileZilla, WinSCP, or Cyberduck. To login in its similar to using SSH. 
 
+<strong>Host</strong>: <u>sftp://sc.rc.usf.edu</u>
+
+<strong>Username</strong>: <u>your USF net ID</u>
+
+<strong>Password</strong>: <u>your USF net ID password</u>
+
+These programs are useful from transferring files from the cluster and your local computer but it can also make it easier to edit text files. From these programs, you can right-click on a .txt or .sh file and edit with more sophisticated text editor interface like <a href= "https://www.sublimetext.com/"> Sublime text </a> or <a href = "https://code.visualstudio.com">Visual Studio Code</a>. Saving any edits you make in these programs will save it on the cluster. 
+
+</div>
 
 ## Linux: Cluster Computing at USF 
 
