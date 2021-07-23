@@ -81,7 +81,7 @@ We will make a sub-directory or folder named "Unix_Practice"  using the **mkdir*
 
         mkdir Unix_Practice        
 
-<div style="background-color: #FFFFE0">📌 sometimes running commands on Terminal won't always look like it did something - no messages typically indicate that the code ran successfully. In this case, we can use **ls** to see if our folder was created.</div>
+<div style="background-color: #FFFFE0">📌 Sometimes commands won't always look like it did something - no messages typically indicate that the code ran successfully. In this case, we can use <strong>ls</strong> to see if our folder was created.</div>
 
 Now that we have a new folder, we can move into it using **cd** which stands for "change directory."
 
@@ -90,13 +90,21 @@ Now that we have a new folder, we can move into it using **cd** which stands for
 At our prompt, we see something like ```[studentNetID@rra-login1]```. Displayed after the prompt is the name of the directory we are in. Until now, it has displayed ```~``` which is a shortcut representing your home directory. Running ```cd ~``` or ```cd ``` will move you to your home directory. Now, it should display "Unix_Practice" as in Justin's example below.
 
 
-<img src="https://github.com/usfomicshub/metagenomics_workshop/blob/main/img/day1_jg1.png?raw=true" width=900 style= "border : 5px solid #75b5aa">
+<img src="https://github.com/usfomicshub/metagenomics_workshop/blob/main/img/day1_jg1.png?raw=true" width=800 style= "border : 5px solid #75b5aa">
 
 Now, we will make two folders in our Unix_Practice folder named "Letters" and "Numbers" - we will move into our Letters folder first. 
 
 <img src="https://github.com/usfomicshub/metagenomics_workshop/blob/main/img/day1_jg2.png?raw=true" width=900 style= "border : 5px solid #75b5aa">
 
-<div style="background-color: #FFFFE0">📌 another shortcut for changing directories is <code>..</code> which will move you up one directory level. For example, <code>cd ..</code> will move you up to "Unix_Practice" if you are in your "Letters" folder. </div>
+<div style="background-color: #FFFFE0">📌 Another shortcut for changing directories is <code>..</code> which will move you up one directory level. For example, <code>cd ..</code> will move you up to "Unix_Practice" if you are in your "Letters" folder. </div>
+
+Now, we will will create a text file using the text editor program Vim. 
+
+      vim letters.txt
+
+This will open Vim.  To insert and modify text, you can enter INSERT mode by pressing the i key. To exit and return to normal mode, hit the escape key. To save changes and quit, press the colon in normal mode to switch to Command Line mode then type "wq" or w to just save(:w) or q to just quit without making changes(:q).
+
+Practice switching modes and saving/writing the file by typing a few lines of letters. 
 
 
 
