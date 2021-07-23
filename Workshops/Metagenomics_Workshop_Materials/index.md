@@ -222,7 +222,7 @@ To load one of these environments use **conda active**. Below is an example usin
 
 After running this successfully, you should see "(multiqc)" before your prompt. 
 
-To exit this environment, run the ```conda deactivate```. The "(multiqc)" should be gone. 
+To exit this environment, run ```conda deactivate```. The "(multiqc)" should be gone. 
 
 <img src="https://github.com/usfomicshub/metagenomics_workshop/blob/main/img/day2_jo2.png?raw=true" width=800 style= "border : 5px solid #75b5aa">
 
