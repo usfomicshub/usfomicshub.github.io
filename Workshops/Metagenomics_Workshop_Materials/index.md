@@ -19,6 +19,7 @@ GOAL
 2. [Day One](#day-one)
   - [Presentation Slides](#day-one)
   - [Linux Hands-on Practice](#linux-hands-on-practice)
+<!--
 3. [Day Two](#day-two)
   - [Presentation Slides](#day-two)
   - [Read-mapping Hands-on Practice](#read-mapping-hands-on-practice)
@@ -27,7 +28,7 @@ GOAL
   - [R and Bioconductor Hands-on Practice](#r-and-bioconductor-hands-on-practice)
 5. [Day Four](#day-four)
   - [RNA-Seq: TUXEDO Pipeline](#rna-seq-tuxedo-pipeline)
-
+-->
 
   <a id="pre-course-materials"></a>
 <h2 style="color:#005440"> Pre-course Materials</h2>
@@ -108,7 +109,7 @@ Practice switching modes and saving/writing the file by typing a few lines of le
 
 <div style="padding-left: 1.5em;background-color: #F7F6F3">
 
-<p><strong>cat</strong> - displays the contents of the file(s) specified on to the output terminal</p>
+<p><strong>cat</strong> - displays the contents of the file(s) specified on to the output terminal. We can also use this to combine files. For example, if you want to combine the contents of file1 and file2 as a new file then the code would look something like this <code>cat file1.txt file2.txt > newfile.txt </code></p>
 
 <p><strong>more</strong> - displays the contents of the file one screen at a time for large files</p>
 
@@ -120,15 +121,24 @@ Practice switching modes and saving/writing the file by typing a few lines of le
   
 </div>
 
+If we want to create a backup file then we can use the **cp** command. This is the copy command. The file or directory specified first is want we want copied and second file or directory specified is where we want our copy to go. If you run this command in your /Unix_Practice/Letters/ directory where you letters.txt file is then, it should create a copy in /Unix_Practice/. 
 
+      cp letters.txt ../letters_copy.txt
 
+You can change directories to /Unix_Practice and list the contents. You should now see your back up file in there but it might make more sense to keep it in your /Letters folder.
 
+To move files, we use the **move** command. This works similarly to the copy command. While in the /Unix_Practice folder run the following:
+
+      mv letters_copy.txt Letters
+
+You can review these commands and find more helpful commands below! 
 
 **Additional Resources:**
 
 - [Linux Cheat Sheet](http://windowsbulletin.com/linuxcommands/)
 - [Vim Cheat Sheet](http://windowsbulletin.com/vimcheat/)
 
+<!--
 ### Copying Training Folder
 
 To prepare for running tomorrow's scripts, we copy a shared folder into our home directory. 
@@ -392,4 +402,4 @@ We will also make a "Code" and a "FASTQ_QC" output folder for our fastq results.
 
 <img src= "https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day4_jg_p2.png?raw=TRUE" width =900 style= "border : 5px solid #75b5aa">
 
-
+-->
