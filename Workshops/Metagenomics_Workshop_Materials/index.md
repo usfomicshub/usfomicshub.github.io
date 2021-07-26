@@ -24,6 +24,10 @@ GOAL
   - [Linux: Shell Scripting](#linux-shell-scripting)
   - [Linux: Cluster Computing at USF](#linux-cluster-computing-at-usf)
   - [Linux: Intro to Conda/Containers](#linux-intro-to-conda-containers)
+4. [Day Three](#day-three)
+  - [Presentation Slides](#day-three)
+  - [Metagenomics WGS Assembly](#metagenomics-wgs-assembly)
+
 
 
   <a id="pre-course-materials"></a>
@@ -225,6 +229,41 @@ After running this successfully, you should see "(multiqc)" before your prompt.
 To exit this environment, run ```conda deactivate```. The "(multiqc)" should be gone. 
 
 <img src="https://github.com/usfomicshub/metagenomics_workshop/blob/main/img/day2_jo2.png?raw=true" width=800 style= "border : 5px solid #75b5aa">
+
+
+  <a id="day-three"></a>
+<h2 style="color:#005440"> Day Three</h2>
+***
+
+## Presentation Slides
+
+
+
+<a id="metagenomics-wgs-assembly"></a>  
+## Metagenomics WGS Assembly
+
+To begin our pipeline, we will need to copy a directory in the /shares/hubtrain folder to where we want it. 
+
+Our project is set up in /shares/hubtrain/metagenomics_workshop/
+
+      cp /shares/hubtrain/metagenomics_workshop/ [source directory]
+
+Below in Anujit's example, he copies this to his own subfolder called "demo_run" - 
+
+<img src="https://github.com/usfomicshub/metagenomics_workshop/blob/main/img/day3_as1.png?raw=true" width=800 style= "border : 5px solid #75b5aa">
+
+After you have copied the metagenomics_workshop folder, then **cd** into /outputs. Once your are in /outputs run **pwd**. and copy the output path. We will paste and assign it to variable *outdir* in the local.env file. 
+
+Below are the two variables we will need to change in the local.env file. Edit this file accordingly.
+
+<div style="padding-left: 1.5em;background-color: #F7F6F3">
+
+<p><strong>outdir</strong>=/path/to/your/metagenomics_workshop/outputs/</p>
+
+<p><strong>email</strong>='studentid@usf.edu'</p>
+  
+</div>
+
 
 <!--
 Now, we run the scripts within the "Genomics_Training" directory that we copied yesterday. To get to the scripts, we can run the following lines from our home directory.
