@@ -252,9 +252,9 @@ Below in Anujit's example, he copies this to his own subfolder called "demo_run"
 
 <img src="https://github.com/usfomicshub/metagenomics_workshop/blob/main/img/day3_as1.png?raw=true" width=800 style= "border : 5px solid #75b5aa">
 
-After you have copied the metagenomics_workshop folder, then **cd** into /outputs. Once your are in /outputs run **pwd**. and copy the output path. We will paste and assign it to variable *outdir* in the local.env file. 
+After you have copied the metagenomics_workshop folder, then **cd** into /outputs. Once your are in /outputs run **pwd** and copy the output path. We will paste and assign it to variable *outdir* in the local.env file. 
 
-Below are the two variables we will need to change in the local.env file. Edit this file accordingly.
+Below are the two variables we will need to change in the local.env file. Edit this file accordingly and save.
 
 <div style="padding-left: 1.5em;background-color: #F7F6F3">
 
@@ -264,6 +264,13 @@ Below are the two variables we will need to change in the local.env file. Edit t
   
 </div>
 
+The local.env file allows us to not need to edit each script as we go because our scripts call variables we assign in it. 
+
+Now, we can start running the first script. We submit the job where our local.env is located.
+
+        bash /workshop_scripts/01_fastqc.sh
+
+If the job was successful, then you should receive an email saying it was completed and had an exit code of 0. If it failed, then check your outputs folder and find the .err and .out files within the 01_fastqc. Check very carefully for typos in your local.env file. After saving your changes, delete the sub-output file for the script (not the all of /outputs) to prevent any overwritting failures when you re-submit the script. 
 
 <!--
 Now, we run the scripts within the "Genomics_Training" directory that we copied yesterday. To get to the scripts, we can run the following lines from our home directory.
