@@ -270,7 +270,7 @@ Now, we can start running the first script. We submit the job where our local.en
 
         bash /workshop_scripts/01_fastqc.sh
 
-If the job was successful, then you should receive an email saying it was completed and had an exit code of 0. If it failed, then check your outputs folder and find the .err/.out files within the 01_fastqc. Check very carefully for typos in your local.env file. For errors after this script, also make sure that the outputs from the previous script were created and that previous jobs finished running. After saving your changes, delete the sub-output file for the script (not the all of /outputs) to prevent any overwritting failures when you re-submit the script. 
+If the job was successful, then you should receive an email saying it was completed and had an exit code of 0. If it failed, then check your outputs folder and find the .err/.out files within the 01_fastqc. Check very carefully for typos in your local.env file. For errors after this script, also make sure that the outputs from the previous script were created (check file sizes too!) and that previous jobs finished running. After saving your changes, delete the sub-output file for the script (not the all of /outputs) to prevent any overwritting failures when you re-submit the script. 
 
 Continue submiting the next scripts the same way and follow along with Anujit's powerpoint to understand these outputs better! 
 
