@@ -241,8 +241,9 @@ To exit this environment, run ```conda deactivate```. The "(multiqc)" should be 
 
 <a id="metagenomics-wgs-assembly"></a>  
 ## Metagenomics WGS Assembly
+<img src="https://github.com/usfomicshub/usfomicshub.github.io/blob/master/images/metagenomics_pipeline.png?raw=TRUE" width=800 style= "border : 5px solid #75b5aa">
 
-To begin our pipeline, we will need to copy a directory in the /shares/hubtrain folder to where we want it. 
+We have nine scripts in our pipeline corresponding to each step above. To begin our pipeline, we will need to copy a directory in the /shares/hubtrain folder to where we want it. 
 
 Our project is set up in /shares/hubtrain/metagenomics_workshop/
 
