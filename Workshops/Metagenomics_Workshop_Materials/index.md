@@ -26,7 +26,11 @@ GOAL
   - [Linux: Intro to Conda/Containers](#linux-intro-to-conda-containers)
 4. [Day Three](#day-three)
   - [Presentation Slides](#day-three)
-  - [Metagenomics WGS Assembly](#metagenomics-wgs-assembly)
+  - [Metagenomics WGS Assembly and Binning](#metagenomics-wgs-assembly)
+5. [Day Four](#day-four)
+  - [Presentation Slides](#day-four)
+  - [Intro to R](#intro-to-r)
+  - [Metagenomics Statistics](#metagenomics-statistics)
 
 
 
@@ -240,7 +244,7 @@ To exit this environment, run ```conda deactivate```. The "(multiqc)" should be 
 [Metagenomics Demo (Dr. Anujit Sarkar)](https://github.com/usfomicshub/metagenomics_workshop/raw/main/slides/day3/Anujit_microbiome_talk_July26_2021.pptx)
 
 <a id="metagenomics-wgs-assembly"></a>  
-## Metagenomics WGS Assembly
+## Metagenomics WGS Assembly and Binning
 <img src="https://github.com/usfomicshub/usfomicshub.github.io/blob/master/images/metagenomics_pipeline.png?raw=TRUE" width=800 style= "border : 5px solid #75b5aa">
 
 We have nine scripts in our pipeline corresponding to each step above. To begin our pipeline, we will need to copy a directory in the /shares/hubtrain folder to where we want it. 
@@ -274,6 +278,33 @@ Now, we can start running the first script. We submit the job where our local.en
 If the job was successful, then you should receive an email saying it was completed and had an exit code of 0. If it failed, then check your outputs folder and find the .err/.out files within the 01_fastqc. Check very carefully for typos in your local.env file. For errors after this script, also make sure that the outputs from the previous script were created (check file sizes too!) and that previous jobs finished running. After saving your changes, delete the sub-output file for the script (not the all of /outputs) to prevent any overwritting failures when you re-submit the script. 
 
 Continue submiting the next scripts the same way and follow along with Anujit's powerpoint to understand these outputs better! 
+
+
+  <a id="day-four"></a>
+<h2 style="color:#005440"> Day Four</h2>
+***
+
+## Presentation Slides
+
+[R Tutorial (Dr. Charley Wang)](https://github.com/usfomicshub/metagenomics_workshop/raw/main/slides/day4/RTutorial.pdf)
+
+
+<a id="intro-to-r"></a> 
+## Intro to R
+
+**1.** [The Basics : part 1](https://usfomicshub.github.io/Workshops/RNAseq_Workshop_Materials/rnaseq_workshop_demos/day3/Rtutorial-basics1/) - Introducing basic R including all data types 
+
+**2.** [The Basics : part 2](https://usfomicshub.github.io/Workshops/RNAseq_Workshop_Materials/rnaseq_workshop_demos/day3/Rtutorial-basics2/) - How to load/save data and use control structures
+
+
+<a id="metagenomics-stats"></a>  
+## Metagenomics Statistics
+
+Download the ASV tables and code for the ASV initial analysis [here](https://github.com/usfomicshub/metagenomics_workshop/raw/main/exercises/day4/microbiome_BasicR.zip)
+
+Follow along Charley's ASV initial analysis tutorial [here](https://usfomicshub.github.io/Workshops/RNAseq_Workshop_Materials/rnaseq_workshop_demos/day3/Rtutorial-corrheatmap/)
+
+
 
 
 
