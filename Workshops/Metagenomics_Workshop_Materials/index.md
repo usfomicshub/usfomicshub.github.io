@@ -31,6 +31,7 @@ GOAL
   - [Presentation Slides](#day-four)
   - [Intro to R](#intro-to-r)
   - [Metagenomics Statistics](#metagenomics-statistics)
+  - [R for Metagenomics](#r-for-metagenomics)
 
 
 
@@ -288,6 +289,7 @@ Continue submiting the next scripts the same way and follow along with Anujit's 
 
 [R Tutorial (Dr. Charley Wang)](https://github.com/usfomicshub/metagenomics_workshop/raw/main/slides/day4/RTutorial.pdf)
 
+[R for Metagenomics](https://github.com/usfomicshub/metagenomics_workshop/raw/main/slides/day4/RMcMinds_R_for_Metagenomics.pptx)
 
 <a id="intro-to-r"></a> 
 ## Intro to R
@@ -303,6 +305,21 @@ Continue submiting the next scripts the same way and follow along with Anujit's 
 [Download the ASV tables and code for the ASV initial analysis](https://github.com/usfomicshub/metagenomics_workshop/raw/main/exercises/day4/microbiome_BasicR.zip)
 
 Follow along Charley's ASV initial analysis tutorial [here](https://usfomicshub.github.io/Workshops/Metagenomics_Workshop_Materials/metagenomics_workshop_demos/day4/asvanalysis/)
+
+<a id="r-for-metagenomics"></a>  
+## R for Metagenomics 
+
+[Download the .tsv files and code for the analysis](https://github.com/usfomicshub/metagenomics_workshop/raw/main/exercises/day4/r_for_metagenomics.zip)
+
+These files are not from yesterday's outputs since we were only working with two samples (more samples would have taken days). The files for this analysis come from a preterm birth dataset that was run on the pipeline used yesterday:
+
+**kaiju_specifies.txt** is a file generated in yesterday's step 04. 
+
+**preterm_metagenomics_pathabundance.tsv** is not generated from our pipeline but created using humann2. Humann2 maps your microbiome reads against functional databases and summarizes the abundances. This tool pre-normalizes the output. 
+
+
+
+
 
 
 
