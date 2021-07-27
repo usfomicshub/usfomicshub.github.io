@@ -300,7 +300,7 @@ Continue submiting the next scripts the same way and follow along with Anujit's 
 <a id="metagenomics-stats"></a>  
 ## Metagenomics Statistics
 
-Download the ASV tables and code for the ASV initial analysis [here](https://github.com/usfomicshub/metagenomics_workshop/raw/main/exercises/day4/microbiome_BasicR.zip)
+[Download the ASV tables and code for the ASV initial analysis](https://github.com/usfomicshub/metagenomics_workshop/raw/main/exercises/day4/microbiome_BasicR.zip)
 
 Follow along Charley's ASV initial analysis tutorial [here](https://usfomicshub.github.io/Workshops/RNAseq_Workshop_Materials/rnaseq_workshop_demos/day3/Rtutorial-corrheatmap/)
 
