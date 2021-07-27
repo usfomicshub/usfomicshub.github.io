@@ -148,7 +148,7 @@ You can review these commands and find more helpful commands below!
 
 ## Presentation Slides
 
-[Linux for Biologists II (Dr. Jenna Oberstaller) - unavailable](/)
+[Linux for Biologists II (Dr. Jenna Oberstaller)](linux2_slides/index.html)
 
 <a id="linux-shell-scripting"></a>  
 ## Linux: Shell Scripting 
