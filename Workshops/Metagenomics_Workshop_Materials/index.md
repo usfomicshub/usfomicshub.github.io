@@ -159,7 +159,7 @@ Shell scripts (.sh) are plain text files that are executable on command line. Yo
 
 <div style="padding-left: 1.5em;background-color: #F7F6F3">
 
-<p><strong>"She-bang" or script header</strong> - the she-bang <code>#!</code> tells the system that this file is a set of commands to be executed using the specified interpreter. Our interpreter Bash, is located in /bin/bash. We can check this using the <strong>which</strong> command by running <code>which bash</code>. </p>
+<p><strong>"Shebang" or script header</strong> - the shebang <code>#!</code> tells the system that this file is a set of commands to be executed using the specified interpreter. Our interpreter Bash, is located in /bin/bash. We can check this using the <strong>which</strong> command by running <code>which bash</code>. </p>
 
 <p><strong>Comments</strong> - comments, unlike the she-bang, just begins with a hash <code>#</code>. Comments are not read by the system and are usually used to describe what a certain piece of code is doing. This is good practice when sharing code between others or returning to a script after a long period of time away.</p>
   
@@ -181,34 +181,37 @@ Create the above shell script using vim and save it as mktest2.sh. Run the scrip
 
 <p><strong>Password</strong>: <u>your USF net ID password</u></p>
 
-These programs are useful from transferring files from the cluster and your local computer but it can also make it easier to edit text files. From these programs, you can right-click on a .txt or .sh file and edit with more sophisticated text editor interface like <a href= "https://www.sublimetext.com/"> Sublime text </a> or <a href = "https://code.visualstudio.com">Visual Studio Code</a>. Saving any edits you make in these programs will save it on the cluster. 
+These programs are useful for transferring files between the cluster and your local computer but it can also make it easier to edit text files. From these programs, you can right-click on a .txt or .sh file and edit with a more sophisticated text editor interface like <a href= "https://www.sublimetext.com/"> Sublime text </a> or <a href = "https://code.visualstudio.com">Visual Studio Code</a>. Saving any edits you make in these programs will save it on the cluster. 
 
 </div>
 
 <a id="linux-cluster-computing-at-USF"></a>  
-## Linux: Cluster Computing at USF 
+## Linux: Cluster Computing at USF: loading programs
+  aka, intro to environments
 
-Research Computing has hundred of programs already downloaded on the cluster. We can see what these are by running the following:
+Research Computing has many programs already installed on the cluster. These are generally available as environmental modules--the program itself along with any dependencies/environmental settings that the program requires to run (see presentation for more about modules and environments). Modules work by adding the directories containing the required executable programs to your search-path. When the module is unloaded, all those changes are reversed.
+
+We can see what modules are available by running the following:
 
        module avail 
 
-Before loading any of these programs, lets check our PATH. PATH is an environment variable that specifies a set of directories, separated with semicolons (;), where executable programs are located. Run the following the print your path. You most likely will not have a long path with any executable programs listed. You can comfirm this by running ```module list``` which will list any loaded modules. 
+Before loading any of these programs, lets check our PATH. PATH is an environment variable that specifies a set of directories, separated with colons (:), where the system should search for executable programs. Run the following to print your path.  
 
-      echo $PATH. 
+      echo $PATH
 
 
-To load one of these programs, use **module load**. Below is an example loading fastqc. We can check to see if this loaded by running ```module list``` or ```echo $PATH```. You should now be able to run fastqc commands. 
+To load one of these programs, use **module load**. Below is an example loading fastqc. We can check to see that it loaded by running ```module list``` (or ```echo $PATH```, which you'll see has been modified to add the directories containing fastqc executables). You should now be able to run fastqc commands. 
 
         module load apps/fastqc/0.11.5
 
-To unload all your modules and reset everything to the original state:
+To unload all your modules and reset everything to the original state (always run this step before loading any modules to minimize potential conflicts):
 
         module purge
 
 <a id="linux-intro-to-conda-containers"></a>  
-## Linux: Intro to Conda/Containers 
+## Linux: Intro to Conda/Environments 
 
-After purging your module, you can add more modules the Hub has made available. Running the following code will permanently copy the programs in the Hub shares module files folder to your /.bash_profile, or your user environment. 
+After purging your module, you can add more modules the Hub has made available to your module search-path. Running the following code will permanently add the directory containing Hub modulefiles to your module search-path (by adding a line to your ~/.bash_profile, the file setting your user environment at login). You'll then be able to use
 
         echo "export MODULEPATH=$MODULEPATH:/shares/omicshub/modulefiles" >> ~/.bash_profile
 
@@ -224,7 +227,7 @@ List all available environments
 
         conda env list 
 
-To load one of these environments use **conda active**. Below is an example using multiqc.  If you are getting an error saying that your shell has not been properly configured. Run this first: ```conda init bash; source ~/.bashrc```. 
+To load one of these environments use **conda activate**. Below is an example using multiqc.  If you are getting an error saying that your shell has not been properly configured. Run this first: ```conda init bash; source ~/.bashrc```. 
 
         conda activate multiqc
 
