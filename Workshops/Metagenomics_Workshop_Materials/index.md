@@ -152,7 +152,7 @@ You can review these commands and find more helpful commands below!
 
 ## Presentation Slides
 
-[Linux for Biologists II (Dr. Jenna Oberstaller) - unavailable](/)
+[Linux for Biologists II (Dr. Jenna Oberstaller)](https://github.com/usfomicshub/metagenomics_workshop/raw/main/slides/day2/Linux_for_biologists_DAY2.pdf)
 
 <a id="linux-shell-scripting"></a>  
 ## Linux: Shell Scripting 
