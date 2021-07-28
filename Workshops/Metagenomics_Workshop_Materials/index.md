@@ -322,7 +322,7 @@ For these analyses, it is reccomended to use R Projects. If you are not familiar
 
 These files are not from yesterday's outputs since we were only working with two samples (more samples would have taken days). The files for this analysis come from a preterm birth dataset that was run on the pipeline used yesterday:
 
-**kaiju_specifies.txt** is a file generated in yesterday's step 04. 
+**kaiju_species.tsv** is a file generated in yesterday's step 04. 
 
 **preterm_metagenomics_pathabundance.tsv** is not generated from our pipeline but created using humann2. Humann2 maps your microbiome reads against functional databases and summarizes the abundances. This tool pre-normalizes the output. 
 
@@ -340,6 +340,7 @@ Follow [Ryan's R for Metagenomics Tutorial: MaAsLin2](https://usfomicshub.github
 ## Presentation Slides
 
 [More things to consider.. (Dr. Ryan McMinds)](https://github.com/usfomicshub/metagenomics_workshop/raw/main/slides/day5/RMcMinds_Stuff_we_didnt_cover.pptx)
+
 
 
 
