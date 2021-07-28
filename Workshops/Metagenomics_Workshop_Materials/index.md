@@ -324,6 +324,8 @@ These files are not from yesterday's outputs since we were only working with two
 
 **kaiju_species.tsv** is a file generated in yesterday's step 04. 
 
+**meta_data_sra_acc.tsv** is our sample metadata
+
 **preterm_metagenomics_pathabundance.tsv** is not generated from our pipeline but created using humann2. Humann2 maps your microbiome reads against functional databases and summarizes the abundances. This tool pre-normalizes the output. 
 
 
@@ -355,8 +357,12 @@ For these analyses, it is reccomended to use R Projects. If you are not familiar
 Follow [Justin's Metagenome Functional Analysis and Data Viz Tutorial](https://usfomicshub.github.io/Workshops/Metagenomics_Workshop_Materials/metagenomics_workshop_demos/day5/metagenomics_func_and_viz/)
 
 
+<a id="machine-learning"></a>
+## Machine Learning for Metagenomics 
 
+For this section, we will be using some of the same files as yesterday so you will only need to download the code [here](https://github.com/usfomicshub/metagenomics_workshop/raw/main/exercises/day5/randomForest.r.zip)
 
+Follow [Ryan's Machine Learning Tutorial](https://usfomicshub.github.io/Workshops/Metagenomics_Workshop_Materials/metagenomics_workshop_demos/day5/machine_learning_for_metagenomics/)
 
 <!--
 Now, we run the scripts within the "Genomics_Training" directory that we copied yesterday. To get to the scripts, we can run the following lines from our home directory.
