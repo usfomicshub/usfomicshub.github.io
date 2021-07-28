@@ -312,7 +312,7 @@ Follow along Charley's ASV initial analysis tutorial [here](https://usfomicshub.
 <a id="r-for-metagenomics"></a>  
 ## R for Metagenomics 
 
-For these analyses, it is reccomended to use R Projects. If you are not familiar with R Projects check out [part 2 of our Introductory R tutorial](https://usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/rtutorial/index.html#The_Basics_-_pt2). The following zip file is set up for R Project format.
+For these analyses, it is reccomended to use R Projects. If you are not familiar with R Projects check out [part 2 of our Introductory R tutorial](https://usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/rtutorial/index.html#The_Basics_-_pt2). The following zip file is set up for an R Project.
 
 
 [Download the .tsv files and code for the analysis](https://github.com/usfomicshub/metagenomics_workshop/raw/main/exercises/day4/r_for_metagenomics.zip)
@@ -333,7 +333,7 @@ Follow [Ryan's R for Metagenomics Tutorial: MaAsLin2](https://usfomicshub.github
 <h2 style="color:#005440"> Metagenomics Functional Analysis and Data Viz</h2>
 * * *
 
-For these analyses, it is reccomended to use R Projects. If you are not familiar with R Projects check out [part 2 of our Introductory R tutorial](https://usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/rtutorial/index.html#The_Basics_-_pt2). The following zip file is set up for R Project format.
+For these analyses, it is reccomended to use R Projects. If you are not familiar with R Projects check out [part 2 of our Introductory R tutorial](https://usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/rtutorial/index.html#The_Basics_-_pt2). The following zip file is set up for an R Project.
 
 [Download data and code for today's analysis](https://github.com/usfomicshub/metagenomics_workshop/raw/main/exercises/day5/Metagenome_Day5_Data_Viz.zip)
 
