@@ -309,6 +309,9 @@ Follow along Charley's ASV initial analysis tutorial [here](https://usfomicshub.
 <a id="r-for-metagenomics"></a>  
 ## R for Metagenomics 
 
+For these analyses, it is reccomended to use R Projects. If you are not familiar with R Projects check out [part 2 of our Introductory R tutorial](https://usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/rtutorial/index.html#The_Basics_-_pt2).
+
+
 [Download the .tsv files and code for the analysis](https://github.com/usfomicshub/metagenomics_workshop/raw/main/exercises/day4/r_for_metagenomics.zip)
 
 These files are not from yesterday's outputs since we were only working with two samples (more samples would have taken days). The files for this analysis come from a preterm birth dataset that was run on the pipeline used yesterday:
@@ -318,7 +321,11 @@ These files are not from yesterday's outputs since we were only working with two
 **preterm_metagenomics_pathabundance.tsv** is not generated from our pipeline but created using humann2. Humann2 maps your microbiome reads against functional databases and summarizes the abundances. This tool pre-normalizes the output. 
 
 
-[Ryan's R for Metagenomics Tutorial: ZINB-WaVE and DESeq2 Analysis](https://usfomicshub.github.io/Workshops/Metagenomics_Workshop_Materials/metagenomics_workshop_demos/day4/rformetagenomics/tutorial1/)
+Follow [Ryan's R for Metagenomics Tutorial: ZINB-WaVE and DESeq2 Analysis](https://usfomicshub.github.io/Workshops/Metagenomics_Workshop_Materials/metagenomics_workshop_demos/day4/rformetagenomics/tutorial1/)
+
+Follow [Ryan's R for Metagenomics Tutorial: MaAsLin2](https://usfomicshub.github.io/Workshops/Metagenomics_Workshop_Materials/metagenomics_workshop_demos/day4/rformetagenomics/tutorial2/)
+
+
 
 
 
