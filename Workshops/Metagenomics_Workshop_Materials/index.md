@@ -339,6 +339,8 @@ Follow [Ryan's R for Metagenomics Tutorial: MaAsLin2](https://usfomicshub.github
 <a id="day-five"></a>
 ## Presentation Slides
 
+[More things to consider.. (Dr. Ryan McMinds)](https://github.com/usfomicshub/metagenomics_workshop/raw/main/slides/day5/RMcMinds_Stuff_we_didnt_cover.pptx)
+
 
 
 <a id="metagenomics-functional"></a>
