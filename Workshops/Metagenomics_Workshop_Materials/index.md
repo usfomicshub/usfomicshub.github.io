@@ -363,10 +363,22 @@ Follow [Justin's Metagenome Functional Analysis and Data Viz Tutorial](https://u
 
 For this section, we will be focusing on the Random Forest method - a robust machine learning algorithm that can be used for a variety of tasks including regression and classification. Random Forest builds multiple decision trees, which each produce their own predictions, and merges them together to get a more accurate and stable prediction.
 
-| Pros   | Cons |
-| ----------- | ----------- |
-| <ul><li>Versatile - both for regression and classification</li><li>Prediction performance</li><li>Can handle mixture of feature types</li></ul>  | <ul><li>They are blackboxes - difficult to interpret</li><li>Can be slow to train</li></ul>      |
 
+<table>
+  <tbody>
+    <tr>
+      <th>Pros</th>
+      <th>Con</th>
+      </tr>
+      <td>
+        <ul><li>Versatile - both for regression and classification</li><li>Prediction performance</li><li>Can handle mixture of feature types</li></ul>
+      </td>
+      <td>
+        <ul><li>They are blackboxes - difficult to interpret</li><li>Can be slow to train</li></ul>
+    </td>
+    </tr>
+  </tbody>
+</table>
 
 
 For this section, we will be using some of the same files as yesterday so you will only need to download the code [here](https://github.com/usfomicshub/metagenomics_workshop/raw/main/exercises/day5/randomForest.r.zip)
