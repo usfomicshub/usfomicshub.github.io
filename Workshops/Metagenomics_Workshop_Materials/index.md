@@ -32,6 +32,9 @@ GOAL
   - [Intro to R](#intro-to-r)
   - [Metagenomics Statistics](#metagenomics-statistics)
   - [R for Metagenomics](#r-for-metagenomics)
+6. [Day Five](#day-five)
+  - [Presentation Slides](#day-five)
+  - [Metagenomics Functional Analysis and Data Viz](#metagenomics-functional)
 
 
 
@@ -309,7 +312,7 @@ Follow along Charley's ASV initial analysis tutorial [here](https://usfomicshub.
 <a id="r-for-metagenomics"></a>  
 ## R for Metagenomics 
 
-For these analyses, it is reccomended to use R Projects. If you are not familiar with R Projects check out [part 2 of our Introductory R tutorial](https://usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/rtutorial/index.html#The_Basics_-_pt2).
+For these analyses, it is reccomended to use R Projects. If you are not familiar with R Projects check out [part 2 of our Introductory R tutorial](https://usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/rtutorial/index.html#The_Basics_-_pt2). The following zip files to be downloaded at ready for R Project format.
 
 
 [Download the .tsv files and code for the analysis](https://github.com/usfomicshub/metagenomics_workshop/raw/main/exercises/day4/r_for_metagenomics.zip)
@@ -326,9 +329,13 @@ Follow [Ryan's R for Metagenomics Tutorial: ZINB-WaVE and DESeq2 Analysis](https
 Follow [Ryan's R for Metagenomics Tutorial: MaAsLin2](https://usfomicshub.github.io/Workshops/Metagenomics_Workshop_Materials/metagenomics_workshop_demos/day4/rformetagenomics/tutorial2/)
 
 
+<a id="metagenomics-functional"></a>
+<h2 style="color:#005440"> Metagenomics Functional Analysis and Data Viz</h2>
+* * *
 
+[Download data and code for today's analysis](https://github.com/usfomicshub/metagenomics_workshop/raw/main/exercises/day5/Metagenome_Day5_Data_Viz.zip)
 
-
+Follow [Justin's Metagenome Functional Analysis and Data Viz Tutorial](https://usfomicshub.github.io/Workshops/Metagenomics_Workshop_Materials/metagenomics_workshop_demos/day5/metagenomics_func_and_viz/)
 
 
 
