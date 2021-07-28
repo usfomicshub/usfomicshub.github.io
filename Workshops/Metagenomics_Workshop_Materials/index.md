@@ -365,10 +365,9 @@ For this section, we will be focusing on the Random Forest method - a robust mac
 
 
 <table>
-  <tbody>
     <tr>
       <th>Pros</th>
-      <th>Con</th>
+      <th>Cons</th>
     </tr>
     <td>
       <ul>
@@ -383,7 +382,6 @@ For this section, we will be focusing on the Random Forest method - a robust mac
         <li>Can be slow to train</li>
       </ul>
     </td>
-  </tbody>
 </table>
 
 
