@@ -369,12 +369,12 @@ For this section, we will be focusing on the Random Forest method - a robust mac
     <tr>
       <th>Pros</th>
       <th>Con</th>
-      </tr>
-      <td>
-        <ul><li>Versatile - both for regression and classification</li><li>Prediction performance</li><li>Can handle mixture of feature types</li></ul>
-      </td>
-      <td>
-        <ul><li>They are blackboxes - difficult to interpret</li><li>Can be slow to train</li></ul>
+    </tr>
+    <td>
+      <ul><li>Versatile - both for regression and classification</li><li>Prediction performance</li><li>Can handle mixture of feature types</li></ul>
+    </td>
+    <td>
+      <ul><li>They are blackboxes - difficult to interpret</li><li>Can be slow to train</li></ul>
     </td>
     </tr>
   </tbody>
