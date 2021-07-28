@@ -287,7 +287,7 @@ Now, we can start running the first script. We submit the job where our local.en
 Continue submiting the next scripts the same way and follow along with Anujit's powerpoint to understand these outputs better! 
 
 
-  <a id="day-four"></a>
+<a id="day-four"></a>
 <h2 style="color:#005440"> Day Four</h2>
 ***
 
@@ -332,9 +332,14 @@ Follow [Ryan's R for Metagenomics Tutorial: ZINB-WaVE and DESeq2 Analysis](https
 Follow [Ryan's R for Metagenomics Tutorial: MaAsLin2](https://usfomicshub.github.io/Workshops/Metagenomics_Workshop_Materials/metagenomics_workshop_demos/day4/rformetagenomics/tutorial2/)
 
 
+  <a id="day-five"></a>
+<h2 style="color:#005440">Day Five</h2>
+***
+
+
 <a id="metagenomics-functional"></a>
-<h2 style="color:#005440"> Metagenomics Functional Analysis and Data Viz</h2>
-* * *
+## Metagenomics Functional Analysis and Data Viz
+
 
 For these analyses, it is reccomended to use R Projects. If you are not familiar with R Projects check out [part 2 of our Introductory R tutorial](https://usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/rtutorial/index.html#The_Basics_-_pt2). The following zip file is set up for an R Project.
 
