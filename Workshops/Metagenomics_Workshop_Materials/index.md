@@ -318,6 +318,8 @@ These files are not from yesterday's outputs since we were only working with two
 **preterm_metagenomics_pathabundance.tsv** is not generated from our pipeline but created using humann2. Humann2 maps your microbiome reads against functional databases and summarizes the abundances. This tool pre-normalizes the output. 
 
 
+[Ryan's R for Metagenomics Tutorial: ZINB-WaVE and DESeq2 Analysis](https://usfomicshub.github.io/Workshops/Metagenomics_Workshop_Materials/metagenomics_workshop_demos/day4/rformetagenomics/tutorial1/)
+
 
 
 
