@@ -26,7 +26,11 @@ manage requests, reservations, and billing.
 The USF Genomics Core laboratory facilities house the following instrumentation:
 _Next-Gen Sequencers:_ Illumina NextSeq-550 and MiSeq systems, 10x Chromium Single-Cell Controller.
 
+<img src="https://github.com/usfomicshub/usfomicshub.github.io/blob/master/images/nextgen_singlecell.png?raw=TRUE" class="center"> 
+
 _Instrumentation for sample library-prep and quality-assurance:_ Covaris M220 for DNA framentation, Agilent 4200 and 2200 TapeStation systems, Roche LightCycler Real-Time qPCR system, Invitrogen Qubit 2.0 fluorometer, and BioRad PCR systems.
+
+<img src="https://github.com/usfomicshub/usfomicshub.github.io/blob/master/images/samp_libprep.png?raw=TRUE" class="center"> 
 
 _Instrumentation for cell culture:_ Three four-foot class II biosafety cabinets, four mixed-gas incubators, two Leica microscopes, one Eppendorf 5810 centrifuge.
 
