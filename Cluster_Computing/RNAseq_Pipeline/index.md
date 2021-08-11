@@ -63,4 +63,3 @@ classes: wide
 
 Contact **genomics@usf.edu** for questions. 
 
-<iframe height="400" width="100%" frameborder="no" src="https://usfomicshub.shinyapps.io/usf_genomics_cost_tool/"> </iframe>
