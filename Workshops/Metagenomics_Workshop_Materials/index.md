@@ -163,7 +163,7 @@ Shell scripts (.sh) are plain text files that are executable on command line. Yo
 
 <div style="padding-left: 1.5em;background-color: #F7F6F3">
 
-<p><strong>"She-bang" or script header</strong> - the she-bang <code>#!</code> tells the system that this file is a set of commands to be executed using the specified interpreter. Our interpreter Bash, is located in /bin/bash. We can check this using the <strong>which</strong> command by running <code>which bash</code>. </p>
+<p><strong>"Shebang" or script header</strong> - the shebang <code>#!</code> tells the system that this file is a set of commands to be executed using the specified interpreter. Our interpreter Bash, is located in /bin/bash. We can check this using the <strong>which</strong> command by running <code>which bash</code>. </p>
 
 <p><strong>Comments</strong> - comments, unlike the she-bang, just begins with a hash <code>#</code>. Comments are not read by the system and are usually used to describe what a certain piece of code is doing. This is good practice when sharing code between others or returning to a script after a long period of time away.</p>
   
@@ -185,34 +185,37 @@ Create the above shell script using vim and save it as mktest2.sh. Run the scrip
 
 <p><strong>Password</strong>: <u>your USF net ID password</u></p>
 
-These programs are useful from transferring files from the cluster and your local computer but it can also make it easier to edit text files. From these programs, you can right-click on a .txt or .sh file and edit with more sophisticated text editor interface like <a href= "https://www.sublimetext.com/"> Sublime text </a> or <a href = "https://code.visualstudio.com">Visual Studio Code</a>. Saving any edits you make in these programs will save it on the cluster. 
+These programs are useful for transferring files between the cluster and your local computer but it can also make it easier to edit text files. From these programs, you can right-click on a .txt or .sh file and edit with a more sophisticated text editor interface like <a href= "https://www.sublimetext.com/"> Sublime text </a> or <a href = "https://code.visualstudio.com">Visual Studio Code</a>. Saving any edits you make in these programs will save it on the cluster. 
 
 </div>
 
 <a id="linux-cluster-computing-at-USF"></a>  
-## Linux: Cluster Computing at USF 
+## Linux: Cluster Computing at USF: loading programs
+  aka, intro to environments
 
-Research Computing has hundred of programs already downloaded on the cluster. We can see what these are by running the following:
+Research Computing has many programs already installed on the cluster. These are generally available as environmental modules--the program itself along with any dependencies/environmental settings that the program requires to run (see presentation for more about modules and environments). Modules work by adding the directories containing the required executable programs to your search-path. When the module is unloaded, all those changes are reversed.
+
+We can see what modules are available by running the following:
 
        module avail 
 
-Before loading any of these programs, lets check our PATH. PATH is an environment variable that specifies a set of directories, separated with semicolons (;), where executable programs are located. Run the following the print your path. You most likely will not have a long path with any executable programs listed. You can comfirm this by running ```module list``` which will list any loaded modules. 
+Before loading any of these programs, lets check our PATH. PATH is an environment variable that specifies a set of directories, separated with colons (:), where the system should search for executable programs. Run the following to print your path.  
 
-      echo $PATH. 
+      echo $PATH
 
 
-To load one of these programs, use **module load**. Below is an example loading fastqc. We can check to see if this loaded by running ```module list``` or ```echo $PATH```. You should now be able to run fastqc commands. 
+To load one of these programs, use **module load**. Below is an example loading fastqc. We can check to see that it loaded by running ```module list``` (or ```echo $PATH```, which you'll see has been modified to add the directories containing fastqc executables). You should now be able to run fastqc commands. 
 
         module load apps/fastqc/0.11.5
 
-To unload all your modules and reset everything to the original state:
+To unload all your modules and reset everything to the original state (always run this step before loading any modules to minimize potential conflicts):
 
         module purge
 
 <a id="linux-intro-to-conda-containers"></a>  
-## Linux: Intro to Conda/Containers 
+## Linux: Intro to Conda/Environments 
 
-After purging your module, you can add more modules the Hub has made available. Running the following code will permanently copy the programs in the Hub shares module files folder to your /.bash_profile, or your user environment. 
+After purging your module, you can add more modules the Hub has made available to your module search-path. Running the following code will permanently add the directory containing Hub modulefiles to your module search-path (by adding a line to your ~/.bash_profile, the file setting your user environment at login). You'll then be able to use
 
         echo "export MODULEPATH=$MODULEPATH:/shares/omicshub/modulefiles" >> ~/.bash_profile
 
@@ -228,7 +231,7 @@ List all available environments
 
         conda env list 
 
-To load one of these environments use **conda active**. Below is an example using multiqc.  If you are getting an error saying that your shell has not been properly configured. Run this first: ```conda init bash; source ~/.bashrc```. 
+To load one of these environments use **conda activate**. Below is an example using multiqc.  If you are getting an error saying that your shell has not been properly configured. Run this first: ```conda init bash; source ~/.bashrc```. 
 
         conda activate multiqc
 
@@ -284,7 +287,7 @@ Now, we can start running the first script. We submit the job where our local.en
 Continue submiting the next scripts the same way and follow along with Anujit's powerpoint to understand these outputs better! 
 
 
-  <a id="day-four"></a>
+<a id="day-four"></a>
 <h2 style="color:#005440"> Day Four</h2>
 ***
 
@@ -319,7 +322,9 @@ For these analyses, it is reccomended to use R Projects. If you are not familiar
 
 These files are not from yesterday's outputs since we were only working with two samples (more samples would have taken days). The files for this analysis come from a preterm birth dataset that was run on the pipeline used yesterday:
 
-**kaiju_specifies.txt** is a file generated in yesterday's step 04. 
+**kaiju_species.tsv** is a file generated in yesterday's step 04. 
+
+**meta_data_sra_acc.tsv** is our sample metadata
 
 **preterm_metagenomics_pathabundance.tsv** is not generated from our pipeline but created using humann2. Humann2 maps your microbiome reads against functional databases and summarizes the abundances. This tool pre-normalizes the output. 
 
@@ -329,9 +334,22 @@ Follow [Ryan's R for Metagenomics Tutorial: ZINB-WaVE and DESeq2 Analysis](https
 Follow [Ryan's R for Metagenomics Tutorial: MaAsLin2](https://usfomicshub.github.io/Workshops/Metagenomics_Workshop_Materials/metagenomics_workshop_demos/day4/rformetagenomics/tutorial2/)
 
 
+  <a id="day-five"></a>
+<h2 style="color:#005440">Day Five</h2>
+***
+
+<a id="day-five"></a>
+## Presentation Slides
+
+[More things to consider.. (Dr. Ryan McMinds)](https://github.com/usfomicshub/metagenomics_workshop/raw/main/slides/day5/RMcMinds_Stuff_we_didnt_cover.pptx)
+
+
+
+
 <a id="metagenomics-functional"></a>
-<h2 style="color:#005440"> Metagenomics Functional Analysis and Data Viz</h2>
-* * *
+## Metagenomics Functional Analysis and Data Viz
+
+For this section, Justin will be going over different data visualizations with the data from kaiju and PERMANOVA testing for significant community composition within the samples. 
 
 For these analyses, it is reccomended to use R Projects. If you are not familiar with R Projects check out [part 2 of our Introductory R tutorial](https://usfomicshub.github.io/Workshops/Microbiome_Workshop_Materials/rtutorial/index.html#The_Basics_-_pt2). The following zip file is set up for an R Project.
 
@@ -340,248 +358,35 @@ For these analyses, it is reccomended to use R Projects. If you are not familiar
 Follow [Justin's Metagenome Functional Analysis and Data Viz Tutorial](https://usfomicshub.github.io/Workshops/Metagenomics_Workshop_Materials/metagenomics_workshop_demos/day5/metagenomics_func_and_viz/)
 
 
+<a id="machine-learning"></a>
+## Machine Learning for Metagenomics 
 
+For this section, we will be focusing on the Random Forest method - a robust machine learning algorithm that can be used for a variety of tasks including regression and classification. Random Forest builds multiple decision trees, which each produce their own predictions, and merges them together to get a more accurate and stable prediction. 
 
 
-<!--
-Now, we run the scripts within the "Genomics_Training" directory that we copied yesterday. To get to the scripts, we can run the following lines from our home directory.
+<table>
+    <tr>
+      <th>Pros</th>
+      <th>Cons</th>
+    </tr>
+    <td>
+      <ul>
+        <li>Versatile - both for regression and classification</li>
+        <li>Prediction performance</li>
+        <li>Can handle mixture of feature types</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>They are blackboxes - difficult to interpret</li>
+        <li>Can be slow to train</li>
+      </ul>
+    </td>
+</table>
 
-<img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day2_jg_pt1.png?raw=TRUE" width=900 style= "border : 5px solid #75b5aa">
 
-The My_Scripts folder contains six shell-scripts comprising the UNIX portions of the RNAseq data-analysis pipeline we run during the workshop. The scripts should be edited appropriately with the email-settings edited to YOUR email address.
+For this section, we will be using some of the same files as yesterday so you will only need to download the code [here](https://github.com/usfomicshub/metagenomics_workshop/raw/main/exercises/day5/randomForest.r.zip)
 
-The scripts are numbered in the order you should run them (via commandline, while logged-in to your student-cluster account). The programs they call and purpose of each step:
+Follow [Ryan's Machine Learning Tutorial](https://usfomicshub.github.io/Workshops/Metagenomics_Workshop_Materials/metagenomics_workshop_demos/day5/machine_learning_for_metagenomics/)
 
-**01_check_fastq_qc.sh**: quality control checks on raw sequence
 
-**02_build_hisat_index.sh:** Build an index of your reference-genome
-
-**03_run_hisat.sh:** Align reads to your indexed reference-genome
-
-**04_run_cufflinks.sh:** Assemble reads into transcripts
-
-**05_run_cuffnorm.sh:** Get normalized gene counts
-
-**06_run_featureCounts.sh:** Get raw gene counts
-
-<div align="center"><h3>         RNA-Seq Pipeline Workflow </h3>
-
-<img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/rnaseqpipeline.png?raw=TRUE" width =520 height="500" style= "border : 5px solid #75b5aa" align="center">
-  </div>
-
-**LETS BEGIN!**
-
-Use **vim** to open a file in Vim editor. To insert and modify text, you can enter INSERT mode by pressing the i key. To exit and return to normal mode, hit the escape key. To save changes and quit, press the colon in normal mode to switch to Command Line mode then type "wq" or w to just save(:w) or q to just quit without making changes(:q). *Do not forget to change the mail-user settings to your USF email address!*
-
-        vim 01_check_fastq_qc.sh
-
-After saving and quiting, we can submit this job using **sbatch** as shown below. If you specified your email, then you should receive an email confirming the submitted job and whether it was successful. If the job was successful, then you should see the output files in the output directory, "./Genomics_Training/FASTQ_QC".
-
-        sbatch 01_check_fastq_qc.sh
-
-Since there are a lot of files, we can combine the files using MultiQC but we will need to install miniconda first.
-
-        echo ". /apps/miniconda/3.6.1/etc/profile.d/conda.sh" >> ~/.bashrc
-
-This makes sure that the upgraded environment settings are being applied.
-
-        source ~/.bashrc
-
-Now you are ready to use conda and load all environments we have built.
-
-        conda activate /home/j/jobersta/.conda/envs/genome.assembly
-
-Run the following code to generate the MultiQC Report. The input "FASTQ_QC/" is our path to the fastqc files and the output directory specified by "-o" is "MultiQC_Report".
-
-        multiqc FASTQ_QC/ -o MultiQC_Report
-
-Lets use FileZilla to transfer this MultiQC_Report to our local server. To log in:
-
-**Host**: <u>sftp://sc.rc.usf.edu</u>
-
-**Username**: <u>your USF net ID</u>
-
-**Password**: <u>your USF net ID password</u>
-
-The right-hand side of FileZilla should show your files in the remote site(your student cluster) and the left-hand side shows all of your files in your local site. Make sure your local site is directed to the path you want your MultiQC report to be in then right click on the MultiQC_Report folder within the files under the remote site and click download. Launch the MultiQC_Report.html file to see the summary statistics and the aggregated FastQC results. Below is a screenshot of what the report looks like. Sequence Counts is one of the graphs MultiQC displays but it also includes sequence quality histograms and per base content.
-
-<img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day2_jg_pt2.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa">
-
-Lets go back to running the rest of the scripts. 02_build_hisat_index.sh builds the index of our reference genome. *It may be a good idea to write "module purge" before loading hisat2*. 
-
-<div style="background-color:	#FFFFE0">📌  Remember these scripts are written in bash. In the following script, a path is being assigned to the variable, INPUT_REF_FASTA, highlighted in blue which is the fasta file of the genome we want to feed hisat2-build. The base name of the index files (\*.ht2)\ is being assigned to the variable, "INDEX_FILES_BASE_NAME." To call these variables in bash, we use $. After building the index to hisat2, save and submit the job. The output files to go to our ./Genomics_Training/Work folder.</div>
-
-<img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day2_jg_pt3.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa">
-
-While in the ./Genomics_Training/Work directory, we can run the following code to check our hisat_index.out file. The **less** command displays the contents of a file. There should be no error messages.
-
-        less hisat_index.out
-
-Now, we can allign our reads to this but first, make sure to go back to the ./Genomics_Training/My_Scripts folder before editing the script in vim. We are loading hisat2 again, to perform the alignment. 
-
-<div style="background-color:	#FFFFE0">📌  In this script, you can see we are also loading an application called samtools. We will use this to organize the allignments from hisat2. The hisat2 allignment outputs sam(sequence alignment maps) files. We use use samtools to organze these files by position and convert them to bam files which are smaller. The script includes the variables we want but again, we have to write the hisat command. </div>
-
-<strong><u>The hisat2 command is made up of the following arguments:</u></strong>
-
-  <div style="padding-left: 1.5em;background-color:	#F7F6F3">
-
-<p>--r : files wth unpaired reads</p>
-
-<p>-p : a performance option defining the number of threads. ncreasing -p increases HISAT2’s memory footprint. E.g. when aligning to a human genome index, increasing -p from 1 to 8 increases the memory footprint by a few hundred megabytes. The number of threads we are using is defined by the NUMBER_OF_PROCESSOR variable.</p>
-
-<p>--dta-cufflinks : Report alignments tailored specifically for Cufflinks. In addition to what HISAT2 does with the above option (–dta), With this option, HISAT2 looks for novel splice sites with three signals (GT/AG, GC/AG, AT/AC), but all user-provided splice sites are used irrespective of their signals.</p>
-
-<p>-x : main argument; the basename of the index for the reference genome follows this.</p>
-
-<p>--rna-strandness : specifies strand-specific information(default is unstranded). For single-end reads, use F or R. For paired-end read, use either FR or RF.</p>
-
-<p>-1 : main argument; Comma-separated list of files containing mate 1s (filename usually includes _1), e.g. -1 flyA_1.fq,flyB_1.fq.</p>
-
-<p>-2 : Comma-separated list of files containing mate 2s (filename usually includes _2), e.g. -2 flyA_2.fq,flyB_2.fq.</p>
-
-<p>-S : File to write SAM alignments to</p>
-  
- </div>
-
-  More information on the hisat2 commands can be found [here](http://daehwankimlab.github.io/hisat2/manual/)
-
-        hisat2 --r -p $NUMBER_OF_PROCESSOR --da-cufflinks -x $REF_GENOME --rna-strandess $RNA_STRANDNESS -1 $SAMPLE_R1 -2 $SAMPLE1_R2 -S $SAMPLE1_SAM_OUTFILE
-
-<strong><u>The samtool command arguments:<u></strong>
-  
-  <div style="padding-left: 1.5em;background-color:	#F7F6F3">
-
-  <p>sort: sort alignments by leftmost coordinates </p>
-
-  <p>-@: number of threads</p>
-
-  <p>-o: where the sorted output is written to</p>
-    
-  </div>
-
-More Information on the samtools commands can be found [here](http://www.htslib.org/doc/samtools.html#COMMANDS)
-
-        samtools sort -@ $NUMBER_OF_PROESSORS -o $SAMPLE1_BAM_OUTFILE $SAMPLE1_SAM_OUTFILE
-
-These lines are repeated for all four samples. The first two are shown in this screenshot. After repeating the code for all four samples, save, and submit the job. You can can check for the bam files in the /Work output directory; there should be four .bam files.
-
-<img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day2_jg_pt4.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa">
-
-Next, we run cufflinks to assemble reads into transcripts. 
-  
-<strong><u>The cufflink command arguments:</u></strong>
-
-  <div style="padding-left: 1.5em;background-color:	#F7F6F3">
-  
- <p>-p : number of prosessors</p>
-
-<p>-G : supplied reference annotation</p>
-
- <p>-o : output files</p>
-    
-  </div>
-
-More information on the cufflinks command can be found [here](http://cole-trapnell-lab.github.io/cufflinks/cufflinks/index.html). We can use the ls -lht command in the /Work directory to see the Cufflinks output. There should be four cufflinks folders for each sample.
-
-<img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day2_jg_pt5.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa">
-
-Now, we get the normalized gene counts using cuffnorm.
-  
-
-  
-  <strong><u>The cuffnorm command arguments:</u></strong>
-  
-<div style="padding-left: 1.5em;background-color:	#F7F6F3">
-  <p>–quiet: suppress messages other than serious warnings and errors.</p>
-
-  <p>–library-norm-method : specifies the library normalization method</p>
-
-  <p>-L : specifies a label for each sample</p>
-  </div>
-
-More information on the cuffnorm command can be found [here](http://cole-trapnell-lab.github.io/cufflinks/cuffnorm/index.html). The cuffnorm outputs in the /Work directory has its own folder inlcuding a set of files containing normalized expression levels for each gene, transcript, TSS group, and CDS group in the experiment. It does not perform differential expression analysis.
-
-<img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day2_jg_pt6.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa">
-
-Finally, we run featureCounts to get raw gene counts. 
- 
-
-  
-  <strong><u>The featureCounts command arguments:</u></strong>
-
-  <div style="padding-left: 1.5em;background-color:	#F7F6F3">
-
-   <p>-T : number of threads</p>
-
-   <p>-t : Specify the type of input sequencing data. Possible valuesinclude 0, denoting RNA-seq data, or 1, denoting genomic DNA-seq data.</p>
-
-   <p>-g : gene identifier</p>
-
-   <p>-a : name of annotation file</p>
-
-   <p>-o : name of output file</p>
-
-   <p>-p : If specified, fragments (or templates) will be counted instead of reads.</p>
-    
-  </div>
-
-  
-More information on the featureCounts command can be found [here](https://bioconductor.org/packages/release/bioc/vignettes/Rsubread/inst/doc/SubreadUsersGuide.pdf). It outputs numbers of reads assigned to features (or meta-features). It also outputs stat info for the overall summrization results, including number of successfully assigned reads and number of reads that failed to be assigned due to various reasons (these reasons are included in the stat info). We will be using the vehicle_drug_feature_counts.txt file tommorow!
-
-<img src="https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day2_jg_pt7.png?raw=TRUE" width = 900 style= "border : 5px solid #75b5aa">
-
-  
-  <a id="day-three"></a>
-<h2 style="color:#005440"> Day Three</h2>
-***
-
-## Presentation Slides
-
-  [R and RStudio for biologists (Dr. Jenna Oberstaller)](rnaseq_workshop_demos/day3/slides_JO/index.html)
-  
-[Introduction to R (Dr. Charley Wang)](https://github.com/usfomicshub/RNASeq_workshop_Sept2020/raw/master/slides/day3/R%20Tutorial.pdf)
-
-  
-  <a id="r-and-bioconductor-hands-on-practice"></a>
-### R and Bioconductor Hands-on Practice
-
-Follow Charley's R Tutorials in order! 
-
-**1.** [The Basics : part 1](https://usfomicshub.github.io/Workshops/RNAseq_Workshop_Materials/rnaseq_workshop_demos/day3/Rtutorial-basics1/) - Introducing basic R including all data types 
-
-**2.** [The Basics : part 2](https://usfomicshub.github.io/Workshops/RNAseq_Workshop_Materials/rnaseq_workshop_demos/day3/Rtutorial-basics2/) - How to load/save data and use control structures
-
-**3.** [Data Normalization](https://usfomicshub.github.io/Workshops/RNAseq_Workshop_Materials/rnaseq_workshop_demos/day3/Rtutorial-datanorm/) - How to normalize data and plot it
-
-**4.** [FPKM Correlation](https://usfomicshub.github.io/Workshops/RNAseq_Workshop_Materials/rnaseq_workshop_demos/day3/Rtutorial-corrheatmap/) - How to create heatmaps to check the correlation between each biological replicates
-
-**5.** [Differential Gene Expression](https://usfomicshub.github.io/Workshops/RNAseq_Workshop_Materials/rnaseq_workshop_demos/day3/Rtutorial-DEgenesanal/) - How to perform differential gene expression analysis using DESeq2 and visualizing results using heatmaps. * use FileZilla to transfer our vehicle_drug_feature_counts.txt output file from day 2 to a path we can call
-
-**6.** [More DE Gene Visualizations](https://usfomicshub.github.io/Workshops/RNAseq_Workshop_Materials/rnaseq_workshop_demos/day3/Rtutorial-morevis/) - How to create boxplots and histograms for significantly DE genes.
-
-These links are output html files created from the original Rmarkdown(.Rmd) file. Rmarkdown creates these files in a html or pdf format that allow you to attractively present code and text in one report (No more screenshotting code into a Word doc!). You can download the .Rmd files <a href= "https://github.com/usfomicshub/RNASeq_workshop/raw/master/exercises/day3/R_code_Training_and_Reference/Sept2020_RNAseqWorkshop_Day2_Rscripts.zip" class="a.tablelink" download = "rtutorials">here</a>  and upload them in R so you can interactively run it as well. Try knitting it to create the html file.
-
-  
-  <a id="day-four"></a>
-<h2 style="color:#005440"> Day Four</h2>
-***
-  <a id="rna-seq-tuxedo-pipeline"></a>
-### RNA-seq: TUXEDO Pipeline
-
-Let's copy the materials we will use today into our home directory to set up our practice directory. This is similar to what we did in Day 1 for Day 2 materials but we are creating our own RNA-seq_Project_Data folder. * *Remember to make sure you are in your home directory before copying the directory*
-
-        cp -r /shares/biocomputing/RNA-Seq_Project_Data/ .
-
-Make a new directory called RNA-seq_Practice in home directory
-
-        mkdir RNA-seq_Practice
-
-Now, we make a directory called FASTQs within RNA-seq_Practice older. Within this directory, we will create a "Work" and "Reference_Data" folder similar to Day 2's folders. We will copy the files from Day 2's Genomics_Training/Reference_Data folder to our new RNA-seq_Practice/Reference_Data folder.
-
-<img src= "https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day4_jg_pt1.png?raw=TRUE" width =900 style= "border : 5px solid #75b5aa">
-
-We will also make a "Code" and a "FASTQ_QC" output folder for our fastq results. Within /Code, we can create new bash scripts that echo our /Genomics_Training/RNA-seq_Training_Scripts using our new fastq files in vim. An easy way to go about this is opening a second terminal window with the old bash scripts and copy-pasting into your new script. Save the scripts and submit the job then continue with the next script! As you continue, make sure the variables correspond to the new fastqs and results. For example, remember to change the input file paths as well as the output file names so that they reflect the new sample names (control1_rep1,control_rep2,treatment_rep1,treatment_rep2) when running the third script.
-
-<img src= "https://github.com/usfomicshub/RNASeq_workshop/blob/master/img/day4_jg_p2.png?raw=TRUE" width =900 style= "border : 5px solid #75b5aa">
-
--->
