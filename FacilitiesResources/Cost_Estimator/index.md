@@ -6,4 +6,4 @@ sidebar:
 classes: wide
 ---
 
-<iframe height="10000" width="105%" frameborder="no" src="https://usfomicshub.shinyapps.io/usf_genomics_cost_tool/"> </iframe>
+<iframe height="9000" width="110%" frameborder="no" src="https://usfomicshub.shinyapps.io/usf_genomics_cost_tool/"> </iframe>
