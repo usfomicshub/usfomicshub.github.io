@@ -43,7 +43,7 @@ docs-3:
 docs-4: 
   - title: Facilities and Resources
     children:
-      - title: "> Grants boilerplate"
+      - title: "> Grants Boilerplate"
         url: /FacilitiesResources/
       - title: "> Service Cost Estimator"
         url: /FacilitiesResources/Cost_Estimator
