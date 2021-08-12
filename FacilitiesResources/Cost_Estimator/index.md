@@ -1,6 +1,6 @@
 --- 
 layout: posts
-title: " "
+title: "USF Genomics Equipment Core and Omics Hub Facility Cost Estimator"
 sidebar:
   nav: "docs-4"
 classes: wide
