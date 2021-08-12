@@ -1,6 +1,6 @@
 --- 
 layout: posts
-title: " "
+title: "Grants Boilerplate"
 sidebar:
   nav: "docs-4"
 classes: wide
