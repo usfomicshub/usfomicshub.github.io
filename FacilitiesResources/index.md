@@ -11,6 +11,7 @@ classes: wide
 2. [Computational](#computational)
 3. [Genomics Training Courses and Consultation](#genomics-training)
 
+[Download "Facilities and Resources" for NIH grant-apps](https://github.com/janelledonglasan/usfomicshub.github.io/raw/master/FacilitiesResources/Facilities_and_Resources.docx)
 
 
 <a id="laboratory"></a>
