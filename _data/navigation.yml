@@ -6,10 +6,9 @@ main:
     url: /Cluster_Computing/
   - title: "Codeathons"
     url: /Codeathon/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Facilities"
+    url: "/FacilitiesResources/"
+
 
 
 docs:
@@ -32,12 +31,7 @@ docs-2:
       - title: "> 2020 - Host Microbiome Interactions in a Global System"
         url: /Codeathon/Codeathon2020/
 
-docs-3: # experimenting updating to add nav for grants boilerplate
-  - title: Facilities and Resources
-    children:
-      - title: "> Grants boilerplate"
-        url: /Cluster_Computing/FacilitiesResources/
-    
+docs-3:
   - title: OmicsHub Modules
     children:
       - title: "> RNAseq Pipeline"
@@ -45,6 +39,15 @@ docs-3: # experimenting updating to add nav for grants boilerplate
 
       - title: "> Basespace Downloader"
         url: /Cluster_Computing/Basespace/
+
+docs-4: 
+  - title: Facilities and Resources
+    children:
+      - title: "> Grants Boilerplate"
+        url: /FacilitiesResources/
+      - title: "> Service Cost Estimator"
+        url: /FacilitiesResources/Cost_Estimator
+
 
 
 Codeathon2020: 

@@ -62,3 +62,4 @@ classes: wide
   These scripts are automatically submitted to slurm to run, but should be saved for your records.
 
 Contact **genomics@usf.edu** for questions. 
+
