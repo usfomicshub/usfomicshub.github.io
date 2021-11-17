@@ -1,0 +1,6 @@
+Tasks to do:
+1) Decide questions and topics for the Codeathon
+2) Create a flyer
+3) Approach the keynote speakers and judges
+4) Create a repository for publicly available data
+5) Create registration form for participants
