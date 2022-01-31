@@ -3,7 +3,7 @@ layout: posts
 title: "One Health Codeathon"
 classes: wide
 sidebar:
-  nav: "docs-3"
+  nav: "docs-2"
 ---
 <img src="https://github.com/usfomicshub/usfomicshub.github.io/blob/master/images/codeathonsimage.png?raw=TRUE" class="center"> 
 
