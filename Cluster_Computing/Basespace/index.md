@@ -35,9 +35,10 @@ Now the Basespace client and the downloader-script have been added to your path.
 
   	This command will give you a link to follow to login to your basespace account. If it worked it will tell you you can close the browser window. The --force flag is needed if you've already accessed basespace before from your RRA account.
 
-		bs auth --force 
 
-2. Find the projectID number containing the fastq.gz files you want to download. 
+		bs auth --force
+
+2. Find the projectID number containing the fastq.gz files you want to download.
 
 	This command will list the projects you have access to. Copy the "ID" of the one you want to download (9 digits long).
 
