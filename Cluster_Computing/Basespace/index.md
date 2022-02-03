@@ -33,8 +33,7 @@ Now the Basespace client and the downloader-script have been added to your path.
 
 1. Authenticate into your basespace account.
 
-  	This command will give you a link to follow to login to your basespace account. If it worked it will tell you you can close the browser window.
-	The --force flag is needed if you've already accessed basespace before from your RRA account.
+  	This command will give you a link to follow to login to your basespace account. If it worked it will tell you you can close the browser window. The --force flag is needed if you've already accessed basespace before from your RRA account.
 
 		bs auth --force 
 
