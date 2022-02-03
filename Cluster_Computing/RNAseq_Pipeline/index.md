@@ -10,7 +10,9 @@ classes: wide
 
 ### Requirements 
 
-*   access to the RRA or CIRCE cluster
+*   access to the RRA cluster
+
+      *note the pipeline module is not available on CIRCE.
 
 *   Suggested naming convention for fastq files:
 
